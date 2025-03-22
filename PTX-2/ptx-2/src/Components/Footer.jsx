@@ -62,37 +62,37 @@ export default function Footer() {
                       }}
                     />
                     <p>
-                      <Link href="/" className="text-dark">
+                      <Link to="/" className="text-dark">
                         Home
                       </Link>
                     </p>
                     <p>
-                      <Link href="/Product" className="text-dark">
+                      <Link to="/Product" className="text-dark">
                         Product
                       </Link>
                     </p>
                     <p>
-                      <Link href="/signup" className="text-dark">
+                      <Link to="/signup" className="text-dark">
                         Wholesale Signup
                       </Link>
                     </p>
                     <p>
-                      <Link href="/Contact" className="text-dark">
+                      <Link to="/Contactus" className="text-dark">
                         Contact
                       </Link>
                     </p>
                     <p>
-                      <Link href="/LookBook-V1" className="text-dark">
+                      <Link to="/LookBook-V1" className="text-dark">
                         LOOKBOOK V1
                       </Link>
                     </p>
                     <p>
-                      <Link href="/LookBook-V2" className="text-dark">
+                      <Link to="/LookBook-V2" className="text-dark">
                         LOOKBOOK V2
                       </Link>
                     </p>
                     <p>
-                      <Link href="/privacypolicy" className="text-dark">
+                      <Link to="/privacypolicy" className="text-dark">
                         Privacy Policy
                       </Link>
                     </p>
@@ -125,7 +125,7 @@ export default function Footer() {
               
             >
               © 2020 Copyright:
-              <Link className="text-dark" href="https://mdbootstrap.com/">
+              <Link className="text-dark" to="https://mdbootstrap.com/">
                 MDBootstrap.com
               </Link>
             </div>
