@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.style.css"
-
+import {Link} from "react-router-dom"
 export default function Footer() {
   return (
     
@@ -29,7 +29,7 @@ export default function Footer() {
                     />
                     <p>
                       Subscribe to get special offers, free giveaways, and
-                      once-in-a-lifetime deals.
+                      once-in-Link-lifetime deals.
                       <br />
                       <br />
                       <div className="form-groups">
@@ -62,39 +62,39 @@ export default function Footer() {
                       }}
                     />
                     <p>
-                      <a href="#!" className="text-dark">
+                      <Link href="/" className="text-dark">
                         Home
-                      </a>
+                      </Link>
                     </p>
                     <p>
-                      <a href="#!" className="text-dark">
+                      <Link href="/Product" className="text-dark">
                         Product
-                      </a>
+                      </Link>
                     </p>
                     <p>
-                      <a href="#!" className="text-dark">
+                      <Link href="/signup" className="text-dark">
                         Wholesale Signup
-                      </a>
+                      </Link>
                     </p>
                     <p>
-                      <a href="#!" className="text-dark">
+                      <Link href="/Contact" className="text-dark">
                         Contact
-                      </a>
+                      </Link>
                     </p>
                     <p>
-                      <a href="#!" className="text-dark">
+                      <Link href="/LookBook-V1" className="text-dark">
                         LOOKBOOK V1
-                      </a>
+                      </Link>
                     </p>
                     <p>
-                      <a href="#!" className="text-dark">
+                      <Link href="/LookBook-V2" className="text-dark">
                         LOOKBOOK V2
-                      </a>
+                      </Link>
                     </p>
                     <p>
-                      <a href="#!" className="text-dark">
+                      <Link href="/privacypolicy" className="text-dark">
                         Privacy Policy
-                      </a>
+                      </Link>
                     </p>
                   </div>
 
@@ -125,9 +125,9 @@ export default function Footer() {
               
             >
               © 2020 Copyright:
-              <a className="text-dark" href="https://mdbootstrap.com/">
+              <Link className="text-dark" href="https://mdbootstrap.com/">
                 MDBootstrap.com
-              </a>
+              </Link>
             </div>
             {/* Copyright */}
           </footer>
