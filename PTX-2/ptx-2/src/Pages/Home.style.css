@@ -1,0 +1,33 @@
+body{
+    overflow-x: hidden;
+}
+.carousel-item img{
+height: 515px !important;object-fit: cover;
+}
+.carousel-caption{
+    position: absolute; top: 5%;left: 50%;
+}
+.banner-btn{
+    font-size: 15px !important;
+   padding:16px 22px 16px 22px !important;
+   border-radius: 0 !important;
+}
+.custom-card{
+    background-color:white;
+  padding-top: 20px;
+    padding-bottom: 20px;
+}
+p{ padding: 0 !important;}
+.btn-container {
+    text-align: center;
+}
+.btn{ border-radius: 0 !important;}
+.content-card{
+    padding: 20px;
+}
+a{  text-decoration: none !important;}
+.img-fluid{
+    height: 500px !important;
+    width: 100%;
+    object-fit: cover !important;
+}

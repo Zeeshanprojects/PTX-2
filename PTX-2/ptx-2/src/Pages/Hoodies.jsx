@@ -1,0 +1,110 @@
+import { useState } from 'react';
+import React from 'react';
+import Image from '../Images/Image';
+import Footer from '../Components/Footer';
+export default function Hoodies() {
+  const [showSidebar, setShowSidebar] = useState(true); // Sidebar open by default
+    const [selectedFilters, setSelectedFilters] = useState([]);
+  
+    const products = [
+      { image: Image.H1, title: "HEAVY BOX S/S TEE 9OZ", price: "$35.00" },
+      { image: Image.H2, title: "LIGHTWEIGHT COTTON TEE", price: "$30.00" },
+      { image: Image.H3, title: "PREMIUM HOODIE", price: "$55.00" },
+      { image: Image.H4, title: "CLASSIC DENIM JACKET", price: "$80.00" },
+      { image: Image.H5, title: "SLIM FIT CHINOS", price: "$45.00" },
+      { image: Image.H6, title: "SPORTS JOGGERS", price: "$40.00" },
+      { image: Image.H7, title: "SPORTS JOGGERS", price: "$80.00" },
+      { image: Image.H8, title: "SPORTS JOGGERS", price: "$53.00" },
+      { image: Image.H9, title: "SPORTS JOGGERS", price: "$75.00" },
+      { image: Image.H10, title: "SPORTS JOGGERS", price: "$75.00" },
+    ];
+  
+    const filterOptions = [
+      "HEAVY BOX S/S TEE 9OZ",
+      "LIGHTWEIGHT COTTON TEE",
+      "CLASSIC DENIM JACKET",
+      "SLIM FIT CHINOS",
+    ];
+  
+    const handleFilterChange = (option) => {
+      setSelectedFilters((prevFilters) =>
+        prevFilters.includes(option)
+          ? prevFilters.filter((filter) => filter !== option)
+          : [...prevFilters, option]
+      );
+    };
+  
+    const filteredProducts =
+      selectedFilters.length === 0
+        ? products
+        : products.filter((product) => selectedFilters.includes(product.title));
+  
+    return (
+      <>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+  
+        <div className="container-fluid">
+          <h2>PRODUCTS / HOODIES</h2>
+          <hr style={{ borderBottom: "1px solid" }}></hr>
+         
+  
+          {/* Toggle Button (For Both Large & Small Screens) */}
+          <div className="text-start mb-3">
+            <button
+              className="btn btn-dark"
+              onClick={() => setShowSidebar(!showSidebar)}
+            >
+              {showSidebar ? "Hide Filters" : "Show Filters"}
+            </button>
+          </div>
+  
+          <div className="row">
+            {/* Sidebar (Filters) */}
+            {showSidebar && (
+              <div className="col-md-3" style={{ padding: "10px" }}>
+                <div className="sidebar p-2 border-end">
+                  <h5 className="mb-3">Filter Options</h5>
+                  {filterOptions.map((option, index) => (
+                    <div key={index} className="form-check">
+                      <input
+                        className="form-check-input me-2"
+                        type="checkbox"
+                        checked={selectedFilters.includes(option)}
+                        onChange={() => handleFilterChange(option)}
+                      />
+                      <p className="form-check-label text-muted m-0">{option}</p>
+                      <br />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+  
+            {/* Product Grid (Takes Full Space When Sidebar is Hidden) */}
+            <div className={showSidebar ? "col-md-9" : "col-md-12"}>
+              <div className="row">
+                {filteredProducts.map((product, index) => (
+                  <div key={index} className="col-sm-12 col-md-6 col-lg-3">
+                    <div className="custom-card">
+                      <img
+                        src={product.image}
+                        className="card-img-top"
+                        alt="Product"
+                      />
+                    </div>
+                    <p className="card-text text-center">{product.title}</p>
+                    <p className="text-muted text-center">{product.price}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+  
+         <Footer/>
+   </>
+
+  )
+}

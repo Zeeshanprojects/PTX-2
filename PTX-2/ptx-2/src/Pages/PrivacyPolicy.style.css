@@ -1,0 +1,19 @@
+.content-container{
+    background-color: #fcfbf9 !important;
+padding-left:150px;
+padding-right:150px;
+text-align: justify;
+}
+@media (min-width:576px) and (max-width:767px) {
+    .content-container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media (max-width:575px) {
+   .content-container{
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+    
+}
