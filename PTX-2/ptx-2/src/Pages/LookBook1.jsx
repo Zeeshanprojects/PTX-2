@@ -25,7 +25,7 @@ export default function LookBook1() {
           border: "none",
           overflow: "hidden", // Hides scrollbar from the object
         }}
-      >
+      ><div className="space"></div>
         <p>
           Your browser does not support PDFs.{" "}
           <a href="/Docs/Zeeshan-CV.pdf">Download PDF</a>

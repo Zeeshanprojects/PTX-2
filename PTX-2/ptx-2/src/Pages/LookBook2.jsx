@@ -23,6 +23,7 @@ export default function LookBook2() {
           overflow: "hidden", 
         }}
       >
+        <div className="space"></div>
         <p>
           Your browser does not support PDFs.{" "}
           <a href="/Docs/Zeeshan-CV.pdf">Download PDF</a>

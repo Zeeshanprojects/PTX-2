@@ -3,6 +3,7 @@
 padding-left:150px;
 padding-right:150px;
 text-align: justify;
+hyphens: auto;
 }
 @media (min-width:576px) and (max-width:767px) {
     .content-container{

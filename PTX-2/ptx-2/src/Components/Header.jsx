@@ -84,14 +84,14 @@ export default function Header() {
                   id="navbarDropdown"
                   role="button"
                   aria-expanded={dropdownOpen}
-                  onClick={handleProductsClick} // Click will navigate + open dropdown
+                  onClick={handleProductsClick} 
                 >
                   PRODUCTS
                 </Link>
 
                 {/* Dropdown Menu */}
                 <ul
-                  className={`dropdown-menu ${dropdownOpen ? "show" : ""}`} // Show dropdown manually
+                  className={`dropdown-menu ${dropdownOpen ? "show" : ""}`} 
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
