@@ -85,7 +85,7 @@ export default function Cart() {
                 type="button"
                 className="btn btn-outline-dark cart-btn btn-lg mx-3 "
               >
-                PROVACY POLICY
+                PRIVACY POLICY
               </button>
                 </Link>
              

@@ -22,7 +22,7 @@ export default function Login() {
               <br />
               <div className="row">
                 <div className="col-9 text-start">
-                  <button type="button" class="btn btn-dark w-25">
+                  <button type="button" class="btn btn-dark w-50">
                     SIGN IN
                   </button>
                 </div>

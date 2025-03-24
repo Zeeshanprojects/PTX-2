@@ -50,7 +50,7 @@ export default function Footer() {
                   </div>
                   {/* Grid column */}
                   {/* Grid column */}
-                  <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <div className="col-md-2 col-lg-2 col-xl-2 me-auto mb-4">
                     {/* Links */}
                     <h2 className="text ">Main menu</h2>
                     <hr
@@ -98,7 +98,7 @@ export default function Footer() {
                     </p>
                   </div>
 
-                  <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
                     {/* Links */}
                     <h2 className="text ">Contact</h2>
                     <hr

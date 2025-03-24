@@ -47,7 +47,7 @@ export default function Hoodies() {
   
         <div className="container-fluid">
           <h2>PRODUCTS / HOODIES</h2>
-          <hr style={{ borderBottom: "1px solid" }}></hr>
+          <hr style={{ borderBottom: "1px solid #ccc" }}></hr>
          
   
           {/* Toggle Button (For Both Large & Small Screens) */}
@@ -58,29 +58,85 @@ export default function Hoodies() {
             >
               {showSidebar ? "Hide Filters" : "Show Filters"}
             </button>
+            <hr style={{ borderBottom: "1px solid #ccc" }}></hr>
           </div>
   
           <div className="row">
             {/* Sidebar (Filters) */}
             {showSidebar && (
-              <div className="col-md-3" style={{ padding: "10px" }}>
-                <div className="sidebar p-2 border-end">
-                  <h5 className="mb-3">Filter Options</h5>
-                  {filterOptions.map((option, index) => (
-                    <div key={index} className="form-check">
-                      <input
-                        className="form-check-input me-2"
-                        type="checkbox"
-                        checked={selectedFilters.includes(option)}
-                        onChange={() => handleFilterChange(option)}
-                      />
-                      <p className="form-check-label text-muted m-0">{option}</p>
-                      <br />
-                    </div>
-                  ))}
+  <div className="col-md-3" style={{ padding: "10px" }}>
+    <div className="sidebar p-2">
+      <h5 className="mb-3">Filter Options</h5>
+
+      <div className="accordion" id="filterAccordion">
+        {/* Category 1 */}
+        <div className="accordion-item border-0 bg-transparent">
+          <h2 className="accordion-header">
+            <button
+              className="accordion-button bg-transparent shadow-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Styles
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            className="accordion-collapse collapse show"
+            data-bs-parent="#filterAccordion"
+          >
+            <div className="accordion-body">
+              {filterOptions.map((option, index) => (
+                <div key={index} className="form-check">
+                  <input
+                    className="form-check-input me-2"
+                    type="checkbox"
+                    checked={selectedFilters.includes(option)}
+                    onChange={() => handleFilterChange(option)}
+                  />
+                  <p className="form-check-label text-muted">{option}</p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Category 2 */}
+        <div className="accordion-item border-0 bg-transparent">
+          <h2 className="accordion-header">
+            <button
+              className="accordion-button bg-transparent shadow-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+            Product Type
+            </button>
+          </h2>
+          {/* <div
+            id="collapseTwo"
+            className="accordion-collapse collapse"
+            data-bs-parent="#filterAccordion"
+          >
+            <div className="accordion-body">
+
+              <div className="form-check">
+                <input className="form-check-input me-2" type="checkbox" />
+                <p className="form-check-label text-muted">T-shirts</p>
+              
               </div>
-            )}
+            </div>
+          </div> */}
+        </div>
+      </div>
+    </div>
+  </div>
+)}
   
             {/* Product Grid (Takes Full Space When Sidebar is Hidden) */}
             <div className={showSidebar ? "col-md-9" : "col-md-12"}>

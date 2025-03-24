@@ -1,8 +1,11 @@
-
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUser,
+
+  faShoppingCart,
+} from "@fortawesome/free-solid-svg-icons";
 import "./Header.style.css";
 
 export default function Header() {
@@ -34,19 +37,17 @@ export default function Header() {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top p-3">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="#">
+          <Link className="navbar-brand" to="/">
             PTX
           </Link>
 
           {/* Icons for small screens */}
-          <div className="nav-icons d-flex d-lg-none">
+          <div className="nav-icons d-flex d-lg-none ">
             <Link to="/Login">
               <FontAwesomeIcon icon={faUser} size="lg" />
             </Link>
-            <Link to="#">
-              <FontAwesomeIcon icon={faSearch} size="lg" />
-            </Link>
-            <Link to="#">
+           
+            <Link to="/cart">
               <FontAwesomeIcon icon={faShoppingCart} size="lg" />
             </Link>
           </div>
@@ -121,43 +122,61 @@ export default function Header() {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link active" to="/signup" onClick={closeNavbar}>
+                <Link
+                  className="nav-link active"
+                  to="/signup"
+                  onClick={closeNavbar}
+                >
                   WHOLESALE SIGNUP
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/Contactus" onClick={closeNavbar}>
+                <Link
+                  className="nav-link active"
+                  to="/Contactus"
+                  onClick={closeNavbar}
+                >
                   CONTACT
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/LookBook-V1" onClick={closeNavbar}>
+                <Link
+                  className="nav-link active"
+                  to="/LookBook-V1"
+                  onClick={closeNavbar}
+                >
                   LOOKBOOK V1
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/LookBook-V2" onClick={closeNavbar}>
+                <Link
+                  className="nav-link active"
+                  to="/LookBook-V2"
+                  onClick={closeNavbar}
+                >
                   LOOKBOOK V2
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/privacypolicy" onClick={closeNavbar}>
+                <Link
+                  className="nav-link active"
+                  to="/privacypolicy"
+                  onClick={closeNavbar}
+                >
                   PRIVACY POLICY
                 </Link>
               </li>
             </ul>
 
             {/* Icons for large screens */}
-            <div className="nav-icons d-none d-lg-flex">
+            <div className="nav-icons d-none d-lg-flex ">
               <Link to="/Login">
                 <FontAwesomeIcon icon={faUser} size="lg" />
               </Link>
-              {/* <Link to="/ProductDetails">
-                <FontAwesomeIcon icon={faSearch} size="lg" />
-              </Link> */}
               <Link to="/Cart">
                 <FontAwesomeIcon icon={faShoppingCart} size="lg" />
               </Link>
+             
             </div>
           </div>
         </div>
