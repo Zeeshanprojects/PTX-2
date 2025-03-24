@@ -7,7 +7,7 @@ export default function Cart() {
   return (
     <>
       <div className="space"></div>
-      <div className="space"></div>
+      
       <div className="space"></div>
       <div className="text-container pt-5 text-center">
         <h3>Cart</h3>
