@@ -16,6 +16,7 @@ import Login from './Pages/Login';
 import Preloader from './Components/Preloader'; // Import Preloader
 import Cart from './Pages/Cart';
 import Search from './Pages/Search';
+import ProductDetails from './Pages/ProductDetails';
 
 
 
@@ -51,6 +52,8 @@ function AppContent() {
             <Route path="/Login" element={<Login />} />
             <Route path='/Cart' element={<Cart/>}/>
         <Route path='/Search' element={<Search/>}/>
+        <Route path='/ProductDetails/:id' element={<ProductDetails />} />
+
           </Routes>
         </>
       )}

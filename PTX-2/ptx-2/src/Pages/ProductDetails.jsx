@@ -1,62 +1,98 @@
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { useState } from "react";
 import "./ProductDetails.style.css";
 
 export default function ProductDetails() {
-  const location = useLocation();
-  const product = location.state; // Retrieve passed product data
+  
 
-  const [selectedColor, setSelectedColor] = useState("Black"); // Default color selection
-  const [quantity, setQuantity] = useState(1); // Quantity state
+  const location = useLocation();
+  const product = location.state?.product;
+
+  const [quantity, setQuantity] = useState(1);
+
   if (!product) {
-    return <h2 className="text-center mt-5">No product selected.</h2>;
+    return <h1 className="text-center text-danger">Product Not Found</h1>;
   }
+
   return (
     <>
-      <div className="space"></div>
+     <br/><br/>
       <div className="container mt-5">
         <div className="row">
-          {/* Left Column - Product Image */}
-          <div className="col-md-6 text-center">
-            <img src={product.image} alt="Product" className="img-fluid product-image" />
+          {/* Product Image */}
+          <div className="col-md-6 d-flex align-items-center justify-content-center">
+            <img
+              src={product.image}
+              className="img-fluid custom-image"
+              alt={product.title}
+            />
           </div>
 
-          {/* Right Column - Product Details */}
-          <div className="col-md-6">
-            <h2>{product.title}</h2>
-            <h4 className="text-primary">{product.price}</h4>
+          {/* Product Details */}
+          <div className="col-md-6 p-4 shadow-sm bg-white rounded">
+            <h2 className="fw-bold">{product.title}</h2>
+            <h4 className="text-danger fw-semibold">{product.price}</h4>
 
-            {/* Color Selection */}
-            <div className="mb-3">
-              <h5>Select Color:</h5>
-              {["Black", "White", "Gray", "Navy"].map((color, index) => (
+            {/* Product Description */}
+            <p className="text-muted mt-3">
+              {product.description ||
+                "This is a premium quality product with the best fabric and craftsmanship."}
+            </p>
+
+        
+
+            {/* Quantity Counter */}
+            <div className="mt-4">
+              <h5 className="fw-semibold mb-2">Quantity:</h5>
+              <div className="d-flex align-items-center gap-3">
                 <button
-                  key={index}
-                  className={`color-btn ${selectedColor === color ? "selected" : ""}`}
-                  onClick={() => setSelectedColor(color)}
+                  className="btn btn-outline-secondary"
+                  onClick={() => setQuantity(Math.max(1, quantity - 1))}
                 >
-                  {color}
+                  -
                 </button>
-              ))}
+                <span className="fs-5">{quantity}</span>
+                <button
+                  className="btn btn-outline-secondary"
+                  onClick={() => setQuantity(quantity + 1)}
+                >
+                  +
+                </button>
+              </div>
             </div>
 
-            {/* Quantity Selector */}
-            <div className="mb-3">
-              <h5>Quantity:</h5>
-              <input
-                type="number"
-                className="form-control w-25"
-                min="1"
-                value={quantity}
-                onChange={(e) => setQuantity(Math.max(1, e.target.value))}
-              />
+            {/* Buttons */}
+            <div className="mt-4 d-flex gap-3">
+              <button className="btn btn-success px-4 py-2 fw-semibold">
+                Buy Now
+              </button>
+              <button className="btn btn-dark px-4 py-2 fw-semibold">
+                Add to Cart
+              </button>
             </div>
 
-            {/* Action Buttons */}
-            <div className="d-flex gap-3 mt-3">
-              <button className="btn btn-primary w-50">Add to Cart</button>
-              <button className="btn btn-success w-50">Buy It Now</button>
+            <div className="d-flex gap-3 mt-3 ">
+              <button type="button" className="btn btn-outline-dark ps-4 pe-4">
+                S
+              </button>
+              <button type="button" className="btn btn-outline-dark ps-4 pe-4">
+                M
+              </button>
+              <button type="button" className="btn btn-outline-dark ps-4 pe-4">
+                L
+              </button>
+              <button type="button" className="btn btn-outline-dark ps-4 pe-4">
+                XL
+              </button>
             </div>
+            <hr></hr>
+            <p>Product Description</p>
+        <ul>
+          <li>100% COTTON FLEECE</li>
+          <li>15 OZ BRUSHED FLEECE</li>
+          <li>OVERSIZED DROP SHOULDER</li>
+          <li>PIGMENT DYE</li>
+        </ul>
           </div>
         </div>
       </div>

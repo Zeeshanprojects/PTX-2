@@ -16,7 +16,7 @@ export default function Footer() {
                 {/* Grid row */}
                 <div className="row mt-3">
                   {/* Grid column */}
-                  <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <div className="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
                     {/* Content */}
                     <h2 className="text ">Newsletter</h2>
                     <hr
