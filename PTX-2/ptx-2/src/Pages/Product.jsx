@@ -55,7 +55,7 @@ export default function Product() {
     <>
       <div className="space"></div>
       <div className="space"></div>
-      <div className="space"></div>
+
 
       <div className="container-fluid">
         <h2>PRODUCTS</h2>

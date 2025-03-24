@@ -1,81 +1,82 @@
 /* Page Container (Centers Everything) */
 .page-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-    background-color: #fcfbf9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfbf9;
 }
-
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 15px;
+}
 /* Centered Text */
 .text-container {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Signup Container */
 .signup-container {
-    width: 700px !important; /* Keeps it from being too wide on large screens */
-    padding: 30px;
-    border-radius: 8px;
-  
+  width: 700px !important; /* Keeps it from being too wide on large screens */
+  padding: 30px;
+  border-radius: 8px;
 }
 .signup-form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .form-group {
-    width: 100%;
-  }
+  width: 100%;
+}
 
 label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 /* Inputs */
 input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-
 .full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .checkbox-container {
-    display: flex;
-    justify-content: start;
-    align-items: center; /* Aligns checkbox and text properly */
-    gap: 5px; /* Adjust spacing between checkbox and text */
-    margin-top: 2px;
-    margin-bottom: 15px;
-    padding-bottom: 2px;
+  display: flex;
+  justify-content: start;
+  align-items: center; /* Aligns checkbox and text properly */
+  gap: 5px; /* Adjust spacing between checkbox and text */
+  margin-top: 2px;
+  margin-bottom: 15px;
+  padding-bottom: 2px;
 }
 
-
-@media (min-width:992px )and (max-width:1199px) {
-    .signup-container{
-        width: 500px;
-    }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .signup-container {
+    width: 500px;
+  }
 }
-@media (min-width:768px )and (max-width:991px) {
-    .signup-container{
-        width: 500px;
-    }
+@media (min-width: 768px) and (max-width: 991px) {
+  .signup-container {
+    width: 500px;
+  }
 }
-@media (min-width:576px )and (max-width:767px) {
-    .signup-container{
-        width: 500px !important;
-    }
+@media (min-width: 576px) and (max-width: 767px) {
+  .signup-container {
+    width: 500px !important;
+  }
 }
-@media (max-width:575px) {
-    .signup-container{
-        width: 380px !important;
-    }
+@media (max-width: 575px) {
+  .signup-container {
+    width: 380px !important;
+  }
 }

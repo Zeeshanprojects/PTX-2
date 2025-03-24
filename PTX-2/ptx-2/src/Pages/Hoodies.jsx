@@ -43,7 +43,7 @@ export default function Hoodies() {
       <>
         <div className="space"></div>
         <div className="space"></div>
-        <div className="space"></div>
+        
   
         <div className="container-fluid">
           <h2>PRODUCTS / HOODIES</h2>

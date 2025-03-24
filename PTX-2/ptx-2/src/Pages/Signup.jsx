@@ -69,6 +69,12 @@ export default function Signup() {
             <p>Conform Email Address</p>
             <input type="email" className="full-width" required />
           </form>
+          <div className="buttons-container ">
+            
+          <button type="button " className="btn btn-light text-muted">Cancel</button>
+          <button type="button" className="btn btn-light text-muted">Next</button>
+          </div>
+          
         </div>
       </div>
       <Footer/>

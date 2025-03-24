@@ -26,8 +26,7 @@ export default function PrivacyPolicy() {
           agree to this Privacy Policy, please do not use or access any of the
           Services.
         </p>
-        <h2>Changes to This Privacy Policy</h2>
-
+        <h3>Changes to This Privacy Policy</h3>
         <p>
           We may update this Privacy Policy from time to time, including to
           reflect changes to our practices or for other operational, legal, or
@@ -35,7 +34,7 @@ export default function PrivacyPolicy() {
           Site, update the "Last updated" date and take any other steps required
           by applicable law.
         </p>
-        <h2>How We Collect and Use Your Personal Information</h2>
+        <h3>How We Collect and Use Your Personal Information</h3>
         <p className="card-text">
           To provide the Services, we collect and have collected over the past
           12 months personal information about you from a variety of sources, as
@@ -49,7 +48,7 @@ export default function PrivacyPolicy() {
           terms of service, and to protect or defend the Services, our rights,
           and the rights of our users or others.
         </p>
-        <h2>What Personal Information We Collect</h2>
+        <h3>What Personal Information We Collect</h3>
         <p>
           The types of personal information we obtain about you depends on how
           you interact with our Site and use our Services. When we use the term
@@ -58,7 +57,7 @@ export default function PrivacyPolicy() {
           following sections describe the categories and specific types of
           personal information we collect.
         </p>
-        <h2>Information We Collect Directly from You</h2>
+        <h3>Information We Collect Directly from You</h3>
 
         <p>
           Information that you directly submit to us through our Services may
@@ -93,7 +92,7 @@ export default function PrivacyPolicy() {
           this information, but doing so may prevent you from using or accessing
           these features.
         </p>
-        <h1>Information We Collect through Cookies</h1>
+        <h3>Information We Collect through Cookies</h3>
         <p>
           We also automatically collect certain information about your
           interaction with the Services ("Usage Data"). To do this, we may use
@@ -103,7 +102,7 @@ export default function PrivacyPolicy() {
           information about your network connection, your IP address and other
           information regarding your interaction with the Services.
         </p>
-        <h2>Information We Obtain from Third Parties</h2>
+        <h3>Information We Obtain from Third Parties</h3>
         <p>
           Finally, we may obtain information about you from third parties,
           including from vendors and service providers who may collect
@@ -135,7 +134,7 @@ export default function PrivacyPolicy() {
           For more information, see the section below, Third Party Websites and
           Links.
         </p>
-        <h2>How We Use Your Personal Information</h2>
+        <h3>How We Use Your Personal Information</h3>
         <ul>
           <li>
             Providing Products and Services. We use your personal information to
@@ -173,7 +172,7 @@ export default function PrivacyPolicy() {
           </li>
         </ul>
 
-        <h2>Cookies</h2>
+        <h3>Cookies</h3>
         <p>
           Like many websites, we use Cookies on our Site. For specific
           information about the Cookies that we use related to powering our
@@ -197,7 +196,7 @@ export default function PrivacyPolicy() {
           parties such as our advertising partners.
         </p>
 
-        <h2>How We Disclose Personal Information</h2>
+        <h3>How We Disclose Personal Information</h3>
         <p>
           In certain circumstances, we may disclose your personal information to
           third parties for legitimate purposes subject to this Privacy Policy.
@@ -218,18 +217,18 @@ export default function PrivacyPolicy() {
      <p>The Services may enable you to post product reviews and other user-generated content. If you choose to submit user generated content to any public area of the Services, this content will be public and accessible by anyone.</p>
      <p>We do not control who will have access to the information that you choose to make available to others, and cannot ensure that parties who have access to such information will respect your privacy or keep it secure. We are not responsible for the privacy or security of any information that you make publicly available, or for the accuracy, use or misuse of any information that you disclose or receive from third parties.</p>
     
-      <h2>Third Party Websites and Links</h2>
+      <h3>Third Party Websites and Links</h3>
       <p>Our Site may provide links to websites or other online platforms operated by third parties. If you follow links to sites not affiliated or controlled by us, you should review their privacy and security policies and other terms and conditions. We do not guarantee and are not responsible for the privacy or security of such sites, including the accuracy, completeness, or reliability of information found on these sites. Information you provide on public or semi-public venues, including information you share on third-party social networking platforms may also be viewable by other users of the Services and/or users of those third-party platforms without limitation as to its use by us or by a third party. Our inclusion of such links does not, by itself, imply any endorsement of the content on such platforms or of their owners or operators, except as disclosed on the Services.</p>
-  <h2>Children’s Data</h2>
+  <h3>Children’s Data</h3>
   <p>The Services are not intended to be used by children, and we do not knowingly collect any personal information about children. If you are the parent or guardian of a child who has provided us with their personal information, you may contact us using the contact details set out below to request that it be deleted.</p>
      
      <p>As of the Effective Date of this Privacy Policy, we do not have actual knowledge that we “share” or “sell” (as those terms are defined in applicable law) personal information of individuals under 16 years of age.</p>
    
-   <h2>Security and Retention of Your Information</h2>
+   <h3>Security and Retention of Your Information</h3>
    <p>Please be aware that no security measures are perfect or impenetrable, and we cannot guarantee “perfect security.” In addition, any information you send to us may not be secure while in transit. We recommend that you do not use unsecure channels to communicate sensitive or confidential information to us.</p>
      <p>How long we retain your personal information depends on different factors, such as whether we need the information to maintain your account, to provide the Services, comply with legal obligations, resolve disputes or enforce other applicable contracts and policies.</p>
      
-     <h2>Your Rights and Choices</h2>
+     <h3>Your Rights and Choices</h3>
      <p>Depending on where you live, you may have some or all of the rights listed below in relation to your personal information. However, these rights are not absolute, may apply only in certain circumstances and, in certain cases, we may decline your request as permitted by law.</p>
     
     
@@ -247,13 +246,13 @@ export default function PrivacyPolicy() {
    <p>We will not discriminate against you for exercising any of these rights. We may need to collect information from you to verify your identity, such as your email address or account information, before providing a substantive response to the request. In accordance with applicable laws, You may designate an authorized agent to make requests on your behalf to exercise your rights. Before accepting such a request from an agent, we will require that the agent provide proof you have authorized them to act on your behalf, and we may need you to verify your identity directly with us. We will respond to your request in a timely manner as required under applicable law.</p>
    
     </ul>
-    <h2>Complaints</h2>
+    <h3>Complaints</h3>
     <p>If you have complaints about how we process your personal information, please contact us using the contact details provided below. If you are not satisfied with our response to your complaint, depending on where you live you may have the right to appeal our decision by contacting us using the contact details set out below, or lodge your complaint with your local data protection authority.</p>
      
-     <h2>International Users</h2>
+     <h3>International Users</h3>
      <p>Please note that we may transfer, store and process your personal information outside the country you live in, including the United States. Your personal information is also processed by staff and third party service providers and partners in these countries.</p>
      <p>If we transfer your personal information out of Europe, we will rely on recognized transfer mechanisms like the European Commission's Standard Contractual Clauses, or any equivalent contracts issued by the relevant competent authority of the UK, as relevant, unless the data transfer is to a country that has been determined to provide an adequate level of protection</p>
-    <h2>Contact</h2>
+    <h3>Contact</h3>
     <p>Should you have any questions about our privacy practices or this Privacy Policy, or if you would like to exercise any of the rights available to you, please email us at blanks@cottoncollective.org or contact us at Cotton Collective, 1855 Dornoch Ct, San Diego, CA 92154, United States.</p>
       </div>
       <Footer/>
