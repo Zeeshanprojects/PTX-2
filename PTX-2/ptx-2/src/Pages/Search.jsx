@@ -28,6 +28,7 @@ export default function Search() {
 
   return (
     <>
+    <div className="space"></div>
       <div className="space"></div>
       <div className="container text-center">
         <h2>Search Products</h2>
