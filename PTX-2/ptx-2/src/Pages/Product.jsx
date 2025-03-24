@@ -154,7 +154,7 @@ export default function Product() {
 
           
 
-          {/* Product Grid (Takes Full Space When Sidebar is Hidden) */}
+         
    
           <div className={showSidebar ? "col-md-9" : "col-md-12"}>
         

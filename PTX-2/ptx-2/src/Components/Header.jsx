@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
-
+faSearch,
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Header.style.css";
@@ -46,7 +46,9 @@ export default function Header() {
             <Link to="/Login">
               <FontAwesomeIcon icon={faUser} size="lg" />
             </Link>
-           
+            <Link to="/Search">
+                <FontAwesomeIcon icon={faSearch} size="lg" />
+              </Link>
             <Link to="/cart">
               <FontAwesomeIcon icon={faShoppingCart} size="lg" />
             </Link>
@@ -72,7 +74,7 @@ export default function Header() {
                 </Link>
               </li>
 
-              {/* PRODUCTS Dropdown */}
+         
               <li
                 className="nav-item dropdown"
                 onMouseEnter={() => setDropdownOpen(true)}
@@ -89,7 +91,6 @@ export default function Header() {
                   PRODUCTS
                 </Link>
 
-                {/* Dropdown Menu */}
                 <ul
                   className={`dropdown-menu ${dropdownOpen ? "show" : ""}`} 
                   aria-labelledby="navbarDropdown"
@@ -172,6 +173,9 @@ export default function Header() {
             <div className="nav-icons d-none d-lg-flex ">
               <Link to="/Login">
                 <FontAwesomeIcon icon={faUser} size="lg" />
+              </Link>
+              <Link to="/Search">
+                <FontAwesomeIcon icon={faSearch} size="lg" />
               </Link>
               <Link to="/Cart">
                 <FontAwesomeIcon icon={faShoppingCart} size="lg" />

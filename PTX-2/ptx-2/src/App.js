@@ -15,6 +15,7 @@ import Hoodies from './Pages/Hoodies';
 import Login from './Pages/Login';
 import Preloader from './Components/Preloader'; // Import Preloader
 import Cart from './Pages/Cart';
+import Search from './Pages/Search';
 
 
 
@@ -49,7 +50,7 @@ function AppContent() {
             <Route path="/Hoodies" element={<Hoodies />} />
             <Route path="/Login" element={<Login />} />
             <Route path='/Cart' element={<Cart/>}/>
-        
+        <Route path='/Search' element={<Search/>}/>
           </Routes>
         </>
       )}

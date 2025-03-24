@@ -23,7 +23,7 @@ export default function LookBook1() {
         height="100%"
         style={{
           border: "none",
-          overflow: "hidden", // Hides scrollbar from the object
+          overflow: "hidden", 
         }}
       ><div className="space"></div>
         <p>

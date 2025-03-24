@@ -13,7 +13,20 @@ export default function Search() {
       { image: Image.image2, title: "LIGHTWEIGHT COTTON TEE", price: "$30.00" },
       { image: Image.image3, title: "PREMIUM HOODIE", price: "$55.00" },
       { image: Image.image4, title: "CLASSIC DENIM JACKET", price: "$80.00" },
-      { image: Image.image5, title: "SLIM FIT CHINOS", price: "$45.00" },
+      { image: Image.image6, title: "SLIM FIT CHINOS", price: "$45.00" },
+      { image: Image.image7, title: "HEAVY BOX S/S TEE 9OZ", price: "$35.00" },
+      { image: Image.image8, title: "LIGHTWEIGHT COTTON TEE", price: "$30.00" },
+      { image: Image.image9, title: "PREMIUM HOODIE", price: "$55.00" },
+      { image: Image.H1, title: "CLASSIC DENIM JACKET", price: "$80.00" },
+      { image: Image.H2, title: "HEAVY BOX S/S TEE 9OZ", price: "$35.00" },
+      { image: Image.H3, title: "LIGHTWEIGHT COTTON TEE", price: "$30.00" },
+      { image: Image.H4, title: "PREMIUM HOODIE", price: "$55.00" },
+      { image: Image.H5, title: "CLASSIC DENIM JACKET", price: "$80.00" },
+      { image: Image.H6, title: "SLIM FIT CHINOS", price: "$45.00" },
+      { image: Image.H7, title: "HEAVY BOX S/S TEE 9OZ", price: "$35.00" },
+      { image: Image.H8, title: "LIGHTWEIGHT COTTON TEE", price: "$30.00" },
+      { image: Image.H9, title: "PREMIUM HOODIE", price: "$55.00" },
+      { image: Image.H10, title: "CLASSIC DENIM JACKET", price: "$80.00" },
     ];
   
     // Filter products based on search term
