@@ -175,10 +175,10 @@ export default function Home() {
             </div>
             <br />
             <p class="card-text text-center">
-              HEAVY BOX S/S TEE 9OZ- Vintage Mahog /S
+              HEAVY BOX S/S TEE 9OZ- Vintage Maog /S
             </p>
      
-            <p className="text-muted text-center">$35.00</p>
+            <p className="text-muted text-center">$33.00</p>
           </div>
 
           <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
