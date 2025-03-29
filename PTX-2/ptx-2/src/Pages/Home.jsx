@@ -135,7 +135,7 @@ export default function Home() {
             </div>
             <br />
             <p class="card-text text-center">
-              HEAVY BOX S/S TEE 9OZ- Vintage Black /S
+              HEAVY BOX S/S TEE 9oz-Limo Black /S
             </p>
             <p className="text-muted text-center">$35.00</p>
           </div>
@@ -145,7 +145,7 @@ export default function Home() {
             </div>
             <br />
             <p class="card-text text-center">
-              HEAVY BOX S/S TEE 9OZ- Vintage Black /S
+              HEAVY BOX S/S TEE 9OZ- Blanc White /S
             </p>
             <p className="text-muted text-center">$35.00</p>
           </div>
@@ -155,7 +155,7 @@ export default function Home() {
             </div>
             <br />
             <p class="card-text text-center">
-              HEAVY BOX S/S TEE 9OZ- Vintage Black /S
+              HEAVY BOX S/S TEE 9OZ- Vintage Camel /S
             </p>
             <p className="text-muted text-center">$35.00</p>
           </div>
@@ -175,7 +175,7 @@ export default function Home() {
             </div>
             <br />
             <p class="card-text text-center">
-              HEAVY BOX S/S TEE 9OZ- Vintage Black /S
+              HEAVY BOX S/S TEE 9OZ- Vintage Mahog /S
             </p>
      
             <p className="text-muted text-center">$35.00</p>
@@ -187,17 +187,18 @@ export default function Home() {
             </div>
             <br />
             <p class="card-text text-center">
-              HEAVY BOX S/S TEE 9OZ- Vintage Black /S
+              HEAVY BOX S/S TEE 9OZ- Vintage Olive /S
             </p>
             <p className="text-muted text-center">$35.00</p>
           </div>
         </div>
       </div>
       <div className="space"></div>
+      <div className="space"></div>
       <div className="container-fluid">
         <div className="content-card">
           <p className="card-text">WHO WE ARE?</p>
-          <h2>Cotton Collective is...</h2>
+          <h1>Cotton Collective is...</h1>
           <p className="card-text">
             an apparel manufacturing company created to fill the blank spaces in
             the market and give an elevated heavyweight garment to our

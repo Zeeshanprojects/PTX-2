@@ -1,5 +1,5 @@
 const Image={
-    logo:require('./logo.png'),
+    logo:require('./PTX-Main-Logo.png'),
     slider1:require("./s1.webp"),
     slider2:require("./s2.webp"),
     slider3:require("./s3.webp"),

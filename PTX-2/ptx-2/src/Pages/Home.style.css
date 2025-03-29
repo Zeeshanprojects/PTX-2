@@ -1,11 +1,16 @@
 body{
     overflow-x: hidden;
 }
+
 .carousel-item img{
-height: 515px !important;object-fit: cover;
+height: 515px !important;object-fit: cover !important;
 }
 .carousel-caption{
     position: absolute; top: 5%;left: 50%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Makes white icons black and vice versa */
 }
 .banner-btn{
     font-size: 15px !important;

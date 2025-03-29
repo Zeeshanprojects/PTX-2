@@ -1,6 +1,10 @@
 .navbar {
   background-color: black !important;
 }
+.logocolor{
+  filter: invert(1);
+  height: 25px;
+ }
 .dropdown-menu {
   background-color: black !important;
 }

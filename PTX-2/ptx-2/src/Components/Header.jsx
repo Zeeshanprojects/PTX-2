@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Image from "../Images/Image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
-faSearch,
+  faSearch,
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Header.style.css";
@@ -26,11 +27,10 @@ export default function Header() {
     setDropdownOpen(!dropdownOpen);
   };
 
-  // Function to handle "PRODUCTS" click
   const handleProductsClick = (event) => {
-    event.preventDefault(); // Prevent default link behavior
-    navigate("/Product"); // Navigate to the product page
-    setDropdownOpen(true); // Open the dropdown manually
+    event.preventDefault();
+    navigate("/Product");
+    setDropdownOpen(true);
   };
 
   return (
@@ -38,17 +38,17 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top p-3">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            PTX
+            <img src={Image.logo} alt="mainlogo" className="logocolor" />
           </Link>
 
           {/* Icons for small screens */}
-          <div className="nav-icons d-flex d-lg-none ">
+          <div className="nav-icons d-flex d-lg-none">
             <Link to="/Login">
               <FontAwesomeIcon icon={faUser} size="lg" />
             </Link>
             <Link to="/Search">
-                <FontAwesomeIcon icon={faSearch} size="lg" />
-              </Link>
+              <FontAwesomeIcon icon={faSearch} size="lg" />
+            </Link>
             <Link to="/cart">
               <FontAwesomeIcon icon={faShoppingCart} size="lg" />
             </Link>
@@ -74,25 +74,25 @@ export default function Header() {
                 </Link>
               </li>
 
-         
+              {/* Dropdown without arrow */}
               <li
                 className="nav-item dropdown"
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
                 <Link
-                  className="nav-link dropdown-toggle active"
+                  className="nav-link active" // Removed "dropdown-toggle" to remove the arrow
                   to="/Product"
                   id="navbarDropdown"
                   role="button"
                   aria-expanded={dropdownOpen}
-                  onClick={handleProductsClick} 
+                  onClick={handleProductsClick}
                 >
                   PRODUCTS
                 </Link>
 
                 <ul
-                  className={`dropdown-menu ${dropdownOpen ? "show" : ""}`} 
+                  className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
@@ -170,7 +170,7 @@ export default function Header() {
             </ul>
 
             {/* Icons for large screens */}
-            <div className="nav-icons d-none d-lg-flex ">
+            <div className="nav-icons d-none d-lg-flex">
               <Link to="/Login">
                 <FontAwesomeIcon icon={faUser} size="lg" />
               </Link>
@@ -180,7 +180,6 @@ export default function Header() {
               <Link to="/Cart">
                 <FontAwesomeIcon icon={faShoppingCart} size="lg" />
               </Link>
-             
             </div>
           </div>
         </div>
