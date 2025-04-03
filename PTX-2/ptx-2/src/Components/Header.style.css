@@ -15,6 +15,13 @@
 background-color: none !important;
   color: black !important;
 }
+.dropdown-item:focus {
+  background-color: transparent !important;
+  color: white !important;
+  outline: none !important; /* Remove outline on focus */
+}
+
+
 .nav-link{
     padding-right: 20px !important;
     font-size: .875rem !important;

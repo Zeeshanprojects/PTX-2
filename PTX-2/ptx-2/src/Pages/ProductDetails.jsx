@@ -39,9 +39,6 @@ export default function ProductDetails() {
                 "This is a premium quality product with the best fabric and craftsmanship."}
             </p>
 
-        
-
-            {/* Quantity Counter */}
             <div className="mt-4">
               <h5 className="fw-semibold mb-2">Quantity:</h5>
               <div className="d-flex align-items-center gap-3">
