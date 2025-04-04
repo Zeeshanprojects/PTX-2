@@ -123,7 +123,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="space"></div>
+      <br/>
       <h2 className="text-center">Best Sellers</h2>
       <div className="btn-container">
         <button type="button" class="btn btn-dark pe-3 ps-3 ">

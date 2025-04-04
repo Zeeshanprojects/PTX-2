@@ -3,6 +3,7 @@ body{
 }
 
 .carousel-item img{
+    margin-top: 30px !important;
 height: 515px !important;object-fit: cover !important;
 }
 .carousel-caption{
