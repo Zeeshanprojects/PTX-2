@@ -146,27 +146,11 @@ export default function Header() {
                   to="/LookBook-V1"
                   onClick={closeNavbar}
                 >
-                  LOOKBOOK V1
+                  LOOKBOOK
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  to="/LookBook-V2"
-                  onClick={closeNavbar}
-                >
-                  LOOKBOOK V2
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  to="/privacypolicy"
-                  onClick={closeNavbar}
-                >
-                  PRIVACY POLICY
-                </Link>
-              </li>
+             
+              
             </ul>
 
             {/* Icons for large screens */}

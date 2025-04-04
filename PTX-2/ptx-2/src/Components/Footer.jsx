@@ -114,7 +114,7 @@ export default function Footer() {
                       we’ll do our best to get back to you as quickly as
                       possible.
                     </p>
-                    <p>orders@cottoncollective.org</p>
+                    <p>sales@paktex.com</p>
                   </div>
                 </div>
               </div>
@@ -124,10 +124,10 @@ export default function Footer() {
               className="text-center p-3"
               
             >
-              © 2020 Copyright:
-              <Link className="text-dark" to="https://mdbootstrap.com/">
-                MDBootstrap.com
-              </Link>
+              © 2025 | PTX
+              {/* <Link className="text-dark" to="https://mdbootstrap.com/">
+                PTX
+              </Link> */}
             </div>
             {/* Copyright */}
           </footer>
