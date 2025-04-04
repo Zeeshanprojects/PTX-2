@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import Image from "../Images/Image"; 
 import { useNavigate } from "react-router-dom"; 
 import Footer from "../Components/Footer";
 
 export default function Search() {
+    useEffect(()=>{
+      document.title="Search - Pakistan Textile Exchnage"
+    })
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
 

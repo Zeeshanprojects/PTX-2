@@ -1,10 +1,14 @@
-import { useState } from 'react';
+
+import { useState ,useEffect} from 'react';
 import React from 'react';
 import Image from '../Images/Image';
 import Footer from '../Components/Footer';
 import { useNavigate } from 'react-router-dom';
 
 export default function Hoodies() {
+  useEffect(()=>{
+    document.title="Hoddies - Pakistan Textile Exchnage"
+  })
   const [showSidebar, setShowSidebar] = useState(true); // Sidebar open by default
   const [selectedFilters, setSelectedFilters] = useState([]);
   const navigate = useNavigate();

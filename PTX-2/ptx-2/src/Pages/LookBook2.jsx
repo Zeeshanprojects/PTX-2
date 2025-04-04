@@ -1,6 +1,9 @@
+import { useEffect } from "react";
 import React from "react";
-
 export default function LookBook2() {
+   useEffect(()=>{
+      document.title="LookBook V2- Pakistan Textile Exchange"
+    })
   return (
     <div
       style={{

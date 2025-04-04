@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import the navigate hook
 import Image from '../Images/Image';
@@ -5,6 +6,9 @@ import Footer from '../Components/Footer';
 import "./Product.style.css";
 
 export default function Product() {
+    useEffect(()=>{
+      document.title="Product - Pakistan Textile Exchnage"
+    })
   const [showSidebar, setShowSidebar] = useState(true); // Sidebar open by default
   const [selectedFilters, setSelectedFilters] = useState([]);
   const navigate = useNavigate(); // Initialize the navigate function

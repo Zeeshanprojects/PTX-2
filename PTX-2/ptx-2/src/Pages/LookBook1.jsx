@@ -1,9 +1,12 @@
+import { useEffect } from "react";
 import React from "react";
 
 export default function LookBook1() {
+  useEffect(()=>{
+    document.title="LookBook V1- Pakistan Textile Exchange"
+  })
   return (
     <>
-    
     <div
       style={{
         width: "100vw",

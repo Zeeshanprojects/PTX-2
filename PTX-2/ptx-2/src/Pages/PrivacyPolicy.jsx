@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import React from "react";
 import Footer from "../Components/Footer";
 import './PrivacyPolicy.style.css'
 export default function PrivacyPolicy() {
+    useEffect(()=>{
+      document.title="Privacy Policy - Pakistan Textile Exchnage"
+    })
   return (
     <>
       <div className="space"></div>

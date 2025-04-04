@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import React from "react";
 import Footer from "../Components/Footer";
 import { Link } from "react-router-dom";
 import "./Cart.style.css";
 
 export default function Cart() {
+    useEffect(()=>{
+      document.title="Your Shopping Cart - Pakistan Textile Exchnage"
+    })
   return (
     <>
       <div className="space"></div>

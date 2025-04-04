@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import React from "react";
 import "./Login.style.css";
 import Footer from "../Components/Footer";
 export default function Login() {
+  useEffect(()=>{
+    document.title="Account - Pakistan Textile Exchange"
+  })
   return (
     <>
       <div className="space"></div>

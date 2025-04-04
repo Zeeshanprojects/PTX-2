@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import React from "react";
 import Image from "../Images/Image";
 import "./Home.style.css";
 import {Link} from "react-router-dom"
 import Footer from "../Components/Footer";
 export default function Home() {
+  useEffect(()=>{
+    document.title="Pakistan Textile Exchange"
+  })
   return (
     <>
       <div className="container-fluid p-0">

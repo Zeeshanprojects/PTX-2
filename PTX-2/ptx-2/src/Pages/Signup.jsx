@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "./Signup.style.css";
 import "react-phone-input-2/lib/style.css";
 import Footer from "../Components/Footer";
 
 export default function Signup() {
+useEffect(()=>{
+  document.title="Create Account-Pakistan Textile Exchnage"
+})
+
   const [phone, setPhone] = useState("");
   return (
     <>

@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import React from "react";
 import "./ContactUs.style.css"; // Make sure to use this CSS file
 import Footer from "../Components/Footer";
 
 export default function ContactUs() {
+  useEffect(()=>{
+    document.title="Contact - Pakistan Textile Exchnage"
+  })
   return (
     <>
    
