@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import { useLocation } from "react-router-dom";
 import "./ProductDetails.style.css";
 
 export default function ProductDetails() {
-  
+   useEffect(()=>{
+      document.title="Product Detail- Pakistan Textile Exchange"
+    })
 
   const location = useLocation();
   const product = location.state?.product;

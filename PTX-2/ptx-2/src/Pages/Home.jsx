@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import React from "react";
 import Image from "../Images/Image";
 import "./Home.style.css";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 export default function Home() {
-  useEffect(()=>{
-    document.title="Pakistan Textile Exchange"
-  })
+  useEffect(() => {
+    document.title = "Pakistan Textile Exchange";
+  });
   return (
     <>
       <div className="container-fluid p-0">
@@ -34,14 +34,13 @@ export default function Home() {
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
                     <Link to="/Product">
-                    <button
-                      type="button"
-                      className="btn btn-dark btn-lg banner-btn"
-                    >
-                      VIEW PRODUCTS
-                    </button>
+                      <button
+                        type="button"
+                        className="btn btn-dark btn-lg banner-btn"
+                      >
+                        VIEW PRODUCTS
+                      </button>
                     </Link>
-                  
                   </div>
                 </div>
                 <div className="carousel-item">
@@ -52,14 +51,13 @@ export default function Home() {
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
                     <Link to="/Product">
-                    <button
-                      type="button"
-                      className="btn btn-dark btn-lg banner-btn"
-                    >
-                      VIEW PRODUCTS
-                    </button>
+                      <button
+                        type="button"
+                        className="btn btn-dark btn-lg banner-btn"
+                      >
+                        VIEW PRODUCTS
+                      </button>
                     </Link>
-                  
                   </div>
                 </div>
                 <div className="carousel-item">
@@ -70,14 +68,13 @@ export default function Home() {
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
                     <Link to="/Products">
-                    <button
-                      type="button"
-                      className="btn btn-light btn-lg banner-btn"
-                    >
-                      VIEW PRODUCTS
-                    </button>
+                      <button
+                        type="button"
+                        className="btn btn-light btn-lg banner-btn"
+                      >
+                        VIEW PRODUCTS
+                      </button>
                     </Link>
-                 
                   </div>
                 </div>
                 <div className="carousel-item">
@@ -123,11 +120,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <br/>
+      <br />
       <h2 className="text-center">Best Sellers</h2>
       <div className="btn-container">
         <button type="button" class="btn btn-dark pe-3 ps-3 ">
-          SHOP NOW 
+          SHOP NOW
         </button>
       </div>
       <div className="space"></div>
@@ -181,7 +178,7 @@ export default function Home() {
             <p class="card-text text-center">
               HEAVY BOX S/S TEE 9OZ- Vintage Maog /S
             </p>
-     
+
             <p className="text-muted text-center">$33.00</p>
           </div>
 
@@ -226,7 +223,7 @@ export default function Home() {
           />
         </div>
       </div>
-    <Footer/>
+      <Footer />
     </>
   );
 }
