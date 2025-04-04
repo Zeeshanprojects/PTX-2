@@ -123,9 +123,12 @@ export default function Home() {
       <br />
       <h2 className="text-center">Best Sellers</h2>
       <div className="btn-container">
+        <Link to="/productdetails">
         <button type="button" class="btn btn-dark pe-3 ps-3 ">
           SHOP NOW
         </button>
+        </Link>
+       
       </div>
       <div className="space"></div>
       <div className="container">
@@ -207,9 +210,12 @@ export default function Home() {
             apparel and strive to produce a level of excellence that has been
             unseen in the market.
           </p>
+          <Link to="/productdetails">
           <button type="button" class="btn btn-dark ps-4 pe-4">
             READY FOR US
           </button>
+          </Link>
+        
         </div>
       </div>
       <div className="space"></div>
