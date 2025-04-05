@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "./Signup.style.css";
 import "react-phone-input-2/lib/style.css";
+import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 
 export default function Signup() {
@@ -15,7 +16,7 @@ useEffect(()=>{
       <div className="space"></div>
       <div className="text-container pt-5">
         <h1>Create Account</h1>
-        <p>Already have an account? Sign in here</p>
+        <p>Already have an account? <Link to="/login">Sign in here</Link></p>
       </div>
       <div className="page-container ">
         {/* Centered Heading */}

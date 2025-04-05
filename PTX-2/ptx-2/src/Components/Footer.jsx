@@ -83,14 +83,10 @@ export default function Footer() {
                     </p>
                     <p>
                       <Link to="/LookBook-V1" className="text-dark">
-                        LOOKBOOK V1
+                        LOOKBOOK
                       </Link>
                     </p>
-                    <p>
-                      <Link to="/LookBook-V2" className="text-dark">
-                        LOOKBOOK V2
-                      </Link>
-                    </p>
+                    
                     <p>
                       <Link to="/privacypolicy" className="text-dark">
                         Privacy Policy
@@ -129,11 +125,11 @@ export default function Footer() {
                 PTX
               </Link> */}
             </div>
-            {/* Copyright */}
+        
           </footer>
-          {/* Footer */}
+          
         </div>
-        {/* End of .container */}
+        
       </>
    
   );

@@ -34,9 +34,9 @@ export default function Product() {
   }, []);
 
   const filterOptions = [
-    "HEAVY BOX S/S TEE 9OZ",
-    "LIGHTWEIGHT COTTON TEE",
-    "CLASSIC DENIM JACKET",
+    "Men's Mineral Wash",
+    "Junior's Mineral Wash Baby",
+    "Fleese Mineral Wash",
     "SLIM FIT CHINOS",
   ];
 
@@ -56,6 +56,7 @@ export default function Product() {
   if (loading) {
     return (
       <div className="text-center mt-5">
+        <div className="space"></div>
         <div className="spinner-border" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
@@ -72,7 +73,7 @@ export default function Product() {
         <hr style={{ borderBottom: "1px solid #ccc" }} />
         <div className="text-start mb-3">
           <button
-            className="btn btn-outline-dark"
+            className="btn btn-outline-dark ps-5 pe-5"
             onClick={() => setShowSidebar(!showSidebar)}
           >
             {showSidebar ? "Hide Filters" : "Show Filters"}
@@ -131,10 +132,10 @@ export default function Product() {
               {filteredProducts.length > 0 ? (
                 filteredProducts.map((product) => (
                   <div key={product.id} className="col-sm-12 col-md-6 col-lg-3">
-                    <div className="custom-card">
+                    <div className="product-custom-card">
                       <img
                         src={product.image || "default-image.jpg"} // Ensure 'image' is the correct field
-                        className="card-img-top"
+                        className="product-card-img-top "
                         alt={product.title}
                         onClick={() =>
                           navigate(`/ProductDetails/${product.id}`, {
@@ -143,8 +144,8 @@ export default function Product() {
                         }
                       />
                     </div>
-                    <p className="card-text text-center">{product.title}</p>
-                    <p className="text-muted text-center">{product.subtitle}</p>
+                    <p className="card-text text-center ">{product.title}</p>
+                    <p className="text-muted text-center ">{product.subtitle}</p>
                   </div>
                 ))
               ) : (
@@ -154,6 +155,7 @@ export default function Product() {
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );

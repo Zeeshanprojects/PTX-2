@@ -18,11 +18,27 @@ height: 515px !important;object-fit: cover !important;
    padding:16px 22px 16px 22px !important;
    border-radius: 0 !important;
 }
-.custom-card{
+/* .custom-card{
     background-color:white;
   padding-top: 20px;
     padding-bottom: 20px;
-}
+} */
+.custom-card {
+    height: 500px; /* or any height you prefer */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Optional: looks clean if image is small */
+    border-radius: 8px;
+  }
+  
+  .custom-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
 p{ padding: 0 !important;}
 .btn-container {
     text-align: center;

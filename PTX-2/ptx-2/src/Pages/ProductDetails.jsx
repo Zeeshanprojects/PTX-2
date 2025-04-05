@@ -25,7 +25,7 @@ export default function ProductDetails() {
           <div className="col-md-6 d-flex align-items-center justify-content-center">
             <img
               src={product.image}
-              className="img-fluid custom-image"
+              className="img-fluid productdetails-custom-image"
               alt={product.title}
             />
           </div>

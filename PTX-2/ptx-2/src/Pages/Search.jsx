@@ -2,6 +2,7 @@ import React, { useState ,useEffect} from "react";
 import Image from "../Images/Image"; 
 import { useNavigate } from "react-router-dom"; 
 import Footer from "../Components/Footer";
+import './Search.style.css'
 
 export default function Search() {
     useEffect(()=>{
@@ -12,15 +13,15 @@ export default function Search() {
 
   // Dummy Product List with Unique IDs
   const products = [
-    { id: 1, image: Image.image1, title: "HEAVY BOX S/S TEE 9OZ", price: "$35.00", colors: ["black", "white", "blue"] },
-    { id: 2, image: Image.image2, title: "LIGHTWEIGHT COTTON TEE", price: "$30.00", colors: ["red", "gray", "yellow"] },
-    { id: 3, image: Image.image3, title: "PREMIUM HOODIE", price: "$55.00", colors: ["green", "black", "white"] },
-    { id: 4, image: Image.image4, title: "CLASSIC DENIM JACKET", price: "$80.00", colors: ["blue", "brown"] },
-    { id: 5, image: Image.image5, title: "HEAVY BOX S/S TEE", price: "$35.00", colors: ["black", "white", "blue"] },
-    { id: 6, image: Image.image6, title: "LIGHTWEIGHT COTTON TEE", price: "$30.00", colors: ["red", "gray", "yellow"] },
-    { id: 7, image: Image.image7, title: "PREMIUM HOODIE", price: "$55.00", colors: ["green", "black", "white"] },
-    { id: 8, image: Image.image8, title: "CLASSIC DENIM JACKET", price: "$80.00", colors: ["blue", "brown"] },
-    { id: 9, image: Image.image9, title: "PREMIUM HOODIE", price: "$55.00", colors: ["green", "black", "white"] },
+    { id: 1, image: Image.image1, title: "HEAVY BOX S/S TEE 9OZ",colors: ["black", "white", "blue"] },
+    { id: 2, image: Image.image2, title: "LIGHTWEIGHT COTTON TEE", colors: ["red", "gray", "yellow"] },
+    { id: 3, image: Image.image3, title: "PREMIUM HOODIE",colors: ["green", "black", "white"] },
+    { id: 4, image: Image.image4, title: "CLASSIC DENIM JACKET", colors: ["blue", "brown"] },
+    { id: 5, image: Image.image5, title: "HEAVY BOX S/S TEE", colors: ["black", "white", "blue"] },
+    { id: 6, image: Image.image6, title: "LIGHTWEIGHT COTTON TEE", colors: ["red", "gray", "yellow"] },
+    { id: 7, image: Image.image7, title: "PREMIUM HOODIE", colors: ["green", "black", "white"] },
+    { id: 8, image: Image.image8, title: "CLASSIC DENIM JACKET", colors: ["blue", "brown"] },
+    { id: 9, image: Image.image9, title: "PREMIUM HOODIE", colors: ["green", "black", "white"] },
 
   ];
 
@@ -48,11 +49,11 @@ export default function Search() {
         <div className="row">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => (
-              <div key={product.id} className="col-sm-12 col-md-6 col-lg-3">
-                <div className="custom-card text-center">
+              <div key={product.id} className="col-sm-12 col-md-6 col-lg-3 mb-4">
+                <div className="search-custom-card text-center">
                   <img src={product.image} className="card-img-top" alt={product.title} />
                   <p className="card-text">{product.title}</p>
-                  <p className="text-muted">{product.price}</p>
+                 
                   <button 
                     className="btn btn-dark"
                     onClick={() => navigate(`/ProductDetails/${product.id}`, { state: { product } })}

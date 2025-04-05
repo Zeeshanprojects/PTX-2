@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import React from "react";
 import "./Login.style.css";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 export default function Login() {
   useEffect(()=>{
     document.title="Account - Pakistan Textile Exchange"
@@ -12,7 +13,7 @@ export default function Login() {
       <br />
       <div className="text-container pt-5">
         <h1>Login</h1>
-        <p>Dont have an account? Sign up here</p>
+        <p>Dont have an account?<Link to="/signup"> Sign up here</Link> </p>
         <div className="page-container">
           <div className="signin-container">
             <form className="signin-form">
@@ -31,7 +32,7 @@ export default function Login() {
                   </button>
                 </div>
                 <div className="col-3">
-                  <p className="text-start">Forgot Password?</p>
+                  <p className="text-start"><Link to="#">Forgot Password?</Link></p>
                 </div>
               </div>
             </form>

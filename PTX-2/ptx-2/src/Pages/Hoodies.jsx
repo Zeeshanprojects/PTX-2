@@ -34,10 +34,9 @@ export default function Hoodies() {
   }, []);
 
   const filterOptions = [
-    "HEAVY BOX S/S TEE 9OZ",
-    "LIGHTWEIGHT COTTON TEE",
-    "CLASSIC DENIM JACKET",
-    "SLIM FIT CHINOS",
+    "Men's Mineral Wash",
+    "Junior's Mineral Wash Baby",
+    "Fleece Mineral Wash",
   ];
 
   const handleFilterChange = (option) => {
@@ -53,16 +52,17 @@ export default function Hoodies() {
       ? products
       : products.filter((product) => selectedFilters.includes(product.title));
 
-  if (loading) {
-    return (
-      <div className="text-center mt-5">
-        <div className="spinner-border" role="status">
-          <span className="visually-hidden">Loading...</span>
-        </div>
-      </div>
-    );
-  }
-
+      if (loading) {
+        return (
+          <div className="text-center mt-5">
+            <div className="space"></div>
+            <div className="spinner-border" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        );
+      }
+    
   return (
     <>
       <div className="space"></div>
@@ -72,7 +72,7 @@ export default function Hoodies() {
         <hr style={{ borderBottom: "1px solid #ccc" }} />
         <div className="text-start mb-3">
           <button
-            className="btn btn-outline-dark"
+            className="btn btn-outline-dark ps-5 pe-5"
             onClick={() => setShowSidebar(!showSidebar)}
           >
             {showSidebar ? "Hide Filters" : "Show Filters"}
@@ -131,10 +131,10 @@ export default function Hoodies() {
               {filteredProducts.length > 0 ? (
                 filteredProducts.map((product) => (
                   <div key={product.id} className="col-sm-12 col-md-6 col-lg-3">
-                    <div className="custom-card">
+                    <div className="product-custom-card">
                       <img
                         src={product.image || "default-image.jpg"} // Ensure 'image' is the correct field
-                        className="card-img-top"
+                        className="product-card-img-top"
                         alt={product.title}
                         onClick={() =>
                           navigate(`/ProductDetails/${product.id}`, {

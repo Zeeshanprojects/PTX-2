@@ -4,10 +4,10 @@
 }
 
 /* Make the image look good */
-.custom-image {
+.productdetails-custom-image {
   object-fit: contain !important;
   max-width: 100%;
-  height: auto;
+  height:500px !important;
 }
 
 /* Improve product details styling */

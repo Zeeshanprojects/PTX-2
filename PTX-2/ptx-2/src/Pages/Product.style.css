@@ -6,5 +6,34 @@
     width: auto;
     margin: 0;
   }
- 
+  .product-custom-card {
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Optional: looks clean if image is small */
+    border-radius: 8px;
+   
+    margin-bottom: 15px; /* Optional: to provide some spacing between products */
+  }
+  
+  .product-custom-card img {
+
+    width: 100%;
+    object-fit: cover;  /* Ensures the image covers the full area without distortion */
+    border-radius: 8px;
+    transition: height 0.3s ease-in-out;  /* Smooth transition when height changes */
+  }
+  
+  /* Default height when sidebar is visible */
+  .product-custom-card.sidebar-visible img {
+    height: 320px;  /* Height when sidebar is visible */
+  }
+  
+  /* Increased height when sidebar is hidden */
+  .product-custom-card.sidebar-hidden img {
+    height: 400px;  /* Increased height when sidebar is hidden */
+  }
+  
  
