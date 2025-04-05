@@ -72,6 +72,40 @@ export default function Home() {
                     </Link>
                   </div>
                 </div>
+                <div className="carousel-item">
+                  <img
+                    src={Image.slider4}
+                    className="d-block w-100"
+                    alt="..."
+                  />
+                  <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                    <Link to="/Product">
+                      <button
+                        type="button"
+                        className="btn btn-dark btn-lg banner-btn"
+                      >
+                        VIEW PRODUCTS
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src={Image.slider5}
+                    className="d-block w-100"
+                    alt="..."
+                  />
+                  <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                    <Link to="/Product">
+                      <button
+                        type="button"
+                        className="btn btn-light btn-lg banner-btn"
+                      >
+                        VIEW PRODUCTS
+                      </button>
+                    </Link>
+                  </div>
+                </div>
               </div>
               <button
                 className="carousel-control-prev"
