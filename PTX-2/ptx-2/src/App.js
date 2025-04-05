@@ -1,33 +1,36 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import Header from './Components/Header';
-import Home from './Pages/Home';
-import Product from './Pages/Product';
-import Signup from './Pages/Signup';
-import ContactUs from './Pages/Contactus';
-import PrivacyPolicy from './Pages/PrivacyPolicy';
-import ScrollToTop from './Components/ScrollToTop';
-import LookBook1 from './Pages/LookBook1';
-import LookBook2 from './Pages/LookBook2';
-import Tshirts from './Pages/Tshirts';
-import Hoodies from './Pages/Hoodies';
-import Login from './Pages/Login';
-import Preloader from './Components/Preloader'; 
-import Cart from './Pages/Cart';
-import Search from './Pages/Search';
-import ProductDetails from './Pages/ProductDetails';
-
-
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import { useState, useEffect } from "react";
+import Header from "./Components/Header";
+import Home from "./Pages/Home";
+import Product from "./Pages/Product";
+import Signup from "./Pages/Signup";
+import ContactUs from "./Pages/Contactus";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import ScrollToTop from "./Components/ScrollToTop";
+import LookBook1 from "./Pages/LookBook1";
+import LookBook2 from "./Pages/LookBook2";
+import Tshirts from "./Pages/Tshirts";
+import Hoodies from "./Pages/Hoodies";
+import Login from "./Pages/Login";
+import Preloader from "./Components/Preloader";
+import Cart from "./Pages/Cart";
+import Search from "./Pages/Search";
+import ProductDetails from "./Pages/ProductDetails";
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
-  const location = useLocation(); 
+  const location = useLocation();
 
   useEffect(() => {
-    setLoading(true); 
+    setLoading(true);
     setTimeout(() => {
-      setLoading(false); 
+      setLoading(false);
     }, 2000);
   }, [location.pathname]);
 
@@ -50,10 +53,9 @@ function AppContent() {
             <Route path="/Tshirts" element={<Tshirts />} />
             <Route path="/Hoodies" element={<Hoodies />} />
             <Route path="/Login" element={<Login />} />
-            <Route path='/Cart' element={<Cart/>}/>
-        <Route path='/Search' element={<Search/>}/>
-        <Route path='/ProductDetails/:id' element={<ProductDetails />} />
-
+            <Route path="/Cart" element={<Cart />} />
+            <Route path="/Search" element={<Search />} />
+            <Route path="/ProductDetails/:id" element={<ProductDetails />} />
           </Routes>
         </>
       )}
