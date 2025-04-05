@@ -35,8 +35,8 @@ export default function Product() {
 
   const filterOptions = [
     "Men's Mineral Wash",
-    "Junior's Mineral Wash Baby",
-    "Fleese Mineral Wash",
+    "Junior's Mineral Wash Baby Crop Tee",
+    "Fleece Mineral Wash Crewneck",
     "SLIM FIT CHINOS",
   ];
 

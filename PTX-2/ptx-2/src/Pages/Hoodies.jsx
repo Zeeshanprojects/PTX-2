@@ -35,8 +35,9 @@ export default function Hoodies() {
 
   const filterOptions = [
     "Men's Mineral Wash",
-    "Junior's Mineral Wash Baby",
-    "Fleece Mineral Wash",
+    "Junior's Mineral Wash Baby Crop Tee",
+    "Fleece Mineral Wash Crewneck",
+    "SLIM FIT CHINOS",
   ];
 
   const handleFilterChange = (option) => {
