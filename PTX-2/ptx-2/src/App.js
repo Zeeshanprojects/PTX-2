@@ -13,7 +13,7 @@ import LookBook2 from './Pages/LookBook2';
 import Tshirts from './Pages/Tshirts';
 import Hoodies from './Pages/Hoodies';
 import Login from './Pages/Login';
-import Preloader from './Components/Preloader'; // Import Preloader
+import Preloader from './Components/Preloader'; 
 import Cart from './Pages/Cart';
 import Search from './Pages/Search';
 import ProductDetails from './Pages/ProductDetails';
@@ -22,12 +22,12 @@ import ProductDetails from './Pages/ProductDetails';
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
-  const location = useLocation(); // Detects route changes
+  const location = useLocation(); 
 
   useEffect(() => {
-    setLoading(true); // Show preloader when route changes
+    setLoading(true); 
     setTimeout(() => {
-      setLoading(false); // Hide preloader after 2 seconds
+      setLoading(false); 
     }, 2000);
   }, [location.pathname]);
 

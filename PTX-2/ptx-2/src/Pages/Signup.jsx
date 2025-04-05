@@ -19,9 +19,7 @@ useEffect(()=>{
         <p>Already have an account? <Link to="/login">Sign in here</Link></p>
       </div>
       <div className="page-container ">
-        {/* Centered Heading */}
-
-        {/* Signup Container */}
+        
         <div className="signup-container">
           <form className="signup-form">
             <p className="text-muted">Step 1 of 2</p>

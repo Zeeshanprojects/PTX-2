@@ -37,7 +37,7 @@ export default function Tshirts() {
     "Men's Mineral Wash",
     "Junior's Mineral Wash Baby Crop Tee",
     "Fleece Mineral Wash Crewneck",
-    "SLIM FIT CHINOS",
+    "Slim Fit Chions",
   ];
 
   const handleFilterChange = (option) => {
@@ -156,7 +156,7 @@ export default function Tshirts() {
           </div>
         </div>
       </div>
-
+      <div className="space"></div>
       <Footer />
     </>
   );
