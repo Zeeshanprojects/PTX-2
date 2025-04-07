@@ -75,7 +75,7 @@ export default function Header() {
               </li>
 
               {/* Dropdown without arrow */}
-              <li
+              {/* <li
                 className="nav-item dropdown"
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
@@ -120,6 +120,25 @@ export default function Header() {
                     </Link>
                   </li>
                 </ul>
+              </li> */}
+              <li className="nav-item">
+                <Link
+                  className="nav-link active"
+                  to="#"
+                  onClick={closeNavbar}
+                >
+                  ABOUT US
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link
+                  className="nav-link active"
+                  to="#"
+                  onClick={closeNavbar}
+                >
+                 SERVICES
+                </Link>
               </li>
 
               <li className="nav-item">
@@ -149,8 +168,24 @@ export default function Header() {
                   LOOKBOOK
                 </Link>
               </li>
-             
-              
+              <li className="nav-item">
+                <Link
+                  className="nav-link active"
+                  to="#"
+                  onClick={closeNavbar}
+                >
+                  INVENTORY
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link active"
+                  to="#"
+                  onClick={closeNavbar}
+                >
+                  STYLES
+                </Link>
+              </li>
             </ul>
 
             {/* Icons for large screens */}

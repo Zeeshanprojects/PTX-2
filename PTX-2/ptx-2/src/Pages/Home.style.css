@@ -4,7 +4,7 @@ body{
 
 .carousel-item img{
     margin-top: 30px !important;
-height: 515px !important;object-fit: cover !important;
+height: 100vh !important;width: 100vw !important;;object-fit: cover !important;
 }
 .carousel-caption{
     position: absolute; top: 5%;left: 50%;
@@ -17,6 +17,46 @@ height: 515px !important;object-fit: cover !important;
     font-size: 15px !important;
    padding:16px 22px 16px 22px !important;
    border-radius: 0 !important;
+}
+.relationship-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 20px;
+  height: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.relationship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.relationship-card h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+.imagesize1,
+.imagesize2 {
+  width: 100% !important;
+  height: 100% !important ;
+  object-fit: cover;
+ 
+}
+.relationship-card p {
+  text-align: justify;
+  hyphens: auto;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.latestproducts{
+  padding: 20px ;
+
+}
+.latestproducts:hover{
+  transform: translate() !important;
 }
 /* .custom-card{
     background-color:white;
