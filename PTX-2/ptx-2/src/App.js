@@ -22,6 +22,14 @@ import Preloader from "./Components/Preloader";
 import Cart from "./Pages/Cart";
 import Search from "./Pages/Search";
 import ProductDetails from "./Pages/ProductDetails";
+import AboutUs from "./Pages/AboutUs";
+import Services from "./Pages/Services";
+import Manufacturing from "./Pages/Manufacturing";
+import QualityAssurance from "./Pages/QualityAssurance";
+import Logistics from "./Pages/Logistics";
+import Sourcing from "./Pages/Sourcing";
+import Studio from "./Pages/Studio";
+import Inquireform from "./Pages/Inquireform";
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -44,6 +52,14 @@ function AppContent() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/Aboutus" element={<AboutUs/>}/>
+            <Route path="/Services" element={<Services/>}/>
+            <Route path="/Manufacturing" element={<Manufacturing />} />
+        <Route path="/QualityAssurance" element={<QualityAssurance />} />
+        <Route path="/Logistics" element={<Logistics />} />
+        <Route path="/Sourcing" element={<Sourcing/>}/>
+        <Route path="/Studio" element={<Studio />} />
+        <Route path="/inquireform" element={<Inquireform/>}/>
             <Route path="/Product" element={<Product />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/Contactus" element={<ContactUs />} />

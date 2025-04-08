@@ -124,7 +124,7 @@ export default function Header() {
               <li className="nav-item">
                 <Link
                   className="nav-link active"
-                  to="#"
+                  to="/Aboutus"
                   onClick={closeNavbar}
                 >
                   ABOUT US
@@ -134,23 +134,14 @@ export default function Header() {
               <li className="nav-item">
                 <Link
                   className="nav-link active"
-                  to="#"
+                  to="/Services"
                   onClick={closeNavbar}
                 >
                  SERVICES
                 </Link>
               </li>
 
-              <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  to="/signup"
-                  onClick={closeNavbar}
-                >
-                  WHOLESALE SIGNUP
-                </Link>
-              </li>
-              <li className="nav-item">
+                         <li className="nav-item">
                 <Link
                   className="nav-link active"
                   to="/Contactus"

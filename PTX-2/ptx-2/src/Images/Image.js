@@ -40,6 +40,6 @@ H7:require("./hoddie7.webp"),
 H8:require("./hoddie8.webp"),
 H9:require("./hoddie9.webp"),
 H10:require("./hoddie10.webp"),
-
+CEO:require("./Davidjumani.webp")
 }
 export default Image
