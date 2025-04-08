@@ -10,7 +10,7 @@ import {
 import "./Header.style.css";
 
 export default function Header() {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+ 
   const navigate = useNavigate();
 
   // Function to close the navbar on small screens
@@ -21,17 +21,7 @@ export default function Header() {
     }
   };
 
-  // Function to toggle dropdown manually
-  const toggleDropdown = (event) => {
-    event.preventDefault(); // Prevent Bootstrap default behavior
-    setDropdownOpen(!dropdownOpen);
-  };
-
-  const handleProductsClick = (event) => {
-    event.preventDefault();
-    navigate("/Product");
-    setDropdownOpen(true);
-  };
+ 
 
   return (
     <>
