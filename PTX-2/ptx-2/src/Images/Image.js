@@ -20,6 +20,13 @@ const Image={
     service8:require("./service8.webp"),
     service9:require("./service9.webp"),
     service10:require("./service10.webp"),
+   
+    Gallery2:require("./2.jpg"),
+    Gallery3:require("./3.jpg"),
+    Gallery4:require("./4.jpg"),
+    Gallery5:require("./5.jpg"),
+    Gallery6:require("./6.jpg"),
+    Gallery7:require("./7.jpg"),
     image1:require("./1.webp"),
     image2:require("./2.webp"),
     image3:require("./3.webp"),
