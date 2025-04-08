@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 export default function Services() {
   useEffect(() => {
-    document.title = "Pakistan Textile Exchange | Services";
+    document.title = "Services | Pakistan Textile Exchange ";
   });
   return (
     <>

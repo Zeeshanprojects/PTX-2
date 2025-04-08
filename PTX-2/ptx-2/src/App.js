@@ -30,6 +30,7 @@ import Logistics from "./Pages/Logistics";
 import Sourcing from "./Pages/Sourcing";
 import Studio from "./Pages/Studio";
 import Inquireform from "./Pages/Inquireform";
+import Gallery from "./Pages/Gallery";
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -45,7 +46,7 @@ function AppContent() {
   return (
     <div className="App">
       {loading ? (
-        <Preloader /> // Show preloader when loading is true
+        <Preloader /> // Show preloader when loading is f
       ) : (
         <>
           <ScrollToTop />
@@ -59,6 +60,7 @@ function AppContent() {
         <Route path="/Logistics" element={<Logistics />} />
         <Route path="/Sourcing" element={<Sourcing/>}/>
         <Route path="/Studio" element={<Studio />} />
+        <Route path="/Gallery" element={<Gallery/>}/>
         <Route path="/inquireform" element={<Inquireform/>}/>
             <Route path="/Product" element={<Product />} />
             <Route path="/signup" element={<Signup />} />

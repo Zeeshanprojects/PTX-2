@@ -8,18 +8,10 @@ import Footer from "../Components/Footer";
 export default function Home() {
   const [products, setProducts] = useState([]);
 
-  // useEffect(() => {
-  //   document.title = "Pakistan Textile Exchange";
 
-  //   fetch("https://plm.paktex.com/api/stylesheets")
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       console.log("Fetched Products:", data); // You can remove this later
-  //       setProducts(data);
-  //     })
-  //     .catch((error) => console.error("Error fetching products:", error));
-  // }, []);
-
+useEffect(()=>{
+  document.title="Home | Pakistan Textile Exchange"
+})
   return (
     <>
       <div className="container-fluid p-0">

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from '../Images/Image';
 import "./AboutUs.style.css"
 import Footer from '../Components/Footer'
 
 export default function AboutUs() {
+ useEffect(()=>{
+   document.title="Abour US | Pakistan Textile Exchange "
+ })
   return (
     <>
     <div className="space"></div>

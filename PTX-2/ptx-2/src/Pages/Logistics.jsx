@@ -4,7 +4,7 @@ import Images from '../Images/Image';
 import Footer from '../Components/Footer';
 export default function Logistics() {
     useEffect(()=>{
-        document.title="Pakistan Textile Exchange | Logistics"
+        document.title="Logistics | Pakistan Textile Exchange "
       })
   const handleDownload = () => {
     const link = document.createElement("a");

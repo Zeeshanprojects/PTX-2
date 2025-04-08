@@ -7,7 +7,7 @@ import Footer from "../Components/Footer";
 
 export default function Signup() {
 useEffect(()=>{
-  document.title="Create Account-Pakistan Textile Exchnage"
+  document.title="Create Account | Pakistan Textile Exchnage"
 })
 
   const [phone, setPhone] = useState("");

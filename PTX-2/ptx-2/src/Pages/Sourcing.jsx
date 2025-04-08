@@ -4,7 +4,7 @@ import Images from "../Images/Image";
 import Footer from "../Components/Footer";
 export default function Sourcing() {
   useEffect(() => {
-    document.title = "Pakistan Textile Exchange | Sourcing";
+    document.title = "Sourcing | Pakistan Textile Exchange ";
   });
   const handleDownload = () => {
     const link = document.createElement("a");

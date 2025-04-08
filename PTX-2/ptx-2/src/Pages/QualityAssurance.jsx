@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 export default function QualityAssurance() {
   useEffect(() => {
-    document.title = "Pakistan Textile Exchange | Quality Assurance";
+    document.title = "Quality Assurance | Pakistan Textile Exchange ";
   });
   const handleDownload = () => {
     const link = document.createElement("a");

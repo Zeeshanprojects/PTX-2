@@ -4,7 +4,7 @@ import Footer from "../Components/Footer";
 import './PrivacyPolicy.style.css'
 export default function PrivacyPolicy() {
     useEffect(()=>{
-      document.title="Privacy Policy - Pakistan Textile Exchnage"
+      document.title="Privacy Policy | Pakistan Textile Exchnage"
     })
   return (
     <>

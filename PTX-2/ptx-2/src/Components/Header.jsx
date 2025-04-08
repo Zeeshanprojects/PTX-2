@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Image from "../Images/Image";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -10,7 +11,6 @@ import {
 import "./Header.style.css";
 
 export default function Header() {
- 
   const navigate = useNavigate();
 
   // Function to close the navbar on small screens
@@ -20,8 +20,6 @@ export default function Header() {
       navbar.classList.remove("show");
     }
   };
-
- 
 
   return (
     <>
@@ -64,53 +62,6 @@ export default function Header() {
                 </Link>
               </li>
 
-              {/* Dropdown without arrow */}
-              {/* <li
-                className="nav-item dropdown"
-                onMouseEnter={() => setDropdownOpen(true)}
-                onMouseLeave={() => setDropdownOpen(false)}
-              >
-                <Link
-                  className="nav-link active" // Removed "dropdown-toggle" to remove the arrow
-                  to="/Product"
-                  id="navbarDropdown"
-                  role="button"
-                  aria-expanded={dropdownOpen}
-                  onClick={handleProductsClick}
-                >
-                  PRODUCTS
-                </Link>
-
-                <ul
-                  className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <Link
-                      className="dropdown-item"
-                      to="/Tshirts"
-                      onClick={() => {
-                        closeNavbar();
-                        setDropdownOpen(false);
-                      }}
-                    >
-                      TSHIRTS
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="dropdown-item"
-                      to="/Hoodies"
-                      onClick={() => {
-                        closeNavbar();
-                        setDropdownOpen(false);
-                      }}
-                    >
-                      HOODIES
-                    </Link>
-                  </li>
-                </ul>
-              </li> */}
               <li className="nav-item">
                 <Link
                   className="nav-link active"
@@ -127,17 +78,26 @@ export default function Header() {
                   to="/Services"
                   onClick={closeNavbar}
                 >
-                 SERVICES
+                  SERVICES
                 </Link>
               </li>
 
-                         <li className="nav-item">
+              <li className="nav-item">
                 <Link
                   className="nav-link active"
                   to="/Contactus"
                   onClick={closeNavbar}
                 >
                   CONTACT
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link active"
+                  to="/Gallery"
+                  onClick={closeNavbar}
+                >
+                  GALLERY
                 </Link>
               </li>
               <li className="nav-item">
@@ -150,22 +110,29 @@ export default function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  to="#"
+                <a
+                  className="nav-link active d-flex align-items-center gap-1"
+                  href="https://external-inventory-website.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={closeNavbar}
                 >
                   INVENTORY
-                </Link>
+                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" />
+                </a>
               </li>
+
               <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  to="#"
+                <a
+                  className="nav-link active d-flex align-items-center gap-1"
+                  href="https://external-styles-website.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={closeNavbar}
                 >
                   STYLES
-                </Link>
+                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" />
+                </a>
               </li>
             </ul>
 
