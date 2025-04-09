@@ -2,6 +2,9 @@ import React from "react";
 import Image from "../Images/Image";
 import "./Footer.style.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faFacebookF, faTwitter, faInstagram, faLinkedinIn, faTiktok } from '@fortawesome/free-brands-svg-icons'
 export default function Footer() {
   return (
     <>
@@ -47,19 +50,19 @@ export default function Footer() {
   {/* Social Media Icons */}
   <div className="social-icons mt-4">
     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="me-2">
-      <i className="fab fa-facebook-f " style={{ fontSize: '20px', color: 'black', border: '2px solid black', borderRadius: '50%', padding: '8px', width: '36px', height: '36px', textAlign: 'center' }}></i>
+    <FontAwesomeIcon icon={faFacebookF}  style={{color: 'black', border: '2px solid black', borderRadius: '50%', padding: '8px', width: '15px', height: '15px', textAlign: 'center' }} />
     </a>
     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="me-2">
-      <i className="fab fa-twitter" style={{ fontSize: '20px', color: 'black', border: '2px solid black', borderRadius: '50%', padding: '8px', width: '36px', height: '36px', textAlign: 'center' }}></i>
+    <FontAwesomeIcon icon={faTwitter} style={{ fontSize: '5px', color: 'black', border: '2px solid black', borderRadius: '50%', padding: '8px', width: '15px', height: '15px', textAlign: 'center' }} />
     </a>
     <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="me-2">
-      <i className="fab fa-tiktok" style={{ fontSize: '20px', color: 'black', border: '2px solid black', borderRadius: '50%', padding: '8px', width: '36px', height: '36px', textAlign: 'center' }}></i>
+    <FontAwesomeIcon icon={faTiktok} style={{ fontSize: '5px', color: 'black', border: '2px solid black', borderRadius: '50%', padding: '8px', width: '15px', height: '15px', textAlign: 'center' }} />
     </a>
     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="me-2">
-      <i className="fab fa-instagram" style={{ fontSize: '20px', color: 'black', border: '2px solid black', borderRadius: '50%', padding: '8px', width: '36px', height: '36px', textAlign: 'center' }}></i>
+    <FontAwesomeIcon icon={faInstagram} style={{ fontSize: '5px', color: 'black', border: '2px solid black', borderRadius: '50%', padding: '8px', width: '15px', height: '15px', textAlign: 'center' }} />
     </a>
     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="me-2">
-      <i className="fab fa-linkedin-in" style={{ fontSize: '20px', color: 'black', border: '2px solid black', borderRadius: '50%', padding: '8px', width: '36px', height: '36px', textAlign: 'center' }}></i>
+    <FontAwesomeIcon icon={faLinkedinIn} style={{ fontSize: '5px', color: 'black', border: '2px solid black', borderRadius: '50%', padding: '8px', width: '15px', height: '15px', textAlign: 'center' }} />
     </a>
   </div>
 </div>
