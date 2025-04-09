@@ -9,61 +9,37 @@ export default function Gallery() {
 
   const categories = {
     KNITS: [
-    
+      Image.Gallery1,
       Image.Gallery2,
       Image.Gallery3,
       Image.Gallery4,
-      Image.Gallery5,
-      Image.Gallery6,
       Image.Gallery7,
+      
+      
+      
     ],
     DENIM: [
-      Image.service6,
-      Image.service2,
-      Image.service3,
-      Image.service4,
-      Image.service15,
-      Image.service16,
-      Image.service17,
-      Image.service18,
-      Image.service19,
-      Image.service20,
+     
+      Image.Gallery8,
+      Image.Gallery9,
+      Image.Gallery10,
+      Image.Gallery13,
+      Image.Gallery14,
     ],
     WOVEN: [
-      Image.service21,
-      Image.service22,
-      Image.service23,
-      Image.service24,
-      Image.service25,
-      Image.service26,
-      Image.service27,
-      Image.service28,
-      Image.service29,
-      Image.service30,
+      Image.Gallery15,
+      Image.Gallery16,
+      Image.Gallery19,
+      Image.Gallery20,
+      Image.Gallery21,
     ],
-    "PREMIUM ESSENTIALS": [
-      Image.service31,
-      Image.service32,
-      Image.service33,
-      Image.service34,
-      Image.service35,
-      Image.service36,
-      Image.service37,
-      Image.service38,
-      Image.service39,
-      Image.service40,
-    ],
-    CATEGORIES: [
-      Image.service41,
-      Image.service42,
-      Image.service43,
-      Image.service44,
-      Image.service45,
-      Image.service46,
-      Image.service47,
-      Image.service48,
-      Image.service49,
-      Image.service50,
+    
+    OUTWEAR: [
+      Image.Gallery22,
+      Image.Gallery25,
+      Image.Gallery26,
+      Image.Gallery27,
+     
     ],
   };
   
