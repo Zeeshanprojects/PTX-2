@@ -31,6 +31,8 @@ import Sourcing from "./Pages/Sourcing";
 import Studio from "./Pages/Studio";
 import Inquireform from "./Pages/Inquireform";
 import Gallery from "./Pages/Gallery";
+import Blog1 from "./Pages/Blog1";
+import Blog2 from "./Pages/Blog2";
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -73,6 +75,8 @@ function AppContent() {
             <Route path="/Login" element={<Login />} />
             <Route path="/Cart" element={<Cart />} />
             <Route path="/Search" element={<Search />} />
+            <Route path="/blog1" element={<Blog1/>}/>
+            <Route path="/blog2" element={<Blog2/>}/>
             <Route path="/ProductDetails/:id" element={<ProductDetails />} />
           </Routes>
         </>

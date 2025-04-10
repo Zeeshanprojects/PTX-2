@@ -5,19 +5,19 @@ import Footer from '../Components/Footer'
 
 export default function AboutUs() {
  useEffect(()=>{
-   document.title="Abour US | Pakistan Textile Exchange "
+   document.title="About US | Pakistan Textile Exchange "
  })
   return (
     <>
     <div className="space"></div>
     <div className='space'></div>
       <h1 className="text-center">WHO WE ARE</h1>
-      <div className="space"></div>
+  
       <div className="container my-5">
-  <div className="row align-items-center g-4">
-    {/* Text Content */}
+  <div className="row align-items-stretch g-4">
+    
     <div className="col-sm-12 col-md-6">
-      <div className="knowus p-4 rounded shadow-sm bg-white h-100">
+      <div className="knowus p-4 rounded  bg-white same-height h-100">
         <h5 className="text-uppercase text-secondary mb-3">Our Story</h5>
         <p className="text-muted">
           <strong>The Pakistan Textile Exchange</strong> is one of the most reliable names in apparel and accessory manufacturing in Pakistan.
@@ -30,23 +30,23 @@ export default function AboutUs() {
 
     {/* Image */}
     <div className="col-sm-12 col-md-6">
-      <img
-        src={Image.service2}
-        className="img-fluid storyimage rounded shadow-sm"
-        alt="Our Story"
-      />
+      <div className="h-100 rounded shadow-sm overflow-hidden">
+        <img
+          src={Image.service2}
+          className="img-fluid storyimage w-100 h-100"
+          alt="Our Story"
+        />
+      </div>
     </div>
   </div>
 </div>
-
-
-      <div className="space"></div>
+     <div className="space"></div>
       <h1 className="text-center">FROM DESIGN TO DELIVERY</h1>
       <br />
       <div className="container my-5">
   <div className="row g-4">
     <div className="col-sm-12 col-md-6 col-lg-4">
-      <div className="service-card shadow-sm p-4 h-100">
+      <div className="service-card sp-4 h-100">
         <div className="service-card-body">
           <h6 className="custom-card-title">Design</h6>
           <p className="service-card-text">
@@ -57,7 +57,7 @@ export default function AboutUs() {
     </div>
 
     <div className="col-sm-12 col-md-6 col-lg-4">
-      <div className="service-card shadow-sm p-4 h-100">
+      <div className="service-card  p-4 h-100">
         <div className="service-card-body">
           <h6 className="custom-card-title">Materials & Manufacturing</h6>
           <p className="service-card-text">
@@ -68,7 +68,7 @@ export default function AboutUs() {
     </div>
 
     <div className="col-sm-12 col-md-6 col-lg-4">
-      <div className="service-card shadow-sm p-4 h-100">
+      <div className="service-card  p-4 h-100">
         <div className="service-card-body">
           <h6 className="custom-card-title">Delivering</h6>
           <p className="service-card-text">

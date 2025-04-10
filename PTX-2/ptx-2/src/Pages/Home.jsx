@@ -281,36 +281,40 @@ useEffect(()=>{
       <h1 className="text-center">BLOGS</h1>
       <div className="space"></div>
       <div className="container blog-section">
-  <div className="row g-4">
-    <div className="col-sm-12 col-md-12 col-lg-5 col-xl-4">
-      <div className="blog-box">
-        <img src={Image.Blog1} alt="blog-1" className="blog-img" />
-        <div className="blog-content">
-          <h3 className="blog-heading">Fashion Trends 2025</h3>
-          <p className="blog-text">Discover what's shaping the clothing world this year—from eco fabrics to minimalist design.</p>
+      <div className="row g-4">
+        <div className="col-sm-12 col-md-12 col-lg-5 col-xl-4">
+          <Link to="/blog1" className="text-decoration-none text-dark">
+            <div className="blog-box">
+              <img src={Image.Blog1} alt="blog-1" className="blog-img" />
+              <div className="blog-content">
+                <h3 className="blog-heading">Fashion Trends 2025</h3>
+                <p className="blog-text">Discover what's shaping the clothing world this year—from eco fabrics to minimalist design.</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+        <div className="col-sm-12 col-md-12 col-lg-5 col-xl-4">
+          <Link to="/blog2" className="text-decoration-none text-dark">
+            <div className="blog-box">
+              <img src={Image.Blog2} alt="blog-2" className="blog-img" />
+              <div className="blog-content">
+                <h3 className="blog-heading">Behind The Stitch</h3>
+                <p className="blog-text">A deep dive into how our premium clothing is made with quality, precision, and passion.</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+        <div className="col-sm-12 col-md-12 col-lg-2 col-xl-4">
+          <div className="blog-highlight">
+            <h3 className="highlight-heading">Join Our Style Circle</h3>
+            <p className="highlight-text">Be the first to know about exclusive drops, trends, and insider stories.</p>
+            <button className="highlight-btn">Subscribe Now</button>
+          </div>
         </div>
       </div>
     </div>
-
-    <div className="col-sm-12 col-md-12 col-lg-5 col-xl-4">
-      <div className="blog-box">
-        <img src={Image.Blog2} alt="blog-2" className="blog-img" />
-        <div className="blog-content">
-          <h3 className="blog-heading">Behind The Stitch</h3>
-          <p className="blog-text">A deep dive into how our premium clothing is made with quality, precision, and passion.</p>
-        </div>
-      </div>
-    </div>
-
-    <div className="col-sm-12 col-md-12 col-lg-2 col-xl-4">
-      <div className="blog-highlight">
-        <h3 className="highlight-heading">Join Our Style Circle</h3>
-        <p className="highlight-text">Be the first to know about exclusive drops, trends, and insider stories.</p>
-        <button className="highlight-btn">Subscribe Now</button>
-      </div>
-    </div>
-  </div>
-</div>
       <div className="space"></div>
       <div className="space"></div>
       <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
