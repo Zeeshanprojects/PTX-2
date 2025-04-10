@@ -271,6 +271,7 @@ a{  text-decoration: none !important;}
   }
 }
 @media (max-width:575px) {
+  
   .sectionimage {
     padding: 0 !important;
     margin: 0 !important;
