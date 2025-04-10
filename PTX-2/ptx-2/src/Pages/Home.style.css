@@ -250,3 +250,33 @@ a{  text-decoration: none !important;}
     width: 100%;
     object-fit: cover !important;
 }
+@media (min-width:768px) and (max-width:991px) {
+  .sectionimage {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    display: block;
+  }
+}
+@media (min-width:576px) and (max-width:767px) {
+  .sectionimage {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    display: block;
+  }
+}
+@media (max-width:575px) {
+  .sectionimage {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    display: block;
+  }
+}

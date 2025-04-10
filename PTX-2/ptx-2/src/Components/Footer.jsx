@@ -70,7 +70,7 @@ export default function Footer() {
                 {/* Grid column */}
                 <div className="col-md-2 col-lg-3 col-xl-3 me-auto mb-4">
                   {/* Links */}
-                  <h2 className="text ">Main menu</h2>
+                  <h2 className="text ">Menu</h2>
                   <hr
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     style={{

@@ -142,9 +142,9 @@ useEffect(()=>{
       <div className="space"></div>
 
       <div className="container-fluid">
-  <div className="row">
+  <div className="row g-4">
     <div className="col-sm-12 col-md-6 col-lg-3">
-      <div className="relationship-card">
+      <div className="relationship-card ">
       <i className="fas fa-industry relationship-icon"></i>
       
         <h5>
@@ -158,7 +158,7 @@ useEffect(()=>{
     </div>
 
     <div className="col-sm-12 col-md-6 col-lg-3">
-      <div className="relationship-card">
+      <div className="relationship-card ">
       <i className="fas fa-check-circle relationship-icon"></i>
         <h5>
           Quality Assurance
@@ -171,7 +171,7 @@ useEffect(()=>{
     </div>
 
     <div className="col-sm-12 col-md-6 col-lg-3">
-      <div className="relationship-card">
+      <div className="relationship-card ">
       <i className="fas fa-search relationship-icon"></i>
         <h5>
           Sourcing
@@ -184,7 +184,7 @@ useEffect(()=>{
     </div>
 
     <div className="col-sm-12 col-md-6 col-lg-3">
-      <div className="relationship-card">
+      <div className="relationship-card ">
       <i className="fas fa-truck-moving relationship-icon"></i>
         <h5>
           Logistics
@@ -315,8 +315,7 @@ useEffect(()=>{
         </div>
       </div>
     </div>
-      <div className="space"></div>
-      <div className="space"></div>
+   
       <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <img
           src={Image.sectionimage}
