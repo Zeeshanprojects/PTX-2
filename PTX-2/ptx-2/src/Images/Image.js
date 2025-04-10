@@ -6,7 +6,8 @@ const Image={
     slider4:require("./s4.webp"),
     slider5:require("./s5.webp"),
     slider6:require("./s6.webp"),
-  
+  Blog1:require("./fashion-trend.webp"),
+  Blog2:require("./Stitch.webp"),
     latestproduct1:require('./latestproduct1.jpg'),
     latestproduct2:require('./latestproduct2.jpg'),
     latestproduct3:require('./latestproduct3.jpg'),

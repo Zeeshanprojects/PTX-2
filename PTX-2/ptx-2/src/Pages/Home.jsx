@@ -284,7 +284,7 @@ useEffect(()=>{
   <div className="row g-4">
     <div className="col-sm-12 col-md-12 col-lg-5 col-xl-4">
       <div className="blog-box">
-        <img src={Image.blog1} alt="blog-1" className="blog-img" />
+        <img src={Image.Blog1} alt="blog-1" className="blog-img" />
         <div className="blog-content">
           <h3 className="blog-heading">Fashion Trends 2025</h3>
           <p className="blog-text">Discover what's shaping the clothing world this year—from eco fabrics to minimalist design.</p>
@@ -294,7 +294,7 @@ useEffect(()=>{
 
     <div className="col-sm-12 col-md-12 col-lg-5 col-xl-4">
       <div className="blog-box">
-        <img src={Image.blog2} alt="blog-2" className="blog-img" />
+        <img src={Image.Blog2} alt="blog-2" className="blog-img" />
         <div className="blog-content">
           <h3 className="blog-heading">Behind The Stitch</h3>
           <p className="blog-text">A deep dive into how our premium clothing is made with quality, precision, and passion.</p>

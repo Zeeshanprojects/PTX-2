@@ -124,7 +124,7 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   className="nav-link active d-flex align-items-center gap-1"
-                  href="https://external-styles-website.com"
+                  href="http://localhost:3002/"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={closeNavbar}
