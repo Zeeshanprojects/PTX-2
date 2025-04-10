@@ -108,7 +108,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div className='soace'></div>
+      <div className='so=ace'></div>
       <Footer/>
     </>
   )

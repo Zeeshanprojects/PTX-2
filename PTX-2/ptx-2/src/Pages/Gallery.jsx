@@ -10,7 +10,7 @@ export default function Gallery() {
   const categories = {
     KNITS: [
       Image.Gallery1,
-      Image.Gallery2,
+   
       Image.Gallery3,
       Image.Gallery4,
       Image.Gallery5,
@@ -70,7 +70,8 @@ export default function Gallery() {
       <div className="col-md-4 mb-4" key={index}>
         <div className="gallery-card">
           <img src={img} alt={`${activeCategory}-${index}`} />
-        </div>
+          <h2 className="hover-caption text-align-center">{activeCategory}</h2>
+                   </div>
       </div>
     ))}
   </div>

@@ -51,7 +51,7 @@ export default function Search() {
             filteredProducts.map((product) => (
               <div key={product.id} className="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <div className="search-custom-card text-center">
-                  <img src={product.image} className="card-img-top" alt={product.title} />
+                  <img src={product.image} className="card-img-top" alt={product.title} loading="lazy"/>
                   <p className="card-text">{product.title}</p>
                  
                   <button 

@@ -37,7 +37,6 @@ height: 100vh !important;width: 100vw !important;;object-fit: cover !important;
   margin-bottom: 15px;
   color: #333;
 }
-x
 
 .text-body {
   flex: 1;
@@ -47,10 +46,6 @@ x
   text-align: justify;
   padding: 2rem; /* adjust padding to reduce vertical space */
 }
-
-
-
-
 
 .relationship-card p {
   text-align: justify;
@@ -123,7 +118,7 @@ x
 }
 .blog-img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover !important;
 }
 
@@ -238,7 +233,7 @@ p{ padding: 0 !important;}
 
 .btn{ border-radius: 0 !important;}
 .content-card{
-  background-color:#f8f9fa;
+  background-color:#e9ecef;
  padding-top: 100px;
  padding-bottom: 100px !important;
  padding-left: 20px;
@@ -250,6 +245,7 @@ a{  text-decoration: none !important;}
     width: 100%;
     object-fit: cover !important;
 }
+
 @media (min-width:768px) and (max-width:991px) {
   .sectionimage {
     padding: 0 !important;
@@ -280,4 +276,12 @@ a{  text-decoration: none !important;}
     object-fit: cover !important;
     display: block;
   }
+  /* .blogs-img{
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    display: block ;
+  } */
 }

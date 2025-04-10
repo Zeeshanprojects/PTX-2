@@ -5,9 +5,10 @@
   }
   
   .blogs-img {
-    width: 100%;
+    width: 80%;
 height: 400px !important;
     object-fit: cover;
+ margin-top: 50px;
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     margin-bottom: 20px;
