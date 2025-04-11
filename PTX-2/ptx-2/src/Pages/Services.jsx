@@ -18,7 +18,7 @@ export default function Services() {
           <div className="service-col ">
             <div className="service-card h-100 d-flex flex-column">
               <div className="service-card-body d-flex flex-column flex-grow-1">
-                <h5 className="service-card-title">Manufacturing</h5>
+                <h6 className="service-card-title">MANUFACTURING</h6>
                 <p className="service-card-text mt-2">
                   We ensure premium fabric selection, advanced stitching
                   techniques, and strict quality control to deliver superior
@@ -36,7 +36,7 @@ export default function Services() {
           <div className="service-col">
             <div className="service-card h-100 d-flex flex-column">
               <div className="service-card-body d-flex flex-column flex-grow-1">
-                <h5 className="service-card-title">Quality Assurance</h5>
+                <h6 className="service-card-title">QUALITY ASSURANCE</h6>
                 <p className="service-card-text">
                   Our rigorous inspection processes guarantee that every fabric
                   and garment meets durability, resilience, comfort, and
@@ -54,7 +54,7 @@ export default function Services() {
           <div className="service-col">
             <div className="service-card h-100 d-flex flex-column">
               <div className="service-card-body d-flex flex-column flex-grow-1">
-                <h5 className="service-card-title">Logistics</h5>
+                <h6 className="service-card-title">LOGISTICS</h6>
                 <p className="service-card-text mt-2">
                   From warehousing to distribution, we manage efficient
                   logistics to ensure smooth, on-time shipments across global
@@ -75,7 +75,7 @@ export default function Services() {
           <div className="service-col">
             <div className="service-card h-100 d-flex flex-column">
               <div className="service-card-body d-flex flex-column flex-grow-1">
-                <h5 className="service-card-title">Sourcing</h5>
+                <h6 className="service-card-title">SOURCING</h6>
                 <p className="service-card-text">
                   We procure premium fabrics and raw materials from trusted
                   suppliers to meet the evolving demands of the fashion
@@ -93,7 +93,7 @@ export default function Services() {
           <div className="service-col">
             <div className="service-card h-100 d-flex flex-column">
               <div className="service-card-body d-flex flex-column flex-grow-1">
-                <h5 className="service-card-title">Studio</h5>
+                <h6 className="service-card-title">STUDIO</h6>
                 <p className="service-card-text">
                   Our creative studio brings unique textile concepts to life
                   with trend-driven designs, custom patterns, and branding

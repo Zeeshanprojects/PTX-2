@@ -89,16 +89,8 @@ export default function Footer() {
                       Product
                     </Link>
                   </p>
-                  <p>
-                    <Link to="/signup" className="text-dark">
-                      Wholesale Signup
-                    </Link>
-                  </p>
-                  <p>
-                    <Link to="/Contactus" className="text-dark">
-                      Contact
-                    </Link>
-                  </p>
+                 
+                 
                   <p>
                     <Link to="/LookBook-V1" className="text-dark">
                       LOOKBOOK
@@ -123,17 +115,17 @@ export default function Footer() {
                     }}
                   />
                   <p>
-                    <Link to="/" className="text-dark">
+                    <Link to="/Aboutus" className="text-dark">
                       Our Story
                     </Link>
                   </p>
                   <p>
-                    <Link to="#" className="text-dark">
+                    <Link to="/ContactUS" className="text-dark">
                       Contact Us
                     </Link>
                   </p>
                   <p>
-                    <Link to="#" className="text-dark">
+                    <Link to="/signup" className="text-dark">
                       Account
                     </Link>
                   </p>
