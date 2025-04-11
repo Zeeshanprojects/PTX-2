@@ -17,6 +17,7 @@ export default function Studio() {
   return (
     <>
       <div className="space"></div>
+      <div className="space"></div>
         <h1 className="mt-5 text-center">SERVICES / STUDIO</h1>
      
       <div className="space"></div>

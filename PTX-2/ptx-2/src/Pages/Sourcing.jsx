@@ -17,20 +17,20 @@ export default function Sourcing() {
   return (
     <>
       <div className="space"></div>
-
+<div className="space"> </div>
       <h1 className="mt-5 text-center">SERVICES / SOURCING</h1>
-
-      <div className="space"></div>
+      <div className="space"> </div>
+ 
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div className="card-body bg-transparent">
               `
-              <br />
-              <h2 className="card-title service">
+              
+              <h2 className="card-title service ">
                 Sourcing Manufactured Goods
               </h2>
-              <p className="card-text service ">
+              <p className="card-text service mt-2">
                 Pakistan is the third largest grower of cotton and producer of
                 cotton yarn. We have some of the largest vertical textile mills
                 in the world let along the region, Pakistan is strong in cotton
@@ -42,9 +42,9 @@ export default function Sourcing() {
               </p>
             </div>
             <div className="card-body bg-transparent serviceparagraph">
-              <h2 className="card-title service">Your Sourcing Partner</h2>
+              <h2 className="card-title service mt-4">Your Sourcing Partner</h2>
 
-              <p className="card-text  service">
+              <p className="card-text  service mt-2">
                 Our roots started in the Surf and Skate industry back in the
                 90s, focusing on the classic hoodie and t shirts for all the
                 iconic surf brands, We were then asked to help in other
@@ -57,9 +57,9 @@ export default function Sourcing() {
             </div>
 
             <div className="card-body bg-transparent ">
-              <h2 className="card-title service">Why Choose PTX</h2>
+              <h2 className="card-title service mt-4">Why Choose PTX</h2>
 
-              <p className="card-text service ">
+              <p className="card-text service mt-2">
                 We never compromise with the quality as we consider it as our
                 success pillar. We believe that compromising on quality leads to
                 losing market share or clients. We believe that if we have
