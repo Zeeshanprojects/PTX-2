@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import React from "react";
 import Images from "../Images/Image";
-import Footer from "../Components/Footer";
+
 
 export default function Manufacturing() {
   useEffect(() => {
