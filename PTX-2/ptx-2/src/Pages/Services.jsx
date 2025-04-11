@@ -11,8 +11,7 @@ export default function Services() {
     <>
 <div className="space"></div>
         <h1 className="mt-5 text-center">SERVICES</h1>
-    
-      <div className="space"></div>
+   <br/>
       <div className="services-container">
         <div className="service-row">
           <div className="service-col ">

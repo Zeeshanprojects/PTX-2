@@ -18,8 +18,9 @@ export default function Manufacturing() {
   return (
     <>
       <div className="space"></div>
+      <br/>
         <h1 className="mt-5 text-center">SERVICES / MANUFACTURING</h1>
-    
+        <br/>
 
       <div className="space"></div>
       <div className="container">
@@ -54,8 +55,7 @@ export default function Manufacturing() {
             </div>
 
             <div className="card-body bg-transparent ">
-              <h2 className="card-title service mt-5">Why Choose PTX</h2>
-
+              <h2 className="card-title service mt-4">Why Choose PTX</h2>
               <p className="card-text service mt-2">
                 We never compromise with the quality as we consider it as our
                 success pillar. We believe that compromising on quality leads to
@@ -77,7 +77,7 @@ export default function Manufacturing() {
         </div>
       </div>
       <br />
-      <Footer/>
+ 
     </>
   );
 }
