@@ -11,25 +11,20 @@ export default function Search() {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
 
-  // Dummy Product List with Unique IDs
   const products = [
-    { id: 1, image: Image.image1, title: "HEAVY BOX S/S TEE 9OZ",colors: ["black", "white", "blue"] },
-    { id: 2, image: Image.image2, title: "LIGHTWEIGHT COTTON TEE", colors: ["red", "gray", "yellow"] },
-    { id: 3, image: Image.image3, title: "PREMIUM HOODIE",colors: ["green", "black", "white"] },
-    { id: 4, image: Image.image4, title: "CLASSIC DENIM JACKET", colors: ["blue", "brown"] },
-    { id: 5, image: Image.image5, title: "HEAVY BOX S/S TEE", colors: ["black", "white", "blue"] },
-    { id: 6, image: Image.image6, title: "LIGHTWEIGHT COTTON TEE", colors: ["red", "gray", "yellow"] },
-    { id: 7, image: Image.image7, title: "PREMIUM HOODIE", colors: ["green", "black", "white"] },
-    { id: 8, image: Image.image8, title: "CLASSIC DENIM JACKET", colors: ["blue", "brown"] },
-    { id: 9, image: Image.image9, title: "PREMIUM HOODIE", colors: ["green", "black", "white"] },
-
+    { id: 1, image: Image.image1, title: "HEAVY BOX S/S TEE 9OZ",price:"$30" },
+    { id: 2, image: Image.image2, title: "LIGHTWEIGHT COTTON TEE",price:"$50" },
+    { id: 3, image: Image.image3, title: "PREMIUM HOODIE",price:"$35" },
+    { id: 4, image: Image.image4, title: "CLASSIC DENIM JACKET", price:"$25" },
+    { id: 5, image: Image.image5, title: "HEAVY BOX S/S TEE",price:"$18" },
+    { id: 6, image: Image.image6, title: "LIGHTWEIGHT COTTON TEE",price:"$18" },
+    { id: 7, image: Image.image7, title: "PREMIUM HOODIE", price:"$30" },
+    { id: 8, image: Image.image8, title: "CLASSIC DENIM JACKET", price:"$25" },
+    { id: 9, image: Image.image9, title: "PREMIUM HOODIE", price:"$12"},
   ];
-
-  // Clean and filter products
   const filteredProducts = products.filter((product) =>
     product.title.toLowerCase().trim().includes(searchTerm.toLowerCase().trim())
   );
-
   return (
     <>
     <div className="space"></div>
@@ -44,7 +39,6 @@ export default function Search() {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
-
       <div className="container mt-4">
         <div className="row">
           {filteredProducts.length > 0 ? (

@@ -202,7 +202,7 @@ useEffect(()=>{
      
       <div className="space"></div>
       <h1 className="text-center">LATEST PRODUCTS</h1>
-      <div className="space"></div>
+     
       <div className="container latest-products-section ">
   <div className="row">
     {/* Product 1 */}

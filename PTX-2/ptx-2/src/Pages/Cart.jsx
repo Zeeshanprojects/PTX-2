@@ -1,104 +1,89 @@
-import { useEffect } from "react";
-import React from "react";
-import Footer from "../Components/Footer";
+import React, { useContext, useEffect } from "react";
+import { CartContext } from "../Components/CartContext";
 import { Link } from "react-router-dom";
 import "./Cart.style.css";
 
 export default function Cart() {
-    useEffect(()=>{
-      document.title="Your Shopping Cart - Pakistan Textile Exchnage"
-    })
+  const { cart, removeFromCart } = useContext(CartContext);
+
+  useEffect(() => {
+    document.title = "Your Shopping Cart - Pakistan Textile Exchange";
+  }, []);
+
+
+  if (cart.length === 0) {
+    return (
+      <div className="text-center my-5 ">
+        <br/>
+        <h2 className="mt-5">Your Cart is Empty</h2>
+        <Link to="/search">
+          <button className="btn btn-dark mt-3">Go to Products Page</button>
+        </Link>
+      </div>
+    );
+  }
+
+  const totalAmount = cart.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
+
   return (
     <>
       <div className="space"></div>
-      
-      <div className="space"></div>
-      <div className="text-container pt-5 text-center">
-        <h3>Cart</h3>
-        <p>Your Cart is Empty</p>
-        <div className="space"></div>
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-auto">
-              <Link to="/">
-              
-                <button
-                  type="button"
-                  className="btn btn-outline-dark cart-btn btn-lg mx-3 "
-                >
-                  Home
-                </button>
-              </Link>
-<Link to="/Product">
-<button
-                type="button"
-                className="btn btn-outline-dark cart-btn btn-lg mx-3 "
-              >
-                PRODUCT
-              </button>
-</Link >
-             
-            </div>
-          </div>
-          <div className="row justify-content-center mt-3">
-            <div className="col-auto">
+      <br />
+      <div className="container-fluid py-5">
+        <h2 className="text-center ">Your Shopping Cart</h2>
+        <div className="d-flex justify-content-center">
+  <Link to="/search">
+    <button className="btn btn-dark mt-1">Back to Products Page</button>
+  </Link>
+</div>
+<br/>
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            {cart.map((item) => (
+              <div key={item.id} className="card mb-3 cart-item">
+                <div className="row g-0 align-items-center">
+                  <div className="col-md-3">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="img-fluids rounded-start"
+                    />
+                  </div>
+                  <div className="col-md-6">
+                    <div className="card-body">
+                      <h5 className="card-title">{item.title}</h5>
+                      <p className="card-text">Price: ${item.price}</p>
+                      <p className="card-text">Quantity: {item.quantity}</p>
+                    </div>
+                  </div>
+                  <div className="col-md-3 text-center">
+                  <p className="fs-5 fw-bold mt-3">${item.price * item.quantity}</p>
+                    <button
+                      className="btn btn-outline-danger btn-sm mt-2 mb-4"
+                      onClick={() => removeFromCart(item.id)}
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
 
-                <Link to="/signup">
-                <button
-                type="button"
-                className="btn btn-outline-dark cart-btn btn-lg mx-3  "
-              >
-                WHOLESALE SIGNUP
-              </button>
-                </Link>
-             <Link to="/Contactus">
-             <button
-                type="button"
-                className="btn btn-outline-dark cart-btn btn-lg mx-3 "
-              >
-                CONTACT
-              </button>
-             </Link>
-              
-            </div>
-          </div>
-          <div className="row justify-content-center mt-3">
-            <div className="col-auto">
-                <Link to="/LookBook-V1">
-                <button
-                type="button"
-                className="btn btn-outline-dark cart-btn btn-lg mx-3 "
-              >
-                LOOLBOOK V1
-              </button>
-                </Link>
-              <Link to="/LookBook-V2"> <button
-                type="button"
-                className="btn btn-outline-dark cart-btn btn-lg mx-3 "
-              >
-                LOOKBOOK V2
-              </button>
+            {/* Total & Checkout */}
+            <div className="card p-4 shadow-sm total-section mt-4">
+              <h4 className="text-end">
+                Total: <span className="text-success">${totalAmount}</span>
+              </h4>
+              <Link to="/checkout">
+                <button className="btn btn-dark mt-3 w-100">Proceed to Checkout</button>
               </Link>
-             
-            </div>
-          </div>
-          <div className="row justify-content-center mt-3">
-            <div className="col-auto">
-                <Link to="/privacypolicy">
-                <button
-                type="button"
-                className="btn btn-outline-dark cart-btn btn-lg mx-3 "
-              >
-                PRIVACY POLICY
-              </button>
-                </Link>
-             
             </div>
           </div>
         </div>
       </div>
-      <div className="space"></div>
-      <Footer />
     </>
   );
 }
