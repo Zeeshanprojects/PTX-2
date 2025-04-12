@@ -21,7 +21,7 @@ export default function Footer() {
                 {/* Grid column */}
                 <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
   {/* Content */}
-<img src={Image.logo}></img>
+<img src={Image.logo} alt="logo"></img>
   {/* <hr
     className="mb-4 mt-0 d-inline-block mx-auto"
     style={{

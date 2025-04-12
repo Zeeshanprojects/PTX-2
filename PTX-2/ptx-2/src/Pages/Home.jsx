@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import React from "react";
 import Image from "../Images/Image";
 import "./Home.style.css";
@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 
 export default function Home() {
-  const [products, setProducts] = useState([]);
+
 
 
 useEffect(()=>{
@@ -269,7 +269,7 @@ useEffect(()=>{
             assurance, logistics to import, retail solutions and social
             compliance.
           </p>
-          <Link to="/product">
+          <Link to="/search">
             <button type="button" className="btn btn-dark ps-4 pe-4">
               READY FOR US
             </button>
@@ -285,7 +285,7 @@ useEffect(()=>{
         <div className="col-sm-12 col-md-12 col-lg-5 col-xl-4">
           <Link to="/blog1" className="text-decoration-none text-dark">
             <div className="blog-box">
-              <img src={Image.Blog1} alt="blog-1" className="blog-img" />
+              <img src={Image.Blog1} alt="blog-1" className="blog-img" loading="lazy" />
               <div className="blog-content">
                 <h3 className="blog-heading">Fashion Trends 2025</h3>
                 <p className="blog-text">Discover what's shaping the clothing world this year—from eco fabrics to minimalist design.</p>
@@ -297,7 +297,7 @@ useEffect(()=>{
         <div className="col-sm-12 col-md-12 col-lg-5 col-xl-4">
           <Link to="/blog2" className="text-decoration-none text-dark">
             <div className="blog-box">
-              <img src={Image.Blog2} alt="blog-2" className="blog-img" />
+              <img src={Image.Blog2} alt="blog-2" className="blog-img" loading="lazy" />
               <div className="blog-content">
                 <h3 className="blog-heading">Behind The Stitch</h3>
                 <p className="blog-text">A deep dive into how our premium clothing is made with quality, precision, and passion.</p>

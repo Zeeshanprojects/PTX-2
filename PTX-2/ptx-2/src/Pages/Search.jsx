@@ -48,7 +48,7 @@ export default function Search() {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
-      <div className="container mt-4">
+      <div className="container-fluid mt-4">
         <div className="row">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => (
