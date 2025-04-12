@@ -17,11 +17,11 @@ export default function QualityAssurance() {
   };
   return (
     <>
-      <div className="space"></div>
-      <div className="space"> </div>
-        <h1 className="mt-5 text-center">SERVICES / QUALITY ASSURANCE</h1>
+      <div className="background-color">
+      <h1 className="mt-5 text-center">SERVICES / QUALITY ASSURANCE</h1>
     
-
+      </div>
+  
       <div className="space"></div>
       <div className="container">
         <div className="row">

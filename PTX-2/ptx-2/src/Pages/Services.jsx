@@ -9,8 +9,10 @@ export default function Services() {
   });
   return (
     <>
-<div className="space"></div>
-        <h1 className="mt-5 text-center">SERVICES</h1>
+<div className="background-color">
+<h1 className="mt-5 text-center">SERVICES</h1>
+</div>
+       
    <br/>
       <div className="services-container">
         <div className="service-row">

@@ -16,8 +16,10 @@ export default function Logistics() {
   };
   return (
     <>
-  <div className="space"></div>
-        <h1 className='mt-5 text-center'>SERVICES / LOGISTICS</h1>
+  <div className="background-color">
+  <h1 className='mt-5 text-center'>SERVICES / LOGISTICS</h1>
+  </div>
+       
       
 <div className='space'></div>
       <div className="container">

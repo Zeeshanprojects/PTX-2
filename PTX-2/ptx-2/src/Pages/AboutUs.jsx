@@ -9,9 +9,10 @@ export default function AboutUs() {
  })
   return (
     <>
-    <div className="space"></div>
-    <div className='space'></div>
-      <h1 className="text-center">WHO WE ARE</h1>
+  <div className='background-color'>
+  <h1 className="text-center">WHO WE ARE</h1>
+  </div>
+     
   
       <div className="container my-5">
   <div className="row align-items-stretch g-4">

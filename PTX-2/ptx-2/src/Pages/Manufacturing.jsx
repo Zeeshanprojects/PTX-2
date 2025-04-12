@@ -17,10 +17,11 @@ export default function Manufacturing() {
   };
   return (
     <>
-      <div className="space"></div>
-      <div className="space"> </div>
-        <h1 className="mt-5 text-center">SERVICES / MANUFACTURING</h1>
-       
+      <div className="background-color">
+      <h1 className="mt-5 text-center">SERVICES / MANUFACTURING</h1>
+      
+      </div>
+ 
 
       <div className="space"></div>
       <div className="container">
