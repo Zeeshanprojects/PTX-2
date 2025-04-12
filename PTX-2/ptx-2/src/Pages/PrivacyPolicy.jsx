@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
         <br/>
         <p className="card-text">Last updated 20/2025</p>
         <p className="card-text">
-          This Privacy Policy describes how cottoncollective.org (the "Site",
+          This Privacy Policy describes how Pakistan Textile Exchange(the "Site",
           "we", "us", or "our") collects, uses, and discloses your personal
           information when you visit, use our services, or make a purchase from
           cottoncollective.org (the "Site") or otherwise communicate with us
