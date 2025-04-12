@@ -137,7 +137,7 @@ export default function Footer() {
   <hr
     className="mb-4 mt-0 d-inline-block mx-auto"
     style={{
-      width: 60,
+      width: 100,
       backgroundColor: "#7c4dff",
       height: 2,
     }}
