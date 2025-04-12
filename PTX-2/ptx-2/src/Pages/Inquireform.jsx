@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../Components/Footer'
 export default function Inquireform() {
+
   return (
    <>
      <div className="contact-container pt-5">
