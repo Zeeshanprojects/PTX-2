@@ -83,4 +83,7 @@
   opacity: 1;
   transform: translateY(0);
 }
-
+.color{
+  color: black !important;
+  font-size:large !important;
+}

@@ -7,7 +7,7 @@ export default function Blog2() {
   return (
     <>
     <div className='space'></div>
-    <div className="blog-container">
+    <div className="container">
       <div className="blog-header">
         <img src={Image.Blog2} alt="Blog Banner" className="blogs-img" />
         <div className="blog-title">
