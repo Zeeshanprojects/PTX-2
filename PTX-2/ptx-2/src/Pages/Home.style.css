@@ -278,11 +278,7 @@ a{  text-decoration: none !important;}
     object-fit: cover !important;
     display: block;
   }
-  .btn-container{
-    display: flex !important;
-    justify-content: end !important;
-
-  }
+ 
   /* .blogs-img{
     padding: 0 !important;
     margin: 0 !important;
