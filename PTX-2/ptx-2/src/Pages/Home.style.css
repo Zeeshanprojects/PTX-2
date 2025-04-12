@@ -155,7 +155,7 @@ height: 100vh !important;width: 100vw !important;;object-fit: cover !important;
   font-size: 1rem;
   margin-bottom: 1.5rem;
 }
-      
+
 .highlight-btn {
   background-color: #fff;
   color: #111;
@@ -277,6 +277,11 @@ a{  text-decoration: none !important;}
     height: auto !important;
     object-fit: cover !important;
     display: block;
+  }
+  .btn-container{
+    display: flex !important;
+    justify-content: end !important;
+
   }
   /* .blogs-img{
     padding: 0 !important;

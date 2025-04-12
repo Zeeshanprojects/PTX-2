@@ -131,7 +131,7 @@ useEffect(()=>{
 
       <div className="btn-container">
         <Link to="/inquireform">
-          <button type="button" className="btn btn-dark pe-5 ps-5">
+          <button type="button" className="btn btn-dark">
             INQUIRE NOW
           </button>
         </Link>

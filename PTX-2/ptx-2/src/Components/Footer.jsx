@@ -159,13 +159,15 @@ export default function Footer() {
               </div>
             </div>
           </section>
-
-          <div className="text-center p-3">
+          <div className="text-start p-3 ">
             © 2025 | PTX
             {/* <Link className="text-dark" to="https://mdbootstrap.com/">
                 PTX
               </Link> */}
+               
           </div>
+          
+        
         </footer>
       </div>
     </>
