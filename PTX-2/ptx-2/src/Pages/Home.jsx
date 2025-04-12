@@ -37,7 +37,7 @@ useEffect(()=>{
                     alt="..."
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <Link to="/Product">
+                    <Link to="#">
                       <button
                         type="button"
                         className="btn btn-dark btn-lg banner-btn"
@@ -54,7 +54,7 @@ useEffect(()=>{
                     alt="..."
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <Link to="/Product">
+                    <Link to="#">
                       <button
                         type="button"
                         className="btn btn-dark btn-lg banner-btn"
@@ -71,7 +71,7 @@ useEffect(()=>{
                     alt="..."
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <Link to="/Product">
+                    <Link to="#">
                       <button
                         type="button"
                         className="btn btn-dark btn-lg banner-btn"
@@ -88,7 +88,7 @@ useEffect(()=>{
                     alt="..."
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <Link to="/Product">
+                    <Link to="#">
                       <button
                         type="button"
                         className="btn btn-light btn-lg banner-btn"
