@@ -92,6 +92,8 @@
       .storyimage:hover {
         transform: scale(1.02);
       }
-      
-  
- 
+ @media (max-width:575px) {
+  .percentageheading{
+    font-size: 15px !important;
+  }
+ }
