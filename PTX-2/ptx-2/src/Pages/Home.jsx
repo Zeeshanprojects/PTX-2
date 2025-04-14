@@ -223,7 +223,7 @@ useEffect(()=>{
     </div>
 
     {/* Product 2 */}
-    <div className="col-sm-12 col-md-12 col-lg-4">
+    <div className="col-sm-12 col-md-12 col-lg-4 ">
       <div className="product-box">
         <img
           src={Image.latestproduct2}
@@ -260,7 +260,7 @@ useEffect(()=>{
 
       <div className="space"></div>
  
-      <div className="container-fluid">
+      <div className="container-fluid p-0">
         <div className="content-card ">
           <p className="card-text">WHO WE ARE?</p>
           <h1>Pakistan Textile Exchange...</h1>
