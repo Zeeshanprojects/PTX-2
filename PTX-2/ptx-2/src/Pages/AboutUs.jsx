@@ -80,6 +80,67 @@ export default function AboutUs() {
   </div>
 </div>
 
+<div className="space"></div>
+<div className="content-card py-5">
+  <div className="container">
+    <h2 className="heading text-center mb-5">OUR INDUSTRY EXCELLENCE IN NUMBERS</h2>
+
+    <div className="row align-items-center">
+      <div className="col-lg-6 mb-4 mb-lg-0 performancecontent">
+        <h3 className="card-title">Committed to Quality and Innovation</h3>
+        <p className="card-text pt-2">
+          We take pride in delivering high-quality textiles and efficient
+          manufacturing processes that drive industry success. Our dedication to
+          excellence ensures optimized production, sustainable practices, and
+          cutting-edge innovation. With a focus on precision and performance, we
+          continue to set new benchmarks in the textile industry.
+        </p>
+      </div>
+
+      <div className="col-lg-6">
+        <div className="row g-4">
+          <div className="col-6">
+            <div className="card performancecard h-100">
+              <div className="card-body bg-white text-center">
+                <h6 className="card-title text-muted percentageheading">Textile</h6>
+                <h1 className="card-subtitle">97%</h1>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-6">
+            <div className="card performancecard h-100">
+              <div className="card-body bg-white text-center">
+                <h6 className="card-title text-muted percentageheading">Manufacturing</h6>
+                <h1 className="card-subtitle">95%</h1>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-6">
+            <div className="card performancecard h-100">
+              <div className="card-body bg-white text-center">
+                <h6 className="card-title text-muted percentageheading">Production Efficiency</h6>
+                <h1 className="card-subtitle">92%</h1>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-6">
+            <div className="card performancecard h-100">
+              <div className="card-body bg-white text-center">
+                <h6 className="card-title text-muted percentageheading">Sustainability Practices</h6>
+                <h1 className="card-subtitle">88%</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       <div className="space"></div>
       <div className="container">
         <div className="row align-items-center">
