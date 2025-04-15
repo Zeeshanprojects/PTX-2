@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 export default function ContactUs() {
   useEffect(()=>{
-    document.title="Pakistan Textile Exchnage | Contact Us"
+    document.title="Contact Us | Pakistan Textile Exchange"
   })
   return (
     <>

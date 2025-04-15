@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 export default function Manufacturing() {
   useEffect(() => {
-    document.title = "Pakistan Textile Exchange | Manufacturing";
+    document.title = "Manufacturing | Pakistan Textile Exchange";
   });
   const handleDownload = () => {
     const link = document.createElement("a");
