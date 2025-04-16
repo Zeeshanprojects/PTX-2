@@ -22,7 +22,7 @@ export default function Gallery() {
       
 
       {/* Bootstrap Nav-style Tabs */}
-      <ul className="nav justify-content-center gallery-tabs">
+      <ul className="nav justify-content-center gallery-tabs color">
         {Object.keys(categories).map((category) => (
           <li className="nav-item" key={category}>
             <button
