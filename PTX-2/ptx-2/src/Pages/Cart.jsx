@@ -41,7 +41,7 @@ export default function Cart() {
 </div>
 <br/>
         <div className="row justify-content-center">
-          <div className="col-lg-8">
+          <div className="col-lg-10">
             {cart.map((item) => (
               <div key={item.id} className="card mb-3 cart-item">
                 <div className="row g-0 align-items-center">

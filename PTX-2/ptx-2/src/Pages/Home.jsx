@@ -7,8 +7,6 @@ import Footer from "../Components/Footer";
 
 export default function Home() {
 
-
-
 useEffect(()=>{
   document.title="Home | Pakistan Textile Exchange"
 })
@@ -27,17 +25,17 @@ useEffect(()=>{
                   <img
                     src={Image.slider1}
                     className="d-block w-100"
-                    alt="..."
+                    alt="slider1"
                   />
                 </div>
                 <div className="carousel-item">
                   <img
                     src={Image.slider2}
                     className="d-block w-100"
-                    alt="..."
+                    alt="slider2"
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <Link to="#">
+                    <Link to="/search">
                       <button
                         type="button"
                         className="btn btn-dark btn-lg banner-btn"
@@ -51,10 +49,10 @@ useEffect(()=>{
                   <img
                     src={Image.slider3}
                     className="d-block w-100"
-                    alt="..."
+                    alt="slider3"
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <Link to="#">
+                    <Link to="/search">
                       <button
                         type="button"
                         className="btn btn-dark btn-lg banner-btn"
@@ -68,10 +66,10 @@ useEffect(()=>{
                   <img
                     src={Image.slider4}
                     className="d-block w-100"
-                    alt="..."
+                    alt="clider4"
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <Link to="#">
+                    <Link to="/search">
                       <button
                         type="button"
                         className="btn btn-dark btn-lg banner-btn"
@@ -85,10 +83,10 @@ useEffect(()=>{
                   <img
                     src={Image.slider5}
                     className="d-block w-100"
-                    alt="..."
+                    alt="slider5"
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <Link to="#">
+                    <Link to="/search">
                       <button
                         type="button"
                         className="btn btn-light btn-lg banner-btn"
