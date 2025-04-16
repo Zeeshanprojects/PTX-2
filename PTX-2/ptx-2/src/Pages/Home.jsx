@@ -26,6 +26,7 @@ useEffect(()=>{
                     src={Image.slider1}
                     className="d-block w-100"
                     alt="slider1"
+                    fetchPriority="high"
                   />
                 </div>
                 <div className="carousel-item">
@@ -33,6 +34,7 @@ useEffect(()=>{
                     src={Image.slider2}
                     className="d-block w-100"
                     alt="slider2"
+                     fetchPriority="high"
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
                     <Link to="/search">
@@ -50,6 +52,7 @@ useEffect(()=>{
                     src={Image.slider3}
                     className="d-block w-100"
                     alt="slider3"
+                     fetchPriority="high"
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
                     <Link to="/search">
@@ -66,7 +69,8 @@ useEffect(()=>{
                   <img
                     src={Image.slider4}
                     className="d-block w-100"
-                    alt="clider4"
+                    alt="slider4"
+                     fetchPriority="high"
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
                     <Link to="/search">
@@ -84,6 +88,7 @@ useEffect(()=>{
                     src={Image.slider5}
                     className="d-block w-100"
                     alt="slider5"
+                     fetchPriority="high"
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
                     <Link to="/search">
