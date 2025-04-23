@@ -48,7 +48,7 @@ function AppContent() {
   return (
     <div className="App">
       {loading ? (
-        <Preloader /> // Show preloader when loading is f
+        <Preloader /> 
       ) : (
         <>
           <ScrollToTop />
