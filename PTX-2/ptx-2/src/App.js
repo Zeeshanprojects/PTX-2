@@ -33,6 +33,10 @@ import Inquireform from "./Pages/Inquireform";
 import Gallery from "./Pages/Gallery";
 import Blog1 from "./Pages/Blog1";
 import Blog2 from "./Pages/Blog2";
+import KnitsGallery from "./Pages/Knits";
+import DenimGallery from "./Pages/Denim";
+import WovenGallery from "./Pages/Woven";
+import OutwearGallery from "./Pages/Outwear";
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -63,6 +67,10 @@ function AppContent() {
         <Route path="/Sourcing" element={<Sourcing/>}/>
         <Route path="/Studio" element={<Studio />} />
         <Route path="/Gallery" element={<Gallery/>}/>
+        <Route path="/Knits" element={<KnitsGallery/>}/>
+        <Route path="/denim" element={<DenimGallery/>}/>
+        <Route path="/woven" element={<WovenGallery/>}/>
+        <Route path="/outwear" element={<OutwearGallery/>}/>
         <Route path="/inquireform" element={<Inquireform/>}/>
             <Route path="/Product" element={<Product />} />
             <Route path="/signup" element={<Signup />} />
