@@ -60,8 +60,7 @@ export default function Gallery() {
           </li>
         ))}
       </ul>
-      
-
+<br/>
       <div className="container-fluid">
         <div className="row">
           {allImages.map((item, index) => (
