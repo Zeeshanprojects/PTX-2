@@ -1,23 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Image from "../Images/Image"; // Update this path if needed
-import "./Gallery.style.css"; // Reuse your gallery styles
+import axios from "axios";
+import "./Gallery.style.css";
 
 export default function WovenGallery() {
+  const [wovenImages, setWovenImages] = useState([]);
+
   useEffect(() => {
-    document.title = "Knits Gallery | Pakistan Textile Exchange";
+    document.title = "Woven Gallery | Pakistan Textile Exchange";
+
+    axios.get("https://ptxapi.io/api/woven")
+      .then(response => {
+        setWovenImages(response.data);
+      })
+      .catch(error => {
+        console.error("Error fetching woven data:", error);
+      });
   }, []);
 
-  const WovenImages = [
-    Image.Gallery15,
-    Image.Gallery16,
-    Image.Gallery17,
-    Image.Gallery19,
-    Image.Gallery20,
-    Image.Gallery21,
-  ];
   const navLinks = [
-    {name : "GALLERY" , path: "/Gallery"},
+    { name: "GALLERY", path: "/Gallery" },
     { name: "KNITS", path: "/knits" },
     { name: "DENIM", path: "/denim" },
     { name: "WOVEN", path: "/woven" },
@@ -26,12 +28,11 @@ export default function WovenGallery() {
 
   return (
     <>
-    <div className="background-color">
-    <h1 className="mt-5 text-center">WOVEN GALLERY</h1>
-  </div>
-  <br/>
+      <div className="background-color">
+        <h1 className="mt-5 text-center">WOVEN GALLERY</h1>
+      </div>
+      <br />
 
-     
       <ul className="nav justify-content-center gallery-tabs color">
         {navLinks.map((link) => (
           <li className="nav-item" key={link.name}>
@@ -41,22 +42,19 @@ export default function WovenGallery() {
           </li>
         ))}
       </ul>
-      
 
       <div className="container-fluid mt-4">
         <div className="row">
-          {WovenImages.map((img, index) => (
+          {wovenImages.map((item, index) => (
             <div className="col-md-4 mb-4" key={index}>
               <div className="gallery-card">
-                <img src={img} alt={`Knit-${index}`} />
-                <h2 className="hover-caption text-align-center">KNITS</h2>
+                <img src={item.url} alt={`Woven-${index}`} />
+                <h2 className="hover-caption text-align-center">{item.title}</h2>
               </div>
             </div>
           ))}
         </div>
       </div>
-
     </>
- 
   );
 }

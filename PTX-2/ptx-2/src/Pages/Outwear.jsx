@@ -1,23 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Image from "../Images/Image"; // Update this path if needed
-import "./Gallery.style.css"; // Reuse your gallery styles
+import axios from "axios";
+import "./Gallery.style.css";
 
 export default function OutwearGallery() {
+  const [outwearImages, setOutwearImages] = useState([]);
+
   useEffect(() => {
-    document.title = "Knits Gallery | Pakistan Textile Exchange";
+    document.title = "Outwear Gallery | Pakistan Textile Exchange";
+
+    axios.get("https://ptxapi.io/api/outwear")
+      .then(response => {
+        setOutwearImages(response.data);
+      })
+      .catch(error => {
+        console.error("Error fetching outwear data:", error);
+      });
   }, []);
 
-  const OutwearImages = [
-    Image.Gallery22,
-    Image.Gallery25,
-    Image.Gallery26,
-    Image.Gallery27,
-    Image.Gallery28,
-  ];
-
   const navLinks = [
-    {name : "GALLERY" , path: "/Gallery"},
+    { name: "GALLERY", path: "/Gallery" },
     { name: "KNITS", path: "/knits" },
     { name: "DENIM", path: "/denim" },
     { name: "WOVEN", path: "/woven" },
@@ -43,11 +45,11 @@ export default function OutwearGallery() {
 
       <div className="container-fluid mt-4">
         <div className="row">
-          {OutwearImages.map((img, index) => (
+          {outwearImages.map((item, index) => (
             <div className="col-md-4 mb-4" key={index}>
               <div className="gallery-card">
-                <img src={img} alt={`Knit-${index}`} />
-                <h2 className="hover-caption text-align-center">KNITS</h2>
+                <img src={item.url} alt={`Outwear-${index}`} />
+                <h2 className="hover-caption text-align-center">{item.title}</h2>
               </div>
             </div>
           ))}

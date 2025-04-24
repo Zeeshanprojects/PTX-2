@@ -1,24 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Image from "../Images/Image"; // Adjust the path if needed
-import "./Gallery.style.css"; // Reuse your existing styles
+import axios from "axios";
+import "./Gallery.style.css";
 
 export default function KnitsGallery() {
+  const [knitsImages, setKnitsImages] = useState([]);
+
   useEffect(() => {
     document.title = "Knits Gallery | Pakistan Textile Exchange";
+
+    // Fetch knits gallery data from backend
+    axios.get("https://ptxapi.io/api/knit")
+      .then(response => {
+        setKnitsImages(response.data);
+      })
+      .catch(error => {
+        console.error("Error fetching knits data:", error);
+      });
   }, []);
 
-  const knitsImages = [
-    Image.Gallery1,
-    Image.Gallery3,
-    Image.Gallery4,
-    Image.Gallery5,
-    Image.Gallery6,
-    Image.Gallery7,
-  ];
-
   const navLinks = [
-    {name : "GALLERY" , path: "/Gallery"},
+    { name: "GALLERY", path: "/Gallery" },
     { name: "KNITS", path: "/knits" },
     { name: "DENIM", path: "/denim" },
     { name: "WOVEN", path: "/woven" },
@@ -43,14 +45,14 @@ export default function KnitsGallery() {
         ))}
       </ul>
 
-      {/* Image Grid */}
+      {/* Dynamic Image Grid */}
       <div className="container-fluid mt-4">
         <div className="row">
-          {knitsImages.map((img, index) => (
+          {knitsImages.map((item, index) => (
             <div className="col-md-4 mb-4" key={index}>
               <div className="gallery-card">
-                <img src={img} alt={`Knit-${index}`} />
-                <h2 className="hover-caption text-align-center">KNITS</h2>
+                <img src={item.url} alt={`Knit-${index}`} />
+                <h2 className="hover-caption text-align-center">{item.title}</h2>
               </div>
             </div>
           ))}
