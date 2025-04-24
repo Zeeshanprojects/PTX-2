@@ -5,6 +5,7 @@ import "./Gallery.style.css";
 
 export default function Gallery() {
   const [galleryImages, setGalleryImages] = useState([]);
+  const [loading, setLoading] = useState(true); // Loading state
 
   useEffect(() => {
     document.title = "Gallery | Pakistan Textile Exchange";
@@ -13,9 +14,11 @@ export default function Gallery() {
     axios.get("https://ptxapi.io/api/gallery")
       .then(response => {
         setGalleryImages(response.data);
+        setLoading(false); // Set loading to false once data is fetched
       })
       .catch(error => {
         console.error("Error fetching gallery data:", error);
+        setLoading(false); // Set loading to false even if there's an error
       });
   }, []);
 
@@ -46,19 +49,28 @@ export default function Gallery() {
       </ul>
       <br />
 
-      {/* Gallery Images from API */}
-      <div className="container-fluid">
-        <div className="row">
-          {galleryImages.map((item, index) => (
-            <div className="col-md-4 mb-4" key={index}>
-              <div className="gallery-card">
-                <img src={item.url} alt={`Gallery-${index}`} />
-                <h2 className="hover-caption text-align-center">{item.text}</h2>
-              </div>
-            </div>
-          ))}
+      {/* Display Spinner while loading */}
+      {loading ? (
+        <div className="d-flex justify-content-center mt-5">
+          <div className="spinner-border" style={{ width: "3rem", height: "3rem" }} role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
         </div>
-      </div>
+      ) : (
+        // Gallery Images from API
+        <div className="container-fluid">
+          <div className="row">
+            {galleryImages.map((item, index) => (
+              <div className="col-md-4 mb-4" key={index}>
+                <div className="gallery-card">
+                  <img src={item.url} alt={`Gallery-${index}`} />
+                  <h2 className="hover-caption text-align-center">{item.text}</h2>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </>
   );
 }

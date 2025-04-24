@@ -15,14 +15,27 @@ export default function ProductDetails() {
     document.title = "Product Details - Pakistan Textile Exchange";
   }, []);
 
+  // If the product is not found, show an error message
   if (!product) {
     return <h1 className="text-center text-danger">Product Not Found</h1>;
   }
 
   const handleAddToCart = () => {
-    const numericPrice = parseFloat(product.price.replace("$", ""));
-    addToCart({ ...product, price: numericPrice, quantity });
-    navigate("/cart");
+    // Check if product.price is a valid string before attempting to replace
+    if (product.price && typeof product.price === "string") {
+      // Remove the "$" sign and convert price to a number
+      const numericPrice = parseFloat(product.price.replace("$", ""));
+      if (!isNaN(numericPrice)) {
+        // Add to cart and navigate to cart page
+        addToCart({ ...product, price: numericPrice, quantity });
+        navigate("/cart");
+      } else {
+        console.error("Invalid product price:", product.price);
+        // You can display an alert here if you want
+      }
+    } else {
+      console.error("Product price is not a valid string:", product.price);
+    }
   };
 
   return (
@@ -33,7 +46,7 @@ export default function ProductDetails() {
           {/* Left: Product Image */}
           <div className="col-md-5 mb-4 mb-md-0">
             <img
-              src={product.image}
+              src={product.url}
               className="product-image"
               alt={product.title}
             />

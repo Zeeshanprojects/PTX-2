@@ -5,16 +5,20 @@ import "./Gallery.style.css";
 
 export default function OutwearGallery() {
   const [outwearImages, setOutwearImages] = useState([]);
+  const [loading, setLoading] = useState(true); // State for loading
 
   useEffect(() => {
     document.title = "Outwear Gallery | Pakistan Textile Exchange";
 
+    // Fetch outwear gallery data from backend
     axios.get("https://ptxapi.io/api/outwear")
       .then(response => {
         setOutwearImages(response.data);
+        setLoading(false); // Set loading to false after data is fetched
       })
       .catch(error => {
         console.error("Error fetching outwear data:", error);
+        setLoading(false); // Set loading to false even if there's an error
       });
   }, []);
 
@@ -33,6 +37,7 @@ export default function OutwearGallery() {
       </div>
       <br />
 
+      {/* Navigation Tabs */}
       <ul className="nav justify-content-center gallery-tabs color">
         {navLinks.map((link) => (
           <li className="nav-item" key={link.name}>
@@ -43,17 +48,27 @@ export default function OutwearGallery() {
         ))}
       </ul>
 
+      {/* Displaying Loading Spinner or Images */}
       <div className="container-fluid mt-4">
-        <div className="row">
-          {outwearImages.map((item, index) => (
-            <div className="col-md-4 mb-4" key={index}>
-              <div className="gallery-card">
-                <img src={item.url} alt={`Outwear-${index}`} />
-                <h2 className="hover-caption text-align-center">{item.title}</h2>
+        {loading ? (
+          <div className="text-center">
+           <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+          
+          </div>
+        ) : (
+          <div className="row">
+            {outwearImages.map((item, index) => (
+              <div className="col-md-4 mb-4" key={index}>
+                <div className="gallery-card">
+                  <img src={item.url} alt={`Outwear-${index}`} />
+                  <h2 className="hover-caption text-align-center">{item.title}</h2>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </div>
     </>
   );
