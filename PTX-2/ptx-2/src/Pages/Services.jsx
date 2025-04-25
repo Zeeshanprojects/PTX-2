@@ -9,18 +9,18 @@ export default function Services() {
   });
   return (
     <>
-<div className="background-color">
-<h1 className="mt-5 text-center">SERVICES</h1>
-</div>
-       
-   <br/>
-      <div className="services-container">
-        <div className="service-row">
-          <div className="service-col ">
+      <div className="background-color">
+        <h1 className="mt-5 text-center">SERVICES</h1>
+      </div>
+
+      <br />
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
             <div className="service-card h-100 d-flex flex-column">
               <div className="service-card-body d-flex flex-column flex-grow-1">
                 <h6 className="service-card-title">MANUFACTURING</h6>
-                <p className="service-card-text mt-2">
+                <p className="service-card-text ">
                   We ensure premium fabric selection, advanced stitching
                   techniques, and strict quality control to deliver superior
                   textile products.
@@ -34,7 +34,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <div className="service-col">
+          <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
             <div className="service-card h-100 d-flex flex-column">
               <div className="service-card-body d-flex flex-column flex-grow-1">
                 <h6 className="service-card-title">QUALITY ASSURANCE</h6>
@@ -52,7 +52,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <div className="service-col">
+          <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
             <div className="service-card h-100 d-flex flex-column">
               <div className="service-card-body d-flex flex-column flex-grow-1">
                 <h6 className="service-card-title">LOGISTICS</h6>
@@ -70,20 +70,18 @@ export default function Services() {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="service-row">
-          <div className="service-col">
+          <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
             <div className="service-card h-100 d-flex flex-column">
               <div className="service-card-body d-flex flex-column flex-grow-1">
                 <h6 className="service-card-title">SOURCING</h6>
-                <p className="service-card-text">
-                  We procure premium fabrics and raw materials from trusted
-                  suppliers to meet the evolving demands of the fashion
-                  industry.
+                <p className="service-card-text mt-2">
+                We procure premium fabrics and raw materials from trusted
+                    suppliers to meet the evolving demands of the fashion
+                    industry.
                 </p>
                 <br />
-                <Link to="/Sourcing" className="mt-auto">
+                <Link to="/Sourcing" className="mt-auto ">
                   <button type="button" className="btn btn-outline-dark">
                     Read More
                   </button>
@@ -91,17 +89,19 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <div className="service-col">
+
+
+          <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
             <div className="service-card h-100 d-flex flex-column">
               <div className="service-card-body d-flex flex-column flex-grow-1">
                 <h6 className="service-card-title">STUDIO</h6>
-                <p className="service-card-text">
-                  Our creative studio brings unique textile concepts to life
-                  with trend-driven designs, custom patterns, and branding
-                  solutions.
+                <p className="service-card-text mt-2">
+                Our creative studio brings unique textile concepts to life
+                    with trend-driven designs, custom patterns, and branding
+                    solutions.
                 </p>
                 <br />
-                <Link to="/Studio" className="mt-auto">
+                <Link to="/Studio" className="mt-auto ">
                   <button type="button" className="btn btn-outline-dark">
                     Read More
                   </button>
@@ -110,9 +110,12 @@ export default function Services() {
             </div>
           </div>
         </div>
+
+
+  
       </div>
       <div className="space"></div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

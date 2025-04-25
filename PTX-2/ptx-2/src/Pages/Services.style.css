@@ -1,11 +1,12 @@
 /* White background container */
 .services-container {
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    margin-left: 10px;
   }
     .service-row {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+ 
     flex-wrap: wrap;
     margin-bottom: 30px;
   }
@@ -41,10 +42,7 @@
     color: #444;
     line-height: 1.6;
   }
-.service-row:nth-child(2) {
-    justify-content: center;
-gap: 20px;
-  }
+
     @media (max-width: 992px) {
     .service-col {
       width: 45%;
@@ -56,16 +54,7 @@ gap: 20px;
       justify-content: center;
       gap: 20px;
     }
-  
-    /* First row (2 cards) */
-    .service-row:first-child .service-col {
-      width: calc(50% - 10px);
-    }
-  
-    /* Second row (3 cards) */
-    .service-row:nth-child(2) .service-col {
-      width: calc(33.33% - 10px);
-    }
+
   }
   @media (max-width: 768px) {
     .service-col {
