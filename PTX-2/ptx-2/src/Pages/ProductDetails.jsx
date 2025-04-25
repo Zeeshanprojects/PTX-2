@@ -15,27 +15,16 @@ export default function ProductDetails() {
     document.title = "Product Details - Pakistan Textile Exchange";
   }, []);
 
-  // If the product is not found, show an error message
   if (!product) {
     return <h1 className="text-center text-danger">Product Not Found</h1>;
   }
 
   const handleAddToCart = () => {
-    // Check if product.price is a valid string before attempting to replace
-    if (product.price && typeof product.price === "string") {
-      // Remove the "$" sign and convert price to a number
-      const numericPrice = parseFloat(product.price.replace("$", ""));
-      if (!isNaN(numericPrice)) {
-        // Add to cart and navigate to cart page
-        addToCart({ ...product, price: numericPrice, quantity });
-        navigate("/cart");
-      } else {
-        console.error("Invalid product price:", product.price);
-        // You can display an alert here if you want
-      }
-    } else {
-      console.error("Product price is not a valid string:", product.price);
-    }
+    addToCart({
+      ...product,
+      quantity,
+    });
+    navigate("/cart");
   };
 
   return (
@@ -55,7 +44,6 @@ export default function ProductDetails() {
           {/* Right: Product Details */}
           <div className="col-md-7">
             <h2 className="fw-bold">{product.title}</h2>
-            <h4 className="text-danger fw-semibold">{product.price}</h4>
 
             <p className="text-muted mt-2">
               {product.description || "This is a premium quality product with the best fabric and craftsmanship."}
@@ -69,11 +57,12 @@ export default function ProductDetails() {
             </ul>
 
             {/* Sizes */}
+           
             <div className="inventory-grid my-3">
               {["S", "M", "L", "XL", "2XL"].map((size) => (
                 <div key={size} className="size-quantity-box">
                   <div className="size-badge">{size}</div>
-                  <div className="quantity-text">Available</div>
+                
                 </div>
               ))}
             </div>

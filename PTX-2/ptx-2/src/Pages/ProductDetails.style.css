@@ -16,7 +16,6 @@
   padding: 12px;
   border-radius: 10px;
   width: 80px;
- 
 }
 
 .size-badge {
@@ -25,20 +24,17 @@
   align-items: center;
   width: 45px;
   height: 30px;
-  border-bottom: 2px solid black;
+  border: 2px solid black; /* Changed to a full border instead of just the bottom */
+  border-radius: 5px; /* Rounded corners for the box */
   font-size: 16px;
   font-weight: bold;
 }
 
-.quantity-text {
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 5px;
-}
-.product-image{
+.product-image {
   height: 450px;
   object-fit: contain !important;
 }
+
 /* Image */
 img {
   object-fit: cover !important;

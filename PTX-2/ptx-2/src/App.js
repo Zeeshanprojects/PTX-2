@@ -37,6 +37,7 @@ import KnitsGallery from "./Pages/Knits";
 import DenimGallery from "./Pages/Denim";
 import WovenGallery from "./Pages/Woven";
 import OutwearGallery from "./Pages/Outwear";
+import Checkout from "./Pages/Checkout";
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -82,6 +83,7 @@ function AppContent() {
             <Route path="/Hoodies" element={<Hoodies />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/Cart" element={<Cart />} />
+            <Route path="/Checkout" element={<Checkout/>}/>
             <Route path="/Search" element={<Search />} />
             <Route path="/blog1" element={<Blog1/>}/>
             <Route path="/blog2" element={<Blog2/>}/>
