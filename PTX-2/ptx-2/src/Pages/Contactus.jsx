@@ -30,7 +30,7 @@ export default function ContactUs() {
     e.preventDefault();  // Prevent default form submission behavior
 
     try {
-      const response = await axios.post("http://ptxapi.io/api/contact-form", formData);
+      const response = await axios.post("https://ptxapi.io/api/contactform", formData);
       if (response.data.success) {
         setStatus("Your message has been sent successfully.");
       } else {
