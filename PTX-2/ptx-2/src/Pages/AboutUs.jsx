@@ -102,7 +102,7 @@ export default function AboutUs() {
           <div className="col-6">
             <div className="card performancecard h-100">
               <div className="card-body bg-white text-center">
-                <h6 className="card-title text-muted percentageheading">Textile</h6>
+                <h6 className="card-title text-muted percentageheading">Textile Innovation</h6>
                 <h1 className="card-subtitle">97%</h1>
               </div>
             </div>
