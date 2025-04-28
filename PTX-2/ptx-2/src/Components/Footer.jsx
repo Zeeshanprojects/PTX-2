@@ -164,10 +164,7 @@ export default function Footer() {
             <Link className="text-dark ms-1" to="/">
               PTX
               </Link>
-               
-          </div>
-          
-        
+                        </div>
         </footer>
       </div>
     </>
