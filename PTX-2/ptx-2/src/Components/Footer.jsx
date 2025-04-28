@@ -161,7 +161,7 @@ export default function Footer() {
           </section>
           <div className="text-center p-3 ">
             © 2025 |
-            <Link className="text-dark ms-1" to="http://localhost:3000/">
+            <Link className="text-dark ms-1" to="/">
               PTX
               </Link>
                
