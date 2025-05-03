@@ -6,22 +6,7 @@ import Footer from '../Components/Footer';
 
 export default function AboutUs() {
   // State to store the team data
-  const [teamData, setTeamData] = useState([]);
-
-  // Fetch team data using Axios
-  useEffect(() => {
-    document.title = "About US | Pakistan Textile Exchange";
-
-    // Fetch team data
-    axios.get('https://ptxapi.io/api/team')
-      .then(response => {
-        // Set the team data to state
-        setTeamData(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching team data:', error);
-      });
-  }, []);
+  
 
   return (
     <>
@@ -184,24 +169,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div className='space'></div>
-      <h1 className="text-center">MEET THE TEAM </h1>
-
-      <div className="container mt-5">
-        <div className="row text-center g-4">
-          {teamData.map((member, index) => (
-            <div className="col-6 col-sm-4 col-md-3 col-lg-2" key={index}>
-              <img
-                src={member.image || 'https://via.placeholder.com/100'}
-                alt={member.name}
-                className="img-fluid rounded-circle team-image"
-              />
-              <h6 className="mt-2 mb-1">{member.name}</h6>
-              <p className="text-muted small">{member.designation}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+     
 
       <Footer />
     </>

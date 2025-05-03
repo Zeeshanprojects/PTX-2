@@ -38,6 +38,8 @@ import DenimGallery from "./Pages/Denim";
 import WovenGallery from "./Pages/Woven";
 import OutwearGallery from "./Pages/Outwear";
 import Checkout from "./Pages/Checkout";
+import Teams from "./Pages/Teams";
+import Teaminfo from "./Pages/Teaminfo";
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -53,26 +55,28 @@ function AppContent() {
   return (
     <div className="App">
       {loading ? (
-        <Preloader /> 
+        <Preloader />
       ) : (
         <>
           <ScrollToTop />
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Aboutus" element={<AboutUs/>}/>
-            <Route path="/Services" element={<Services/>}/>
+            <Route path="/Aboutus" element={<AboutUs />} />
+            <Route path="/Services" element={<Services />} />
             <Route path="/Manufacturing" element={<Manufacturing />} />
-        <Route path="/QualityAssurance" element={<QualityAssurance />} />
-        <Route path="/Logistics" element={<Logistics />} />
-        <Route path="/Sourcing" element={<Sourcing/>}/>
-        <Route path="/Studio" element={<Studio />} />
-        <Route path="/Gallery" element={<Gallery/>}/>
-        <Route path="/Knits" element={<KnitsGallery/>}/>
-        <Route path="/denim" element={<DenimGallery/>}/>
-        <Route path="/woven" element={<WovenGallery/>}/>
-        <Route path="/outwear" element={<OutwearGallery/>}/>
-        <Route path="/inquireform" element={<Inquireform/>}/>
+            <Route path="/QualityAssurance" element={<QualityAssurance />} />
+            <Route path="/Logistics" element={<Logistics />} />
+            <Route path="/Sourcing" element={<Sourcing />} />
+            <Route path="/Studio" element={<Studio />} />
+            <Route path="/Gallery" element={<Gallery />} />
+            <Route path="/Knits" element={<KnitsGallery />} />
+            <Route path="/denim" element={<DenimGallery />} />
+            <Route path="/woven" element={<WovenGallery />} />
+            <Route path="/outwear" element={<OutwearGallery />} />
+            <Route path="/team" element={<Teams />} />
+<Route path="/team/:slug" element={<Teaminfo />} />        
+  <Route path="/inquireform" element={<Inquireform />} />
             <Route path="/Product" element={<Product />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/Contactus" element={<ContactUs />} />
@@ -83,10 +87,10 @@ function AppContent() {
             <Route path="/Hoodies" element={<Hoodies />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/Cart" element={<Cart />} />
-            <Route path="/Checkout" element={<Checkout/>}/>
+            <Route path="/Checkout" element={<Checkout />} />
             <Route path="/Search" element={<Search />} />
-            <Route path="/blog1" element={<Blog1/>}/>
-            <Route path="/blog2" element={<Blog2/>}/>
+            <Route path="/blog1" element={<Blog1 />} />
+            <Route path="/blog2" element={<Blog2 />} />
             <Route path="/ProductDetails/:id" element={<ProductDetails />} />
           </Routes>
         </>

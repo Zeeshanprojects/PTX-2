@@ -103,6 +103,15 @@ export default function Header() {
               <li className="nav-item">
                 <Link
                   className="nav-link active"
+                  to="/team"
+                  onClick={closeNavbar}
+                >
+                  TEAM
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link active"
                   to="/LookBook-V1"
                   onClick={closeNavbar}
                 >
