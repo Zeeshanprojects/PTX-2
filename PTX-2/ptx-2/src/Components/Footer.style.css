@@ -38,5 +38,16 @@
     outline: none;
   }
   }
+  @media (min-width:767px) and (max-width:991px) {
+    .subscribe-input{
+width: 120px !important;
+    }
+    .subscribe-input::placeholder{
+      font-size: 12px;
+    }
+ .subscribe-btn{
+  padding: 10px 10px !important;
+ }
+  }
  
   

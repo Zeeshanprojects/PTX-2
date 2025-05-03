@@ -169,7 +169,40 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div className='so=ace'></div>
+      <div className='space'></div>
+      <h1 className="text-center">MEET THE TEAM </h1>
+
+      <div className="container mt-5">
+  <div className="row text-center g-4">
+    {[
+      { name: 'Ali Raza', designation: 'Production Head' },
+      { name: 'Sarah Malik', designation: 'Lead Designer' },
+      { name: 'Usman Tariq', designation: 'Merchandising Manager' },
+      { name: 'Areeba Khan', designation: 'Textile Engineer' },
+      { name: 'Zeeshan Ahmed', designation: 'Frontend Developer' },
+      { name: 'Nimra Sohail', designation: 'QA Manager' },
+      { name: 'Imran Qureshi', designation: 'Fabric Manager' },
+      { name: 'Sana Iqbal', designation: 'Marketing Specialist' },
+      { name: 'Tariq Mehmood', designation: 'Logistics Head' },
+      { name: 'Kiran Shah', designation: 'HR Manager' },
+      { name: 'Bilal Asif', designation: 'Backend Developer' },
+      { name: 'Fahad Hussain', designation: 'Data Analyst' },
+      { name: 'Mehwish Akhtar', designation: 'Pattern Master' },
+      { name: 'Danish Raza', designation: 'Content Strategist' }
+    ].map((member, index) => (
+      <div className="col-6 col-sm-4 col-md-3 col-lg-2" key={index}>
+        <img
+          src="https://via.placeholder.com/100"
+          alt={member.name}
+          className="img-fluid rounded-circle team-image"
+        />
+        <h6 className="mt-2 mb-1">{member.name}</h6>
+        <p className="text-muted small">{member.designation}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
       <Footer/>
     </>
   )

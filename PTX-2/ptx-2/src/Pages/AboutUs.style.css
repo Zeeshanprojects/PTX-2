@@ -90,8 +90,23 @@
       .storyimage:hover {
         transform: scale(1.02);
       }
+
+      .team-image {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border: 3px solid #ddd;
+      }
+  @media (min-width:576px) and (max-width:767px){
+    .ceocontent{
+      text-align: center !important;
+    }
+  }
  @media (max-width:575px) {
   .percentageheading{
     font-size: 15px !important;
+  }
+   .ceocontent{
+    text-align: center!important;
   }
  }
