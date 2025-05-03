@@ -2,9 +2,12 @@ body{
     overflow-x: hidden;
 }
 
-.carousel-item img{
-    margin-top: 30px !important;
-height: 100vh !important;width: 100vw !important;;object-fit: cover !important;
+.carousel-item img {
+  margin-top: 30px !important;
+  width: 100% !important;
+  height: 100vh !important;
+  display: block !important;
+  object-fit: cover;
 }
 .carousel-caption{
     position: absolute; top: 5%;left: 50%;
@@ -249,6 +252,8 @@ a{  text-decoration: none !important;}
   justify-content: center;
   align-items: center;
 }
+
+
 @media (min-width:768px) and (max-width:991px) {
   .sectionimage {
     padding: 0 !important;
@@ -260,6 +265,11 @@ a{  text-decoration: none !important;}
   }
 }
 @media (min-width:576px) and (max-width:767px) {
+  .carousel-item img{
+    height: 50vh !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
   .sectionimage {
     padding: 0 !important;
     margin: 0 !important;
@@ -280,12 +290,9 @@ a{  text-decoration: none !important;}
     display: block;
   }
  
-  /* .blogs-img{
-    padding: 0 !important;
-    margin: 0 !important;
+  .carousel-item img{
+    height: 50vh !important;
     width: 100% !important;
-    height: auto !important;
     object-fit: cover !important;
-    display: block ;
-  } */
+  }
 }
