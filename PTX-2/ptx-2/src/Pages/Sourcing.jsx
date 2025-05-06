@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import React from "react";
 import Images from "../Images/Image";
 import Footer from "../Components/Footer";
+import ScrollReveal from "../Components/ScrollReveal";
 export default function Sourcing() {
   useEffect(() => {
     document.title = "Sourcing | Pakistan Textile Exchange ";
@@ -21,8 +22,8 @@ export default function Sourcing() {
 </div>
       
       <div className="space"> </div>
- 
-      <div className="container">
+ <ScrollReveal>
+ <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div className="card-body bg-transparent">
@@ -82,6 +83,8 @@ export default function Sourcing() {
       </div>
 
       <div className="space"></div>
+ </ScrollReveal>
+     
       <Footer/>
     </>
   );

@@ -4,6 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Team.style.css';
 import Footer from '../Components/Footer';
+import ScrollReveal from '../Components/ScrollReveal';
 
 export default function Teams() {
   const [teamData, setTeamData] = useState([]);
@@ -25,6 +26,7 @@ export default function Teams() {
 
   return (
     <>
+    
       <div className="space"></div>
       <div className="space"></div>
       <h1 className="text-center">MEET THE TEAM</h1>
@@ -36,7 +38,8 @@ export default function Teams() {
           </div>
         </div>
       ) : (
-        <div className="container mt-5">
+        <ScrollReveal>
+           <div className="container mt-5">
           <div className="row text-center g-4">
             {teamData.map((member, index) => (
               <div className="col-6 col-sm-4 col-md-3 col-lg-2" key={index}>
@@ -53,6 +56,8 @@ export default function Teams() {
             ))}
           </div>
         </div>
+        </ScrollReveal>
+       
       )}
 
       <Footer />

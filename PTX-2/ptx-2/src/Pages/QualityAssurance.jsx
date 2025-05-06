@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import React from "react";
 import Images from "../Images/Image";
 import Footer from "../Components/Footer";
+import ScrollReveal from "../Components/ScrollReveal";
 
 export default function QualityAssurance() {
   useEffect(() => {
@@ -21,18 +22,11 @@ export default function QualityAssurance() {
       <h1 className="mt-5 text-center">SERVICES / QUALITY ASSURANCE</h1>
     
       </div>
-  
-      <div className="space"></div>
+  <ScrollReveal>
+  <div className="space"></div>
       <div className="container">
         <div className="row">
-          {/* <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-            <img
-              src={Images.service2}
-              class="img-fluid h-100"
-              alt="..."
-              loading="lazy"
-            />
-          </div> */}
+         
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div className="card-body bg-white">
               <h2 className="card-title service">
@@ -102,6 +96,8 @@ export default function QualityAssurance() {
           </div>
         </div>
       </div>
+  </ScrollReveal>
+     
       <div className="space"></div>
 
    <Footer/>

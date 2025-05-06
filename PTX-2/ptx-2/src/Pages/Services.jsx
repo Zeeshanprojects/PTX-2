@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Services.style.css";
 import Footer from "../Components/Footer";
 
+
 export default function Services() {
   useEffect(() => {
     document.title = "Services | Pakistan Textile Exchange ";
@@ -14,6 +15,7 @@ export default function Services() {
       </div>
 
       <br />
+     
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
@@ -70,8 +72,8 @@ export default function Services() {
               </div>
             </div>
           </div>
-
-          <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
+      
+        <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
             <div className="service-card h-100 d-flex flex-column">
               <div className="service-card-body d-flex flex-column flex-grow-1">
                 <h6 className="service-card-title">SOURCING</h6>
@@ -89,6 +91,8 @@ export default function Services() {
               </div>
             </div>
           </div>
+      
+         
 
 
           <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
@@ -114,6 +118,8 @@ export default function Services() {
 
   
       </div>
+   
+     
       <div className="space"></div>
       <Footer />
     </>

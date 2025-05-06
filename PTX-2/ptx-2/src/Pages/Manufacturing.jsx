@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import React from "react";
 import Images from "../Images/Image";
 import Footer from "../Components/Footer";
+import ScrollReveal from "../Components/ScrollReveal";
 
 export default function Manufacturing() {
   useEffect(() => {
@@ -17,12 +18,13 @@ export default function Manufacturing() {
   };
   return (
     <>
+    
       <div className="background-color">
       <h1 className="mt-5 text-center">SERVICES / MANUFACTURING</h1>
       
       </div>
  
-
+      <ScrollReveal>
       <div className="space"></div>
       <div className="container">
         <div className="row">
@@ -77,6 +79,8 @@ export default function Manufacturing() {
           </div>
         </div>
       </div>
+      </ScrollReveal>
+     
       <br />
  <Footer/>
     </>

@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Components/Footer";
 import './Search.style.css';
+import ScrollReveal from "../Components/ScrollReveal";
 
 export default function Search() {
   useEffect(() => {
@@ -34,6 +35,7 @@ export default function Search() {
 
   return (
     <>
+    
       <div className="space"></div>
       <div className="space"></div>
 
@@ -48,6 +50,7 @@ export default function Search() {
         />
       </div>
 
+      <ScrollReveal>
       <div className="container-fluid mt-4">
         <div className="row">
           {loading ? (
@@ -84,6 +87,8 @@ export default function Search() {
           )}
         </div>
       </div>
+      </ScrollReveal>
+      
 
       <Footer />
     </>

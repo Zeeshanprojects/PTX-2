@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./Gallery.style.css";
 
+
 export default function OutwearGallery() {
   const [outwearImages, setOutwearImages] = useState([]);
   const [loading, setLoading] = useState(true); // State for loading
@@ -32,12 +33,13 @@ export default function OutwearGallery() {
 
   return (
     <>
+
       <div className="background-color">
         <h1 className="mt-5 text-center">OUTWEAR GALLERY</h1>
       </div>
       <br />
-
-      {/* Navigation Tabs */}
+      
+        {/* Navigation Tabs */}
       <ul className="nav justify-content-center gallery-tabs color">
         {navLinks.map((link) => (
           <li className="nav-item" key={link.name}>
@@ -47,6 +49,8 @@ export default function OutwearGallery() {
           </li>
         ))}
       </ul>
+     
+      
 
       {/* Displaying Loading Spinner or Images */}
       <div className="container-fluid mt-4">
@@ -57,8 +61,10 @@ export default function OutwearGallery() {
 </div>
           
           </div>
+      
         ) : (
-          <div className="row">
+      
+             <div className="row">
             {outwearImages.map((item, index) => (
               <div className="col-md-4 mb-4" key={index}>
                 <div className="gallery-card">
@@ -68,6 +74,8 @@ export default function OutwearGallery() {
               </div>
             ))}
           </div>
+       
+         
         )}
       </div>
     </>

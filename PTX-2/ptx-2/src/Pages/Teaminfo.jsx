@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Footer from '../Components/Footer';
+import ScrollReveal from '../Components/ScrollReveal';
 
 export default function Teaminfo() {
   const { slug } = useParams();
@@ -38,7 +39,8 @@ export default function Teaminfo() {
 
   return (
     <>
-      <div className="space"></div>
+    <ScrollReveal>
+    <div className="space"></div>
       <div className="space"></div>
       <div className="space"></div>
       <div className="container">
@@ -61,6 +63,8 @@ export default function Teaminfo() {
           </div>
         </div>
       </div>
+    </ScrollReveal>
+     
       <Footer />
     </>
   );
