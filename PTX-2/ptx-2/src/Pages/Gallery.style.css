@@ -79,4 +79,8 @@
 .color{
   color: black !important;
   font-size:large !important;
+
+}
+.color:hover{
+  color: black !important;
 }

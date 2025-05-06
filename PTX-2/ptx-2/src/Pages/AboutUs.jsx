@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import Image from '../Images/Image';
 import "./AboutUs.style.css";
 import Footer from '../Components/Footer';
 
 export default function AboutUs() {
-  // State to store the team data
-  
-
-  return (
+ 
+ return (
     <>
       <div className='background-color'>
         <h1 className="text-center">WHO WE ARE</h1>
@@ -48,7 +44,10 @@ export default function AboutUs() {
         <div className="row g-4">
           <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="service-card sp-4 h-100">
+             
               <div className="service-card-body">
+           <img src={Image.step1} alt='1' className='steps'/>
+           <br/><br/>
                 <h6 className="custom-card-title">Design</h6>
                 <p className="service-card-text">
                   We craft innovative and trend-forward designs that blend creativity with functionality, ensuring every garment reflects the perfect balance of style and comfort.
@@ -60,6 +59,8 @@ export default function AboutUs() {
           <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="service-card p-4 h-100">
               <div className="service-card-body">
+              <img src={Image.step2} alt='2' className='steps'/>
+              <br/><br/>
                 <h6 className="custom-card-title">Materials & Manufacturing</h6>
                 <p className="service-card-text">
                   We source high-quality fabrics and employ advanced manufacturing techniques to create durable and premium clothing with a strong focus on sustainability.
@@ -71,6 +72,8 @@ export default function AboutUs() {
           <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="service-card p-4 h-100">
               <div className="service-card-body">
+              <img src={Image.step3} alt='3' className='steps'/>
+         <br/><br/>
                 <h6 className="custom-card-title">Delivering</h6>
                 <p className="service-card-text">
                   With a streamlined logistics network, we ensure timely and secure delivery of our textile products with efficiency and excellence.

@@ -41,9 +41,8 @@
     text-align: start !important;
   }
   .service-card {
-    background-color: #f8f9fa; /* Lightest gray */
     border-radius: 12px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15) !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -65,7 +64,10 @@
     margin-bottom: 15px;
     color: #212529;
   }
-  
+  .steps{
+    height: 50px;
+    width: 50px;
+  }
   .service-card-text {
     font-size: 0.95rem;
     color: #444;
