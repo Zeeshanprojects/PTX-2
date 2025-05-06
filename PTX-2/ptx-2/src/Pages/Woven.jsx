@@ -41,7 +41,7 @@ export default function WovenGallery() {
       <ul className="nav justify-content-center gallery-tabs color">
         {navLinks.map((link) => (
           <li className="nav-item" key={link.name}>
-            <Link className="nav-link color" to={link.path}>
+            <Link className="nav-link color text-muted" to={link.path}>
               {link.name}
             </Link>
           </li>
@@ -52,7 +52,7 @@ export default function WovenGallery() {
       {loading ? (
         <div className="d-flex justify-content-center mt-5">
           <div className="spinner-border" style={{ width: "3rem", height: "3rem" }} role="status">
-            <span className="visually-hidden">Loading...</span>
+            <span className="visually-hidden ">Loading...</span>
           </div>
 
         </div>

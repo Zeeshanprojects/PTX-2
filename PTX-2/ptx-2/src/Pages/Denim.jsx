@@ -11,12 +11,13 @@ export default function DenimGallery() {
     document.title = "Denim Gallery | Pakistan Textile Exchange";
 
     // Fetch denim gallery data from backend
-    axios.get("https://ptxapi.io/api/denim")
-      .then(response => {
+    axios
+      .get("https://ptxapi.io/api/denim")
+      .then((response) => {
         setDenimImages(response.data);
         setLoading(false); // Set loading to false once data is fetched
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("Error fetching denim data:", error);
         setLoading(false); // Set loading to false even if there's an error
       });
@@ -41,7 +42,7 @@ export default function DenimGallery() {
       <ul className="nav justify-content-center gallery-tabs color">
         {navLinks.map((link) => (
           <li className="nav-item" key={link.name}>
-            <Link className="nav-link color" to={link.path}>
+            <Link className="nav-link color text-muted" to={link.path}>
               {link.name}
             </Link>
           </li>
@@ -51,7 +52,11 @@ export default function DenimGallery() {
       {/* Loading Spinner */}
       {loading ? (
         <div className="d-flex justify-content-center mt-5">
-          <div className="spinner-border" style={{ width: "3rem", height: "3rem" }} role="status">
+          <div
+            className="spinner-border"
+            style={{ width: "3rem", height: "3rem" }}
+            role="status"
+          >
             <span className="visually-hidden">Loading...</span>
           </div>
         </div>
@@ -63,7 +68,9 @@ export default function DenimGallery() {
               <div className="col-md-4 mb-4" key={index}>
                 <div className="gallery-card">
                   <img src={item.url} alt={`Denim-${index}`} />
-                  <h2 className="hover-caption text-align-center">{item.title}</h2>
+                  <h2 className="hover-caption text-align-center">
+                    {item.title}
+                  </h2>
                 </div>
               </div>
             ))}

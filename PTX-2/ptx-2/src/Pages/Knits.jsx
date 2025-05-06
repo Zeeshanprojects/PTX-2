@@ -41,7 +41,7 @@ export default function KnitsGallery() {
       <ul className="nav justify-content-center gallery-tabs color">
         {navLinks.map((link) => (
           <li className="nav-item" key={link.name}>
-            <Link className="nav-link color" to={link.path}>
+            <Link className="nav-link color text-muted" to={link.path}>
               {link.name}
             </Link>
           </li>

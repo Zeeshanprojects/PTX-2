@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import Image from "../Images/Image";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,7 +11,7 @@ import {
 import "./Header.style.css";
 
 export default function Header() {
-  const navigate = useNavigate();
+
 
   // Function to close the navbar on small screens
   const closeNavbar = () => {

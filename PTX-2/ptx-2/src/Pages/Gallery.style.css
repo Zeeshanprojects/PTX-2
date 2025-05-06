@@ -23,7 +23,7 @@
   background-color: #ccc;
   color: black;
 }
-.gallery-card {
+/* .gallery-card {
   aspect-ratio: 4 / 3;
   position: relative;
   border-radius: 12px;
@@ -31,14 +31,33 @@
   background: #fff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
+} */
+
+.gallery-card {
+  aspect-ratio: auto;
+  height: 500px; /* Vertically big */
+  position: relative;
+  border-radius: 0; /* Remove rounded corners */
+  overflow: hidden;
+  background: #fff;
+  box-shadow: none; /* Remove shadow if needed */
+  transition: transform 0.3s ease;
+  margin: 0; /* Remove margin */
 }
 
+/* .gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+} */
 .gallery-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
+
 
 .gallery-card:hover img {
   transform: scale(1.08);
@@ -76,11 +95,10 @@
   opacity: 1;
   transform: translateY(0);
 }
-.color{
+.color {
   color: black !important;
-  font-size:large !important;
-
+  font-size: large !important;
 }
-.color:hover{
+.color:hover {
   color: black !important;
 }
