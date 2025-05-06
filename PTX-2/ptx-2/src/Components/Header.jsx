@@ -100,15 +100,7 @@ export default function Header() {
                   GALLERY
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  to="/team"
-                  onClick={closeNavbar}
-                >
-                  TEAM
-                </Link>
-              </li>
+           
               <li className="nav-item">
                 <Link
                   className="nav-link active"

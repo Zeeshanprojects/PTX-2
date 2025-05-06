@@ -20,8 +20,8 @@ export default function LookBook1() {
       }}
     >
       <object
-        data="/Docs/Zeeshan-CV.pdf"
-        type="application/pdf"
+        data="/Docs/dummy.pdf"
+        type="document/pdf"
         width="100%"
         height="100%"
         style={{

@@ -51,6 +51,7 @@ export default function Teams() {
                   />
                   <h6 className="mt-2 mb-1">{member.name}</h6>
                   <p className="text-muted small">{member.designation}</p>
+          
                 </Link>
               </div>
             ))}

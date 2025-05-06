@@ -75,8 +75,8 @@ function AppContent() {
             <Route path="/woven" element={<WovenGallery />} />
             <Route path="/outwear" element={<OutwearGallery />} />
             <Route path="/team" element={<Teams />} />
-            <Route path="/team/:slug" element={<Teaminfo />} />
-            <Route path="/inquireform" element={<Inquireform />} />
+<Route path="/team/:slug" element={<Teaminfo />} />        
+  <Route path="/inquireform" element={<Inquireform />} />
             <Route path="/Product" element={<Product />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/Contactus" element={<ContactUs />} />

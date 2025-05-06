@@ -84,13 +84,7 @@ export default function Footer() {
                       Home
                     </Link>
                   </p>
-                  <p>
-                    <Link to="/Product" className="text-dark">
-                      Product
-                    </Link>
-                  </p>
-                 
-                 
+                
                   <p>
                     <Link to="/LookBook-V1" className="text-dark">
                       LOOKBOOK

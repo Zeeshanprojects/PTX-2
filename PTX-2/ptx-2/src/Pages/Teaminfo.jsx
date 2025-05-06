@@ -45,18 +45,38 @@ export default function Teaminfo() {
       <div className="space"></div>
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-md-5 text-center">
-            <img
-              src={member.image}
-              className="team-image"
-              alt={member.name}
-              width="150"
-              height="150"
-            />
-            <h4 className="mt-3">{member.name}</h4>
-            <p className="text-muted">{member.designation}</p>
-          </div>
+        <div className="col-md-5 text-center">
+  <div className="p-4 shadow rounded bg-light">
+    <img
+      src={member.image}
+      className="team-image rounded-circle shadow"
+      alt={member.name}
+      width="150"
+      height="150"
+    />
+    <h4 className="mt-3 fw-bold">{member.name}</h4>
+    <p className="text-muted mb-2">{member.designation}</p>
 
+    {member.email && (
+      <p className="text-muted mb-1">
+        <i className="bi bi-envelope me-2"></i>{member.email}
+      </p>
+    )}
+
+    {member.phone && (
+      <p className="text-muted mb-1">
+        <i className="bi bi-telephone me-2"></i>{member.phone}
+      </p>
+    )}
+
+    {member.address && (
+      <p className="text-muted mt-3">
+        <i className="bi bi-geo-alt me-2"></i>{member.address}
+      </p>
+    )}
+  </div>
+</div>
+ 
           <div className="col-md-7">
             <h3 className="fw-bold ceocontent">About</h3>
             <p className="text-muted ceocontent">{member.description}</p>
