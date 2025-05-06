@@ -3,6 +3,7 @@ import React from "react";
 import Images from "../Images/Image";
 import Footer from "../Components/Footer";
 import ScrollReveal from "../Components/ScrollReveal";
+
 export default function Studio() {
   useEffect(() => {
     document.title = "Studio | Pakistan Textile Exchange";
@@ -23,7 +24,8 @@ export default function Studio() {
        
      <ScrollReveal>
      <div className="space"></div>
-      <div className="container">
+
+     <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div className="card-body bg-transparent">
@@ -78,8 +80,10 @@ export default function Studio() {
           </div>
         </div>
       </div>
-      <div className="space"></div>
      </ScrollReveal>
+     
+      <div className="space"></div>
+    
      
 <Footer/>
     </>

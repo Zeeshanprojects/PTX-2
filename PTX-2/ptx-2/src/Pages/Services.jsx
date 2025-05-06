@@ -2,12 +2,13 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Services.style.css";
 import Footer from "../Components/Footer";
-
+import ScrollReveal from "../Components/ScrollReveal"; // make sure this component is set up
 
 export default function Services() {
   useEffect(() => {
     document.title = "Services | Pakistan Textile Exchange ";
   });
+
   return (
     <>
       <div className="background-color">
@@ -15,111 +16,122 @@ export default function Services() {
       </div>
 
       <br />
-     
       <div className="container">
         <div className="row">
+
+          {/* MANUFACTURING */}
           <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
-            <div className="service-card h-100 d-flex flex-column">
-              <div className="service-card-body d-flex flex-column flex-grow-1">
-                <h6 className="service-card-title">MANUFACTURING</h6>
-                <p className="service-card-text ">
-                  We ensure premium fabric selection, advanced stitching
-                  techniques, and strict quality control to deliver superior
-                  textile products.
-                </p>
-                <br />
-                <Link to="/Manufacturing" className="mt-auto">
-                  <button type="button" className="btn btn-outline-dark">
-                    Read More
-                  </button>
-                </Link>
+            <ScrollReveal>
+              <div className="service-card h-100 d-flex flex-column">
+                <div className="service-card-body d-flex flex-column flex-grow-1">
+                  <h6 className="service-card-title">MANUFACTURING</h6>
+                  <p className="service-card-text">
+                    We ensure premium fabric selection, advanced stitching
+                    techniques, and strict quality control to deliver superior
+                    textile products.
+                  </p>
+                  <br />
+                  <Link to="/Manufacturing" className="mt-auto">
+                    <button type="button" className="btn btn-outline-dark">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
+
+          {/* QUALITY ASSURANCE */}
           <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
-            <div className="service-card h-100 d-flex flex-column">
-              <div className="service-card-body d-flex flex-column flex-grow-1">
-                <h6 className="service-card-title">QUALITY ASSURANCE</h6>
-                <p className="service-card-text">
-                  Our rigorous inspection processes guarantee that every fabric
-                  and garment meets durability, resilience, comfort, and
-                  industry benchmarks.
-                </p>
-                <br />
-                <Link to="/QualityAssurance" className="mt-auto">
-                  <button type="button" className="btn btn-outline-dark">
-                    Read More
-                  </button>
-                </Link>
+            <ScrollReveal>
+              <div className="service-card h-100 d-flex flex-column">
+                <div className="service-card-body d-flex flex-column flex-grow-1">
+                  <h6 className="service-card-title">QUALITY ASSURANCE</h6>
+                  <p className="service-card-text">
+                    Our rigorous inspection processes guarantee that every fabric
+                    and garment meets durability, resilience, comfort, and
+                    industry benchmarks.
+                  </p>
+                  <br />
+                  <Link to="/QualityAssurance" className="mt-auto">
+                    <button type="button" className="btn btn-outline-dark">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
+
+          {/* LOGISTICS */}
           <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
-            <div className="service-card h-100 d-flex flex-column">
-              <div className="service-card-body d-flex flex-column flex-grow-1">
-                <h6 className="service-card-title">LOGISTICS</h6>
-                <p className="service-card-text mt-2">
-                  From warehousing to distribution, we manage efficient
-                  logistics to ensure smooth, on-time shipments across global
-                  markets.
-                </p>
-                <br />
-                <Link to="/Logistics" className="mt-auto ">
-                  <button type="button" className="btn btn-outline-dark">
-                    Read More
-                  </button>
-                </Link>
+            <ScrollReveal>
+              <div className="service-card h-100 d-flex flex-column">
+                <div className="service-card-body d-flex flex-column flex-grow-1">
+                  <h6 className="service-card-title">LOGISTICS</h6>
+                  <p className="service-card-text mt-2">
+                    From warehousing to distribution, we manage efficient
+                    logistics to ensure smooth, on-time shipments across global
+                    markets.
+                  </p>
+                  <br />
+                  <Link to="/Logistics" className="mt-auto ">
+                    <button type="button" className="btn btn-outline-dark">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
-      
-        <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
-            <div className="service-card h-100 d-flex flex-column">
-              <div className="service-card-body d-flex flex-column flex-grow-1">
-                <h6 className="service-card-title">SOURCING</h6>
-                <p className="service-card-text mt-2">
-                We procure premium fabrics and raw materials from trusted
+
+          {/* SOURCING */}
+          <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
+            <ScrollReveal>
+              <div className="service-card h-100 d-flex flex-column">
+                <div className="service-card-body d-flex flex-column flex-grow-1">
+                  <h6 className="service-card-title">SOURCING</h6>
+                  <p className="service-card-text mt-2">
+                    We procure premium fabrics and raw materials from trusted
                     suppliers to meet the evolving demands of the fashion
                     industry.
-                </p>
-                <br />
-                <Link to="/Sourcing" className="mt-auto ">
-                  <button type="button" className="btn btn-outline-dark">
-                    Read More
-                  </button>
-                </Link>
+                  </p>
+                  <br />
+                  <Link to="/Sourcing" className="mt-auto ">
+                    <button type="button" className="btn btn-outline-dark">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
-      
-         
 
-
+          {/* STUDIO */}
           <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
-            <div className="service-card h-100 d-flex flex-column">
-              <div className="service-card-body d-flex flex-column flex-grow-1">
-                <h6 className="service-card-title">STUDIO</h6>
-                <p className="service-card-text mt-2">
-                Our creative studio brings unique textile concepts to life
+            <ScrollReveal>
+              <div className="service-card h-100 d-flex flex-column">
+                <div className="service-card-body d-flex flex-column flex-grow-1">
+                  <h6 className="service-card-title">STUDIO</h6>
+                  <p className="service-card-text mt-2">
+                    Our creative studio brings unique textile concepts to life
                     with trend-driven designs, custom patterns, and branding
                     solutions.
-                </p>
-                <br />
-                <Link to="/Studio" className="mt-auto ">
-                  <button type="button" className="btn btn-outline-dark">
-                    Read More
-                  </button>
-                </Link>
+                  </p>
+                  <br />
+                  <Link to="/Studio" className="mt-auto ">
+                    <button type="button" className="btn btn-outline-dark">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
+
         </div>
-
-
-  
       </div>
-   
-     
+
       <div className="space"></div>
       <Footer />
     </>

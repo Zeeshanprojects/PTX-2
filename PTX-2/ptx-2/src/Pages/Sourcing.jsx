@@ -20,9 +20,9 @@ export default function Sourcing() {
 <div className="background-color">
 <h1 className="mt-5 text-center">SERVICES / SOURCING</h1>
 </div>
-      
+<ScrollReveal>
       <div className="space"> </div>
- <ScrollReveal>
+
  <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
