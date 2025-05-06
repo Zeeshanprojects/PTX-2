@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Services.style.css";
 import Footer from "../Components/Footer";
-import ScrollReveal from "../Components/ScrollReveal"; // make sure this component is set up
+
 
 export default function Services() {
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function Services() {
 
           {/* MANUFACTURING */}
           <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
-            <ScrollReveal>
+            
               <div className="service-card h-100 d-flex flex-column">
                 <div className="service-card-body d-flex flex-column flex-grow-1">
                   <h6 className="service-card-title">MANUFACTURING</h6>
@@ -38,12 +38,12 @@ export default function Services() {
                   </Link>
                 </div>
               </div>
-            </ScrollReveal>
+          
           </div>
 
           {/* QUALITY ASSURANCE */}
           <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
-            <ScrollReveal>
+            
               <div className="service-card h-100 d-flex flex-column">
                 <div className="service-card-body d-flex flex-column flex-grow-1">
                   <h6 className="service-card-title">QUALITY ASSURANCE</h6>
@@ -60,12 +60,12 @@ export default function Services() {
                   </Link>
                 </div>
               </div>
-            </ScrollReveal>
+            
           </div>
 
           {/* LOGISTICS */}
           <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
-            <ScrollReveal>
+            
               <div className="service-card h-100 d-flex flex-column">
                 <div className="service-card-body d-flex flex-column flex-grow-1">
                   <h6 className="service-card-title">LOGISTICS</h6>
@@ -82,12 +82,12 @@ export default function Services() {
                   </Link>
                 </div>
               </div>
-            </ScrollReveal>
+            
           </div>
 
           {/* SOURCING */}
           <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
-            <ScrollReveal>
+            
               <div className="service-card h-100 d-flex flex-column">
                 <div className="service-card-body d-flex flex-column flex-grow-1">
                   <h6 className="service-card-title">SOURCING</h6>
@@ -104,12 +104,12 @@ export default function Services() {
                   </Link>
                 </div>
               </div>
-            </ScrollReveal>
+            
           </div>
 
           {/* STUDIO */}
           <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5">
-            <ScrollReveal>
+            
               <div className="service-card h-100 d-flex flex-column">
                 <div className="service-card-body d-flex flex-column flex-grow-1">
                   <h6 className="service-card-title">STUDIO</h6>
@@ -126,7 +126,7 @@ export default function Services() {
                   </Link>
                 </div>
               </div>
-            </ScrollReveal>
+            
           </div>
 
         </div>

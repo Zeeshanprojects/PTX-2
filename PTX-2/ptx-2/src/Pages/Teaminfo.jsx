@@ -4,7 +4,7 @@ import axios from "axios";
 import Footer from "../Components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import ScrollReveal from "../Components/ScrollReveal";
+
 
 export default function Teaminfo() {
   const { slug } = useParams();
@@ -45,7 +45,7 @@ export default function Teaminfo() {
 
   return (
     <>
-      <ScrollReveal>
+
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
@@ -92,7 +92,7 @@ export default function Teaminfo() {
             </div>
           </div>
         </div>
-      </ScrollReveal>
+ 
 
       <Footer />
     </>

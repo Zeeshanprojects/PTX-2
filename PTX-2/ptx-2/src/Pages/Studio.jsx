@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import React from "react";
 import Images from "../Images/Image";
 import Footer from "../Components/Footer";
-import ScrollReveal from "../Components/ScrollReveal";
+
 
 export default function Studio() {
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function Studio() {
      <h1 className="mt-5 text-center">SERVICES / STUDIO</h1>
      </div>
        
-     <ScrollReveal>
+ 
      <div className="space"></div>
 
      <div className="container">
@@ -80,7 +80,7 @@ export default function Studio() {
           </div>
         </div>
       </div>
-     </ScrollReveal>
+
      
       <div className="space"></div>
     

@@ -4,7 +4,7 @@ import Image from "../Images/Image";
 import "./Home.style.css";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
-import ScrollReveal from "../Components/ScrollReveal";
+
 
 export default function Home() {
 
@@ -141,13 +141,14 @@ useEffect(()=>{
         </Link>
       </div>
       <div className="space"></div>
-      <ScrollReveal>
+ 
       <h1 className="text-center">BUILDING STRONG RELATIONSHIP</h1>
       <div className="space"></div>
 
       <div className="container-fluid">
   <div className="row g-4">
     <div className="col-sm-12 col-md-6 col-lg-3">
+     
       <div className="relationship-card ">
       <i className="fas fa-industry relationship-icon"></i>
       
@@ -159,10 +160,12 @@ useEffect(()=>{
           knitting, dying, finishing, printing, laundry to pack.
         </p>
       </div>
+
     </div>
 
     <div className="col-sm-12 col-md-6 col-lg-3">
       <div className="relationship-card ">
+  
       <i className="fas fa-check-circle relationship-icon"></i>
         <h5>
           Quality Assurance
@@ -202,12 +205,12 @@ useEffect(()=>{
     </div>
   </div>
 </div>
-      </ScrollReveal>
+      
     
 
      
       <div className="space"></div>
-      <ScrollReveal>
+     
       <h1 className="text-center">LATEST PRODUCTS</h1>
      
      <div className="container latest-products-section ">
@@ -264,11 +267,11 @@ useEffect(()=>{
    </div>
  </div>
 </div>
-      </ScrollReveal>
+    
     
 
       <div className="space"></div>
- <ScrollReveal>
+
  <div className="container-fluid p-0">
         <div className="content-card ">
           <p className="card-text">WHO WE ARE?</p>
@@ -285,9 +288,9 @@ useEffect(()=>{
           </Link>
         </div>
       </div>
- </ScrollReveal>
+
     
-<ScrollReveal>
+
 <div className="space"></div>
       <h1 className="text-center">BLOGS</h1>
       <div className="space"></div>
@@ -326,9 +329,7 @@ useEffect(()=>{
         </div>
       </div>
     </div>
-</ScrollReveal>
-      
-   <ScrollReveal>
+
    <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <img
           src={Image.sectionimage}
@@ -336,7 +337,7 @@ useEffect(()=>{
           alt="sectionimage"
         />
       </div>
-   </ScrollReveal>
+
     
 
       <Footer />

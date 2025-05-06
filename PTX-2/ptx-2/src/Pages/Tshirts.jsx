@@ -3,7 +3,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Footer from "../Components/Footer";
-import ScrollReveal from "../Components/ScrollReveal";
 
 export default function Tshirts() {
   useEffect(() => {
@@ -128,7 +127,7 @@ export default function Tshirts() {
               </div>
             </div>
           )}
-<ScrollReveal>
+
 <div className={showSidebar ? "col-md-9" : "col-md-12"}>
             <div className="row">
               {filteredProducts.length > 0 ? (
@@ -155,7 +154,7 @@ export default function Tshirts() {
               )}
             </div>
           </div>
-</ScrollReveal>
+
         
         </div>
       </div>

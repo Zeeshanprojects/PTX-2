@@ -1,7 +1,7 @@
 import Image from '../Images/Image';
 import "./AboutUs.style.css";
 import Footer from '../Components/Footer';
-import ScrollReveal from '../Components/ScrollReveal';
+
 
 export default function AboutUs() {
  
@@ -10,7 +10,7 @@ export default function AboutUs() {
       <div className='background-color'>
         <h1 className="text-center">WHO WE ARE</h1>
       </div>
-<ScrollReveal>
+
 <div className="container my-5">
         <div className="row align-items-stretch g-4">
           <div className="col-sm-12 col-md-6">
@@ -37,9 +37,8 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-</ScrollReveal>
-     
-<ScrollReveal>
+
+
 <div className="space"></div>
       <h1 className="text-center">FROM DESIGN TO DELIVERY</h1>
       <br />
@@ -86,9 +85,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-</ScrollReveal>
-     
-<ScrollReveal>
+
 <div className="space"></div>
       <div className="content-card py-5">
         <div className="container">
@@ -148,9 +145,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-</ScrollReveal>
-      
-<ScrollReveal>
+
 <div className="space"></div>
       <div className="container">
         <div className="row align-items-center">
@@ -179,7 +174,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-</ScrollReveal>
+
     
 <Footer />  
 

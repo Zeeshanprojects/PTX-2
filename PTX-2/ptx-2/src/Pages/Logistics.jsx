@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import React from "react";
 import Images from "../Images/Image";
 import Footer from "../Components/Footer";
-import ScrollReveal from "../Components/ScrollReveal";
+
 export default function Logistics() {
   useEffect(() => {
     document.title = "Logistics | Pakistan Textile Exchange ";
@@ -20,7 +20,7 @@ export default function Logistics() {
       <div className="background-color">
         <h1 className="mt-5 text-center">SERVICES / LOGISTICS</h1>
       </div>
-<ScrollReveal>
+
 <div className="space"></div>
       <div className="container">
         <div className="row">
@@ -76,7 +76,7 @@ export default function Logistics() {
           </div>
         </div>
       </div>
-</ScrollReveal>
+
     
       <div className="space"></div>
 

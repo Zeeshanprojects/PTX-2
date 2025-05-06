@@ -2,14 +2,14 @@ import { useEffect } from "react";
 import React from "react";
 import Footer from "../Components/Footer";
 import './PrivacyPolicy.style.css'
-import ScrollReveal from "../Components/ScrollReveal";
+
 export default function PrivacyPolicy() {
     useEffect(()=>{
       document.title="Privacy Policy | Pakistan Textile Exchnage"
     })
   return (
     <>
-    <ScrollReveal>
+
     <div className="space"></div>
       <div className="content-container">
         <h1 className="text-center pt-5">Privacy Policy</h1>
@@ -261,7 +261,7 @@ export default function PrivacyPolicy() {
     <h3>Contact</h3>
     <p>Should you have any questions about our privacy practices or this Privacy Policy, or if you would like to exercise any of the rights available to you, please email us at blanks@cottoncollective.org or contact us at Cotton Collective, 1855 Dornoch Ct, San Diego, CA 92154, United States.</p>
       </div>
-    </ScrollReveal>
+   
      
       <Footer/>
     </>
