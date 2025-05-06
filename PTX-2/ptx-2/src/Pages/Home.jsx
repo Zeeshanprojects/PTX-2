@@ -4,6 +4,7 @@ import Image from "../Images/Image";
 import "./Home.style.css";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
+import ScrollReveal from "../Components/ScrollReveal";
 
 export default function Home() {
 
@@ -140,7 +141,7 @@ useEffect(()=>{
         </Link>
       </div>
       <div className="space"></div>
-      
+      <ScrollReveal>
       <h1 className="text-center">BUILDING STRONG RELATIONSHIP</h1>
       <div className="space"></div>
 
@@ -201,69 +202,74 @@ useEffect(()=>{
     </div>
   </div>
 </div>
+      </ScrollReveal>
+    
 
      
       <div className="space"></div>
+      <ScrollReveal>
       <h1 className="text-center">LATEST PRODUCTS</h1>
      
-      <div className="container latest-products-section ">
-  <div className="row">
-    {/* Product 1 */}
-    <div className="col-sm-12 col-md-12 col-lg-4">
-      <div className="product-box">
-        <img
-          src={Image.latestproduct1}
-          className="product-image"
-          alt="PTX Essential"
-        />
-        <div className="product-info">
-          <h3 className="product-title">PTX Essential</h3>
-          <p className="product-description">
-            Our wide range of quality premium essentials
-          </p>
-        </div>
-      </div>
-    </div>
+     <div className="container latest-products-section ">
+ <div className="row">
+   {/* Product 1 */}
+   <div className="col-sm-12 col-md-12 col-lg-4">
+     <div className="product-box">
+       <img
+         src={Image.latestproduct1}
+         className="product-image"
+         alt="PTX Essential"
+       />
+       <div className="product-info">
+         <h3 className="product-title">PTX Essential</h3>
+         <p className="product-description">
+           Our wide range of quality premium essentials
+         </p>
+       </div>
+     </div>
+   </div>
 
-    {/* Product 2 */}
-    <div className="col-sm-12 col-md-12 col-lg-4 ">
-      <div className="product-box">
-        <img
-          src={Image.latestproduct2}
-          className="product-image"
-          alt="PTX Juniors"
-        />
-        <div className="product-info">
-          <h3 className="product-title">PTX Juniors</h3>
-          <p className="product-description">
-            Our new range of essentials for kids
-          </p>
-        </div>
-      </div>
-    </div>
+   {/* Product 2 */}
+   <div className="col-sm-12 col-md-12 col-lg-4 ">
+     <div className="product-box">
+       <img
+         src={Image.latestproduct2}
+         className="product-image"
+         alt="PTX Juniors"
+       />
+       <div className="product-info">
+         <h3 className="product-title">PTX Juniors</h3>
+         <p className="product-description">
+           Our new range of essentials for kids
+         </p>
+       </div>
+     </div>
+   </div>
 
-    {/* Product 3 */}
-    <div className="col-sm-12 col-md-12 col-lg-4">
-      <div className="product-box">
-        <img
-          src={Image.latestproduct3}
-          className="product-image"
-          alt="PTX Denim"
-        />
-        <div className="product-info">
-          <h3 className="product-title">PTX Denim</h3>
-          <p className="product-description">
-            Our collection of classic denim
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+   {/* Product 3 */}
+   <div className="col-sm-12 col-md-12 col-lg-4">
+     <div className="product-box">
+       <img
+         src={Image.latestproduct3}
+         className="product-image"
+         alt="PTX Denim"
+       />
+       <div className="product-info">
+         <h3 className="product-title">PTX Denim</h3>
+         <p className="product-description">
+           Our collection of classic denim
+         </p>
+       </div>
+     </div>
+   </div>
+ </div>
 </div>
+      </ScrollReveal>
+    
 
       <div className="space"></div>
- 
-      <div className="container-fluid p-0">
+ <ScrollReveal>
+ <div className="container-fluid p-0">
         <div className="content-card ">
           <p className="card-text">WHO WE ARE?</p>
           <h1>Pakistan Textile Exchange...</h1>
@@ -279,8 +285,10 @@ useEffect(()=>{
           </Link>
         </div>
       </div>
-
-      <div className="space"></div>
+ </ScrollReveal>
+    
+<ScrollReveal>
+<div className="space"></div>
       <h1 className="text-center">BLOGS</h1>
       <div className="space"></div>
       <div className="container blog-section">
@@ -318,14 +326,18 @@ useEffect(()=>{
         </div>
       </div>
     </div>
-   
-      <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+</ScrollReveal>
+      
+   <ScrollReveal>
+   <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <img
           src={Image.sectionimage}
           className="img-fluid sectionimage"
           alt="sectionimage"
         />
       </div>
+   </ScrollReveal>
+    
 
       <Footer />
     </>
