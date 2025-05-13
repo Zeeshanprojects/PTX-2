@@ -143,7 +143,7 @@ export default function Home() {
       <h1 className="text-center">BUILDING STRONG RELATIONSHIP</h1>
       <div className="space"></div>
 
-      <div className="container-fluid p-1">
+      <div className="container-fluid ">
         <div className="row g-4">
           <div className="col-sm-12 col-md-6 col-lg-3">
             <div className="relationship-card ">
@@ -196,7 +196,7 @@ export default function Home() {
       <div className="space"></div>
 
       <h1 className="text-center">LATEST PRODUCTS</h1>
-
+      <div className="space"></div>
       <div className="container latest-products-section ">
         <div className="row">
           {/* Product 1 */}
@@ -254,7 +254,7 @@ export default function Home() {
 
       <div className="space"></div>
 
-      <div className="container-fluid p-0">
+      <div className="container-fluid ">
         <div className="content-card ">
           <p className="card-text">WHO WE ARE?</p>
           <h1>Pakistan Textile Exchange...</h1>
@@ -270,6 +270,11 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <div className="space"></div>
+        <h1 className="text-center">OUR PRODUCTION UNIT</h1>
+
+
+      <div className="space"></div>
 
       <div className="space"></div>
       <h1 className="text-center">BLOGS</h1>
@@ -336,13 +341,13 @@ export default function Home() {
       <div className="space"></div>
       <div className="space"></div>
 
-      <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+       <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <img
           src={Image.sectionimage}
           className="img-fluid sectionimage"
           alt="sectionimage"
         />
-      </div>
+      </div> 
 
       <Footer />
     </>
