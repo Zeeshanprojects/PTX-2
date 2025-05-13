@@ -225,7 +225,7 @@ const products = [
      <h1 className="text-center">CATEGORIES</h1>
    <br/>
       <div className="container latest-products-section">
-        <div className="row g-5 ">
+        <div className="row g-4 ">
           {products.map((product, index) => (
             <div key={index} className="col-sm-12 col-md-12 col-lg-4">
               <motion.div
@@ -252,6 +252,33 @@ const products = [
       </div>
 
       <div className="space"></div>
+ 
+      <div className="space"></div>
+
+       <div className="container-fluid">
+      <motion.div
+        className="content-card"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.4 }}
+      >
+        <p className="card-text">WHO WE ARE?</p>
+        <h1>Pakistan Textile Exchange...</h1>
+        <p className="card-text">
+          Paktex is a professional apparel sourcing group, providing quality
+          assurance, logistics
+          <br /> to import, retail solutions and social compliance.
+        </p>
+        <Link to="/search">
+          <button type="button" className="btn btn-dark ps-4 pe-4">
+            READY FOR US
+          </button>
+        </Link>
+      </motion.div>
+    </div>
+ 
+ <div className="space"></div>
     <div className="container my-5">
   <div className="row align-items-center">
     {/* Left Column: Text with animation */}
@@ -305,32 +332,6 @@ const products = [
   </div>
 </div>
 
-      <div className="space"></div>
-
-       <div className="container-fluid">
-      <motion.div
-        className="content-card"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true, amount: 0.4 }}
-      >
-        <p className="card-text">WHO WE ARE?</p>
-        <h1>Pakistan Textile Exchange...</h1>
-        <p className="card-text">
-          Paktex is a professional apparel sourcing group, providing quality
-          assurance, logistics
-          <br /> to import, retail solutions and social compliance.
-        </p>
-        <Link to="/search">
-          <button type="button" className="btn btn-dark ps-4 pe-4">
-            READY FOR US
-          </button>
-        </Link>
-      </motion.div>
-    </div>
- 
- <div className="space"></div>
 <h1 className="text-center fw-bold fs-1">BLOGS</h1>
 <div className="space"></div>
 
@@ -339,7 +340,7 @@ const products = [
 
     {/* Blog Card 1 */}
     <motion.div
-      className="col-sm-12 col-md-12 col-lg-5 col-xl-4"
+      className="col-sm-12 col-md-12 col-lg-5 col-xl-6"
       initial={{ opacity: 0, x: -50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6 }}
@@ -367,7 +368,7 @@ const products = [
 
     {/* Blog Card 2 */}
     <motion.div
-      className="col-sm-12 col-md-12 col-lg-5 col-xl-4"
+      className="col-sm-12 col-md-12 col-lg-5 col-xl-6"
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6 }}
@@ -391,28 +392,35 @@ const products = [
           </div>
         </div>
       </Link>
-    </motion.div>
-
-    {/* Highlight Box */}
-    <motion.div
-      className="col-sm-12 col-md-12 col-lg-2 col-xl-4"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7 }}
-      viewport={{ once: true }}
-    >
-      <div className="blog-highlight">
-        <h3 className="highlight-heading">Join Our Style Circle</h3>
-        <p className="highlight-text">
-          Be the first to know about exclusive drops, trends, and insider stories.
-        </p>
-        <button className="highlight-btn">Subscribe Now</button>
-      </div>
-    </motion.div>
+    </motion.div>  
 
   </div>
 </div>
 
+<div className="w-100 py-5" style={{ backgroundColor: "#000" }}>
+  <div className="container text-white text-center">
+    <h2 className="fw-bold mb-3">Subscribe to Our Channel</h2>
+    <p className="mb-4">
+      Stay updated with the latest videos, tutorials, and industry insights. Enter your email below.
+    </p>
+    <form className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+      <input
+        type="email"
+        className="form-control"
+        placeholder="Enter your email"
+        required
+        style={{
+          maxWidth: "300px",
+          border: "none",
+          padding: "0.75rem 1rem",
+        }}
+      />
+      <button type="submit" className="btn btn-outline-light px-4 py-2">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</div>
 
 <div className="space">
   <div className="space"></div>
@@ -455,6 +463,7 @@ const products = [
         </motion.div>
       </div>
     </div>
+
 
       <Footer />
     </>
