@@ -252,6 +252,60 @@ const products = [
       </div>
 
       <div className="space"></div>
+    <div className="container my-5">
+  <div className="row align-items-center">
+    {/* Left Column: Text with animation */}
+    <motion.div
+      className="col-lg-6 mb-4 mb-lg-0"
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
+      <h2 className="fw-bold">OUR Factory Production</h2>
+      <p>
+        At our state-of-the-art textile facility, we specialize in the production of high-quality fabrics ranging from denim to woven and knitwear. 
+        Our factory integrates cutting-edge technology with skilled craftsmanship to ensure consistency, durability, and excellence in every product we deliver.
+      </p>
+      <p>
+        From yarn spinning to final finishing, each process is carefully monitored under strict quality controls, enabling us to serve global brands with confidence.
+      </p>
+    </motion.div>
+
+    {/* Right Column: 4 Animated Images */}
+    <motion.div
+      className="col-lg-6"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={{
+        visible: {
+          transition: {
+            staggerChildren: 0.2,
+          },
+        },
+      }}
+    >
+      <div className="row g-3">
+        {[Image.p1, Image.p2, Image.p3, Image.p4].map((src, index) => (
+          <motion.div
+            className="col-6"
+            key={index}
+            variants={{
+              hidden: { opacity: 0, scale: 0.8 },
+              visible: { opacity: 1, scale: 1 },
+            }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+            <img src={src} alt={`Factory Image ${index + 1}`} className="factory-images" />
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  </div>
+</div>
+
+      <div className="space"></div>
 
        <div className="container-fluid">
       <motion.div
