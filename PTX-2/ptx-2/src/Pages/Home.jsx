@@ -223,7 +223,7 @@ const products = [
       <div className="space"></div>
 
      <h1 className="text-center">CATEGORIES</h1>
-      <div className="space"></div>
+   <br/>
       <div className="container latest-products-section">
         <div className="row g-5 ">
           {products.map((product, index) => (
@@ -280,7 +280,7 @@ const products = [
 <h1 className="text-center fw-bold fs-1">BLOGS</h1>
 <div className="space"></div>
 
-<div className="container-fluid blog-section p-2">
+<div className="container blog-section p-2">
   <div className="row g-4">
 
     {/* Blog Card 1 */}
