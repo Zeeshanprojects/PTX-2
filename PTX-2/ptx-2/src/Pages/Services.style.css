@@ -1,63 +1,61 @@
 /* White background container */
 .services-container {
-    width: 100%;
-    margin-left: 10px;
+  width: 100%;
+  margin-left: 10px;
+}
+.service-row {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.service-col {
+  width: 30%;
+  min-width: 300px;
+}
+.service-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 45px !important;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 300px;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+.service-card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.service-card-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+.service-card-text {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .service-col {
+    width: 45%;
+    margin-bottom: 20px;
   }
-    .service-row {
+  .service-row {
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    justify-content: center;
+    gap: 20px;
   }
-    .service-col {
-    width: 30%;
-    min-width: 300px;
+}
+@media (max-width: 768px) {
+  .service-col {
+    width: 100%;
   }
-    .service-card {
-    background-color: white;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1) !important;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    height: 100%;
-  }
-    .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-  }
-    .service-card-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-    .service-card-subtitle {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 10px;
-  }
-   .service-card-text {
-    font-size: 1rem;
-    color: #444;
-    line-height: 1.6;
-  }
-
-    @media (max-width: 992px) {
-    .service-col {
-      width: 45%;
-      margin-bottom: 20px;
-    }
-    .service-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-  }
-  @media (max-width: 768px) {
-    .service-col {
-      width: 100%;
-    }
-  }
-  
+}

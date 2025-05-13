@@ -1,32 +1,57 @@
-import Image from '../Images/Image';
+import { useEffect } from "react";
+import { motion } from "framer-motion";
+import Image from "../Images/Image";
 import "./AboutUs.style.css";
-import Footer from '../Components/Footer';
-
+import Footer from "../Components/Footer";
 
 export default function AboutUs() {
- 
- return (
+    useEffect(() => {
+      document.title = "About | Pakistan Textile Exchange ";
+    }, []);
+  return (
     <>
-      <div className='background-color'>
+      <motion.div
+        className="background-color"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <h1 className="text-center">WHO WE ARE</h1>
-      </div>
+      </motion.div>
 
-<div className="container my-5">
+      <div className="container my-5">
         <div className="row align-items-stretch g-4">
-          <div className="col-sm-12 col-md-6">
+          <motion.div
+            className="col-sm-12 col-md-6"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <div className="knowus p-4 rounded bg-white same-height h-100">
               <h5 className="text-uppercase text-secondary mb-3">Our Story</h5>
               <p className="text-muted">
-                <strong>The Pakistan Textile Exchange</strong> is one of the most reliable names in apparel and accessory manufacturing in Pakistan.
-                Our roots started in action sports here in Laguna Beach. Our production can now be seen in almost every retailer in the United States and Canada.
-                <br /><br />
-                Knits, Woven, Denim Apparel, along with backpacks and socks — we have emerged as one of the most trusted sources out of Pakistan for North America.
+                <strong>The Pakistan Textile Exchange</strong> is one of the
+                most reliable names in apparel and accessory manufacturing in
+                Pakistan. Our roots started in action sports here in Laguna
+                Beach. Our production can now be seen in almost every retailer
+                in the United States and Canada.
+                <br />
+                <br />
+                Knits, Woven, Denim Apparel, along with backpacks and socks — we
+                have emerged as one of the most trusted sources out of Pakistan
+                for North America.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Image */}
-          <div className="col-sm-12 col-md-6">
+          <motion.div
+            className="col-sm-12 col-md-6"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <div className="h-100 rounded shadow-sm overflow-hidden">
               <img
                 src={Image.service2}
@@ -34,120 +59,127 @@ export default function AboutUs() {
                 alt="Our Story"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
+      <div className="space"></div>
+      <motion.h1
+        className="text-center"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+      >
+        FROM DESIGN TO DELIVERY
+      </motion.h1>
 
-<div className="space"></div>
-      <h1 className="text-center">FROM DESIGN TO DELIVERY</h1>
       <br />
       <div className="container my-5">
         <div className="row g-4">
-          <div className="col-sm-12 col-md-6 col-lg-4">
-            <div className="service-card sp-4 h-100">
-             
-              <div className="service-card-body">
-           <img src={Image.step1} alt='1' className='steps'/>
-           <br/><br/>
-                <h6 className="custom-card-title">Design</h6>
-                <p className="service-card-text">
-                  We craft innovative and trend-forward designs that blend creativity with functionality, ensuring every garment reflects the perfect balance of style and comfort.
-                </p>
+          {[Image.step1, Image.step2, Image.step3].map((img, index) => (
+            <motion.div
+              className="col-sm-12 col-md-6 col-lg-4"
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="service-card p-4 h-100">
+                <div className="service-card-body">
+                  <img src={img} alt={index + 1} className="steps" />
+                  <br />
+                  <br />
+                  <h6 className="custom-card-title">
+                    {["Design", "Materials & Manufacturing", "Delivering"][index]}
+                  </h6>
+                  <p className="service-card-text">
+                    {[
+                      "We craft innovative and trend-forward designs that blend creativity with functionality, ensuring every garment reflects the perfect balance of style and comfort.",
+                      "We source high-quality fabrics and employ advanced manufacturing techniques to create durable and premium clothing with a strong focus on sustainability.",
+                      "With a streamlined logistics network, we ensure timely and secure delivery of our textile products with efficiency and excellence.",
+                    ][index]}
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div className="col-sm-12 col-md-6 col-lg-4">
-            <div className="service-card p-4 h-100">
-              <div className="service-card-body">
-              <img src={Image.step2} alt='2' className='steps'/>
-              <br/><br/>
-                <h6 className="custom-card-title">Materials & Manufacturing</h6>
-                <p className="service-card-text">
-                  We source high-quality fabrics and employ advanced manufacturing techniques to create durable and premium clothing with a strong focus on sustainability.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-sm-12 col-md-6 col-lg-4">
-            <div className="service-card p-4 h-100">
-              <div className="service-card-body">
-              <img src={Image.step3} alt='3' className='steps'/>
-         <br/><br/>
-                <h6 className="custom-card-title">Delivering</h6>
-                <p className="service-card-text">
-                  With a streamlined logistics network, we ensure timely and secure delivery of our textile products with efficiency and excellence.
-                </p>
-              </div>
-            </div>
-          </div>
+            </motion.div>
+          ))}
         </div>
       </div>
 
-<div className="space"></div>
-      <div className="content-card py-5">
+      <div className="space"></div>
+      <motion.div
+        className="content-card py-5"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container">
-          <h2 className="heading text-center mb-5">OUR INDUSTRY EXCELLENCE IN NUMBERS</h2>
+          <h2 className="heading text-center mb-5">
+            OUR INDUSTRY EXCELLENCE IN NUMBERS
+          </h2>
 
           <div className="row align-items-center">
-            <div className="col-lg-6 mb-4 mb-lg-0 performancecontent">
+            <motion.div
+              className="col-lg-6 mb-4 mb-lg-0 performancecontent"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
               <h3 className="card-title">Committed to Quality and Innovation</h3>
               <p className="card-text pt-2">
                 We take pride in delivering high-quality textiles and efficient
-                manufacturing processes that drive industry success. Our dedication to
-                excellence ensures optimized production, sustainable practices, and
-                cutting-edge innovation. With a focus on precision and performance, we
-                continue to set new benchmarks in the textile industry.
+                manufacturing processes that drive industry success. Our
+                dedication to excellence ensures optimized production,
+                sustainable practices, and cutting-edge innovation. With a focus
+                on precision and performance, we continue to set new benchmarks
+                in the textile industry.
               </p>
-            </div>
+            </motion.div>
 
             <div className="col-lg-6">
               <div className="row g-4">
-                <div className="col-6">
-                  <div className="card performancecard h-100">
-                    <div className="card-body bg-white text-center">
-                      <h6 className="card-title text-muted percentageheading">Textile Innovation</h6>
-                      <h1 className="card-subtitle">97%</h1>
+                {[
+                  ["Textile Innovation", "97%"],
+                  ["Manufacturing", "95%"],
+                  ["Production Efficiency", "92%"],
+                  ["Sustainability Practices", "88%"],
+                ].map(([title, percent], i) => (
+                  <motion.div
+                    className="col-6"
+                    key={i}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: i * 0.2 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="card performancecard h-100">
+                      <div className="card-body bg-white text-center">
+                        <h6 className="card-title text-muted percentageheading">
+                          {title}
+                        </h6>
+                        <h1 className="card-subtitle">{percent}</h1>
+                      </div>
                     </div>
-                  </div>
-                </div>
-
-                <div className="col-6">
-                  <div className="card performancecard h-100">
-                    <div className="card-body bg-white text-center">
-                      <h6 className="card-title text-muted percentageheading">Manufacturing</h6>
-                      <h1 className="card-subtitle">95%</h1>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-6">
-                  <div className="card performancecard h-100">
-                    <div className="card-body bg-white text-center">
-                      <h6 className="card-title text-muted percentageheading">Production Efficiency</h6>
-                      <h1 className="card-subtitle">92%</h1>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-6">
-                  <div className="card performancecard h-100">
-                    <div className="card-body bg-white text-center">
-                      <h6 className="card-title text-muted percentageheading">Sustainability Practices</h6>
-                      <h1 className="card-subtitle">88%</h1>
-                    </div>
-                  </div>
-                </div>
+                  </motion.div>
+                ))}
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-<div className="space"></div>
-      <div className="container">
+      <div className="space"></div>
+      <motion.div
+        className="container"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="row align-items-center">
           <div className="col-md-5 text-center">
             <img
@@ -161,8 +193,8 @@ export default function AboutUs() {
             <p className="text-muted">Founder & Chief Executive Officer</p>
           </div>
 
-          <div className="col-md-7 ">
-            <h3 className="fw-bold ceocontent ">CEO Message</h3>
+          <div className="col-md-7">
+            <h3 className="fw-bold ceocontent">CEO Message</h3>
             <p className="text-muted ceocontent">
               One of my first jobs was a teamster at Port Long Beach was loading
               Dole Bananas and Sunkist Oranges. I was always blown away by the
@@ -173,12 +205,9 @@ export default function AboutUs() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-    
-<Footer />  
-
-     
+      <Footer />
     </>
   );
 }

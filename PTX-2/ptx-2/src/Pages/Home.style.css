@@ -40,7 +40,7 @@ body {
 
 .relationship-card h5 {
   justify-content: center;
-align-items: center;
+  align-items: center;
   font-weight: 600;
   margin-bottom: 15px;
   color: #333;
@@ -63,9 +63,8 @@ align-items: center;
   text-align: center !important;
 }
 
-.production-image{
+.production-image {
   height: 300px;
-
   padding: 5px;
 }
 .product-box {
@@ -91,7 +90,7 @@ align-items: center;
 }
 
 .product-box:hover .product-image {
-  transform: scale(1.00);
+  transform: scale(1);
 }
 
 .product-info {
@@ -116,14 +115,15 @@ align-items: center;
   font-weight: 400;
   line-height: 1.4;
 }
-
 .blog-box {
-  position: relative;
   border-radius: 16px;
   overflow: hidden;
-  height: 350px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-box:hover {
@@ -131,40 +131,38 @@ align-items: center;
   box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
 }
 
+.blog-img-wrapper {
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
 .blog-img {
   width: 100%;
-  height: 100%;
+  height: 250px;
   object-fit: cover;
+  transition: transform 0.4s ease;
   display: block;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
-  display: flex;
-  align-items: flex-end;
-  padding: 20px;
-  transition: background 0.3s ease;
+.blog-box:hover .blog-img {
+  transform: scale(1.05);
 }
 
-.blog-content {
-  color: white;
+.blog-body {
+  padding: 1.25rem;
+  flex-grow: 1;
 }
 
 .blog-heading {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: #111;
 }
 
 .blog-text {
-  font-size: 0.95rem;
-  color: #ddd;
+  font-size: 1rem;
+  color: #555;
   margin-bottom: 0;
 }
 
@@ -172,61 +170,37 @@ align-items: center;
   background: #111;
   color: #fff;
   padding: 2rem;
-  /* border-radius: 16px; */
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 16px;
+  text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .highlight-heading {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: bold;
   margin-bottom: 1rem;
 }
-
 .highlight-text {
   font-size: 1rem;
   margin-bottom: 1.5rem;
+  color: #ddd;
 }
-
 .highlight-btn {
-  background: #fff;
+  background-color: #fff;
   color: #111;
   border: none;
-  padding: 10px 20px;
-  font-weight: 600;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.highlight-btn:hover {
-  background: #f0f0f0;
-}
-
-.blog-highlight {
-  background: linear-gradient(135deg, #111, #444);
-  color: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  text-align: center;
-}
-.highlight-btn {
-  margin-top: 10px;
-  background-color: #fff;
-  color: #000;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-weight: 600;
-  transition: 0.3s;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
 }
 .highlight-btn:hover {
   background-color: #ddd;
 }
- 
 .relationship-icon {
   margin-right: 8px;
   color: #000;
@@ -291,8 +265,8 @@ p {
 }
 .content-card {
   background-color: #f5f5f5;
-  padding-top: 130px;
-  padding-bottom: 130px !important;
+  padding-top: 80px;
+  padding-bottom: 80px !important;
   padding-left: 20px;
   text-align: center !important;
 }
@@ -304,16 +278,13 @@ a {
   width: 100%;
   object-fit: cover !important;
 }
-/*for about us and services page*/
-.background-color {
-  height: 300px;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.sectionimage{
+  height: 600px;
+  width:100% ;
+  padding:  0 !important;
+  margin: 0  !important;
+  object-fit: cover !important;
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   .sectionimage {
     padding: 0 !important;
@@ -345,7 +316,7 @@ a {
     margin: 0 !important;
     width: 100% !important;
     height: auto !important;
-    object-fit: cover !important;
+    object-fit: contain !important;
     display: block;
   }
 
