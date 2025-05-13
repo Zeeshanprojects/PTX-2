@@ -1,5 +1,5 @@
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 
 .carousel-item img {
@@ -9,33 +9,38 @@ body{
   display: block !important;
   object-fit: cover;
 }
-.carousel-caption{
-    position: absolute; top: 5%;left: 50%;
+.carousel-caption {
+  position: absolute;
+  top: 5%;
+  left: 50%;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(1); /* Makes white icons black and vice versa */
 }
-.banner-btn{
-    font-size: 15px !important;
-   padding:16px 22px 16px 22px !important;
-   border-radius: 0 !important;
+.banner-btn {
+  font-size: 15px !important;
+  padding: 16px 22px 16px 22px !important;
+  border-radius: 0 !important;
 }
 .relationship-card {
+  text-align: center !important;
   background: white;
-  padding: 30px 20px;
+  padding: 30px 30px;
   border-radius: 20px;
   height: 100%;
-  box-shadow: 0 .7rem 1rem  rgba(0, 0, 0, 0.15) ;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+/* 
 .relationship-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
+} */
 
 .relationship-card h5 {
+  justify-content: center;
+align-items: center;
   font-weight: 600;
   margin-bottom: 15px;
   color: #333;
@@ -55,6 +60,7 @@ body{
   color: #555;
   font-size: 15px;
   line-height: 1.6;
+  text-align: center !important;
 }
 .latest-products-section {
   padding-top: 30px;
@@ -73,7 +79,7 @@ body{
 }
 .product-image {
   width: 100%;
-  height:420px !important;
+  height: 420px !important;
   object-fit: cover !important;
   padding-left: 15px;
   padding-right: 15px;
@@ -93,59 +99,67 @@ body{
   color: #555;
 }
 
-.blog-title {
-  font-weight: 700;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+.blog-box {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 350px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.blog-section {
-  padding-bottom: 60px;
-}
-.blog-box {
-  background-color: #fdfdfd;
-  border-radius: 16px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
 .blog-box:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
 }
+
 .blog-img {
   width: 100%;
-  height: 220px;
-  object-fit: cover !important;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  transition: background 0.3s ease;
 }
 
 .blog-content {
-  padding: 1rem;
+  color: white;
 }
 
 .blog-heading {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #222;
+  color: #fff;
 }
 
 .blog-text {
   font-size: 0.95rem;
-  color: #555;
+  color: #ddd;
+  margin-bottom: 0;
 }
 
 .blog-highlight {
-  background: linear-gradient(135deg, #111 30%, #333);
+  background: #111;
   color: #fff;
   padding: 2rem;
-  border-radius: 16px;
+  /* border-radius: 16px; */
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .highlight-heading {
@@ -160,49 +174,74 @@ body{
 }
 
 .highlight-btn {
-  background-color: #fff;
+  background: #fff;
   color: #111;
   border: none;
   padding: 10px 20px;
   font-weight: 600;
-  border-radius: 30px;
-  transition: all 0.3s ease-in-out;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .highlight-btn:hover {
+  background: #f0f0f0;
+}
+
+.blog-highlight {
+  background: linear-gradient(135deg, #111, #444);
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+.highlight-btn {
+  margin-top: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.highlight-btn:hover {
   background-color: #ddd;
 }
+ 
 .relationship-icon {
   margin-right: 8px;
   color: #000;
   font-weight: 400;
-  font-size:40px !important; /* adjust based on h5 size */
+  font-size: 45px !important; /* adjust based on h5 size */
   vertical-align: middle; /* better alignment */
   margin-bottom: 20px;
 }
 .custom-card {
-    height: 500px; /* or any height you prefer */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white; /* Optional: looks clean if image is small */
-    border-radius: 8px;
-  }
-  
-  .custom-card img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-p{ padding: 0 !important;}
+  height: 500px; /* or any height you prefer */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* Optional: looks clean if image is small */
+  border-radius: 8px;
+}
+
+.custom-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+p {
+  padding: 0 !important;
+}
 /* Container to center the button */
 .btn-container {
   position: fixed;
   margin-bottom: 25px;
   bottom: 20px; /* Adjust the distance from the bottom */
-  left: 50%;    /* Center horizontally */
+  left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Exactly center the button */
   z-index: 999; /* Ensure it stays on top of other elements */
 }
@@ -215,12 +254,12 @@ p{ padding: 0 !important;}
   padding-top: 12px;
   padding-bottom: 12px;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-size: 16px;  /* Adjust font size for better readability */
+  font-size: 16px; /* Adjust font size for better readability */
 }
 
 /* Hover Effect */
 .btn-container .btn:hover {
-  background-color: #5a3d8c;  /* Slightly lighter shade of dark */
+  background-color: #5a3d8c; /* Slightly lighter shade of dark */
   transform: translateY(-3px); /* Hover effect with lift */
 }
 
@@ -229,22 +268,26 @@ p{ padding: 0 !important;}
   transform: translateY(1px); /* Active state for button press effect */
 }
 
-.btn{ border-radius: 0 !important;}
-.content-card{
-  background-color:#e9ecef;
- padding-top: 100px;
- padding-bottom: 100px !important;
- padding-left: 20px;
-    
+.btn {
+  border-radius: 0 !important;
 }
-a{  text-decoration: none !important;}
-.img-fluid{
-    height: 500px !important;
-    width: 100%;
-    object-fit: cover !important;
+.content-card {
+  background-color: #f5f5f5;
+  padding-top: 130px;
+  padding-bottom: 130px !important;
+  padding-left: 20px;
+  text-align: center !important;
+}
+a {
+  text-decoration: none !important;
+}
+.img-fluid {
+  height: 500px !important;
+  width: 100%;
+  object-fit: cover !important;
 }
 /*for about us and services page*/
-.background-color{
+.background-color {
   height: 300px;
   background-color: black;
   color: white;
@@ -253,8 +296,7 @@ a{  text-decoration: none !important;}
   align-items: center;
 }
 
-
-@media (min-width:768px) and (max-width:991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .sectionimage {
     padding: 0 !important;
     margin: 0 !important;
@@ -264,8 +306,8 @@ a{  text-decoration: none !important;}
     display: block;
   }
 }
-@media (min-width:576px) and (max-width:767px) {
-  .carousel-item img{
+@media (min-width: 576px) and (max-width: 767px) {
+  .carousel-item img {
     height: 50vh !important;
     width: 100% !important;
     object-fit: cover !important;
@@ -279,8 +321,7 @@ a{  text-decoration: none !important;}
     display: block;
   }
 }
-@media (max-width:575px) {
-  
+@media (max-width: 575px) {
   .sectionimage {
     padding: 0 !important;
     margin: 0 !important;
@@ -289,8 +330,8 @@ a{  text-decoration: none !important;}
     object-fit: cover !important;
     display: block;
   }
- 
-  .carousel-item img{
+
+  .carousel-item img {
     height: 50vh !important;
     width: 100% !important;
     object-fit: cover !important;
