@@ -108,69 +108,8 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="space"></div>
-      <motion.div
-        className="content-card py-5"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        <div className="container">
-          <h2 className="heading text-center mb-5">
-            OUR INDUSTRY EXCELLENCE IN NUMBERS
-          </h2>
-
-          <div className="row align-items-center">
-            <motion.div
-              className="col-lg-6 mb-4 mb-lg-0 performancecontent"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="card-title">Committed to Quality and Innovation</h3>
-              <p className="card-text pt-2">
-                We take pride in delivering high-quality textiles and efficient
-                manufacturing processes that drive industry success. Our
-                dedication to excellence ensures optimized production,
-                sustainable practices, and cutting-edge innovation. With a focus
-                on precision and performance, we continue to set new benchmarks
-                in the textile industry.
-              </p>
-            </motion.div>
-
-            <div className="col-lg-6">
-              <div className="row g-4">
-                {[
-                  ["Textile Innovation", "97%"],
-                  ["Manufacturing", "95%"],
-                  ["Production Efficiency", "92%"],
-                  ["Sustainability Practices", "88%"],
-                ].map(([title, percent], i) => (
-                  <motion.div
-                    className="col-6"
-                    key={i}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.4, delay: i * 0.2 }}
-                    viewport={{ once: true }}
-                  >
-                    <div className="card performancecard h-100">
-                      <div className="card-body bg-white text-center">
-                        <h6 className="card-title text-muted percentageheading">
-                          {title}
-                        </h6>
-                        <h1 className="card-subtitle">{percent}</h1>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </motion.div>
+     
+     
 
       <div className="space"></div>
       <motion.div

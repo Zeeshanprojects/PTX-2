@@ -221,8 +221,11 @@ const products = [
       </div>
 
       <div className="space"></div>
+<div className="section-heading text-center mb-5">
+  <h1 className="categories-title">CATEGORIES</h1>
+  <p className="categories-subtitle">Explore our latest curated product categories</p>
+</div>
 
-     <h1 className="text-center">CATEGORIES</h1>
    <br/>
       <div className="container latest-products-section">
         <div className="row g-4 ">
@@ -251,32 +254,28 @@ const products = [
         </div>
       </div>
 
-      <div className="space"></div>
  
       <div className="space"></div>
 
-       <div className="container-fluid">
       <motion.div
-        className="content-card"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true, amount: 0.4 }}
-      >
-        <p className="card-text">WHO WE ARE?</p>
-        <h1>Pakistan Textile Exchange...</h1>
-        <p className="card-text">
-          Paktex is a professional apparel sourcing group, providing quality
-          assurance, logistics
-          <br /> to import, retail solutions and social compliance.
-        </p>
-        <Link to="/search">
-          <button type="button" className="btn btn-dark ps-4 pe-4">
-            READY FOR US
-          </button>
-        </Link>
-      </motion.div>
-    </div>
+  className="content-card"
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true, amount: 0.4 }}
+>
+  <p className="card-subtitle">WHO WE ARE?</p>
+  <h1 className="card-title">Pakistan Textile Exchange</h1>
+  <p className="card-description">
+    Paktex is a professional apparel sourcing group offering exceptional quality assurance,
+    logistics, import and retail solutions, along with full social compliance.
+  </p>
+  <Link to="/search">
+    <button type="button" className="btn btn-dark px-4 py-2 mt-3">
+      READY FOR US
+    </button>
+  </Link>
+</motion.div>
  
  <div className="space"></div>
     <div className="container my-5">
@@ -289,7 +288,7 @@ const products = [
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
     >
-      <h2 className="fw-bold">OUR Factory Production</h2>
+      <h2 className="fw-bold">OUR FACTORY PRODUCTION</h2>
       <p>
         At our state-of-the-art textile facility, we specialize in the production of high-quality fabrics ranging from denim to woven and knitwear. 
         Our factory integrates cutting-edge technology with skilled craftsmanship to ensure consistency, durability, and excellence in every product we deliver.
@@ -396,7 +395,7 @@ const products = [
 
   </div>
 </div>
-
+<div className="space"></div>
 <div className="w-100 py-5" style={{ backgroundColor: "#000" }}>
   <div className="container text-white text-center">
     <h2 className="fw-bold mb-3">Subscribe to Our Channel</h2>
