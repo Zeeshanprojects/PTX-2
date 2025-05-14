@@ -40,6 +40,6 @@ const Image = {
   image14: require("./pt-5.webp"),
   image15: require("./pt-6.webp"),
   sectionimage: require("./sectionbanner.webp"),
-
+CEO:require("./Davidjumani.webp"),
 };
 export default Image;

@@ -10,7 +10,6 @@ export default function AboutUs() {
   }, []);
   return (
     <>
-   
       <motion.div
         className="background-color"
         initial={{ opacity: 0, y: -30 }}
@@ -55,7 +54,7 @@ export default function AboutUs() {
           >
             <div className="h-100 rounded shadow-sm overflow-hidden">
               <img
-                src={Image.service2}
+                src={Image.p2}
                 className="img-fluid storyimage w-100 h-100"
                 alt="Our Story"
               />

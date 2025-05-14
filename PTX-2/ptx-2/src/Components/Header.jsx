@@ -29,18 +29,7 @@ export default function Header() {
             <img src={Image.logo} alt="mainlogo" className="logocolor" />
           </Link>
 
-          {/* Icons for small screens */}
-          <div className="nav-icons d-flex d-lg-none">
-            <Link to="/Login">
-              <FontAwesomeIcon icon={faUser} size="lg" />
-            </Link>
-            <Link to="/Search">
-              <FontAwesomeIcon icon={faSearch} size="lg" />
-            </Link>
-            <Link to="/cart">
-              <FontAwesomeIcon icon={faShoppingCart} size="lg" />
-            </Link>
-          </div>
+         
 
           <button
             className="navbar-toggler"
@@ -135,18 +124,29 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-
+ {/* Icons for small screens */}
+          <div className="nav-icons d-flex d-lg-none">
+            <Link to="/Login">
+              <FontAwesomeIcon icon={faUser} size="lg" />
+            </Link>
+            {/* <Link to="/Search">
+              <FontAwesomeIcon icon={faSearch} size="lg" />
+            </Link>
+            <Link to="/cart">
+              <FontAwesomeIcon icon={faShoppingCart} size="lg" />
+            </Link> */}
+          </div>
             {/* Icons for large screens */}
             <div className="nav-icons d-none d-lg-flex">
               <Link to="/Login">
                 <FontAwesomeIcon icon={faUser} size="lg" />
               </Link>
-              <Link to="/Search">
+              {/* <Link to="/Search">
                 <FontAwesomeIcon icon={faSearch} size="lg" />
               </Link>
               <Link to="/Cart">
                 <FontAwesomeIcon icon={faShoppingCart} size="lg" />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
