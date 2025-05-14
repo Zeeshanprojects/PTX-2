@@ -5,9 +5,9 @@ import "./AboutUs.style.css";
 import Footer from "../Components/Footer";
 
 export default function AboutUs() {
-    useEffect(() => {
-      document.title = "About | Pakistan Textile Exchange ";
-    }, []);
+  useEffect(() => {
+    document.title = "About | Pakistan Textile Exchange ";
+  }, []);
   return (
     <>
       <motion.div
@@ -92,14 +92,20 @@ export default function AboutUs() {
                   <br />
                   <br />
                   <h6 className="custom-card-title">
-                    {["Design", "Materials & Manufacturing", "Delivering"][index]}
+                    {
+                      ["Design", "Materials & Manufacturing", "Delivering"][
+                        index
+                      ]
+                    }
                   </h6>
                   <p className="service-card-text">
-                    {[
-                      "We craft innovative and trend-forward designs that blend creativity with functionality, ensuring every garment reflects the perfect balance of style and comfort.",
-                      "We source high-quality fabrics and employ advanced manufacturing techniques to create durable and premium clothing with a strong focus on sustainability.",
-                      "With a streamlined logistics network, we ensure timely and secure delivery of our textile products with efficiency and excellence.",
-                    ][index]}
+                    {
+                      [
+                        "We craft innovative and trend-forward designs that blend creativity with functionality, ensuring every garment reflects the perfect balance of style and comfort.",
+                        "We source high-quality fabrics and employ advanced manufacturing techniques to create durable and premium clothing with a strong focus on sustainability.",
+                        "With a streamlined logistics network, we ensure timely and secure delivery of our textile products with efficiency and excellence.",
+                      ][index]
+                    }
                   </p>
                 </div>
               </div>
@@ -107,9 +113,6 @@ export default function AboutUs() {
           ))}
         </div>
       </div>
-
-     
-     
 
       <div className="space"></div>
       <motion.div

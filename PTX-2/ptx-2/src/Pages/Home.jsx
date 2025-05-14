@@ -398,6 +398,34 @@ const products = [
       </Link>
     </motion.div>  
 
+ {/* Blog Card 2 */}
+    <motion.div
+      className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
+      <Link to="/blog3" className="text-decoration-none text-dark">
+        <div className="blog-box">
+          <div className="blog-img-wrapper">
+            <img
+              src={Image.Blog3}
+              alt="blog-2"
+              className="blog-img"
+              loading="lazy"
+            />
+          </div>
+          <div className="blog-body">
+            <h3 className="blog-heading">Global Threads</h3>
+            <p className="blog-text">
+              Markets served, quality standards, how your company stands out globally
+            </p>
+          </div>
+        </div>
+      </Link>
+    </motion.div>  
+
   </div>
 </div>
 <div className="space"></div>

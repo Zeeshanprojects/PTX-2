@@ -43,22 +43,15 @@
   }
   .service-card {
     border-radius: 12px;
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15) !important;
+    /* box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15) !important; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .service-card:hover {
+  /* .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  }
-  .performancecard {
-    height: 120px;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    border: none;
-    border-radius: 12px;
-    transition: transform 0.2s ease;
-  }
+  } */
+
   .custom-card-title {
     font-size: 1.25rem;
     font-weight: 600;

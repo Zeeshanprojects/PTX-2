@@ -8,6 +8,7 @@ const Image = {
   slider6: require("./s6.webp"),
   Blog1: require("./Blog-1.webp"),
   Blog2: require("./Stitch.webp"),
+  Blog3:require("./Blog-3.webp"),
   latestproduct1: require("./latestproduct1.jpg"),
   latestproduct2: require("./latestproduct2.jpg"),
   latestproduct3: require("./latestproduct3.jpg"),
@@ -39,16 +40,6 @@ const Image = {
   image14: require("./pt-5.webp"),
   image15: require("./pt-6.webp"),
   sectionimage: require("./sectionbanner.webp"),
-  // H1:require("./hoddie1.webp"),
-  // H2:require("./hoddie2.webp"),
-  // H3:require("./hoddie3.webp"),
-  // H4:require("./hoddie4.webp"),
-  // H5:require("./hoddie5.webp"),
-  // H6:require("./hoddie6.webp"),
-  // H7:require("./hoddie7.webp"),
-  // H8:require("./hoddie8.webp"),
-  // H9:require("./hoddie9.webp"),
-  // H10:require("./hoddie10.webp"),
-  // CEO:require("./Davidjumani.webp")
+
 };
 export default Image;
