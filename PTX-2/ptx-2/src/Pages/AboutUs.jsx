@@ -10,14 +10,10 @@ export default function AboutUs() {
   }, []);
   return (
     <>
-      <motion.div
-        className="background-color"
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <h1 className="text-center">WHO WE ARE</h1>
-      </motion.div>
+        <div className="space"></div>
+      <div className="background-color">
+        <h1 className=" text-center">WHO WE ARE</h1>
+      </div>
 
       <div className="container my-5">
         <div className="row align-items-stretch g-4">

@@ -18,7 +18,10 @@ export default function LookBook1() {
   }, []);
 
   return (
-    <div
+    <>
+ <br/>
+      <div className="space"></div>
+      <div
       style={{
         width: "100vw",
         height: "100vh",
@@ -37,7 +40,7 @@ export default function LookBook1() {
         <>
           <p>This document is best viewed on desktop.</p>
           <a
-            href="/Docs/dummy.pdf"
+            href="/Docs/catalog.pdf"
             download
             style={{
               padding: "10px 20px",
@@ -52,7 +55,7 @@ export default function LookBook1() {
         </>
       ) : (
         <object
-          data="/Docs/dummy.pdf"
+          data="/Docs/catalog.pdf"
           type="application/pdf"
           width="100%"
           height="100%"
@@ -60,10 +63,14 @@ export default function LookBook1() {
         >
           <p>
             Your browser does not support PDFs.
-            <a href="/Docs/dummy.pdf" download> Download PDF</a>
+            <a href="/Docs/catalog.pdf" download> Download PDF</a>
           </p>
         </object>
       )}
     </div>
+  
+    </>
+   
+    
   );
 }
