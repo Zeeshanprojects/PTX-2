@@ -1,4 +1,13 @@
 /* White background container */
+.background-color{
+  background-color: black;
+  height: 300px;
+  width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white !important;
+}
 .services-container {
   width: 100%;
   margin-left: 10px;

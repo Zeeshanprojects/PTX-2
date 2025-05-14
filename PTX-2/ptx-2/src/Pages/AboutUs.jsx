@@ -10,6 +10,7 @@ export default function AboutUs() {
   }, []);
   return (
     <>
+   
       <motion.div
         className="background-color"
         initial={{ opacity: 0, y: -30 }}
