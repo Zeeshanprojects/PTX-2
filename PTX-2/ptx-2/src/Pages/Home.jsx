@@ -170,58 +170,55 @@ const products = [
         </Link>
       </div>
       <div className="space"></div>
-
-      <h1 className="text-center">BUILDING STRONG RELATIONSHIP</h1>
+<div className="text-center">
+   <h1 className="text-center">BUILDING STRONG RELATIONSHIP</h1>
+      <p className="categories-subtitle">Fostering Trust Through Quality and Commitment</p>
+</div>
+     
       <div className="space"></div>
 
-      <div className="container-fluid">
-        <div className="row g-4">
-          {[
-            {
-              icon: "fas fa-industry",
-              title: "Manufacturing",
-              desc:
-                "Our factory partners are vertically integrated, from spinning, knitting, dying, finishing, printing, laundry to pack.",
-            },
-            {
-              icon: "fas fa-check-circle",
-              title: "Quality Assurance",
-              desc:
-                "Pakistan textile exchange prides itself on strict focus of quality assurance.",
-            },
-            {
-              icon: "fas fa-search",
-              title: "Sourcing",
-              desc:
-                "Our sourcing team are some of the best in the industry and our vendors are as well.",
-            },
-            {
-              icon: "fas fa-truck-moving",
-              title: "Logistics",
-              desc:
-                "Pakistan textile exchange has built an online PLM with all order and sampling tracking real time",
-            },
-          ].map((card, index) => (
-            <div key={index} className="col-sm-12 col-md-6 col-lg-3">
-              <motion.div
-                className="relationship-card"
-                variants={cardVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-              >
-                <i className={`${card.icon} relationship-icon`}></i>
-                <h5>{card.title}</h5>
-                <p>{card.desc}</p>
-              </motion.div>
-            </div>
-          ))}
-        </div>
+    <div className="container-fluid">
+  <div className="row g-4">
+    {[
+      {
+        icon: "fas fa-award",
+        title: "Consistent Quality Assurance",
+        desc:
+          "We maintain strict quality control at every stage, ensuring each fabric meets international standards and earns our clients' trust.",
+      },
+      {
+        icon: "fas fa-comments",
+        title: "Transparent Communication",
+        desc:
+          "We believe in clear, timely communication to keep our partners informed and confident throughout every project.",
+      },
+      {
+        icon: "fas fa-shipping-fast",
+        title: "Reliable Service & On-Time Delivery",
+        desc:
+          "Our logistics and operations teams are dedicated to delivering every order on schedule, without compromising quality.",
+      },
+    ].map((card, index) => (
+      <div key={index} className="col-sm-12 col-md-6 col-lg-4">
+        <motion.div
+          className="relationship-card"
+          variants={cardVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: index * 0.2 }}
+        >
+          <i className={`${card.icon} relationship-icon`}></i>
+          <h5>{card.title}</h5>
+          <p>{card.desc}</p>
+        </motion.div>
       </div>
+    ))}
+  </div>
+</div>
 
-      <div className="space"></div>
-<div className="section-heading text-center mb-5">
+
+<div className="section-heading text-center mt-5">
   <h1 className="categories-title">CATEGORIES</h1>
   <p className="categories-subtitle">Explore our latest curated product categories</p>
 </div>
@@ -270,9 +267,9 @@ const products = [
     Paktex is a professional apparel sourcing group offering exceptional quality assurance,
     logistics, import and retail solutions, along with full social compliance.
   </p>
-  <Link to="/search">
+  <Link to="/Aboutus">
     <button type="button" className="btn btn-dark px-4 py-2 mt-3">
-      READY FOR US
+      READY MORE
     </button>
   </Link>
 </motion.div>
@@ -288,8 +285,9 @@ const products = [
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
     >
-      <h2 className="fw-bold factory-text">OUR FACTORY PRODUCTION</h2>
-      <p>
+      <h1>OUR FACTORY PRODUCTION</h1>
+      <p className="fw-bold">Where Innovation Meets Craftsmanship in Every Stitch</p>
+      <p className="factory-para">
         At our state-of-the-art textile facility, we specialize in the production of high-quality fabrics ranging from denim to woven and knitwear.
        From yarn spinning to final finishing, each process is carefully monitored under strict quality controls.
       <p>Our production floor is equipped with modern looms, automated dyeing units, and precision cutting machines to maintain accuracy and minimize waste. Sustainability is also a key pillar of our operations — we’ve adopted eco-friendly practices in water usage, chemical handling, and energy management.</p>
@@ -333,8 +331,12 @@ const products = [
 
   
 
+<div className="text-center">
+  <h1 className="text-center fw-bold fs-1">BLOGS</h1>
+  <p>Insights, Stories, and Industry Trends
+  </p>
+</div>
 
-<h1 className="text-center fw-bold fs-1">BLOGS</h1>
 <div className="space"></div>
 
 <div className="container blog-section p-2">
@@ -342,7 +344,7 @@ const products = [
 
     {/* Blog Card 1 */}
     <motion.div
-      className="col-sm-12 col-md-12 col-lg-5 col-xl-6"
+      className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
       initial={{ opacity: 0, x: -50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6 }}
@@ -370,7 +372,7 @@ const products = [
 
     {/* Blog Card 2 */}
     <motion.div
-      className="col-sm-12 col-md-12 col-lg-5 col-xl-6"
+      className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6 }}
