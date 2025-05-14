@@ -5,8 +5,8 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
-  faSearch,
-  faShoppingCart,
+  // faSearch,
+  // faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Header.style.css";
 
