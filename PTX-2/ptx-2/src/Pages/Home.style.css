@@ -1,16 +1,22 @@
 body {
   overflow-x: hidden;
 }
-.col-6 {
-  aspect-ratio: 1 / 1;
+.factory-col {
   overflow: hidden;
 }
 
-.factory-images {
+.factory-image {
   width: 100%;
-  height: 100%;
+  height: 90%; /* Increased to reduce gap */
   object-fit: cover;
+ filter: grayscale(1);
   border-radius: 8px;
+}
+.factory-text{
+  text-align: justify;
+}
+.custom-image-grid {
+  --bs-gutter-y: 0 rem; /* Reduced vertical spacing */
 }
 
 .carousel-item img {
@@ -299,7 +305,7 @@ p {
 }
 .content-card {
   background-color: #f5f5f5;
-  padding: 80px 20px;
+  padding: 150px 20px;
   text-align: center;
 }
 

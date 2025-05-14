@@ -278,9 +278,9 @@ const products = [
 </motion.div>
  
  <div className="space"></div>
-    <div className="container my-5">
-  <div className="row align-items-center">
-    {/* Left Column: Text with animation */}
+<div className="container my-5">
+  <div className="row align-items-center ">
+    {/* Left Column: Text */}
     <motion.div
       className="col-lg-6 mb-4 mb-lg-0"
       initial={{ opacity: 0, x: -50 }}
@@ -288,14 +288,14 @@ const products = [
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
     >
-      <h2 className="fw-bold">OUR FACTORY PRODUCTION</h2>
+      <h2 className="fw-bold factory-text">OUR FACTORY PRODUCTION</h2>
       <p>
-        At our state-of-the-art textile facility, we specialize in the production of high-quality fabrics ranging from denim to woven and knitwear. 
-        Our factory integrates cutting-edge technology with skilled craftsmanship to ensure consistency, durability, and excellence in every product we deliver.
+        At our state-of-the-art textile facility, we specialize in the production of high-quality fabrics ranging from denim to woven and knitwear.
+       From yarn spinning to final finishing, each process is carefully monitored under strict quality controls.
+      <p>Our production floor is equipped with modern looms, automated dyeing units, and precision cutting machines to maintain accuracy and minimize waste. Sustainability is also a key pillar of our operations — we’ve adopted eco-friendly practices in water usage, chemical handling, and energy management.</p>
       </p>
-      <p>
-        From yarn spinning to final finishing, each process is carefully monitored under strict quality controls, enabling us to serve global brands with confidence.
-      </p>
+   
+     
     </motion.div>
 
     {/* Right Column: 4 Animated Images */}
@@ -312,24 +312,27 @@ const products = [
         },
       }}
     >
-      <div className="row g-3">
-        {[Image.p1, Image.p2, Image.p3, Image.p4].map((src, index) => (
+      <div className="row custom-image-grid">
+        {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
           <motion.div
-            className="col-6"
-            key={index}
+            className="col-6 factory-col"
+            key={src}
             variants={{
               hidden: { opacity: 0, scale: 0.8 },
               visible: { opacity: 1, scale: 1 },
             }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <img src={src} alt={`Factory Image ${index + 1}`} className="factory-images" />
+            <img src={src} alt="Factory" className="factory-image" />
           </motion.div>
         ))}
       </div>
     </motion.div>
   </div>
 </div>
+
+  
+
 
 <h1 className="text-center fw-bold fs-1">BLOGS</h1>
 <div className="space"></div>
