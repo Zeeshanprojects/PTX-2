@@ -3,26 +3,24 @@ body {
 }
 .custom-image-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
-  gap: 8px; /* Reduced gap for smaller images, adjust as needed */
-  max-width: 450px; /* Constrain the grid size, adjust this value */
-  margin: 0 auto; /* Center the grid if needed */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  max-width: 450px;
+  margin: 0 auto;
   padding: 0;
 }
-
 .factory-col {
   overflow: hidden;
-  aspect-ratio: 1 / 1; /* Keep square containers */
-  width: 100%; /* Ensure it fits the grid cell */
+  aspect-ratio: 1 / 1;
+  width: 100%;
 }
-
 .factory-image {
   width: 100%;
-  height: 100%; /* Fill the container */
-  object-fit: cover; /* Prevent distortion */
+  height: 100%;
+  object-fit: cover;
   filter: grayscale(1);
-  border-radius: 3px; /* Slightly smaller radius for smaller images */
-  display: block; /* Remove bottom gap */
+  border-radius: 3px;
+  display: block;
 }
 .factory-text {
   text-align: justify;
@@ -50,7 +48,7 @@ body {
 }
 .relationship-card {
   text-align: center;
-  background: #ffffff;
+ 
   padding: 40px 25px;
   border-radius: 20px;
   height: 100%;
@@ -128,12 +126,10 @@ body {
   height: 100%;
   background: #f8f9fa;
 }
-
 .product-box:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
-
 .product-image {
   width: 100%;
   height: 420px;

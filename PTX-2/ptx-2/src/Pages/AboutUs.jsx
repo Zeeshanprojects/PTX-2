@@ -52,7 +52,6 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="space"></div>
     <div className="container my-5">
         <div className="row align-items-stretch g-4">
           <motion.div
