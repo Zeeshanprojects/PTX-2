@@ -78,7 +78,8 @@ export default function Services() {
                 variants={cardVariants}
                 custom={index}
               >
-                <div className="service-card-body d-flex flex-column flex-grow-1 text-center">
+            
+                   <div className="service-card-body d-flex flex-column flex-grow-1 text-center">
                   <i
                     className={`${service.icon} service-icon mb-3`}
                     style={{ fontSize: "2rem", color: "#333" }}

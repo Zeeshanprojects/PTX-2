@@ -58,6 +58,9 @@ export default function Home() {
                     alt="slider1"
                     fetchPriority="high"
                   />
+                    <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                      <h1>PTX COLLECTIVE</h1>
+                    </div>
                 </div>
                 <div className="carousel-item">
                   <img

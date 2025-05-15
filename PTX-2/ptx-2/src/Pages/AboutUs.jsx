@@ -10,7 +10,7 @@ export default function AboutUs() {
   }, []);
   return (
     <>
-        <div className="space"></div>
+      <div className="space"></div>
       <div className="background-color">
         <h1 className=" text-center">WHO WE ARE</h1>
       </div>
@@ -48,17 +48,44 @@ export default function AboutUs() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="h-100 rounded shadow-sm overflow-hidden">
-              <img
-                src={Image.p2}
-                className="img-fluid storyimage w-100 h-100"
-                alt="Our Story"
-              />
+            <div className="image-wrapper">
+              <img src={Image.p2} className="storyimage" alt="Our Story" />
             </div>
           </motion.div>
         </div>
       </div>
 
+      <div className="space"></div>
+    <div className="container my-5">
+        <div className="row align-items-stretch g-4">
+          <motion.div
+            className="col-sm-12 col-md-6"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="knowus p-4 rounded bg-white same-height h-100">
+              <h5 className="text-uppercase text-secondary mb-3">Our Mission</h5>
+              <p className="text-muted">
+                  <strong>Our Mission at Pakistan Textile Exchange</strong> is to elevate Pakistan’s global presence in the textile and apparel industry by delivering superior quality, sustainable products with precision and innovation. We are committed to ethical manufacturing, cutting-edge design, and building long-term partnerships across North America and beyond. From premium knits and denim to woven garments and accessories, we strive to exceed expectations at every step — ensuring our clients receive nothing less than excellence.
+            </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="col-sm-12 col-md-6"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="image-wrapper">
+              <img src={Image.p2} className="storyimage" alt="Our Story" />
+            </div>
+          </motion.div>
+        </div>
+      </div>
       <div className="space"></div>
       <motion.h1
         className="text-center"
