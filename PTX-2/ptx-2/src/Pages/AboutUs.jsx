@@ -78,7 +78,7 @@ export default function AboutUs() {
             viewport={{ once: true }}
           >
             <div className="image-wrapper">
-              <img src={Image.p2} className="storyimage" alt="Our Story" />
+              <img src={Image.p3} className="storyimage" alt="Our Story" />
             </div>
           </motion.div>
         </div>
@@ -109,7 +109,7 @@ export default function AboutUs() {
             viewport={{ once: true }}
           >
             <div className="image-wrapper">
-              <img src={Image.p2} className="storyimage" alt="Our Story" />
+              <img src={Image.p1} className="storyimage" alt="Our Story" />
             </div>
           </motion.div>
         </div>
