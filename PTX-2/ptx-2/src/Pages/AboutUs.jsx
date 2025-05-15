@@ -31,10 +31,7 @@ export default function AboutUs() {
                 most reliable names in apparel and accessory manufacturing in
                 Pakistan. Our roots started in action sports here in Laguna
                 Beach. Our production can now be seen in almost every retailer
-                in the United States and Canada.
-                <br />
-                <br />
-                Knits, Woven, Denim Apparel, along with backpacks and socks — we
+                in the United States.Knits, Woven, Denim Apparel, along with backpacks and socks — we
                 have emerged as one of the most trusted sources out of Pakistan
                 for North America.
               </p>
@@ -70,6 +67,37 @@ export default function AboutUs() {
               <p className="text-muted">
                   <strong>Our Mission at Pakistan Textile Exchange</strong> is to elevate Pakistan’s global presence in the textile and apparel industry by delivering superior quality, sustainable products with precision and innovation. We are committed to ethical manufacturing, cutting-edge design, and building long-term partnerships across North America and beyond. From premium knits and denim to woven garments and accessories, we strive to exceed expectations at every step — ensuring our clients receive nothing less than excellence.
             </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="col-sm-12 col-md-6"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="image-wrapper">
+              <img src={Image.p2} className="storyimage" alt="Our Story" />
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+       <div className="container my-5">
+        <div className="row align-items-stretch g-4">
+          <motion.div
+            className="col-sm-12 col-md-6"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="knowus p-4 rounded bg-white same-height h-100">
+              <h5 className="text-uppercase text-secondary mb-3">Our VISION</h5>
+              <p className="text-muted">
+                <strong>Our Vision at Pakistan Textile Exchange</strong> is to become a global leader in textile innovation, sustainability, and ethical manufacturing. We aim to set new benchmarks in quality and creativity, empowering brands worldwide with products that reflect integrity, craftsmanship, and forward-thinking design. Through continuous improvement and a customer-first mindset, we envision a future where PTX stands as a symbol of trust, excellence, and responsible production in the global apparel industry.
+              </p>
             </div>
           </motion.div>
 

@@ -1,7 +1,7 @@
 
 .background-color{
-  background-color: black;
-  height: 200px;
+  background-color: #212529;
+  height: 180px;
   width: 100%;
 display: flex;
 justify-content: center;
