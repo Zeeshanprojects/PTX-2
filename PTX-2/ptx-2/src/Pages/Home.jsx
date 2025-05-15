@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
     <>
-    <div className="space"></div>
+      <div className="space"></div>
       <div className="container-fluid p-0">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -59,10 +59,12 @@ export default function Home() {
                     alt="slider1"
                     fetchPriority="high"
                   />
-                    <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                      <h1 className="ptx-heading">PTX <br/>
-                      COLLECTIVE</h1>
-                    </div>
+                  <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                    <h1 className="ptx-heading">
+                      PTX <br />
+                      COLLECTIVE
+                    </h1>
+                  </div>
                 </div>
                 <div className="carousel-item">
                   <img
@@ -292,55 +294,52 @@ export default function Home() {
               At our state-of-the-art textile facility, we specialize in the
               production of high-quality fabrics ranging from denim to woven and
               knitwear. From yarn spinning to final finishing, each process is
-              carefully monitored under strict quality controls.
-              
-                Our production floor is equipped with modern looms, automated
-                dyeing units, and precision cutting machines to maintain
-                accuracy and minimize waste. Sustainability is also a key pillar
-                of our operations — we’ve adopted eco-friendly practices in
-                water usage, chemical handling, and energy management.
-              </p>
-            
+              carefully monitored under strict quality controls. Our production
+              floor is equipped with modern looms, automated dyeing units, and
+              precision cutting machines to maintain accuracy and minimize
+              waste. Sustainability is also a key pillar of our operations —
+              we’ve adopted eco-friendly practices in water usage, chemical
+              handling, and energy management.
+            </p>
           </motion.div>
 
-         <motion.div
-  className="col-lg-6"
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: true }}
-  variants={{
-    visible: {
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  }}
->
-  <div className="custom-image-grid">
-    {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
-      <motion.div
-        className="factory-col"
-        key={src}
-        variants={{
-          hidden: { opacity: 0, scale: 0.8 },
-          visible: { opacity: 1, scale: 1 },
-        }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
-      >
-        <img src={src} alt="Factory" className="factory-image" />
-      </motion.div>
-    ))}
-  </div>
-</motion.div>
+          <motion.div
+            className="col-lg-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              visible: {
+                transition: {
+                  staggerChildren: 0.2,
+                },
+              },
+            }}
+          >
+            <div className="custom-image-grid">
+              {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
+                <motion.div
+                  className="factory-col"
+                  key={src}
+                  variants={{
+                    hidden: { opacity: 0, scale: 0.8 },
+                    visible: { opacity: 1, scale: 1 },
+                  }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                >
+                  <img src={src} alt="Factory" className="factory-image" />
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </div>
 
-    <br/>
+      <br />
       <div className="text-center">
         <h1 className="text-center fw-bold fs-1">BLOGS</h1>
         <p>Insights, Stories, and Industry Trends</p>
       </div>
-
 
       <div className="container blog-section p-2">
         <div className="row g-4">
@@ -484,8 +483,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-
-    
       </div>
       <div className="container-fluid p-0">
         <div className="space">
