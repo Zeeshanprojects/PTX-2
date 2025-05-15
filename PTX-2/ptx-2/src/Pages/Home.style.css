@@ -59,7 +59,6 @@ body {
   position: relative;
 }
 
-
 .factory-para {
   text-align: justify !important;
 }
@@ -384,8 +383,8 @@ a {
     object-fit: cover !important;
     display: block;
   }
-  .heading-size{
-font-size: 35px !important;
+  .heading-size {
+    font-size: 35px !important;
   }
 }
 @media (max-width: 575px) {
