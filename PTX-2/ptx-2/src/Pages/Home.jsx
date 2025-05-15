@@ -60,7 +60,8 @@ export default function Home() {
                     fetchPriority="high"
                   />
                     <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                      <h1>PTX COLLECTIVE</h1>
+                      <h1 className="ptx-heading">PTX <br/>
+                      COLLECTIVE</h1>
                     </div>
                 </div>
                 <div className="carousel-item">
