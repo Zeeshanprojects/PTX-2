@@ -12,7 +12,7 @@ import "./Header.style.css";
 
 
 export default function Header() {
-
+  
 
   // Function to close the navbar on small screens
   const closeNavbar = () => {
