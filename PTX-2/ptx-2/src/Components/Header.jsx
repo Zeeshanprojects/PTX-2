@@ -9,6 +9,7 @@ import {
   // faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Header.style.css";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
 
@@ -124,6 +125,7 @@ export default function Header() {
                 </a>
               </li>
             </ul>
+            <ThemeToggle/>
  {/* Icons for small screens */}
           <div className="nav-icons d-flex d-lg-none">
             <Link to="/Login">
