@@ -467,32 +467,8 @@ const handleSubmit = async (e) => {
         </div>
       </div>
       <div className="space"></div>
+   
       {/* <div className="w-100 py-5" style={{ backgroundColor: "#000" }}>
-        <div className="container text-white text-center">
-          <h2 className="fw-bold mb-3">Subscribe to Our Channel</h2>
-          <p className="mb-4">
-            Stay updated with the latest videos, tutorials, and industry
-            insights. Enter your email below.
-          </p>
-          <form className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-            <input
-              type="email"
-              className="form-control"
-              placeholder="Enter your email"
-              required
-              style={{
-                maxWidth: "300px",
-                border: "none",
-                padding: "0.75rem 1rem",
-              }}
-            />
-            <button type="submit" className="btn btn-outline-light px-4 py-2">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </div> */}
-      <div className="w-100 py-5" style={{ backgroundColor: "#000" }}>
       <div className="container text-white text-center">
         <h2 className="fw-bold mb-3">Subscribe to Our Channel</h2>
         <p className="mb-4">
@@ -524,7 +500,64 @@ const handleSubmit = async (e) => {
           </button>
         </form>
       </div>
-    </div>
+    </div> */}
+     <motion.div
+      className="w-100 py-5"
+      style={{ backgroundColor: "#000" }}
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <div className="container text-white text-center">
+        <motion.h2
+          className="fw-bold mb-3"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          Subscribe to Our Channel
+        </motion.h2>
+        <motion.p
+          className="mb-4"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+        >
+          Stay updated with the latest videos, tutorials, and industry insights. Enter your email below.
+        </motion.p>
+        <motion.form
+          onSubmit={handleSubmit}
+          className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+        >
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            style={{
+              maxWidth: "300px",
+              border: "none",
+              padding: "0.75rem 1rem",
+            }}
+          />
+          <motion.button
+            type="submit"
+            className="btn btn-outline-light px-4 py-2"
+            disabled={loading}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            {loading ? "Subscribing..." : "Subscribe"}
+          </motion.button>
+        </motion.form>
+      </div>
+    </motion.div>
   
       <div className="space">
         <div className="space"></div>
