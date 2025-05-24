@@ -1,5 +1,8 @@
-import { useEffect } from "react";
+
+import { useEffect,useState } from "react";
+import axios from 'axios'
 import { motion } from "framer-motion";
+
 import Image from "../Images/Image";
 import "./Home.style.css";
 import { Link } from "react-router-dom";
@@ -9,6 +12,38 @@ export default function Home() {
   useEffect(() => {
     document.title = "Home | Pakistan Textile Exchange";
   });
+const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+
+const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!email) {
+      alert("Please enter a valid email.");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const response = await axios.post("https://ptxapi.io/api/newslettersubscribers", {
+        email: email,
+      });
+
+      if (response.status === 201 || response.status === 200) {
+        alert("Subscribed successfully!");
+        setEmail("");
+      } else {
+        alert("Subscription failed. Please try again.");
+      }
+    } catch (error) {
+      console.error("API Error:", error);
+      alert("An error occurred while subscribing.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
 
   const cardVariants = {
     hidden: { opacity: 0, y: 40 },
@@ -432,7 +467,7 @@ export default function Home() {
         </div>
       </div>
       <div className="space"></div>
-      <div className="w-100 py-5" style={{ backgroundColor: "#000" }}>
+      {/* <div className="w-100 py-5" style={{ backgroundColor: "#000" }}>
         <div className="container text-white text-center">
           <h2 className="fw-bold mb-3">Subscribe to Our Channel</h2>
           <p className="mb-4">
@@ -456,8 +491,41 @@ export default function Home() {
             </button>
           </form>
         </div>
+      </div> */}
+      <div className="w-100 py-5" style={{ backgroundColor: "#000" }}>
+      <div className="container text-white text-center">
+        <h2 className="fw-bold mb-3">Subscribe to Our Channel</h2>
+        <p className="mb-4">
+          Stay updated with the latest videos, tutorials, and industry insights. Enter your email below.
+        </p>
+        <form
+          onSubmit={handleSubmit}
+          className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+        >
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            style={{
+              maxWidth: "300px",
+              border: "none",
+              padding: "0.75rem 1rem",
+            }}
+          />
+          <button
+            type="submit"
+            className="btn btn-outline-light px-4 py-2"
+            disabled={loading}
+          >
+            {loading ? "Subscribing..." : "Subscribe"}
+          </button>
+        </form>
       </div>
-
+    </div>
+  
       <div className="space">
         <div className="space"></div>
         <h1 className="text-center">WHY CHOOSE US?</h1>
