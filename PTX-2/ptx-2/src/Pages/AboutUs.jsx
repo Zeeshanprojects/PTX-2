@@ -129,7 +129,7 @@ export default function AboutUs() {
         <div className="row g-4">
           {[Image.step1, Image.step2, Image.step3].map((img, index) => (
             <motion.div
-              className="col-sm-12 col-md-6 col-lg-4"
+              className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
