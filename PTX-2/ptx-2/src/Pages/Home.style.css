@@ -5,7 +5,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
-  max-width: 450px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 0;
 }
@@ -164,7 +164,7 @@ body {
   line-height: 1.4;
 }
 .blog-box {
-  border-radius: 16px;
+  /* border-radius: 16px; */
   overflow: hidden;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -175,13 +175,13 @@ body {
 }
 
 .blog-box:hover {
-  transform: translateY(-8px);
+  transform: translateY(-2px);
   box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
 }
 
 .blog-img-wrapper {
   overflow: hidden;
-  border-radius: 16px 16px 0 0;
+  
 }
 
 .blog-img {
@@ -222,7 +222,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 16px;
+ 
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }

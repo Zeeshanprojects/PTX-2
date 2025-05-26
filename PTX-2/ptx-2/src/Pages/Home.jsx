@@ -296,15 +296,15 @@ const handleSubmit = async (e) => {
         viewport={{ once: true, amount: 0.4 }}
       >
         <p className="card-subtitle">WHO WE ARE?</p>
-        <h1 className="card-title">Pakistan Textile Exchange</h1>
-        <p className="card-description">
+        <h1 className="card-title mt-3">Pakistan Textile Exchange</h1>
+        <p className="card-description ">
           Paktex is a professional apparel sourcing group offering exceptional
           quality assurance, logistics, import and retail solutions, along with
           full social compliance.
         </p>
 
         <Link to="/inquireform">
-          <button type="button" className="btn btn-dark px-4 py-2 mt-3">
+          <button type="button" className="btn btn-dark px-4 ">
             INQUIRE NOW
           </button>
         </Link>
@@ -376,7 +376,7 @@ const handleSubmit = async (e) => {
         <p>Insights, Stories, and Industry Trends</p>
       </div>
 
-      <div className="container blog-section p-2">
+      <div className="container-fluid blog-section p-2">
         <div className="row g-4">
           {/* Blog Card 1 */}
           <motion.div
