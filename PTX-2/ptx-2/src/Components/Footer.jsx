@@ -22,6 +22,7 @@ export default function Footer() {
                 <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
   {/* Content */}
 <img src={Image.logo} alt="logo"></img>
+
   {/* <hr
     className="mb-4 mt-0 d-inline-block mx-auto"
     style={{
@@ -30,7 +31,7 @@ export default function Footer() {
       height: 2,
     }}
   /> */}
-<br/><br/><br/>
+<br/><br/>
   <p>
     <Link to="/" className="text-dark">
       Laguna Beach, CA 92651
