@@ -55,7 +55,6 @@ background-color: none !important;
   text-decoration: none;
   padding-bottom: 5px;
 }
-
 .nav-link::after {
   content: '';
   position: absolute;
@@ -66,18 +65,7 @@ background-color: none !important;
   background-color: white;
   transition: width 0.3s ease;
 }
-
 .nav-link:hover::after {
-  width: 90%;
+  width: 100%;
 }
-@media (min-width:576px) and (max-width:767px) {
-  .nav-link:hover::after {
-  width: 70px;
-}
-}
-@media (max-width:575px) {
- .nav-link:hover::after {
-  width: 70px;
-}
- 
-}
+
