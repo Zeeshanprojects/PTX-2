@@ -22,6 +22,7 @@
 .tab-btn:hover {
   background-color: #ccc;
   color: black;
+  
 }
 /* .gallery-card {
   aspect-ratio: 4 / 3;
@@ -95,9 +96,6 @@
   transform: translateY(0);
 }
 .color {
-  color: black !important;
   font-size: large !important;
 }
-.color:hover {
-  color: black !important;
-}
+.color:hover {  color:black !important;}
