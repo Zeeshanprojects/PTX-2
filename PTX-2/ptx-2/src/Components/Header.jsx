@@ -101,7 +101,7 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   className="nav-link active d-flex align-items-center gap-1"
-                  href="http://localhost:3001/"
+                  href="https://inventory.paktex.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={closeNavbar}
@@ -113,7 +113,7 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   className="nav-link active d-flex align-items-center gap-1"
-                  href="http://localhost:3002/"
+                  href="https://styles.paktex.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={closeNavbar}
