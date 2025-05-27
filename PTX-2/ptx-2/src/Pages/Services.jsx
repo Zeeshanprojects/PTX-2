@@ -88,7 +88,7 @@ export default function Services() {
                   <p className="service-card-text">{service.text}</p>
                   <div className="mt-auto">
                     <Link to={service.link}>
-                      <button type="button" className="btn btn-outline-dark">
+                      <button type="button" className="btn btn-outline-dark read-more px-5">
                         Read More
                       </button>
                     </Link>

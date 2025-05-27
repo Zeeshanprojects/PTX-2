@@ -304,7 +304,7 @@ const handleSubmit = async (e) => {
         </p>
 
         <Link to="/inquireform">
-          <button type="button" className="btn btn-dark px-4 ">
+          <button type="button" className="btn btn-dark px-5 ">
             INQUIRE NOW
           </button>
         </Link>
