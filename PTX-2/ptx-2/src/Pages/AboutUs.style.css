@@ -109,7 +109,7 @@ text-align: justify;
   height: 340px !important;
   width: 100%;
   height: auto;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
   transition: transform 0.3s ease;
 }
 

@@ -182,11 +182,11 @@ export default function AboutUs() {
               height="100"
             />
             <h4 className="mt-3">David Jumani</h4>
-            <p className="text-muted">Founder & Chief Executive Officer</p>
+            <p className="text-muted">Founder & Chief Apparel Officer</p>
           </div>
 
           <div className="col-md-7">
-            <h3 className="fw-bold ceocontent">CEO Message</h3>
+            <h3 className="fw-bold ceocontent">CAO Message</h3>
             <p className="text-muted ceocontent">
               One of my first jobs was a teamster at Port Long Beach was loading
               Dole Bananas and Sunkist Oranges. I was always blown away by the
