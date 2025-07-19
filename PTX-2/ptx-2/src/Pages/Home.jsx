@@ -79,10 +79,14 @@ export default function Home() {
   return (
     <>
       <div className="space"></div>
-     
+
       <div className="container-fluid p-0">
         <div className="col-12">
-          <img src={Image.bannerimage} alt="ptx-banner-image"className="ptx-banner-image"/>
+          <img
+            src={Image.bannerimage}
+            alt="ptx-banner-image"
+            className="ptx-banner-image"
+          />
         </div>
       </div>
       <br />
@@ -148,7 +152,6 @@ export default function Home() {
             <div key={index} className="col-sm-12 col-md-12 col-lg-4">
               <motion.div
                 className="product-box"
-              
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
@@ -219,6 +222,20 @@ export default function Home() {
               we’ve adopted eco-friendly practices in water usage, chemical
               handling, and energy management.
             </p>
+
+            <div className="d-flex gap-2">
+               
+          <button type="button" className="btn btn-dark px-5 ">
+            AU Textiles
+          </button>
+            <button type="button" className="btn btn-dark px-5 ">
+            Shadan Enterprises
+          </button>
+            <button type="button" className="btn btn-dark px-5 ">
+            Mahad Textiles
+          </button>
+        
+            </div>
           </motion.div>
 
           <motion.div
@@ -254,102 +271,284 @@ export default function Home() {
       </div>
       <br />
 
-    <div className="app-container">
-  {/* Row 1 - T-Shirts */}
-  <div className="scroll-row row1">
-     <div className="scroll-content">
-       <div className="img-box"><img src={Image.image1} alt="Tshirt" /></div>
-    <div className="img-box"><img src={Image.image2} alt="Tshirt" /></div>
-    <div className="img-box"><img src={Image.image3} alt="Tshirt" /></div>
-    <div className="img-box"><img src={Image.image4} alt="Tshirt" /></div>
-    <div className="img-box"><img src={Image.image5} alt="Tshirt" /></div>
-    <div className="img-box"><img src={Image.image6} alt="Tshirt" /></div>
-    <div className="img-box"><img src={Image.image7} alt="Tshirt" /></div>
-    <div className="img-box"><img src={Image.image8} alt="Tshirt" /></div>
-    <div className="img-box"><img src={Image.image9} alt="Tshirt" /></div>
+      <div className="app-container">
+        {/* Row 1 - T-Shirts */}
+        <div className="scroll-row row1">
+          <div className="scroll-content">
+            <div className="img-box">
+              <img src={Image.image1} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image2} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image3} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image4} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image5} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image6} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image7} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image8} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image9} alt="Tshirt" />
+            </div>
 
-     {/* Duplicate Set */}
-      <div className="img-box"><img src={Image.image1} alt="Tshirt" /></div>
-      <div className="img-box"><img src={Image.image2} alt="Tshirt" /></div>
-      <div className="img-box"><img src={Image.image3} alt="Tshirt" /></div>
-      <div className="img-box"><img src={Image.image4} alt="Tshirt" /></div>
-      <div className="img-box"><img src={Image.image5} alt="Tshirt" /></div>
-      <div className="img-box"><img src={Image.image6} alt="Tshirt" /></div>
-      <div className="img-box"><img src={Image.image7} alt="Tshirt" /></div>
-      <div className="img-box"><img src={Image.image8} alt="Tshirt" /></div>
-      <div className="img-box"><img src={Image.image9} alt="Tshirt" /></div>
-     </div>
-   
-  </div>
-<div className="scroll-row row2">
-     <div className="scroll-content">
-       <div className="img-box"><img src={Image.Kidsimage1} alt="h"/></div>
-    <div className="img-box"><img src={Image.Kidsimage2} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage3} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage4} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage5} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage6} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage7} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage8} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage9} alt="Kids" /></div>
+            {/* Duplicate Set */}
+            <div className="img-box">
+              <img src={Image.image1} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image2} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image3} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image4} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image5} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image6} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image7} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image8} alt="Tshirt" />
+            </div>
+            <div className="img-box">
+              <img src={Image.image9} alt="Tshirt" />
+            </div>
+          </div>
+        </div>
+        <div className="scroll-row row2">
+          <div className="scroll-content">
+            <div className="img-box">
+              <img src={Image.LongT1} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT2} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT3} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT4} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT5} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT6} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT7} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT8} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT9} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT10} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT11} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT12} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT13} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT14} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT15} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT16} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT17} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT18} alt="longT" />
+            </div>
 
-    <div className="img-box"><img src={Image.Kidsimage1} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage2} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage3} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage4} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage5} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage6} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage7} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage8} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage9} alt="Kids" /></div>
-     </div>
-   
-  </div>
+            <div className="img-box">
+              <img src={Image.LongT1} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT2} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT3} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT4} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT5} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT6} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT7} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT8} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT9} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT10} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT11} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT12} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT13} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT14} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT15} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT16} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT17} alt="longT" />
+            </div>
+            <div className="img-box">
+              <img src={Image.LongT18} alt="longT" />
+            </div>
+          </div>
+        </div>
 
-  <div className="scroll-row row3">
-     <div className="scroll-content">
-       <div className="img-box"><img src={Image.Kidsimage1} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage2} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage3} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage4} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage5} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage6} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage7} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage8} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage9} alt="Kids" /></div>
+        <div className="scroll-row row3">
+          <div className="scroll-content">
+            <div className="img-box">
+              <img src={Image.Kidsimage1} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage2} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage3} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage4} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage5} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage6} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage7} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage8} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage9} alt="Kids" />
+            </div>
 
-    <div className="img-box"><img src={Image.Kidsimage1} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage2} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage3} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage4} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage5} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage6} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage7} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage8} alt="Kids" /></div>
-    <div className="img-box"><img src={Image.Kidsimage9} alt="Kids" /></div>
-     </div>
-   
-  </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage1} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage2} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage3} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage4} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage5} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage6} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage7} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage8} alt="Kids" />
+            </div>
+            <div className="img-box">
+              <img src={Image.Kidsimage9} alt="Kids" />
+            </div>
+          </div>
+        </div>
 
-  <div className="scroll-row row4">
-     <div className="scroll-content">
-      <div className="img-box"><img src={Image.F1} alt="Fleece" /></div>
-    <div className="img-box"><img src={Image.F2} alt="Fleece" /></div>
-    <div className="img-box"><img src={Image.F3} alt="Fleece" /></div>
-    <div className="img-box"><img src={Image.F4} alt="Fleece" /></div>
-    <div className="img-box"><img src={Image.F5} alt="Fleece" /></div>
-    <div className="img-box"><img src={Image.F6} alt="Fleece" /></div>
+        <div className="scroll-row row4">
+          <div className="scroll-content">
+            <div className="img-box">
+              <img src={Image.F1} alt="Fleece" />
+            </div>
+            <div className="img-box">
+              <img src={Image.F2} alt="Fleece" />
+            </div>
+            <div className="img-box">
+              <img src={Image.F3} alt="Fleece" />
+            </div>
+            <div className="img-box">
+              <img src={Image.F4} alt="Fleece" />
+            </div>
+            <div className="img-box">
+              <img src={Image.F5} alt="Fleece" />
+            </div>
+            <div className="img-box">
+              <img src={Image.F6} alt="Fleece" />
+            </div>
 
-    <div className="img-box"><img src={Image.F1} alt="Fleece" /></div>
-    <div className="img-box"><img src={Image.F2} alt="Fleece" /></div>
-    <div className="img-box"><img src={Image.F3} alt="Fleece" /></div>
-    <div className="img-box"><img src={Image.F4} alt="Fleece" /></div>
-    <div className="img-box"><img src={Image.F5} alt="Fleece" /></div>
-    <div className="img-box"><img src={Image.F6} alt="Fleece" /></div>
-     </div>
-    
-  </div>
-</div>
+            <div className="img-box">
+              <img src={Image.F1} alt="Fleece" />
+            </div>
+            <div className="img-box">
+              <img src={Image.F2} alt="Fleece" />
+            </div>
+            <div className="img-box">
+              <img src={Image.F3} alt="Fleece" />
+            </div>
+            <div className="img-box">
+              <img src={Image.F4} alt="Fleece" />
+            </div>
+            <div className="img-box">
+              <img src={Image.F5} alt="Fleece" />
+            </div>
+            <div className="img-box">
+              <img src={Image.F6} alt="Fleece" />
+            </div>
+          </div>
+        </div>
+      </div>
 
       <br />
       <div className="text-center">
