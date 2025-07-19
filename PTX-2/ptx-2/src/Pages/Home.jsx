@@ -1,6 +1,5 @@
-
-import { useEffect,useState } from "react";
-import axios from 'axios'
+import { useEffect, useState } from "react";
+import axios from "axios";
 import { motion } from "framer-motion";
 
 import Image from "../Images/Image";
@@ -12,10 +11,10 @@ export default function Home() {
   useEffect(() => {
     document.title = "Home | Pakistan Textile Exchange";
   });
-const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
 
-const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!email) {
@@ -26,9 +25,12 @@ const handleSubmit = async (e) => {
     setLoading(true);
 
     try {
-      const response = await axios.post("https://ptxapi.io/api/newslettersubscribers", {
-        email: email,
-      });
+      const response = await axios.post(
+        "https://ptxapi.io/api/newslettersubscribers",
+        {
+          email: email,
+        }
+      );
 
       if (response.status === 201 || response.status === 200) {
         alert("Subscribed successfully!");
@@ -43,7 +45,6 @@ const handleSubmit = async (e) => {
       setLoading(false);
     }
   };
-
 
   const cardVariants = {
     hidden: { opacity: 0, y: 40 },
@@ -78,7 +79,7 @@ const handleSubmit = async (e) => {
   return (
     <>
       <div className="space"></div>
-      <div className="container-fluid p-0">
+      {/* <div className="container-fluid p-0">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div
@@ -201,6 +202,11 @@ const handleSubmit = async (e) => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="container-fluid">
+        <div className="col-12">
+          <img src={Image.bannerimage} alt="ptx-banner-image"/>
+        </div>
       </div>
       <br />
 
@@ -265,7 +271,7 @@ const handleSubmit = async (e) => {
             <div key={index} className="col-sm-12 col-md-12 col-lg-4">
               <motion.div
                 className="product-box"
-                variants={productVariants}
+              
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
@@ -369,6 +375,83 @@ const handleSubmit = async (e) => {
           </motion.div>
         </div>
       </div>
+      <br />
+
+    <div className="app-container">
+  {/* Row 1 - T-Shirts */}
+  <div className="scroll-row row1">
+     <div className="scroll-content">
+       <div className="img-box"><img src={Image.image1} alt="Tshirt" /></div>
+    <div className="img-box"><img src={Image.image2} alt="Tshirt" /></div>
+    <div className="img-box"><img src={Image.image3} alt="Tshirt" /></div>
+    <div className="img-box"><img src={Image.image4} alt="Tshirt" /></div>
+    <div className="img-box"><img src={Image.image5} alt="Tshirt" /></div>
+    <div className="img-box"><img src={Image.image6} alt="Tshirt" /></div>
+    <div className="img-box"><img src={Image.image7} alt="Tshirt" /></div>
+    <div className="img-box"><img src={Image.image8} alt="Tshirt" /></div>
+    <div className="img-box"><img src={Image.image9} alt="Tshirt" /></div>
+
+     {/* Duplicate Set */}
+      <div className="img-box"><img src={Image.image1} alt="Tshirt" /></div>
+      <div className="img-box"><img src={Image.image2} alt="Tshirt" /></div>
+      <div className="img-box"><img src={Image.image3} alt="Tshirt" /></div>
+      <div className="img-box"><img src={Image.image4} alt="Tshirt" /></div>
+      <div className="img-box"><img src={Image.image5} alt="Tshirt" /></div>
+      <div className="img-box"><img src={Image.image6} alt="Tshirt" /></div>
+      <div className="img-box"><img src={Image.image7} alt="Tshirt" /></div>
+      <div className="img-box"><img src={Image.image8} alt="Tshirt" /></div>
+      <div className="img-box"><img src={Image.image9} alt="Tshirt" /></div>
+     </div>
+   
+  </div>
+
+
+  {/* Row 2 - Kids */}
+  <div className="scroll-row row2">
+     <div className="scroll-content">
+       <div className="img-box"><img src={Image.Kidsimage1} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage2} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage3} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage4} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage5} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage6} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage7} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage8} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage9} alt="Kids" /></div>
+
+    <div className="img-box"><img src={Image.Kidsimage1} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage2} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage3} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage4} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage5} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage6} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage7} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage8} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage9} alt="Kids" /></div>
+     </div>
+   
+  </div>
+
+  {/* Row 3 - Fleece */}
+  <div className="scroll-row row3">
+     <div className="scroll-content">
+      <div className="img-box"><img src={Image.F1} alt="Fleece" /></div>
+    <div className="img-box"><img src={Image.F2} alt="Fleece" /></div>
+    <div className="img-box"><img src={Image.F3} alt="Fleece" /></div>
+    <div className="img-box"><img src={Image.F4} alt="Fleece" /></div>
+    <div className="img-box"><img src={Image.F5} alt="Fleece" /></div>
+    <div className="img-box"><img src={Image.F6} alt="Fleece" /></div>
+
+    <div className="img-box"><img src={Image.F1} alt="Fleece" /></div>
+    <div className="img-box"><img src={Image.F2} alt="Fleece" /></div>
+    <div className="img-box"><img src={Image.F3} alt="Fleece" /></div>
+    <div className="img-box"><img src={Image.F4} alt="Fleece" /></div>
+    <div className="img-box"><img src={Image.F5} alt="Fleece" /></div>
+    <div className="img-box"><img src={Image.F6} alt="Fleece" /></div>
+     </div>
+    
+  </div>
+</div>
 
       <br />
       <div className="text-center">
@@ -467,7 +550,7 @@ const handleSubmit = async (e) => {
         </div>
       </div>
       <div className="space"></div>
-   
+
       {/* <div className="w-100 py-5" style={{ backgroundColor: "#000" }}>
       <div className="container text-white text-center">
         <h2 className="fw-bold mb-3">Subscribe to Our Channel</h2>
@@ -501,64 +584,65 @@ const handleSubmit = async (e) => {
         </form>
       </div>
     </div> */}
-     <motion.div
-      className="w-100 py-5"
-      style={{ backgroundColor: "#000" }}
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-    >
-      <div className="container text-white text-center">
-        <motion.h2
-          className="fw-bold mb-3"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-        >
-          Subscribe to Our Channel
-        </motion.h2>
-        <motion.p
-          className="mb-4"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-        >
-          Stay updated with the latest videos, tutorials, and industry insights. Enter your email below.
-        </motion.p>
-        <motion.form
-          onSubmit={handleSubmit}
-          className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-        >
-          <input
-            type="email"
-            className="form-control"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            style={{
-              maxWidth: "300px",
-              border: "none",
-              padding: "0.75rem 1rem",
-            }}
-          />
-          <motion.button
-            type="submit"
-            className="btn btn-outline-light px-4 py-2"
-            disabled={loading}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 300 }}
+      <motion.div
+        className="w-100 py-5"
+        style={{ backgroundColor: "#000" }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div className="container text-white text-center">
+          <motion.h2
+            className="fw-bold mb-3"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
           >
-            {loading ? "Subscribing..." : "Subscribe"}
-          </motion.button>
-        </motion.form>
-      </div>
-    </motion.div>
-  
+            Subscribe to Our Channel
+          </motion.h2>
+          <motion.p
+            className="mb-4"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
+            Stay updated with the latest videos, tutorials, and industry
+            insights. Enter your email below.
+          </motion.p>
+          <motion.form
+            onSubmit={handleSubmit}
+            className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+          >
+            <input
+              type="email"
+              className="form-control"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              style={{
+                maxWidth: "300px",
+                border: "none",
+                padding: "0.75rem 1rem",
+              }}
+            />
+            <motion.button
+              type="submit"
+              className="btn btn-outline-light px-4 py-2"
+              disabled={loading}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              {loading ? "Subscribing..." : "Subscribe"}
+            </motion.button>
+          </motion.form>
+        </div>
+      </motion.div>
+
       <div className="space">
         <div className="space"></div>
         <h1 className="text-center">WHY CHOOSE US?</h1>

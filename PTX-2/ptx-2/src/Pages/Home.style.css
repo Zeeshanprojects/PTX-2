@@ -112,27 +112,27 @@ body {
   line-height: 1.6;
   text-align: center !important;
 }
-
+/* 
 .production-image {
-  height: 300px;
+  height: 1400px !important;
   padding: 5px;
-}
+} */
 .product-box {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
 }
 .product-box:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12); */
 }
 .product-image {
   width: 100%;
-  height: 420px;
+  height: 550px !important;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -314,7 +314,7 @@ p {
 .content-card {
   background-color: black;
   color: white !important;
-  padding: 120px 20px;
+  padding: 170px 20px;
   text-align: center;
 }
 
@@ -355,6 +355,72 @@ a {
   margin: 0 !important;
   object-fit: cover !important;
 }
+.app-container {
+  background-color: black;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.scroll-row {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 30px 0;
+  position: relative;
+}
+
+.scroll-content {
+  display: inline-flex;
+  gap: 20px;
+  animation: scroll-left 40s linear infinite;
+}
+
+/* Different speeds for different rows */
+
+.row2 .scroll-content {
+  animation: scroll-right 40s linear infinite;
+}
+
+.row3 .scroll-content {
+  animation: scroll-left 30s linear infinite;
+}
+
+.img-box {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .sectionimage {
     padding: 0 !important;
