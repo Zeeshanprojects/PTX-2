@@ -51,10 +51,10 @@ export default function Home() {
     visible: { opacity: 1, y: 0 },
   };
 
-  const productVariants = {
-    hidden: { opacity: 0, scale: 0.95, y: 30 },
-    visible: { opacity: 1, scale: 1, y: 0 },
-  };
+  // const productVariants = {
+  //   hidden: { opacity: 0, scale: 0.95, y: 30 },
+  //   visible: { opacity: 1, scale: 1, y: 0 },
+  // };
   const products = [
     {
       img: Image.latestproduct1,
@@ -79,133 +79,10 @@ export default function Home() {
   return (
     <>
       <div className="space"></div>
-      {/* <div className="container-fluid p-0">
-        <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <div
-              id="carouselExampleControls"
-              className="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img
-                    src={Image.slider1}
-                    className="d-block w-100"
-                    alt="slider1"
-                    fetchPriority="high"
-                  />
-                  <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <h1 className="ptx-heading">
-                      PTX <br />
-                      COLLECTIVE
-                    </h1>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src={Image.slider2}
-                    className="d-block w-100"
-                    alt="slider2"
-                    fetchPriority="high"
-                  />
-                  <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <Link to="/search">
-                      <button
-                        type="button"
-                        className="btn btn-dark btn-lg banner-btn"
-                      >
-                        VIEW PRODUCTS
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src={Image.slider3}
-                    className="d-block w-100"
-                    alt="slider3"
-                    fetchPriority="high"
-                  />
-                  <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <Link to="/search">
-                      <button
-                        type="button"
-                        className="btn btn-dark btn-lg banner-btn"
-                      >
-                        VIEW PRODUCTS
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src={Image.slider4}
-                    className="d-block w-100"
-                    alt="slider4"
-                    fetchPriority="high"
-                  />
-                  <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <Link to="/search">
-                      <button
-                        type="button"
-                        className="btn btn-dark btn-lg banner-btn"
-                      >
-                        VIEW PRODUCTS
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src={Image.slider5}
-                    className="d-block w-100"
-                    alt="slider5"
-                    fetchPriority="high"
-                  />
-                  <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                    <Link to="/search">
-                      <button
-                        type="button"
-                        className="btn btn-light btn-lg banner-btn"
-                      >
-                        VIEW PRODUCTS
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon bg-dark"
-                  aria-hidden="true"
-                />
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon bg-dark"
-                  aria-hidden="true"
-                />
-                <span className="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      <div className="container-fluid">
+     
+      <div className="container-fluid p-0">
         <div className="col-12">
-          <img src={Image.bannerimage} alt="ptx-banner-image"/>
+          <img src={Image.bannerimage} alt="ptx-banner-image"className="ptx-banner-image"/>
         </div>
       </div>
       <br />
@@ -404,10 +281,32 @@ export default function Home() {
      </div>
    
   </div>
+<div className="scroll-row row2">
+     <div className="scroll-content">
+       <div className="img-box"><img src={Image.Kidsimage1} alt="h"/></div>
+    <div className="img-box"><img src={Image.Kidsimage2} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage3} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage4} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage5} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage6} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage7} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage8} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage9} alt="Kids" /></div>
 
+    <div className="img-box"><img src={Image.Kidsimage1} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage2} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage3} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage4} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage5} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage6} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage7} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage8} alt="Kids" /></div>
+    <div className="img-box"><img src={Image.Kidsimage9} alt="Kids" /></div>
+     </div>
+   
+  </div>
 
-  {/* Row 2 - Kids */}
-  <div className="scroll-row row2">
+  <div className="scroll-row row3">
      <div className="scroll-content">
        <div className="img-box"><img src={Image.Kidsimage1} alt="Kids" /></div>
     <div className="img-box"><img src={Image.Kidsimage2} alt="Kids" /></div>
@@ -432,8 +331,7 @@ export default function Home() {
    
   </div>
 
-  {/* Row 3 - Fleece */}
-  <div className="scroll-row row3">
+  <div className="scroll-row row4">
      <div className="scroll-content">
       <div className="img-box"><img src={Image.F1} alt="Fleece" /></div>
     <div className="img-box"><img src={Image.F2} alt="Fleece" /></div>
