@@ -235,7 +235,7 @@ const handleSubmit = async (e) => {
           ].map((card, index) => (
             <div key={index} className="col-sm-12 col-md-6 col-lg-4">
               <motion.div
-                className="relationship-card"
+                className="relationship-card border-outline"
                 variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
