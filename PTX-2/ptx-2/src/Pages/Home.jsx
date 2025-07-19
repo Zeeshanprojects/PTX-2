@@ -208,9 +208,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h1 className="heading-size">OUR FACTORY PRODUCTION</h1>
-            <p className="fw-bold">
-              Where Innovation Meets Craftsmanship in Every Stitch
-            </p>
+            
             <p className="factory-para">
               At our state-of-the-art textile facility, we specialize in the
               production of high-quality fabrics ranging from denim to woven and
@@ -222,20 +220,14 @@ export default function Home() {
               we’ve adopted eco-friendly practices in water usage, chemical
               handling, and energy management.
             </p>
-
-            <div className="d-flex gap-2">
-               
-          <button type="button" className="btn btn-dark px-5 ">
-            AU Textiles
-          </button>
-            <button type="button" className="btn btn-dark px-5 ">
-            Shadan Enterprises
-          </button>
-            <button type="button" className="btn btn-dark px-5 ">
-            Mahad Textiles
-          </button>
-        
-            </div>
+  <div className="d-flex flex-wrap gap-2">
+    {["AU Textiles", "Shadan Enterprises", "Mahad Textiles"].map((name) => (
+      <span key={name} className="badge bg-dark text-white fs-6 px-3 py-2 rounded-pill">
+        {name}
+      </span>
+    ))}
+  </div>
+         
           </motion.div>
 
           <motion.div
@@ -556,7 +548,7 @@ export default function Home() {
         <p>Insights, Stories, and Industry Trends</p>
       </div>
 
-      <div className="container-fluid blog-section p-2">
+      <div className="container blog-section p-2">
         <div className="row g-4">
           {/* Blog Card 1 */}
           <motion.div
