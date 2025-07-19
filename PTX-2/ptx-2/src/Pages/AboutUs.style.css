@@ -54,10 +54,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  } */
 
 .custom-card-title {
   font-size: 1.25rem;
@@ -88,17 +84,7 @@
   border-radius: 12px;
 }
 
-/* Background block behind the image */
-/* .image-wrapper::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 100%;
-  height: 100%;
-  background-color: #212529;
-  z-index: -1;
-} */
+
 
 .storyimage {
   margin-left: 20px !important;
