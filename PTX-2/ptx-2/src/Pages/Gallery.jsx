@@ -21,13 +21,13 @@ export default function Gallery() {
       });
   }, []);
 
-  const navLinks = [
-    { name: "GALLERY", path: "/Gallery" },
-    { name: "KNITS", path: "/knits" },
-    { name: "DENIM", path: "/denim" },
-    { name: "WOVEN", path: "/woven" },
-    { name: "OUTWEAR", path: "/outwear" },
-  ];
+  // const navLinks = [
+  //   { name: "GALLERY", path: "/Gallery" },
+  //   { name: "KNITS", path: "/knits" },
+  //   { name: "DENIM", path: "/denim" },
+  //   { name: "WOVEN", path: "/woven" },
+  //   { name: "OUTWEAR", path: "/outwear" },
+  // ];
 
   return (
     <>
@@ -37,7 +37,7 @@ export default function Gallery() {
       <br />
 
       {/* Nav Tabs */}
-      <ul className="nav justify-content-center gallery-tabs color">
+      {/* <ul className="nav justify-content-center gallery-tabs color">
         {navLinks.map((link, i) => (
           <li className="nav-item" key={link.name}>
             <Link className="nav-link color text-muted" to={link.path}>
@@ -45,7 +45,7 @@ export default function Gallery() {
             </Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
       <br />
 
       {loading ? (
