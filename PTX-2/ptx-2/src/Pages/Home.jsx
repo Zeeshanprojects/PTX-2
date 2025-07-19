@@ -184,7 +184,14 @@ export default function Home() {
         <p className="card-subtitle">WHO WE ARE?</p>
         <h1 className="card-title mt-3">Pakistan Textile Exchange</h1>
         <p className="card-description ">
-         Pakistan Textile Exchange (Paktex) is a leading apparel sourcing company offering complete supply chain solutions including product development, quality assurance, logistics, and import services. We partner with global brands to deliver high-quality garments with a strong focus on timely delivery and full social compliance. Backed by a network of reliable manufacturers and a commitment to ethical practices, Paktex ensures excellence at every stage—from concept to final shipment.
+          Pakistan Textile Exchange (Paktex) is a leading apparel sourcing
+          company offering complete supply chain solutions including product
+          development, quality assurance, logistics, and import services. We
+          partner with global brands to deliver high-quality garments with a
+          strong focus on timely delivery and full social compliance. Backed by
+          a network of reliable manufacturers and a commitment to ethical
+          practices, Paktex ensures excellence at every stage—from concept to
+          final shipment.
         </p>
 
         <Link to="/inquireform">
@@ -206,7 +213,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h1 className="heading-size">OUR FACTORY PRODUCTION</h1>
-            
+
             <p className="factory-para">
               At our state-of-the-art textile facility, we specialize in the
               production of high-quality fabrics ranging from denim to woven and
@@ -218,14 +225,18 @@ export default function Home() {
               we’ve adopted eco-friendly practices in water usage, chemical
               handling, and energy management.
             </p>
-  <div className="d-flex flex-wrap gap-2">
-    {["AU Textiles", "Shadan Enterprises", "Mahad Textiles"].map((name) => (
-      <span key={name} className="badge bg-dark text-white fs-6 px-3 py-2 rounded-pill">
-        {name}
-      </span>
-    ))}
-  </div>
-         
+            <div className="d-flex flex-wrap gap-2">
+              {["AU Textiles", "Shadan Enterprises", "Mahad Textiles"].map(
+                (name) => (
+                  <span
+                    key={name}
+                    className="badge bg-dark text-white fs-6 px-3 py-2 rounded-pill"
+                  >
+                    {name}
+                  </span>
+                )
+              )}
+            </div>
           </motion.div>
 
           <motion.div

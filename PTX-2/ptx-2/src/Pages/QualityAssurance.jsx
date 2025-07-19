@@ -32,7 +32,7 @@ export default function QualityAssurance() {
                 Ensuring Best Apparel Quality
               </h2>
 
-              <p className="card-text service mt-2">
+              <p className="card-text service mt-2" style={{textAlign: "justify"}}>
                 Pakistan textile exchange prides itself on strict focus of
                 quality assurance, we do not just handle in-line and final
                 inspection we start with product induction, inspecting yarn,
@@ -47,7 +47,7 @@ export default function QualityAssurance() {
                 Quality Assurance and Quality Control
               </h2>
 
-              <p className="card-text  service mt-2">
+              <p className="card-text  service mt-2 " style={{textAlign: "justify"}}>
                 Quality assurance and quality control may seem the same thing,
                 but they’re not. Apparel garments, accessories, and other
                 textile products are assessed for quality in the preproduction
@@ -63,7 +63,7 @@ export default function QualityAssurance() {
                 In-line Production Inspection
               </h2>
 
-              <p className="card-text  service mt-2">
+              <p className="card-text  service mt-2"  style={{textAlign: "justify"}}>
                 In-line product inspection or DUPRO (During Production
                 Inspection) is an effective way for customers to know about the
                 status of the manufacturing of an order, gain important
@@ -75,7 +75,7 @@ export default function QualityAssurance() {
             <div className="card-body bg-white ">
               <h2 className="card-title service mt-4">Why Choose PTX</h2>
 
-              <p className="card-text service mt-2">
+              <p className="card-text service mt-2"  style={{textAlign: "justify"}}>
                 We never compromise with the quality as we consider it as our
                 success pillar. We believe that compromising on quality leads to
                 losing market share or clients. We believe that if we have

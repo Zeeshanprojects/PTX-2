@@ -31,7 +31,7 @@ export default function Studio() {
             <div className="card-body bg-transparent">
               <h2 className="card-title service">IT Solutions</h2>
 
-              <p className="card-text service mt-2">
+              <p className="card-text service mt-2" style={{textAlign: "justify"}}>
                 PTX stands for the Pakistan Textile Exchange, we help our
                 vendors develop sound marketing campaigns, professional product
                 shots, web sites to help market their services through our
@@ -44,7 +44,7 @@ export default function Studio() {
             <div className="card-body bg-transparent serviceparagraph">
               <h2 className="card-title service mt-4">What are we offering?</h2>
 
-              <p className="card-text  service mt-2">
+              <p className="card-text  service mt-2" style={{textAlign: "justify"}}>
                 We are professional who are responsible for the design and
                 construction of websites. We ensure that sites meet user
                 expectations by ensuring they look good, run smoothly and offer
@@ -60,7 +60,7 @@ export default function Studio() {
             <div className="card-body bg-transparent ">
               <h2 className="card-title service mt-4">Why Choose PTX</h2>
 
-              <p className="card-text service mt-2">
+              <p className="card-text service mt-2"  style={{textAlign: "justify"}}>
                 We never compromise with the quality as we consider it as our
                 success pillar. We believe that compromising on quality leads to
                 losing market share or clients. We believe that if we have

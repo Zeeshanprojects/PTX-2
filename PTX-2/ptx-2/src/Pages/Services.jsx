@@ -80,10 +80,13 @@ export default function Services() {
               >
             
                    <div className="service-card-body d-flex flex-column flex-grow-1 text-center">
-                  <i
+                  {/* <i
                     className={`${service.icon} service-icon mb-3`}
                     style={{ fontSize: "2rem", color: "#333" }}
-                  ></i>
+                  ></i> */}
+                  <div className="service-icon-wrapper mx-auto mb-3">
+                  <i className={`${service.icon} service-icon`}></i>
+                </div>
                   <h6 className="service-card-title">{service.title}</h6>
                   <p className="service-card-text">{service.text}</p>
                   <div className="mt-auto">

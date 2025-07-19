@@ -28,7 +28,7 @@ export default function Logistics() {
             <div className="card-body bg-transparent">
               <h2 className="card-title service">Logistics</h2>
 
-              <p className="card-text service mt-2">
+              <p className="card-text service mt-2" style={{textAlign: "justify"}}>
                 Want to know where your shipments are? tired of calling your
                 forwarder or waiting for emails? Pakistan textile exchange has
                 built an online PLM with all order and sampling tracking real
@@ -42,7 +42,7 @@ export default function Logistics() {
                 What is Apparel Production?
               </h2>
 
-              <p className="card-text  service mt-2">
+              <p className="card-text  service mt-2"  style={{textAlign: "justify"}}>
                 Apparel production, also known as garment production is a
                 process where fabric is being converted into garments. The term
                 apparel production is basically used when garments are
@@ -56,7 +56,7 @@ export default function Logistics() {
             <div className="card-body bg-transparent ">
               <h2 className="card-title service mt-4">Why Choose PTX</h2>
 
-              <p className="card-text service  mt-2">
+              <p className="card-text service  mt-2"  style={{textAlign: "justify"}}>
                 We never compromise with the quality as we consider it as our
                 success pillar. We believe that compromising on quality leads to
                 losing market share or clients. We believe that if we have

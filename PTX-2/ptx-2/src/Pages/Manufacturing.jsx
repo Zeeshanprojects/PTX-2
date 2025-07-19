@@ -32,7 +32,7 @@ export default function Manufacturing() {
             <div className="card-body bg-transparent">
               <h2 className="card-title service">Manufacturing Best Apparel</h2>
 
-              <p className="card-text service mt-2 ">
+              <p className="card-text service mt-2 " style={{textAlign: "justify"}}>
                 Our factory partners are vertically integrated, from spinning,
                 knitting, dying, finishing, printing, laundry to pack. We have
                 sample departments the size of small production units knocking
@@ -46,7 +46,7 @@ export default function Manufacturing() {
                 What is Apparel Production?
               </h2>
 
-              <p className="card-text  service mt-2">
+              <p className="card-text  service mt-2" style={{textAlign: "justify"}}>
                 Apparel production, also known as garment production is a
                 process where fabric is being converted into garments. The term
                 apparel production is basically used when garments are
@@ -57,7 +57,7 @@ export default function Manufacturing() {
               </p>
             </div>
 
-            <div className="card-body bg-transparent ">
+            <div className="card-body bg-transparent "  style={{textAlign: "justify"}}>
               <h2 className="card-title service mt-4">Why Choose PTX</h2>
               <p className="card-text service mt-2">
                 We never compromise with the quality as we consider it as our

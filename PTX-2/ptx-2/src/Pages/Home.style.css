@@ -1,8 +1,7 @@
 body {
   overflow-x: hidden;
 }
-.ptx-banner-image{
-
+.ptx-banner-image {
   width: 100%;
   object-fit: cover;
 }
@@ -17,7 +16,7 @@ body {
 .factory-col {
   overflow: hidden;
   aspect-ratio: 1 / 1;
-  
+
   width: 100%;
 }
 .factory-image {
@@ -118,16 +117,12 @@ body {
   line-height: 1.6;
   text-align: center !important;
 }
-/* 
-.production-image {
-  height: 1400px !important;
-  padding: 5px;
-} */
+
 .product-box {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
   /* background: #f8f9fa; */
@@ -187,7 +182,6 @@ body {
 
 .blog-img-wrapper {
   overflow: hidden;
-  
 }
 
 .blog-img {
@@ -228,7 +222,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
+
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }

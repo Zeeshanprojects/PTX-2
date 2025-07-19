@@ -49,6 +49,52 @@ color: white !important;
   color: #444;
   line-height: 1.6;
 }
+.services-section {
+  background-color: #f9f9f9;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon-wrapper {
+  background-color: #000;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.service-icon-wrapper:hover {
+  background-color: #222;
+}
+
+.service-icon {
+  font-size: 1.8rem;
+  color: #fff !important;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: #555;
+}
 
 @media (max-width: 992px) {
   .service-col {
