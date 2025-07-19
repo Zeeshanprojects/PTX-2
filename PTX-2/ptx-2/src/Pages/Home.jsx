@@ -99,9 +99,9 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="space"></div>
 
-      <div className="container-fluid">
+
+      <div className="container-fluid ">
         <div className="row g-4">
           {[
             {
