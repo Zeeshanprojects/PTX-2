@@ -184,9 +184,7 @@ export default function Home() {
         <p className="card-subtitle">WHO WE ARE?</p>
         <h1 className="card-title mt-3">Pakistan Textile Exchange</h1>
         <p className="card-description ">
-          Paktex is a professional apparel sourcing group offering exceptional
-          quality assurance, logistics, import and retail solutions, along with
-          full social compliance.
+         Pakistan Textile Exchange (Paktex) is a leading apparel sourcing company offering complete supply chain solutions including product development, quality assurance, logistics, and import services. We partner with global brands to deliver high-quality garments with a strong focus on timely delivery and full social compliance. Backed by a network of reliable manufacturers and a commitment to ethical practices, Paktex ensures excellence at every stage—from concept to final shipment.
         </p>
 
         <Link to="/inquireform">

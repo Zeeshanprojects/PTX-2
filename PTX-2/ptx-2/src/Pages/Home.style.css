@@ -319,7 +319,7 @@ p {
 .content-card {
   background-color: black;
   color: white !important;
-  padding: 170px 20px;
+  padding: 120px 20px;
   text-align: center;
 }
 
@@ -341,9 +341,10 @@ p {
 .card-description {
   font-size: 16px;
   color: white !important;
-  max-width: 700px;
+  max-width: 1200px;
   margin: 0 auto 30px;
   line-height: 1.8;
+  text-align: center;
 }
 a {
   text-decoration: none !important;
@@ -380,13 +381,19 @@ a {
 }
 
 /* Different speeds for different rows */
-
-.row2 .scroll-content {
+.row1 .scroll-content {
   animation: scroll-right 40s linear infinite;
 }
 
+.row2 .scroll-content {
+  animation: scroll-left 40s linear infinite;
+}
 .row3 .scroll-content {
-  animation: scroll-left 30s linear infinite;
+  animation: scroll-right 40s linear infinite;
+}
+
+.row4 .scroll-content {
+  animation: scroll-left 40s linear infinite;
 }
 
 .img-box {
