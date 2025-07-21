@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
       <div className="content-container">
         <h1 className="text-center pt-5">Privacy Policy</h1>
         <br/>
-        <p className="card-text">Last updated 20/2025</p>
+        <p className="card-text">Last updated July 21 2025</p>
         <p className="card-text">
           This Privacy Policy describes how Pakistan Textile Exchange(the "Site",
           "we", "us", or "our") collects, uses, and discloses your personal
