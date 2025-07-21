@@ -142,7 +142,7 @@ export default function Home() {
         </p>
       </div>
 
-      <br />
+      
       <div className="container latest-products-section">
         <div className="row g-4 ">
           {products.map((product, index) => (
