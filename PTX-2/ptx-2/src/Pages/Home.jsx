@@ -78,8 +78,6 @@ export default function Home() {
 
   return (
     <>
-      
-
       <div className="container-fluid p-0">
         <div className="col-12">
           <img
@@ -98,8 +96,6 @@ export default function Home() {
           Fostering Trust Through Quality and Commitment
         </p>
       </div>
-
-
 
       <div className="container-fluid ">
         <div className="row g-4">
@@ -179,7 +175,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.5 }}
       >
         <p className="card-subtitle">WHO WE ARE?</p>
         <h1 className="card-title mt-3">Pakistan Textile Exchange</h1>
