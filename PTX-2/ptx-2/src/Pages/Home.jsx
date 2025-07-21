@@ -574,7 +574,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="blog-body">
-                  <h3 className="blog-heading">Fashion Trends 2025</h3>
+                  <h3 className="blog-heading">FASHIONS TRENDS 2025</h3>
                   <p className="blog-text">
                     Discover what's shaping the clothing world this year—from
                     eco fabrics to minimalist design.
@@ -603,7 +603,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="blog-body">
-                  <h3 className="blog-heading">Behind The Stitch</h3>
+                  <h3 className="blog-heading">BEHIND THE STITCH</h3>
                   <p className="blog-text">
                     A deep dive into how our premium clothing is made with
                     quality, precision, and passion.
@@ -632,7 +632,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="blog-body">
-                  <h3 className="blog-heading">Global Threads</h3>
+                  <h3 className="blog-heading">GLOBAL THREADS</h3>
                   <p className="blog-text">
                     Markets served, quality standards, how your company stands
                     out globally

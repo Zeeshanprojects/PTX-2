@@ -9,7 +9,7 @@ const Image = {
   slider5: require("./Sliderimage-5.webp"),
   slider6: require("./Sliderimage-6.webp"),
   Blog1: require("./Blog-image.webp"),
-  Blog2: require("./Stitch.webp"),
+  Blog2: require("./Blog-image2.webp"),
   Blog3: require("./Blog-3.webp"),
   latestproduct1: require("./latestproduct1.jpg"),
   latestproduct2: require("./latestproduct2.jpg"),
