@@ -1,12 +1,35 @@
-.background-color{
-  background-color: #212529;
-  height: 200px;
+.background-color {
+  position: relative;
+  height: 400px;
   width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  overflow: hidden; /* Ensures pseudo-element doesn't spill */
 }
+
+.background-color::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('../Images/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5); /* Only affects the background */
+  z-index: 0;
+}
+
+.background-color > * {
+  position: relative;
+  z-index: 1; /* Keep text above the background image */
+}
+
 .services-container {
   width: 100%;
   margin-left: 10px;
@@ -29,10 +52,6 @@ color: white !important;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   height: 300px;
 }
-/* .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-} */
 .service-card-title {
   font-size: 1.8rem;
   font-weight: bold;
@@ -94,6 +113,9 @@ color: white !important;
 .service-description {
   font-size: 0.95rem;
   color: #555;
+}
+.read-more{
+border-radius: 20px !important;
 }
 
 @media (max-width: 992px) {

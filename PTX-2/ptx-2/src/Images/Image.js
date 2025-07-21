@@ -1,6 +1,7 @@
 const Image = {
   logo: require("./PTX-Main-Logo.png"),
   bannerimage: require("./PTX-Banner.webp"),
+  backgroundimage:require('./background.webp'),
   slider1: require("./Sliderimage-1.webp"),
   slider2: require("./SliderImage-2.webp"),
   slider3: require("./sliderimage-3.webp"),

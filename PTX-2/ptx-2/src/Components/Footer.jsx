@@ -23,6 +23,7 @@ export default function Footer() {
   {/* Content */}
 <img src={Image.logo} alt="logo"></img>
 
+
   {/* <hr
     className="mb-4 mt-0 d-inline-block mx-auto"
     style={{

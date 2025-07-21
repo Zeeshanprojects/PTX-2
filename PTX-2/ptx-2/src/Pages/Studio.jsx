@@ -72,7 +72,7 @@ export default function Studio() {
             <br />
             <button
               type="button"
-              className="btn btn-dark"
+              className="btn btn-dark Download"
               onClick={handleDownload}
             >
               Download LookBook
