@@ -379,7 +379,7 @@ export default function Home() {
               <img src={Image.LongT15} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT16} alt="longT" />
+              <img src={Image.LongT10} alt="longT" />
             </div>
             <div className="img-box">
               <img src={Image.image10} alt="longT" />
@@ -401,7 +401,7 @@ export default function Home() {
               <img src={Image.LongT4} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.F8} alt="longT" />
+              <img src={Image.F1} alt="longT" />
             </div>
             <div className="img-box">
               <img src={Image.Kidsimage6} alt="longT" />
