@@ -43,8 +43,12 @@ export default function ContactUs() {
 
   return (
     <>
+     <div className="background-color">
+            <h1 className="text-center">CONTACT US</h1>
+        </div>
       <div className="contact-container pt-5">
-        <h1 className="text-center">CONTACT US</h1>
+       
+      
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-groups">
             <input

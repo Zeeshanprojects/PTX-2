@@ -6,10 +6,7 @@ import Footer from "../Components/Footer";
 export default function Blog1() {
   return (
     <>
-    <div className='space'></div>
-    
-   
-    <div className="container">
+    <div className="container-fluid">
       <div className="blog-header">
         <img src={Image.Blog1} alt="Blog Banner" className="blogs-img" />
         <div className="blog-title">
