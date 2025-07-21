@@ -312,13 +312,13 @@ export default function Home() {
               <img src={Image.image3} alt="Tshirt" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT4} alt="Tshirt" />
+              <img src={Image.Kidsimage3} alt="Tshirt" />
             </div>
             <div className="img-box">
               <img src={Image.image5} alt="Tshirt" />
             </div>
             <div className="img-box">
-              <img src={Image.image6} alt="Tshirt" />
+              <img src={Image.F1} alt="Tshirt" />
             </div>
             <div className="img-box">
               <img src={Image.LongT5} alt="Tshirt" />
@@ -346,7 +346,7 @@ export default function Home() {
               <img src={Image.LongT4} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT5} alt="longT" />
+              <img src={Image.image3} alt="longT" />
             </div>
             <div className="img-box">
               <img src={Image.LongT6} alt="longT" />
@@ -370,7 +370,7 @@ export default function Home() {
               <img src={Image.Kidsimage8} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT13} alt="longT" />
+              <img src={Image.F6} alt="longT" />
             </div>
             <div className="img-box">
               <img src={Image.image5} alt="longT" />
