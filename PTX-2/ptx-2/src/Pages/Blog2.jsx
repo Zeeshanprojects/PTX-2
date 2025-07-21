@@ -7,13 +7,10 @@ export default function Blog2() {
   return (
     <>
 
-    <div className="container">
+    <div className="container-fluid p-0">
       <div className="blog-header">
         <img src={Image.Blog2} alt="Blog Banner" className="blogs-img" />
-        <div className="blog-title">
-          <h1>Behind The Stitch</h1>
-          
-        </div>
+       
       </div>
 
       <div className="container blog-content">
