@@ -6,7 +6,7 @@ footer {
   font-size: 20px !important;
 }
 .email-subscribe {
-  display: flx;
+  display: flex;
 
   margin-top: 10px;
 }
