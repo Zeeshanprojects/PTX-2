@@ -8,7 +8,9 @@ import { faFacebookF, faTwitter, faInstagram, faLinkedinIn, faTiktok } from '@fo
 export default function Footer() {
   return (
     <>
+    <hr class="footer-separator" />
       <div className="container-fluid ">
+        
         {/* Footer */}
         <footer className="text-center text-lg-start text-dark">
           {/* Section: Social media */}
