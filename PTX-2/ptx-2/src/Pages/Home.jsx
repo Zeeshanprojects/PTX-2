@@ -76,6 +76,7 @@ export default function Home() {
     },
   ];
 
+  
   return (
     <>
       <div className="container-fluid p-0">
@@ -276,25 +277,25 @@ export default function Home() {
               <img src={Image.image1} alt="Tshirt" />
             </div>
             <div className="img-box">
-              <img src={Image.image2} alt="Tshirt" />
+              <img src={Image.LongT2} alt="Tshirt" />
             </div>
             <div className="img-box">
-              <img src={Image.image3} alt="Tshirt" />
+              <img src={Image.Kidsimage5} alt="Tshirt" />
             </div>
             <div className="img-box">
-              <img src={Image.image4} alt="Tshirt" />
+              <img src={Image.F1} alt="Tshirt" />
             </div>
             <div className="img-box">
-              <img src={Image.image5} alt="Tshirt" />
+              <img src={Image.LongT2} alt="Tshirt" />
             </div>
             <div className="img-box">
               <img src={Image.image6} alt="Tshirt" />
             </div>
             <div className="img-box">
-              <img src={Image.image7} alt="Tshirt" />
+              <img src={Image.F3} alt="Tshirt" />
             </div>
             <div className="img-box">
-              <img src={Image.image8} alt="Tshirt" />
+              <img src={Image.Kidsimage2} alt="Tshirt" />
             </div>
             <div className="img-box">
               <img src={Image.image9} alt="Tshirt" />
@@ -305,13 +306,13 @@ export default function Home() {
               <img src={Image.image1} alt="Tshirt" />
             </div>
             <div className="img-box">
-              <img src={Image.image2} alt="Tshirt" />
+              <img src={Image.LongT2} alt="Tshirt" />
             </div>
             <div className="img-box">
               <img src={Image.image3} alt="Tshirt" />
             </div>
             <div className="img-box">
-              <img src={Image.image4} alt="Tshirt" />
+              <img src={Image.LongT4} alt="Tshirt" />
             </div>
             <div className="img-box">
               <img src={Image.image5} alt="Tshirt" />
@@ -320,10 +321,10 @@ export default function Home() {
               <img src={Image.image6} alt="Tshirt" />
             </div>
             <div className="img-box">
-              <img src={Image.image7} alt="Tshirt" />
+              <img src={Image.LongT5} alt="Tshirt" />
             </div>
             <div className="img-box">
-              <img src={Image.image8} alt="Tshirt" />
+              <img src={Image.F5} alt="Tshirt" />
             </div>
             <div className="img-box">
               <img src={Image.image9} alt="Tshirt" />
@@ -336,10 +337,10 @@ export default function Home() {
               <img src={Image.LongT1} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT2} alt="longT" />
+              <img src={Image.F7} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT3} alt="longT" />
+              <img src={Image.Kidsimage1} alt="longT" />
             </div>
             <div className="img-box">
               <img src={Image.LongT4} alt="longT" />
@@ -351,28 +352,28 @@ export default function Home() {
               <img src={Image.LongT6} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT7} alt="longT" />
+              <img src={Image.Kidsimage3} alt="longT" />
             </div>
             <div className="img-box">
               <img src={Image.LongT8} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT9} alt="longT" />
+              <img src={Image.F4} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT10} alt="longT" />
+              <img src={Image.Kidsimage5} alt="longT" />
             </div>
             <div className="img-box">
               <img src={Image.LongT11} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT12} alt="longT" />
+              <img src={Image.Kidsimage8} alt="longT" />
             </div>
             <div className="img-box">
               <img src={Image.LongT13} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT14} alt="longT" />
+              <img src={Image.image5} alt="longT" />
             </div>
             <div className="img-box">
               <img src={Image.LongT15} alt="longT" />
@@ -381,7 +382,7 @@ export default function Home() {
               <img src={Image.LongT16} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT17} alt="longT" />
+              <img src={Image.image10} alt="longT" />
             </div>
             <div className="img-box">
               <img src={Image.LongT18} alt="longT" />
@@ -391,7 +392,7 @@ export default function Home() {
               <img src={Image.LongT1} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT2} alt="longT" />
+              <img src={Image.Kidsimage3} alt="longT" />
             </div>
             <div className="img-box">
               <img src={Image.LongT3} alt="longT" />
@@ -403,7 +404,7 @@ export default function Home() {
               <img src={Image.LongT5} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT6} alt="longT" />
+              <img src={Image.Kidsimage6} alt="longT" />
             </div>
             <div className="img-box">
               <img src={Image.LongT7} alt="longT" />
@@ -450,7 +451,7 @@ export default function Home() {
               <img src={Image.Kidsimage1} alt="Kids" />
             </div>
             <div className="img-box">
-              <img src={Image.Kidsimage2} alt="Kids" />
+              <img src={Image.LongT12} alt="Kids" />
             </div>
             <div className="img-box">
               <img src={Image.Kidsimage3} alt="Kids" />
@@ -459,38 +460,38 @@ export default function Home() {
               <img src={Image.Kidsimage4} alt="Kids" />
             </div>
             <div className="img-box">
-              <img src={Image.Kidsimage5} alt="Kids" />
+              <img src={Image.image4} alt="Kids" />
             </div>
             <div className="img-box">
               <img src={Image.Kidsimage6} alt="Kids" />
             </div>
             <div className="img-box">
-              <img src={Image.Kidsimage7} alt="Kids" />
+              <img src={Image.LongT12} alt="Kids" />
             </div>
             <div className="img-box">
               <img src={Image.Kidsimage8} alt="Kids" />
             </div>
             <div className="img-box">
-              <img src={Image.Kidsimage9} alt="Kids" />
+              <img src={Image.F6} alt="Kids" />
             </div>
 
             <div className="img-box">
               <img src={Image.Kidsimage1} alt="Kids" />
             </div>
             <div className="img-box">
-              <img src={Image.Kidsimage2} alt="Kids" />
+              <img src={Image.F3} alt="Kids" />
             </div>
             <div className="img-box">
               <img src={Image.Kidsimage3} alt="Kids" />
             </div>
             <div className="img-box">
-              <img src={Image.Kidsimage4} alt="Kids" />
+              <img src={Image.image9} alt="Kids" />
             </div>
             <div className="img-box">
               <img src={Image.Kidsimage5} alt="Kids" />
             </div>
             <div className="img-box">
-              <img src={Image.Kidsimage6} alt="Kids" />
+              <img src={Image.image4} alt="Kids" />
             </div>
             <div className="img-box">
               <img src={Image.Kidsimage7} alt="Kids" />
@@ -510,7 +511,7 @@ export default function Home() {
               <img src={Image.F1} alt="Fleece" />
             </div>
             <div className="img-box">
-              <img src={Image.F2} alt="Fleece" />
+              <img src={Image.Kidsimage2} alt="Fleece" />
             </div>
             <div className="img-box">
               <img src={Image.F3} alt="Fleece" />
@@ -519,29 +520,29 @@ export default function Home() {
               <img src={Image.F4} alt="Fleece" />
             </div>
             <div className="img-box">
-              <img src={Image.F5} alt="Fleece" />
+              <img src={Image.image10} alt="Fleece" />
             </div>
             <div className="img-box">
               <img src={Image.F6} alt="Fleece" />
             </div>
 
             <div className="img-box">
-              <img src={Image.F1} alt="Fleece" />
+              <img src={Image.LongT12} alt="Fleece" />
             </div>
             <div className="img-box">
               <img src={Image.F2} alt="Fleece" />
             </div>
             <div className="img-box">
-              <img src={Image.F3} alt="Fleece" />
+              <img src={Image.image5} alt="Fleece" />
             </div>
             <div className="img-box">
-              <img src={Image.F4} alt="Fleece" />
+              <img src={Image.Kidsimage5} alt="Fleece" />
             </div>
             <div className="img-box">
               <img src={Image.F5} alt="Fleece" />
             </div>
             <div className="img-box">
-              <img src={Image.F6} alt="Fleece" />
+              <img src={Image.image8} alt="Fleece" />
             </div>
           </div>
         </div>
