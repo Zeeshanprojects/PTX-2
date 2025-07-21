@@ -9,9 +9,9 @@ export default function Blog1() {
     <div className="container-fluid p-0">
       <div className="blog-header ">
         <img src={Image.Blog1} alt="Blog Banner" className="blogs-img" />
-        <div className="blog-title">
+        {/* <div className="blog-title">
           <h1>FASHION TRENDS 2025</h1>
-        </div>
+        </div> */}
       </div>
 
       <div className="container blog-content">

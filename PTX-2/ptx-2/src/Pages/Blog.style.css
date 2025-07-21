@@ -1,49 +1,54 @@
+.blog-header {
+  text-align: center;
+}
 
-  
-  .blog-header {
-    text-align: center;
-  }
-  
-  .blogs-img {
-    width: 100%;
-height: 550px;
-    object-fit: cover;
-padding: 0px;
+.blogs-img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover !important;
+  padding: 0px;
 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.blog-title h1 {
+  font-size: 32px;
+  margin: 10px 0;
+  color: #222;
+}
+
+.blog-title p {
+  font-size: 18px;
+  color: #666;
+}
+
+.blog-content {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.blog-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+
+  color: #1a1a1a;
+}
+
+.blog-content p,
+.blog-content li {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.blog-content ul {
+  padding-left: 20px;
+}
+@media (max-width: 575px) {
+ .blogs-img {
+    height: auto; /* Remove fixed height */
+    max-width: 100%;
+    object-fit: contain; /* Optional: or keep 'cover' based on how you want the crop */
   }
-  
-  .blog-title h1 {
-    font-size: 32px;
-    margin: 10px 0;
-    color: #222;
-  }
-  
-  .blog-title p {
-    font-size: 18px;
-    color: #666;
-  }
-  
-  .blog-content {
-    margin-top: 30px;
-    text-align: justify;
-  }
-  
-  .blog-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    
-    color: #1a1a1a;
-  }
-  
-  .blog-content p, .blog-content li {
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 15px;
-  }
-  
-  .blog-content ul {
-    padding-left: 20px;
-  }
-  
+}
