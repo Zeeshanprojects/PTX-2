@@ -10,10 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./Header.style.css";
 
-
 export default function Header() {
-  
-
   // Function to close the navbar on small screens
   const closeNavbar = () => {
     const navbar = document.getElementById("navbarSupportedContent");
@@ -24,7 +21,13 @@ export default function Header() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top p-3">
+     <div className="Top-header p-3">
+  <div className="scrolling-text">
+    <span>SALE UPTO 60% — SALE UPTO 60% — SALE UPTO 60% — </span>
+  </div>
+</div>
+
+      <nav className="navbar navbar-expand-lg navbar-dark  p-3">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img src={Image.logo} alt="mainlogo" className="logocolor" />
@@ -88,7 +91,7 @@ export default function Header() {
                   GALLERY
                 </Link>
               </li>
-           
+
               <li className="nav-item">
                 <Link
                   className="nav-link active"
@@ -123,18 +126,18 @@ export default function Header() {
                 </a>
               </li>
             </ul>
- {/* Icons for small screens */}
-          <div className="nav-icons d-flex d-lg-none">
-            <Link to="/Login">
-              <FontAwesomeIcon icon={faUser} size="lg" />
-            </Link>
-            {/* <Link to="/Search">
+            {/* Icons for small screens */}
+            <div className="nav-icons d-flex d-lg-none">
+              <Link to="/Login">
+                <FontAwesomeIcon icon={faUser} size="lg" />
+              </Link>
+              {/* <Link to="/Search">
               <FontAwesomeIcon icon={faSearch} size="lg" />
             </Link>
             <Link to="/cart">
               <FontAwesomeIcon icon={faShoppingCart} size="lg" />
             </Link> */}
-          </div>
+            </div>
             {/* Icons for large screens */}
             <div className="nav-icons d-none d-lg-flex">
               <Link to="/Login">

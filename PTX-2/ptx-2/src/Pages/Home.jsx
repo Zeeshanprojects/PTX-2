@@ -78,7 +78,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="space"></div>
+      
 
       <div className="container-fluid p-0">
         <div className="col-12">

@@ -31,6 +31,7 @@ export default function Gallery() {
 
   return (
     <>
+
       <div className="background-color">
         <h1 className="mt-5 text-center">GALLERY</h1>
       </div>

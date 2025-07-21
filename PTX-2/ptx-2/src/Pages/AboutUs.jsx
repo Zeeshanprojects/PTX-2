@@ -10,7 +10,7 @@ export default function AboutUs() {
   }, []);
   return (
     <>
-      <div className="space"></div>
+
       <div className="background-color">
         <h1 className=" text-center">WHO WE ARE</h1>
       </div>

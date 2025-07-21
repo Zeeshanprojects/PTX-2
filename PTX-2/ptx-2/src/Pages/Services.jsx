@@ -58,7 +58,7 @@ export default function Services() {
 
   return (
     <>
-      <div className="space"></div>
+
       <div className="background-color">
         <h1 className="text-center">SERVICES</h1>
       </div>
