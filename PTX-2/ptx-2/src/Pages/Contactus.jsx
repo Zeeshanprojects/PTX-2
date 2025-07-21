@@ -46,7 +46,7 @@ export default function ContactUs() {
      <div className="background-color">
             <h1 className="text-center">CONTACT US</h1>
         </div>
-      <div className="contact-container pt-5">
+      <div className="contact-container pt-2">
        
       
         <form className="contact-form" onSubmit={handleSubmit}>

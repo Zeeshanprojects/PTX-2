@@ -13,19 +13,18 @@ useEffect(()=>{
   const [phone, setPhone] = useState("");
   return (
     <>
-      <div className="space"></div>
-      <div className="text-container pt-5">
-        <h1>Create Account</h1>
+    <div className="space"></div>
+      <div className="text-container pt-2">
+        <h1>CREATE ACCOUNT</h1>
         <p>Already have an account? <Link to="/login">Sign in here</Link></p>
       </div>
       <div className="page-container ">
         
         <div className="signup-container">
           <form className="signup-form">
-            <p className="text-muted">Step 1 of 2</p>
-            <h6 className="fw-bold">Primary Contact Details</h6>
+          
   
-            <div className="space"></div>
+          <br/>
             <h4 className="fw-bold">Primary Contact</h4>
             <div className="row">
               <div className="col-md-6">
@@ -72,14 +71,14 @@ useEffect(()=>{
             <p>Conform Email Address</p>
             <input type="email" className="full-width" required />
           </form>
-          <div className="buttons-container ">
-            
-          <button type="button " className="btn btn-light text-muted">Cancel</button>
-          <button type="button" className="btn btn-light text-muted">Next</button>
+          <div className="button-container">
+     <button type="submit" className="btn btn-outline-dark ps-5 pe-5">Submit</button>
           </div>
           
         </div>
+             
       </div>
+<br/>
       <Footer/>
     </>
   );

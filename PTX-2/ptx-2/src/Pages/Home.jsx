@@ -548,7 +548,7 @@ export default function Home() {
         </div>
       </div>
 
-      <br />
+      <div className="space"></div>
       <div className="text-center">
         <h1 className="text-center fw-bold fs-1">BLOGS</h1>
         <p>Insights, Stories, and Industry Trends</p>
@@ -646,39 +646,7 @@ export default function Home() {
       </div>
       <div className="space"></div>
 
-      {/* <div className="w-100 py-5" style={{ backgroundColor: "#000" }}>
-      <div className="container text-white text-center">
-        <h2 className="fw-bold mb-3">Subscribe to Our Channel</h2>
-        <p className="mb-4">
-          Stay updated with the latest videos, tutorials, and industry insights. Enter your email below.
-        </p>
-        <form
-          onSubmit={handleSubmit}
-          className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
-        >
-          <input
-            type="email"
-            className="form-control"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            style={{
-              maxWidth: "300px",
-              border: "none",
-              padding: "0.75rem 1rem",
-            }}
-          />
-          <button
-            type="submit"
-            className="btn btn-outline-light px-4 py-2"
-            disabled={loading}
-          >
-            {loading ? "Subscribing..." : "Subscribe"}
-          </button>
-        </form>
-      </div>
-    </div> */}
+     
       <motion.div
         className="w-100 py-5"
         style={{ backgroundColor: "#000" }}
@@ -740,7 +708,7 @@ export default function Home() {
 
       <div className="space">
         <div className="space"></div>
-        <h1 className="text-center">WHY CHOOSE US?</h1>
+        <h1 className="text-center ">WHY CHOOSE US?</h1>
         <div className="space"></div>
         <div className="container">
           <div className="row g-4">

@@ -12,7 +12,7 @@ export default function Login() {
  
       
       <div className="text-container pt-5">
-        <h1>Login</h1>
+        <h1>SIGN IN</h1>
         <p>Dont have an account?<Link to="/signup"> Sign up here</Link> </p>
         <div className="page-container">
           <div className="signin-container">
