@@ -6,7 +6,7 @@ import Footer from "../Components/Footer";
 export default function Blog2() {
   return (
     <>
-    <div className='space'></div>
+
     <div className="container">
       <div className="blog-header">
         <img src={Image.Blog2} alt="Blog Banner" className="blogs-img" />
@@ -16,7 +16,7 @@ export default function Blog2() {
         </div>
       </div>
 
-      <div className="blog-content">
+      <div className="container blog-content">
   <h4>1.The Art of Craftsmanship</h4>
   <p>
     Before a garment hits the runway or shelf, there’s a story woven into every stitch. From hand-sewn details to carefully chosen textures, the fashion world thrives on the unseen labor of passionate artisans and skilled technicians. 

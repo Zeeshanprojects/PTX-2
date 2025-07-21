@@ -6,7 +6,7 @@ import Image from "../Images/Image";
 export default function Blog3() {
   return (
     <>
-    <div className="space"></div>
+
       <div className="container">
         <div className="blog-header">
           <img src={Image.Blog3} alt="Blog Banner" className="blogs-img" />
@@ -15,7 +15,7 @@ export default function Blog3() {
           </div>
         </div>
 
-        <div className="blog-content">
+        <div className="container blog-content">
           <h2> Global Thread – Weaving Cultures Through Fashion</h2>
           <p>
             Fashion is more than just clothing—it's a universal language that tells stories of culture, heritage, and identity. <strong>Global Thread</strong> represents the fusion of global textile traditions, where creativity and craftsmanship from different parts of the world come together to inspire modern fashion. From the bold patterns of African prints to the delicate embroidery of South Asia, every region contributes to a richer, more connected fashion world.

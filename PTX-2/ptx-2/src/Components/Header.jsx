@@ -23,7 +23,7 @@ export default function Header() {
     <>
      <div className="Top-header p-3 ">
   <div className="scrolling-text">
-    <span>SALE UPTO 60% — SALE UPTO 60% — SALE UPTO 60% — </span>
+    <span>SALE UPTO 50% — </span>
   </div>
 </div>
 

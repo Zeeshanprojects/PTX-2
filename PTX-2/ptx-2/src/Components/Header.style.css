@@ -24,7 +24,7 @@
 
 /* Content is duplicated using ::after to create seamless loop */
 .scrolling-text span::after {
-  content: "SALE UPTO 60% — SALE UPTO 60% — SALE UPTO 60% — ";
+  content: "SALE UPTO 50% — SALE UPTO 50% —";
 }
 
 @keyframes scroll-left {

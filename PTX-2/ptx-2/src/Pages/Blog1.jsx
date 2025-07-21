@@ -10,11 +10,11 @@ export default function Blog1() {
       <div className="blog-header">
         <img src={Image.Blog1} alt="Blog Banner" className="blogs-img" />
         <div className="blog-title">
-          <h1>Fashion Trends 2025</h1>
+          <h1>FASHION TRENDS 2025</h1>
         </div>
       </div>
 
-      <div className="blog-content">
+      <div className="container blog-content">
   <h4>1. Sustainable is the New Standard</h4>
   <p>
     In 2025, fashion isn’t just about looking good — it’s about doing good. Brands are shifting toward organic cotton, recycled polyester, and biodegradable materials. Consumers now expect transparency in supply chains and a clear commitment to reducing waste.
