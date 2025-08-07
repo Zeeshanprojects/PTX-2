@@ -46,10 +46,7 @@ export default function Home() {
     }
   };
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0 },
-  };
+
 
   // const productVariants = {
   //   hidden: { opacity: 0, scale: 0.95, y: 30 },

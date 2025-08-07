@@ -1,14 +1,14 @@
-.background-color {
+ .background-color {
   position: relative;
-  height: 400px;
+  height: 300px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-weight: bold;
-  overflow: hidden; /* Ensures pseudo-element doesn't spill */
-}
+  overflow: hidden; 
+} 
 
 .background-color::before {
   content: '';

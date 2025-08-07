@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+
 import "./Services.style.css";
 import Footer from "../Components/Footer";
 
@@ -70,7 +70,7 @@ export default function Services() {
               key={index}
               className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5"
             >
-              <motion.div
+              <div
                 className="service-card h-100 d-flex flex-column p-4"
                 initial="hidden"
                 whileInView="visible"
@@ -80,10 +80,7 @@ export default function Services() {
               >
             
                    <div className="service-card-body d-flex flex-column flex-grow-1 text-center">
-                  {/* <i
-                    className={`${service.icon} service-icon mb-3`}
-                    style={{ fontSize: "2rem", color: "#333" }}
-                  ></i> */}
+             
                   <div className="service-icon-wrapper mx-auto mb-3">
                   <i className={`${service.icon} service-icon`}></i>
                 </div>
@@ -97,7 +94,7 @@ export default function Services() {
                     </Link>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           ))}
         </div>

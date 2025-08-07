@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { motion } from "framer-motion";
+
 import Image from "../Images/Image";
 import "./AboutUs.style.css";
 import Footer from "../Components/Footer";
@@ -10,20 +10,13 @@ export default function AboutUs() {
   }, []);
   return (
     <>
-
       <div className="background-color">
         <h1 className=" text-center">WHO WE ARE</h1>
       </div>
 
       <div className="container my-5">
         <div className="row align-items-stretch g-4">
-          <motion.div
-            className="col-sm-12 col-md-6"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
+          <div className="col-sm-12 col-md-6">
             <div className="knowus p-4 rounded bg-white same-height h-100">
               <h5 className="text-uppercase text-secondary mb-3">Our Story</h5>
               <p className="text-muted">
@@ -31,111 +24,84 @@ export default function AboutUs() {
                 most reliable names in apparel and accessory manufacturing in
                 Pakistan. Our roots started in action sports here in Laguna
                 Beach. Our production can now be seen in almost every retailer
-                in the United States.Knits, Woven, Denim Apparel, along with backpacks and socks — we
-                have emerged as one of the most trusted sources out of Pakistan
-                for North America.
+                in the United States.Knits, Woven, Denim Apparel, along with
+                backpacks and socks — we have emerged as one of the most trusted
+                sources out of Pakistan for North America.
               </p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="col-sm-12 col-md-6"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
+          <div className="col-sm-12 col-md-6">
             <div className="image-wrapper">
               <img src={Image.p2} className="storyimage" alt="Our Story" />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 
-    <div className="container my-5">
+      <div className="container my-5">
         <div className="row align-items-stretch g-4">
-          <motion.div
-            className="col-sm-12 col-md-6"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
+          <div className="col-sm-12 col-md-6">
             <div className="knowus p-4 rounded bg-white same-height h-100">
-              <h5 className="text-uppercase text-secondary mb-3">Our Mission</h5>
+              <h5 className="text-uppercase text-secondary mb-3">
+                Our Mission
+              </h5>
               <p className="text-muted">
-                  <strong>Our Mission at Pakistan Textile Exchange</strong> is to elevate Pakistan’s global presence in the textile and apparel industry by delivering superior quality, sustainable products with precision and innovation. We are committed to ethical manufacturing, cutting-edge design, and building long-term partnerships across North America and beyond. From premium knits and denim to woven garments and accessories, we strive to exceed expectations at every step — ensuring our clients receive nothing less than excellence.
-            </p>
+                <strong>Our Mission at Pakistan Textile Exchange</strong> is to
+                elevate Pakistan’s global presence in the textile and apparel
+                industry by delivering superior quality, sustainable products
+                with precision and innovation. We are committed to ethical
+                manufacturing, cutting-edge design, and building long-term
+                partnerships across North America and beyond. From premium knits
+                and denim to woven garments and accessories, we strive to exceed
+                expectations at every step — ensuring our clients receive
+                nothing less than excellence.
+              </p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="col-sm-12 col-md-6"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
+          <div className="col-sm-12 col-md-6">
             <div className="image-wrapper">
               <img src={Image.p3} className="storyimage" alt="Our Story" />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 
-       <div className="container my-5">
+      <div className="container my-5">
         <div className="row align-items-stretch g-4">
-          <motion.div
-            className="col-sm-12 col-md-6"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
+          <div className="col-sm-12 col-md-6">
             <div className="knowus p-4 rounded bg-white same-height h-100">
               <h5 className="text-uppercase text-secondary mb-3">Our VISION</h5>
               <p className="text-muted">
-                <strong>Our Vision at Pakistan Textile Exchange</strong> is to become a global leader in textile innovation, sustainability, and ethical manufacturing. We aim to set new benchmarks in quality and creativity, empowering brands worldwide with products that reflect integrity, craftsmanship, and forward-thinking design. Through continuous improvement and a customer-first mindset, we envision a future where PTX stands as a symbol of trust, excellence, and responsible production in the global apparel industry.
+                <strong>Our Vision at Pakistan Textile Exchange</strong> is to
+                become a global leader in textile innovation, sustainability,
+                and ethical manufacturing. We aim to set new benchmarks in
+                quality and creativity, empowering brands worldwide with
+                products that reflect integrity, craftsmanship, and
+                forward-thinking design. Through continuous improvement and a
+                customer-first mindset, we envision a future where PTX stands as
+                a symbol of trust, excellence, and responsible production in the
+                global apparel industry.
               </p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="col-sm-12 col-md-6"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
+          <div className="col-sm-12 col-md-6">
             <div className="image-wrapper">
               <img src={Image.p1} className="storyimage" alt="Our Story" />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
       <div className="space"></div>
-      <motion.h1
-        className="text-center"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
-      >
-        FROM DESIGN TO DELIVERY
-      </motion.h1>
+      <h1 className="text-center">FROM DESIGN TO DELIVERY</h1>
 
       <br />
       <div className="container my-5">
         <div className="row g-4">
           {[Image.step1, Image.step2, Image.step3].map((img, index) => (
-            <motion.div
-              className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
-            >
+            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
               <div className="service-card p-4 h-100">
                 <div className="service-card-body">
                   <img src={img} alt={index + 1} className="steps" />
@@ -159,19 +125,13 @@ export default function AboutUs() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
 
       <div className="space"></div>
-      <motion.div
-        className="container"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
+      <div className="container">
         <div className="row align-items-center">
           <div className="col-md-5 text-center">
             <img
@@ -197,7 +157,7 @@ export default function AboutUs() {
             </p>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       <Footer />
     </>
