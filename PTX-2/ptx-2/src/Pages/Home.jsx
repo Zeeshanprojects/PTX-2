@@ -5,11 +5,23 @@ import Image from "../Images/Image";
 import "./Home.style.css";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 export default function Home() {
+  
   useEffect(() => {
     document.title = "Home | Pakistan Textile Exchange";
   });
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true,     // whether animation should happen only once
+    });
+  }, []);
+
+
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -72,7 +84,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="container-fluid p-0">
+      <div className="container-fluid p-0 mt-5">
         <div className="col-12">
           <img
             src={Image.bannerimage}
@@ -85,13 +97,13 @@ export default function Home() {
 
       <div className="space"></div>
       <div className="text-center">
-        <h1 className="text-center">BUILDING STRONG RELATIONSHIP</h1>
+        <h1 className="text-center fw-bold">BUILDING STRONG RELATIONSHIP</h1>
         <p className="categories-subtitle">
           Fostering Trust Through Quality and Commitment
         </p>
       </div>
 
-      <div className="container-fluid ">
+      <div className="container-fluid" data-aos="fade-up">
         <div className="row g-4">
           {[
             {
@@ -121,14 +133,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="section-heading text-center mt-5">
-        <h1 className="categories-title">CATEGORIES</h1>
+      <div className="section-heading text-center mt-5 " data-aos="fade-up">
+        <h1 className="categories-title fw-bold">CATEGORIES</h1>
         <p className="categories-subtitle">
           Explore our latest curated product categories
         </p>
       </div>
 
-      <div className="container latest-products-section">
+      <div className="container latest-products-section" data-aos="fade-up">
         <div className="row g-4 ">
           {products.map((product, index) => (
             <div key={index} className="col-sm-12 col-md-12 col-lg-4">
@@ -149,7 +161,7 @@ export default function Home() {
       </div>
 
       <div className="space"></div>
-      <div className="content-card">
+      <div className="content-card" data-aos="fade-up">
         <p className="card-subtitle">WHO WE ARE?</p>
         <h1 className="card-title mt-3">Pakistan Textile Exchange</h1>
         <p className="card-description ">
@@ -171,11 +183,11 @@ export default function Home() {
       </div>
 
       <div className="space"></div>
-      <div className="container my-5">
+      <div className="container my-5" data-aos="fade-up">
         <div className="row align-items-center ">
           {/* Left Column: Text */}
           <div className="col-lg-6 mb-4 mb-lg-0">
-            <h1 className="heading-size">OUR FACTORY PRODUCTION</h1>
+            <h1 className="heading-size fw-bold">OUR FACTORY PRODUCTION</h1>
 
             <p className="factory-para">
               At our state-of-the-art textile facility, we specialize in the
@@ -184,17 +196,17 @@ export default function Home() {
               carefully monitored under strict quality controls. Our production
               floor is equipped with modern looms, automated dyeing units, and
               precision cutting machines to maintain accuracy and minimize
-              waste. Sustainability is also a key pillar of our operations —
+              waste. Sustainability is also a key pillar of our operations
               we’ve adopted eco-friendly practices in water usage, chemical
               handling, and energy management.
             </p>
 
             <div className="d-flex flex-wrap ">
-              {["AU Textiles", "Shadan Enterprises", "Mahad Textiles"].map(
+              {["AU TEXTILES", "SHADAN ENTERPRISES", "MAHAD TEXTILES"].map(
                 (name) => (
                   <span
                     key={name}
-                    className="badge text-dark fs-5 py-2 rounded-pill d-flex align-items-center gap-2"
+                    className="badge text-dark fs-6 py-2 rounded-pill d-flex align-items-center gap-2  "
                   >
                     <img
                       src={Image.location}
@@ -209,7 +221,7 @@ export default function Home() {
           </div>
 
           <div className="col-lg-6">
-            <div className="custom-image-grid">
+            <div className="custom-image-grid" data-aos="fade-up">
               {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
                 <div
                   className="factory-col"
@@ -510,20 +522,17 @@ export default function Home() {
       </div>
 
       <div className="space"></div>
-      <div className="text-center">
+      <div className="text-center" data-aos="fade-up">
         <h1 className="text-center fw-bold fs-1">BLOGS</h1>
         <p>Insights, Stories, and Industry Trends</p>
       </div>
 
-      <div className="container blog-section p-2">
+      <div className="container blog-section p-2"data-aos="fade-up">
         <div className="row g-4">
           {/* Blog Card 1 */}
           <div
             className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+           
           >
             <Link to="/blog1" className="text-decoration-none text-dark">
               <div className="blog-box">
@@ -549,10 +558,7 @@ export default function Home() {
           {/* Blog Card 2 */}
           <div
             className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+           
           >
             <Link to="/blog2" className="text-decoration-none text-dark">
               <div className="blog-box">
@@ -609,25 +615,18 @@ export default function Home() {
 
       <div
         className="w-100 py-5"
-        style={{ backgroundColor: "#000" }}
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+      
       >
-        <div className="container text-white text-center">
+        <div className="container-fluid text-white text-center p-5 bg-black" data-aos="fade-up" >
           <h2
             className="fw-bold mb-3"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
+          
           >
             Subscribe to Our Channel
           </h2>
           <p
             className="mb-4"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
+           
           >
             Stay updated with the latest videos, tutorials, and industry
             insights. Enter your email below.
@@ -635,9 +634,7 @@ export default function Home() {
           <form
             onSubmit={handleSubmit}
             className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
+          
           >
             <input
               type="email"
@@ -655,10 +652,7 @@ export default function Home() {
             <button
               type="submit"
               className="btn btn-outline-light px-4 py-2"
-              disabled={loading}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              
             >
               {loading ? "Subscribing..." : "Subscribe"}
             </button>
@@ -666,11 +660,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="space">
+      
         <div className="space"></div>
-        <h1 className="text-center ">WHY CHOOSE US?</h1>
+        <h1 className="text-center fw-bold" data-aos="fade-up">WHY CHOOSE US?</h1>
         <div className="space"></div>
-        <div className="container">
+        <div className="container" data-aos="fade-up">
           <div className="row g-4">
             {[
               { icon: "fas fa-tshirt", text: "Premium Quality Fabrics" },
@@ -686,8 +680,8 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
-      <div className="container-fluid p-0">
+     
+      <div className="container-fluid p-0 m-0" data-aos="fade-up">
         <div className="space">
           <div className="col-12 col-sm-12 col-md-12 col-lg-12">
             <img

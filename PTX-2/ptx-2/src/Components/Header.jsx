@@ -21,13 +21,13 @@ export default function Header() {
 
   return (
     <>
-     <div className="Top-header p-3 ">
-  <div className="scrolling-text">
-    <span>SALE UPTO 50% — </span>
+     {/* <div className="Top-header p-3 ">
+  <div className="#">
+    <span className="d-flex justify-content-center fw-bold">SALE UPTO 50%  </span>
   </div>
-</div>
+</div> */}
 
-      <nav className="navbar navbar-expand-lg navbar-dark  p-3">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top p-3 ">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img src={Image.logo} alt="mainlogo" className="logocolor" />
@@ -82,7 +82,7 @@ export default function Header() {
                   CONTACT
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   className="nav-link active"
                   to="/Gallery"
@@ -90,7 +90,7 @@ export default function Header() {
                 >
                   GALLERY
                 </Link>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <Link

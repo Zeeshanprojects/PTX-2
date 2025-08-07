@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
           This Privacy Policy describes how Pakistan Textile Exchange(the "Site",
           "we", "us", or "our") collects, uses, and discloses your personal
           information when you visit, use our services, or make a purchase from
-          cottoncollective.org (the "Site") or otherwise communicate with us
+          paktex.com (the "Site") or otherwise communicate with us
           (collectively, the "Services"). For purposes of this Privacy Policy,
           "you" and "your" means you as the user of the Services, whether you
           are a customer, website visitor, or another individual whose
@@ -259,7 +259,7 @@ export default function PrivacyPolicy() {
      <p>Please note that we may transfer, store and process your personal information outside the country you live in, including the United States. Your personal information is also processed by staff and third party service providers and partners in these countries.</p>
      <p>If we transfer your personal information out of Europe, we will rely on recognized transfer mechanisms like the European Commission's Standard Contractual Clauses, or any equivalent contracts issued by the relevant competent authority of the UK, as relevant, unless the data transfer is to a country that has been determined to provide an adequate level of protection</p>
     <h3>Contact</h3>
-    <p>Should you have any questions about our privacy practices or this Privacy Policy, or if you would like to exercise any of the rights available to you, please email us at blanks@cottoncollective.org or contact us at Cotton Collective, 1855 Dornoch Ct, San Diego, CA 92154, United States.</p>
+    <p>Should you have any questions about our privacy practices or this Privacy Policy, or if you would like to exercise any of the rights available to you, please email us at sales@paktex.com </p>
       </div>
    
      

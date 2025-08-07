@@ -1,31 +1,4 @@
-.Top-header {
-  background-color:#F6F6F6 !important;
-  overflow: hidden;
-  height: 20px !important;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
 
-.scrolling-text {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll-left 10s linear infinite;
-  font-size: 1rem;
-  color: black;
-  font-weight: bold;
-}
-
-.scrolling-text span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scroll-left 10s linear infinite;
-}
-
-/* Content is duplicated using ::after to create seamless loop */
-.scrolling-text span::after {
-  content: "SALE UPTO 50% — SALE UPTO 50% — SALE UPTO 50% — SALE UPTO 50% —";
-}
 
 @keyframes scroll-left {
   0% {

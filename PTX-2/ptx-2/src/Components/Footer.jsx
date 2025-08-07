@@ -14,7 +14,7 @@ import {
 export default function Footer() {
   return (
     <>
-      <div className="container-fluid p-0">
+      <div className="container-fluid p-0 m-0">
         {/* Footer */}
         <footer className="text-center text-lg-start text-dark">
           {/* Section: Social media */}
