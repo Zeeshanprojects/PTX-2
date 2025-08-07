@@ -4,6 +4,7 @@ import "./ContactUs.style.css";
 import Footer from "../Components/Footer";
 
 export default function ContactUs() {
+  
   useEffect(() => {
     document.title = "Contact Us | Pakistan Textile Exchange";
   }, []);
@@ -14,8 +15,7 @@ export default function ContactUs() {
     message: "",
   });
 
-  const [status, setStatus] = useState(""); // Track submission status (success/error)
-
+  const [status, setStatus] = useState({ type: "", message: "" });
   // Handle input changes and update state
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,20 +26,30 @@ export default function ContactUs() {
   };
 
   // Handle form submission
-  const handleSubmit = async (e) => {
-    e.preventDefault();  // Prevent default form submission behavior
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    try {
-      const response = await axios.post("https://ptxapi.io/api/contactform", formData);
-      if (response.data.success) {
-        setStatus("Your message has been sent successfully.");
-      } else {
-        setStatus("Failed to send message. Please try again.");
-      }
-    } catch (error) {
-      setStatus("An error occurred. Please try again.");
+  try {
+    const response = await axios.post("https://ptxapi.io/api/contactform", formData);
+    if (response.data.success) {
+      setStatus({
+        type: "success",
+        message: "✅ Your message has been sent successfully.",
+      });
+      setFormData({ name: "", email: "", message: "" }); // Clear form
+    } else {
+      setStatus({
+        type: "error",
+        message: "❌ Failed to send message. Please try again.",
+      });
     }
-  };
+  } catch (error) {
+    setStatus({
+      type: "error",
+      message: "❌ An error occurred. Please try again later.",
+    });
+  }
+};
 
   return (
     <>
@@ -84,7 +94,12 @@ export default function ContactUs() {
             Submit
           </button>
         </form>
-        {status && <p className="status-message">{status}</p>} {/* Display submission status */}
+      {status.message && (
+  <p className={`status-message ${status.type}`}>
+    {status.message}
+  </p>
+)}
+
       </div>
       <Footer />
     </>

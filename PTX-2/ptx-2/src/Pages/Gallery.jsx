@@ -20,33 +20,16 @@ export default function Gallery() {
         setLoading(false);
       });
   }, []);
+  console.log("https://ptxapi.io/api/gallery");
 
-  // const navLinks = [
-  //   { name: "GALLERY", path: "/Gallery" },
-  //   { name: "KNITS", path: "/knits" },
-  //   { name: "DENIM", path: "/denim" },
-  //   { name: "WOVEN", path: "/woven" },
-  //   { name: "OUTWEAR", path: "/outwear" },
-  // ];
 
   return (
     <>
-
       <div className="background-color">
         <h1 className="mt-5 text-center">GALLERY</h1>
       </div>
       <br />
 
-      {/* Nav Tabs */}
-      {/* <ul className="nav justify-content-center gallery-tabs color">
-        {navLinks.map((link, i) => (
-          <li className="nav-item" key={link.name}>
-            <Link className="nav-link color text-muted" to={link.path}>
-              {link.name}
-            </Link>
-          </li>
-        ))}
-      </ul> */}
       <br />
 
       {loading ? (
