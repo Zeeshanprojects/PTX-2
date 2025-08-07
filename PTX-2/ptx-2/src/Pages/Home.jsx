@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { motion } from "framer-motion";
+
 
 import Image from "../Images/Image";
 import "./Home.style.css";
@@ -118,18 +118,14 @@ export default function Home() {
             },
           ].map((card, index) => (
             <div key={index} className="col-sm-12 col-md-6 col-lg-4">
-              <motion.div
-                className="relationship-card border-outline"
-                variants={cardVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-              >
-                <i className={`${card.icon} relationship-icon`}></i>
+              <div className="relationship-card border-outline">
+                 <i className={`${card.icon} relationship-icon`}></i>
                 <h5>{card.title}</h5>
                 <p>{card.desc}</p>
-              </motion.div>
+             
+              </div>
+             
+               
             </div>
           ))}
         </div>
@@ -147,14 +143,8 @@ export default function Home() {
         <div className="row g-4 ">
           {products.map((product, index) => (
             <div key={index} className="col-sm-12 col-md-12 col-lg-4">
-              <motion.div
-                className="product-box"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-              >
-                <img
+              <div className="product-box">
+                 <img
                   src={product.img}
                   className="product-image"
                   alt={product.alt}
@@ -163,22 +153,18 @@ export default function Home() {
                   <h3 className="product-title">{product.title}</h3>
                   <p className="product-description">{product.desc}</p>
                 </div>
-              </motion.div>
+              </div>
+              
+               
+              
             </div>
           ))}
         </div>
       </div>
 
       <div className="space"></div>
-
-      <motion.div
-        className="content-card"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true, amount: 0.5 }}
-      >
-        <p className="card-subtitle">WHO WE ARE?</p>
+<div className="content-card">
+   <p className="card-subtitle">WHO WE ARE?</p>
         <h1 className="card-title mt-3">Pakistan Textile Exchange</h1>
         <p className="card-description ">
           Pakistan Textile Exchange (Paktex) is a leading apparel sourcing
@@ -196,19 +182,17 @@ export default function Home() {
             INQUIRE NOW
           </button>
         </Link>
-      </motion.div>
+</div>
+     
+       
+     
 
       <div className="space"></div>
       <div className="container my-5">
         <div className="row align-items-center ">
           {/* Left Column: Text */}
-          <motion.div
-            className="col-lg-6 mb-4 mb-lg-0"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            
             <h1 className="heading-size">OUR FACTORY PRODUCTION</h1>
 
             <p className="factory-para">
@@ -234,24 +218,13 @@ export default function Home() {
                 )
               )}
             </div>
-          </motion.div>
-
-          <motion.div
-            className="col-lg-6"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={{
-              visible: {
-                transition: {
-                  staggerChildren: 0.2,
-                },
-              },
-            }}
-          >
-            <div className="custom-image-grid">
+          </div>
+         
+          
+<div className="col-lg-6">
+  <div className="custom-image-grid">
               {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
-                <motion.div
+                <div
                   className="factory-col"
                   key={src}
                   variants={{
@@ -261,12 +234,15 @@ export default function Home() {
                   transition={{ duration: 0.5, ease: "easeOut" }}
                 >
                   <img src={src} alt="Factory" className="factory-image" />
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
-      </div>
+      
+</div>
+        
+            
       <br />
 
       <div className="app-container">
@@ -557,7 +533,7 @@ export default function Home() {
       <div className="container blog-section p-2">
         <div className="row g-4">
           {/* Blog Card 1 */}
-          <motion.div
+          <div
             className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -583,10 +559,10 @@ export default function Home() {
                 </div>
               </div>
             </Link>
-          </motion.div>
+          </div>
 
           {/* Blog Card 2 */}
-          <motion.div
+          <div
             className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -612,10 +588,10 @@ export default function Home() {
                 </div>
               </div>
             </Link>
-          </motion.div>
+          </div>
 
           {/* Blog Card 2 */}
-          <motion.div
+          <div
             className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -641,13 +617,13 @@ export default function Home() {
                 </div>
               </div>
             </Link>
-          </motion.div>
+          </div>
         </div>
       </div>
       <div className="space"></div>
 
      
-      <motion.div
+      <div
         className="w-100 py-5"
         style={{ backgroundColor: "#000" }}
         initial={{ opacity: 0, y: 50 }}
@@ -655,15 +631,15 @@ export default function Home() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <div className="container text-white text-center">
-          <motion.h2
+          <h2
             className="fw-bold mb-3"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
             Subscribe to Our Channel
-          </motion.h2>
-          <motion.p
+          </h2>
+          <p
             className="mb-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -671,8 +647,8 @@ export default function Home() {
           >
             Stay updated with the latest videos, tutorials, and industry
             insights. Enter your email below.
-          </motion.p>
-          <motion.form
+          </p>
+          <form
             onSubmit={handleSubmit}
             className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
             initial={{ opacity: 0, y: 30 }}
@@ -692,7 +668,7 @@ export default function Home() {
                 padding: "0.75rem 1rem",
               }}
             />
-            <motion.button
+            <button
               type="submit"
               className="btn btn-outline-light px-4 py-2"
               disabled={loading}
@@ -701,10 +677,10 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               {loading ? "Subscribing..." : "Subscribe"}
-            </motion.button>
-          </motion.form>
+            </button>
+          </form>
         </div>
-      </motion.div>
+      </div>
 
       <div className="space">
         <div className="space"></div>
@@ -718,7 +694,7 @@ export default function Home() {
               { icon: "fas fa-shipping-fast", text: "On-Time Global Delivery" },
             ].map((item, i) => (
               <div key={i} className="col-md-4 text-center">
-                <motion.div
+                <div
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: i * 0.2 }}
@@ -726,7 +702,7 @@ export default function Home() {
                 >
                   <i className={`${item.icon} fa-3x mb-3`}></i>
                   <p>{item.text}</p>
-                </motion.div>
+                </div>
               </div>
             ))}
           </div>
@@ -734,7 +710,7 @@ export default function Home() {
       </div>
       <div className="container-fluid p-0">
         <div className="space">
-          <motion.div
+          <div
             className="col-12 col-sm-12 col-md-12 col-lg-12"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -746,7 +722,7 @@ export default function Home() {
               className="sectionimage"
               alt="section"
             />
-          </motion.div>
+          </div>
         </div>
       </div>
 
