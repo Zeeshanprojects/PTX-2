@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-
 import Image from "../Images/Image";
 import "./Home.style.css";
 import { Link } from "react-router-dom";
@@ -46,8 +45,6 @@ export default function Home() {
     }
   };
 
-
-
   // const productVariants = {
   //   hidden: { opacity: 0, scale: 0.95, y: 30 },
   //   visible: { opacity: 1, scale: 1, y: 0 },
@@ -73,7 +70,6 @@ export default function Home() {
     },
   ];
 
-  
   return (
     <>
       <div className="container-fluid p-0">
@@ -116,13 +112,10 @@ export default function Home() {
           ].map((card, index) => (
             <div key={index} className="col-sm-12 col-md-6 col-lg-4">
               <div className="relationship-card border-outline">
-                 <i className={`${card.icon} relationship-icon`}></i>
+                <i className={`${card.icon} relationship-icon`}></i>
                 <h5>{card.title}</h5>
                 <p>{card.desc}</p>
-             
               </div>
-             
-               
             </div>
           ))}
         </div>
@@ -135,13 +128,12 @@ export default function Home() {
         </p>
       </div>
 
-      
       <div className="container latest-products-section">
         <div className="row g-4 ">
           {products.map((product, index) => (
             <div key={index} className="col-sm-12 col-md-12 col-lg-4">
               <div className="product-box">
-                 <img
+                <img
                   src={product.img}
                   className="product-image"
                   alt={product.alt}
@@ -151,17 +143,14 @@ export default function Home() {
                   <p className="product-description">{product.desc}</p>
                 </div>
               </div>
-              
-               
-              
             </div>
           ))}
         </div>
       </div>
 
       <div className="space"></div>
-<div className="content-card">
-   <p className="card-subtitle">WHO WE ARE?</p>
+      <div className="content-card">
+        <p className="card-subtitle">WHO WE ARE?</p>
         <h1 className="card-title mt-3">Pakistan Textile Exchange</h1>
         <p className="card-description ">
           Pakistan Textile Exchange (Paktex) is a leading apparel sourcing
@@ -179,17 +168,13 @@ export default function Home() {
             INQUIRE NOW
           </button>
         </Link>
-</div>
-     
-       
-     
+      </div>
 
       <div className="space"></div>
       <div className="container my-5">
         <div className="row align-items-center ">
           {/* Left Column: Text */}
           <div className="col-lg-6 mb-4 mb-lg-0">
-            
             <h1 className="heading-size">OUR FACTORY PRODUCTION</h1>
 
             <p className="factory-para">
@@ -203,23 +188,28 @@ export default function Home() {
               we’ve adopted eco-friendly practices in water usage, chemical
               handling, and energy management.
             </p>
-            <div className="d-flex flex-wrap gap-2">
+
+            <div className="d-flex flex-wrap ">
               {["AU Textiles", "Shadan Enterprises", "Mahad Textiles"].map(
                 (name) => (
                   <span
                     key={name}
-                    className="badge bg-dark text-white fs-6 px-3 py-2 rounded-pill"
+                    className="badge text-dark fs-5 py-2 rounded-pill d-flex align-items-center gap-2"
                   >
+                    <img
+                      src={Image.location}
+                      alt="location"
+                      style={{ width: "16px", height: "16px" }}
+                    />
                     {name}
                   </span>
                 )
               )}
             </div>
           </div>
-         
-          
-<div className="col-lg-6">
-  <div className="custom-image-grid">
+
+          <div className="col-lg-6">
+            <div className="custom-image-grid">
               {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
                 <div
                   className="factory-col"
@@ -236,10 +226,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      
-</div>
-        
-            
+      </div>
+
       <br />
 
       <div className="app-container">
@@ -619,7 +607,6 @@ export default function Home() {
       </div>
       <div className="space"></div>
 
-     
       <div
         className="w-100 py-5"
         style={{ backgroundColor: "#000" }}
@@ -691,12 +678,7 @@ export default function Home() {
               { icon: "fas fa-shipping-fast", text: "On-Time Global Delivery" },
             ].map((item, i) => (
               <div key={i} className="col-md-4 text-center">
-                <div
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: i * 0.2 }}
-                  viewport={{ once: true }}
-                >
+                <div>
                   <i className={`${item.icon} fa-3x mb-3`}></i>
                   <p>{item.text}</p>
                 </div>
@@ -707,13 +689,7 @@ export default function Home() {
       </div>
       <div className="container-fluid p-0">
         <div className="space">
-          <div
-            className="col-12 col-sm-12 col-md-12 col-lg-12"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
+          <div className="col-12 col-sm-12 col-md-12 col-lg-12">
             <img
               src={Image.sectionimage}
               className="sectionimage"

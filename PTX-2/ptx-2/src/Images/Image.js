@@ -77,5 +77,6 @@ const Image = {
   image15: require("./pt-6.webp"),
   sectionimage: require("./sectionbanner.webp"),
   CEO: require("./Davidjumani.webp"),
+  location: require("./location.webp"), 
 };
 export default Image;
