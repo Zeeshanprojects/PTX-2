@@ -11,7 +11,7 @@ export default function AboutUs() {
   return (
     <>
       <div className="background-color">
-        <h1 className=" text-center">WHO WE ARE</h1>
+        <h1 className=" text-center">WHO WE ARE hello</h1>
       </div>
 
       <div className="container my-5">
