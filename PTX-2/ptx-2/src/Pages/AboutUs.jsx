@@ -18,7 +18,7 @@ export default function AboutUs() {
   return (
     <>
       <div className="background-color" data-aos="fade-up">
-        <h1 className=" text-center" data-aos="fade-up">WHO WE ARE hello</h1>
+        <h1 className=" text-center" data-aos="fade-up">WHO WE ARE</h1>
       </div>
 
       <div className="container my-5">

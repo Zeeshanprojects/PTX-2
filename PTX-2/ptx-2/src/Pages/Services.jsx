@@ -3,11 +3,19 @@ import { Link } from "react-router-dom";
 
 import "./Services.style.css";
 import Footer from "../Components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Services() {
   useEffect(() => {
     document.title = "Services | Pakistan Textile Exchange ";
   }, []);
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // animation duration in ms
+          once: true,     // whether animation should happen only once
+        });
+      }, []);
 
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -30,7 +38,7 @@ export default function Services() {
       title: "PRODUCT DEVELOPMENT",
       text:
         "Collaborative design & prototyping services to turn your ideas into ready-to-produce fashion items.",
-      link: "/QualityAssurance",
+      link: "/productdevelopment",
       icon: "fas fa-tshirt",
     },
     {
@@ -66,8 +74,8 @@ export default function Services() {
   return (
     <>
 
-      <div className="background-color">
-        <h1 className="text-center">SERVICES</h1>
+      <div className="background-color" data-aos="fade-up">
+        <h1 className="text-center" data-aos="fade-up">SERVICES</h1>
       </div>
 
       <div className="container">
@@ -75,7 +83,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5"
+              className="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5"  data-aos="fade-up"
             >
               <div
                 className="service-card h-100 d-flex flex-column p-4"

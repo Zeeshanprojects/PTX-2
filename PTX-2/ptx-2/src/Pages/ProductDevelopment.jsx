@@ -8,6 +8,7 @@ export default function ProductDevelopment() {
      <h1 className="mt-5 text-center">SERVICES / PRODUCT DEVELOPMENT</h1>
      </div>
 
+<div className='space'></div>
     <div className="container">
   <div className="row">
     <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -64,8 +65,7 @@ export default function ProductDevelopment() {
       <br />
       <button
         type="button"
-        className="btn btn-dark"
-        onClick={handleDownload}
+        className="btn btn-dark" 
       >
         Download Development Guide
       </button>

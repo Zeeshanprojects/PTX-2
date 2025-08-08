@@ -30,18 +30,15 @@ import Logistics from "./Pages/Logistics";
 import Sourcing from "./Pages/Sourcing";
 import Studio from "./Pages/Studio";
 import Inquireform from "./Pages/Inquireform";
-import Gallery from "./Pages/Gallery";
+import ProductDevelopment from "./Pages/ProductDevelopment";
+
 import Blog1 from "./Pages/Blog1";
 import Blog2 from "./Pages/Blog2";
 import Blog3 from "./Pages/Blog3";
-import KnitsGallery from "./Pages/Knits";
-import DenimGallery from "./Pages/Denim";
-import WovenGallery from "./Pages/Woven";
-import OutwearGallery from "./Pages/Outwear";
+
 import Checkout from "./Pages/Checkout";
 import Teams from "./Pages/Teams";
 import Teaminfo from "./Pages/Teaminfo";
-
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -71,14 +68,10 @@ function AppContent() {
             <Route path="/Logistics" element={<Logistics />} />
             <Route path="/Sourcing" element={<Sourcing />} />
             <Route path="/Studio" element={<Studio />} />
-            <Route path="/Gallery" element={<Gallery />} />
-            <Route path="/Knits" element={<KnitsGallery />} />
-            <Route path="/denim" element={<DenimGallery />} />
-            <Route path="/woven" element={<WovenGallery />} />
-            <Route path="/outwear" element={<OutwearGallery />} />
+           <Route path="/productdevelopment" element={<ProductDevelopment />} />
             <Route path="/team" element={<Teams />} />
-<Route path="/team/:slug" element={<Teaminfo />} />        
-  <Route path="/inquireform" element={<Inquireform />} />
+            <Route path="/team/:slug" element={<Teaminfo />} />
+            <Route path="/inquireform" element={<Inquireform />} />
             <Route path="/Product" element={<Product />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/Contactus" element={<ContactUs />} />
@@ -93,7 +86,7 @@ function AppContent() {
             <Route path="/Search" element={<Search />} />
             <Route path="/blog1" element={<Blog1 />} />
             <Route path="/blog2" element={<Blog2 />} />
-            <Route path="/blog3" element={<Blog3/>}/>
+            <Route path="/blog3" element={<Blog3 />} />
             <Route path="/ProductDetails/:id" element={<ProductDetails />} />
           </Routes>
         </>
