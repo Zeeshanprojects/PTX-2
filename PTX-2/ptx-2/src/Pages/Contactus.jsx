@@ -53,7 +53,7 @@ const handleSubmit = async (e) => {
 
   return (
     <>
-     <div className="background-color">
+     <div className="background-color mt-5">
             <h1 className="text-center">CONTACT US</h1>
         </div>
       <div className="contact-container pt-2">
@@ -84,7 +84,7 @@ const handleSubmit = async (e) => {
             <textarea
               name="message"
               placeholder="MESSAGE"
-              rows="5"
+              rows="3"
               required
               value={formData.message}
               onChange={handleChange}
