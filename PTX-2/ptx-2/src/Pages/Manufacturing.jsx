@@ -2,12 +2,19 @@ import { useEffect } from "react";
 import React from "react";
 import Images from "../Images/Image";
 import Footer from "../Components/Footer";
-
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Manufacturing() {
   useEffect(() => {
     document.title = "Manufacturing | Pakistan Textile Exchange";
   });
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // whether animation should happen only once
+    });
+  }, []);
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = Images.pdf;
@@ -18,21 +25,23 @@ export default function Manufacturing() {
   };
   return (
     <>
-    
-      <div className="background-color">
-      <h1 className="mt-5 text-center">SERVICES / MANUFACTURING</h1>
-      
+      <div className="background-color" data-aos="fade-up">
+        <h1 className="mt-5 text-center" data-aos="fade-up">
+          SERVICES / MANUFACTURING
+        </h1>
       </div>
- 
-    
+
       <div className="space"></div>
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div className="card-body bg-transparent">
               <h2 className="card-title service">Manufacturing Best Apparel</h2>
 
-              <p className="card-text service mt-2 " style={{textAlign: "justify"}}>
+              <p
+                className="card-text service mt-2 "
+                style={{ textAlign: "justify" }}
+              >
                 Our factory partners are vertically integrated, from spinning,
                 knitting, dying, finishing, printing, laundry to pack. We have
                 sample departments the size of small production units knocking
@@ -46,7 +55,10 @@ export default function Manufacturing() {
                 What is Apparel Production?
               </h2>
 
-              <p className="card-text  service mt-2" style={{textAlign: "justify"}}>
+              <p
+                className="card-text  service mt-2"
+                style={{ textAlign: "justify" }}
+              >
                 Apparel production, also known as garment production is a
                 process where fabric is being converted into garments. The term
                 apparel production is basically used when garments are
@@ -57,7 +69,10 @@ export default function Manufacturing() {
               </p>
             </div>
 
-            <div className="card-body bg-transparent "  style={{textAlign: "justify"}}>
+            <div
+              className="card-body bg-transparent "
+              style={{ textAlign: "justify" }}
+            >
               <h2 className="card-title service mt-4">Why Choose PTX</h2>
               <p className="card-text service mt-2">
                 We never compromise with the quality as we consider it as our
@@ -79,10 +94,9 @@ export default function Manufacturing() {
           </div>
         </div>
       </div>
-      
-     
+
       <br />
- <Footer/>
+      <Footer />
     </>
   );
 }
