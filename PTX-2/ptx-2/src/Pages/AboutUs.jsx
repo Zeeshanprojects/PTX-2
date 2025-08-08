@@ -3,20 +3,27 @@ import { useEffect } from "react";
 import Image from "../Images/Image";
 import "./AboutUs.style.css";
 import Footer from "../Components/Footer";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function AboutUs() {
   useEffect(() => {
     document.title = "About | Pakistan Textile Exchange ";
   }, []);
+   useEffect(() => {
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true,     // whether animation should happen only once
+      });
+    }, []);
   return (
     <>
-      <div className="background-color">
-        <h1 className=" text-center">WHO WE ARE hello</h1>
+      <div className="background-color" data-aos="fade-up">
+        <h1 className=" text-center" data-aos="fade-up">WHO WE ARE hello</h1>
       </div>
 
       <div className="container my-5">
         <div className="row align-items-stretch g-4">
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-6" data-aos="fade-up">
             <div className="knowus p-4 rounded bg-white same-height h-100">
               <h5 className="text-uppercase text-secondary mb-3">Our Story</h5>
               <p className="text-muted">
@@ -31,7 +38,7 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-6" data-aos="fade-up">
             <div className="image-wrapper">
               <img src={Image.p2} className="storyimage" alt="Our Story" />
             </div>
@@ -41,7 +48,7 @@ export default function AboutUs() {
 
       <div className="container my-5">
         <div className="row align-items-stretch g-4">
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-6" data-aos="fade-up">
             <div className="knowus p-4 rounded bg-white same-height h-100">
               <h5 className="text-uppercase text-secondary mb-3">
                 Our Mission
@@ -60,8 +67,8 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-6">
-            <div className="image-wrapper">
+          <div className="col-sm-12 col-md-6" data-aos="fade-up">
+            <div className="image-wrapper" >
               <img src={Image.p3} className="storyimage" alt="Our Story" />
             </div>
           </div>
@@ -70,7 +77,7 @@ export default function AboutUs() {
 
       <div className="container my-5">
         <div className="row align-items-stretch g-4">
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-6" data-aos="fade-up">
             <div className="knowus p-4 rounded bg-white same-height h-100">
               <h5 className="text-uppercase text-secondary mb-3">Our VISION</h5>
               <p className="text-muted">
@@ -87,7 +94,7 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-6" data-aos="fade-up">
             <div className="image-wrapper">
               <img src={Image.p1} className="storyimage" alt="Our Story" />
             </div>
@@ -95,10 +102,10 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="space"></div>
-      <h1 className="text-center">FROM DESIGN TO DELIVERY</h1>
+      <h1 className="text-center" data-aos="fade-up">FROM DESIGN TO DELIVERY</h1>
 
       <br />
-      <div className="container my-5">
+      <div className="container my-5" data-aos="fade-up">
         <div className="row g-4">
           {[Image.step1, Image.step2, Image.step3].map((img, index) => (
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
@@ -131,7 +138,7 @@ export default function AboutUs() {
       </div>
 
       <div className="space"></div>
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="row align-items-center">
           <div className="col-md-5 text-center">
             <img

@@ -27,11 +27,11 @@ export default function Services() {
       icon: "fas fa-industry",
     },
     {
-      title: "QUALITY ASSURANCE",
+      title: "PRODUCT DEVELOPMENT",
       text:
-        "Our rigorous inspection processes guarantee that every fabric and garment meets durability, resilience, comfort, and industry benchmarks.",
+        "Collaborative design & prototyping services to turn your ideas into ready-to-produce fashion items.",
       link: "/QualityAssurance",
-      icon: "fas fa-clipboard-check",
+      icon: "fas fa-tshirt",
     },
     {
       title: "LOGISTICS",
@@ -53,6 +53,13 @@ export default function Services() {
         "Our creative studio brings unique textile concepts to life with trend-driven designs, custom patterns, and branding solutions.",
       link: "/Studio",
       icon: "fas fa-palette",
+    },
+    {
+      title: "QUALITY ASSURANCE",
+      text:
+        "Our rigorous inspection processes guarantee that every fabric and garment meets durability, resilience, comfort, and industry benchmarks.",
+      link: "/QualityAssurance",
+      icon: "fas fa-clipboard-check",
     },
   ];
 
