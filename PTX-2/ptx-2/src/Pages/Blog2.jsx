@@ -1,14 +1,18 @@
 import React from "react";
 import "./Blog.style.css";
-import Image from "../Images/Image";
+// import Image from "../Images/Image";
 import Footer from "../Components/Footer";
 
 export default function Blog2() {
   return (
     <>
-      <div className="container-fluid p-0">
-        <div className="blog-header">
-          <img src={Image.Blog2} alt="Blog Banner" className="blogs-img" />
+    <div className="space"></div>
+      <div className="container-fluid p-0 ">
+       <div className="blog-header ">
+          {/* <img src={Image.Blog1} alt="Blog Banner" className="blogs-img" /> */}
+          <div className="blog-title mt-5">
+          <h1>BEHIND THE STITCH</h1>
+        </div>
         </div>
 
         <div className="container blog-content">

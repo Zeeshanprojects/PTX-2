@@ -1,17 +1,21 @@
 import React from "react";
 import "./Blog.style.css";
 import Footer from "../Components/Footer";
-import Image from "../Images/Image";
+// import Image from "../Images/Image";
 
 export default function Blog3() {
   return (
     <>
 
       <div className="container-fluid p-0">
-        <div className="blog-header">
-          <img src={Image.Blog3} alt="Blog Banner" className="blogs-img" />
         
+         <div className="blog-header ">
+          {/* <img src={Image.Blog1} alt="Blog Banner" className="blogs-img" /> */}
+          <div className="blog-title mt-5">
+          <h1>GLOBAL THREAD</h1>
         </div>
+        </div>
+      
 
         <div className="container blog-content">
           <h2> Global Thread – Weaving Cultures Through Fashion</h2>

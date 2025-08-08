@@ -355,10 +355,10 @@ export default function Home() {
               <img src={Image.LongT10} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.image10} alt="longT" />
+              <img src={Image.image12} alt="longT" />
             </div>
             <div className="img-box">
-              <img src={Image.LongT12} alt="longT" />
+              <img src={Image.LongT6} alt="longT" />
             </div>
 
             <div className="img-box">
@@ -478,47 +478,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="scroll-row row4">
-          <div className="scroll-content">
-            <div className="img-box">
-              <img src={Image.F1} alt="Fleece" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage2} alt="Fleece" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F3} alt="Fleece" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT13} alt="Fleece" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image10} alt="Fleece" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F6} alt="Fleece" />
-            </div>
-
-            <div className="img-box">
-              <img src={Image.LongT12} alt="Fleece" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F2} alt="Fleece" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image5} alt="Fleece" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage5} alt="Fleece" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F5} alt="Fleece" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image8} alt="Fleece" />
-            </div>
-          </div>
-        </div>
+      
       </div>
 
       <div className="space"></div>
