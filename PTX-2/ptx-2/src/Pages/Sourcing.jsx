@@ -2,11 +2,19 @@ import { useEffect } from "react";
 import React from "react";
 import Images from "../Images/Image";
 import Footer from "../Components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Sourcing() {
   useEffect(() => {
     document.title = "Sourcing | Pakistan Textile Exchange ";
   });
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // whether animation should happen only once
+    });
+  }, []);
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = Images.pdf;
@@ -17,22 +25,26 @@ export default function Sourcing() {
   };
   return (
     <>
-<div className="background-color">
-<h1 className="mt-5 text-center">SERVICES / SOURCING</h1>
-</div>
+      <div className="background-color" data-aos="fade-up">
+        <h1 className="mt-5 text-center" data-aos="fade-up">
+          SERVICES / SOURCING
+        </h1>
+      </div>
 
       <div className="space"> </div>
 
- <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div className="card-body bg-transparent">
               `
-              
               <h2 className="card-title service ">
                 Sourcing Manufactured Goods
               </h2>
-              <p className="card-text service mt-2"  style={{textAlign: "justify"}}>
+              <p
+                className="card-text service mt-2"
+                style={{ textAlign: "justify" }}
+              >
                 Pakistan is the third largest grower of cotton and producer of
                 cotton yarn. We have some of the largest vertical textile mills
                 in the world let along the region, Pakistan is strong in cotton
@@ -46,7 +58,10 @@ export default function Sourcing() {
             <div className="card-body bg-transparent serviceparagraph">
               <h2 className="card-title service mt-4">Your Sourcing Partner</h2>
 
-              <p className="card-text  service mt-2"  style={{textAlign: "justify"}}>
+              <p
+                className="card-text  service mt-2"
+                style={{ textAlign: "justify" }}
+              >
                 Our roots started in the Surf and Skate industry back in the
                 90s, focusing on the classic hoodie and t shirts for all the
                 iconic surf brands, We were then asked to help in other
@@ -58,10 +73,13 @@ export default function Sourcing() {
               </p>
             </div>
 
-            <div className="card-body bg-transparent " >
+            <div className="card-body bg-transparent ">
               <h2 className="card-title service mt-4">Why Choose PTX</h2>
 
-              <p className="card-text service mt-2" style={{textAlign: "justify"}}>
+              <p
+                className="card-text service mt-2"
+                style={{ textAlign: "justify" }}
+              >
                 We never compromise with the quality as we consider it as our
                 success pillar. We believe that compromising on quality leads to
                 losing market share or clients. We believe that if we have
@@ -84,8 +102,7 @@ export default function Sourcing() {
 
       <div className="space"></div>
 
-     
-      <Footer/>
+      <Footer />
     </>
   );
 }

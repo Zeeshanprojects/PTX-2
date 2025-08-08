@@ -2,12 +2,19 @@ import { useEffect } from "react";
 import React from "react";
 import Images from "../Images/Image";
 import Footer from "../Components/Footer";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Studio() {
   useEffect(() => {
     document.title = "Studio | Pakistan Textile Exchange";
   });
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true, // whether animation should happen only once
+      });
+    }, []);
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = Images.pdf;

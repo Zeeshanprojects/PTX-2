@@ -2,11 +2,19 @@ import { useEffect } from "react";
 import React from "react";
 import Images from "../Images/Image";
 import Footer from "../Components/Footer";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function QualityAssurance() {
+
   useEffect(() => {
     document.title = "Quality Assurance | Pakistan Textile Exchange ";
   });
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // whether animation should happen only once
+    });
+  }, []);
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = Images.pdf;
@@ -17,12 +25,12 @@ export default function QualityAssurance() {
   };
   return (
     <>
-      <div className="background-color">
-        <h1 className="mt-5 text-center">SERVICES / QUALITY ASSURANCE</h1>
+      <div className="background-color" data-aos="fade-up">
+        <h1 className="mt-5 text-center" data-aos="fade-up">SERVICES / QUALITY ASSURANCE</h1>
       </div>
 
       <div className="space"></div>
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div className="card-body bg-white">

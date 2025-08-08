@@ -25,6 +25,7 @@ export default function Manufacturing() {
   };
   return (
     <>
+    <br/>
       <div className="background-color" data-aos="fade-up">
         <h1 className="mt-5 text-center" data-aos="fade-up">
           SERVICES / MANUFACTURING
