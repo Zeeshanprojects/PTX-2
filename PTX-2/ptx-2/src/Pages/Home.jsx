@@ -209,7 +209,6 @@ export default function Home() {
                 { label: "Customers", value: "8" },
                 { label: "Team Members", value: "20" },
                 { label: "Years", value: "25" },
-                 
               ].map((item) => (
                 <div
                   key={item.label}
@@ -227,34 +226,21 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="col-lg-6">
-
-          <video data-aos="fade-up"
-  width="100%"
-  height="auto"
-  controls
-  autoPlay
-  muted
-  loop
->
-  <source src="/ptxvideo.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-            {/* <div className="custom-image-grid" data-aos="fade-up">
-              {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
-                <div
-                  className="factory-col"
-                  key={src}
-                  variants={{
-                    hidden: { opacity: 0, scale: 0.8 },
-                    visible: { opacity: 1, scale: 1 },
-                  }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
-                >
-                  <img src={src} alt="Factory" className="factory-image" />
-                </div>
-              ))}
-            </div> */}
+          <div className=" col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <video
+              data-aos="fade-up"
+              width="100%"
+              height="auto"
+              controls
+              autoPlay
+              muted
+              loop
+              play
+            >
+              <source src="/ptxvideo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+           
           </div>
         </div>
       </div>
@@ -618,7 +604,6 @@ export default function Home() {
         </div>
       </div>
 
-    
       <h1 className="text-center fw-bold" data-aos="fade-up">
         WHY CHOOSE US?
       </h1>

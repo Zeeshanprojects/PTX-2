@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 import Image from "../Images/Image";
 import "./AboutUs.style.css";
+import "./Home.style.css"
 import Footer from "../Components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -25,7 +26,7 @@ export default function AboutUs() {
         <div className="row align-items-stretch g-4">
           <div className="col-sm-12 col-md-6" data-aos="fade-up">
             <div className="knowus p-4 rounded bg-white same-height h-100">
-              <h5 className="text-uppercase text-secondary mb-3">Our Story</h5>
+              <h3 className="text-uppercase text-secondary mb-3">Our Story</h3>
               <p className="text-muted">
                 <strong>The Pakistan Textile Exchange</strong> is one of the
                 most reliable names in apparel and accessory manufacturing in
@@ -39,10 +40,24 @@ export default function AboutUs() {
           </div>
 
           <div className="col-sm-12 col-md-6" data-aos="fade-up">
-            <div className="image-wrapper">
-              <img src={Image.p2} className="storyimage" alt="Our Story" />
-            </div>
+              <div className="custom-image-grid" data-aos="fade-up">
+              {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
+                <div
+                  className="factory-col"
+                  key={src}
+                  variants={{
+                    hidden: { opacity: 0, scale: 0.8 },
+                    visible: { opacity: 1, scale: 1 },
+                  }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                >
+                  <img src={src} alt="Factory" className="factory-image" />
+                </div>
+              ))}
+             </div>
           </div>
+
+         
         </div>
       </div>
 
@@ -50,9 +65,9 @@ export default function AboutUs() {
         <div className="row align-items-stretch g-4">
           <div className="col-sm-12 col-md-6" data-aos="fade-up">
             <div className="knowus p-4 rounded bg-white same-height h-100">
-              <h5 className="text-uppercase text-secondary mb-3">
+              <h3 className="text-uppercase text-secondary mb-3">
                 Our Mission
-              </h5>
+              </h3>
               <p className="text-muted">
                 <strong>Our Mission at Pakistan Textile Exchange</strong> is to
                 elevate Pakistan’s global presence in the textile and apparel
@@ -67,10 +82,22 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-6" data-aos="fade-up">
-            <div className="image-wrapper" >
-              <img src={Image.p3} className="storyimage" alt="Our Story" />
-            </div>
+             <div className="col-sm-12 col-md-6" data-aos="fade-up">
+              <div className="custom-image-grid" data-aos="fade-up">
+              {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
+                <div
+                  className="factory-col"
+                  key={src}
+                  variants={{
+                    hidden: { opacity: 0, scale: 0.8 },
+                    visible: { opacity: 1, scale: 1 },
+                  }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                >
+                  <img src={src} alt="Factory" className="factory-image" />
+                </div>
+              ))}
+             </div>
           </div>
         </div>
       </div>
@@ -79,7 +106,7 @@ export default function AboutUs() {
         <div className="row align-items-stretch g-4">
           <div className="col-sm-12 col-md-6" data-aos="fade-up">
             <div className="knowus p-4 rounded bg-white same-height h-100">
-              <h5 className="text-uppercase text-secondary mb-3">Our VISION</h5>
+              <h3 className="text-uppercase text-secondary mb-3">Our VISION</h3>
               <p className="text-muted">
                 <strong>Our Vision at Pakistan Textile Exchange</strong> is to
                 become a global leader in textile innovation, sustainability,
@@ -94,10 +121,22 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-6" data-aos="fade-up">
-            <div className="image-wrapper">
-              <img src={Image.p1} className="storyimage" alt="Our Story" />
-            </div>
+             <div className="col-sm-12 col-md-6" data-aos="fade-up">
+              <div className="custom-image-grid" data-aos="fade-up">
+              {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
+                <div
+                  className="factory-col"
+                  key={src}
+                  variants={{
+                    hidden: { opacity: 0, scale: 0.8 },
+                    visible: { opacity: 1, scale: 1 },
+                  }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                >
+                  <img src={src} alt="Factory" className="factory-image" />
+                </div>
+              ))}
+             </div>
           </div>
         </div>
       </div>
