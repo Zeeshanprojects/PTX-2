@@ -9,7 +9,7 @@ import {
   faTwitter,
   faInstagram,
   faLinkedinIn,
-  faTiktok,
+
 } from "@fortawesome/free-brands-svg-icons";
 export default function Footer() {
   return (

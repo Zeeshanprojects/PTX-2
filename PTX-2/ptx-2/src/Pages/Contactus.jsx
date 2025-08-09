@@ -56,7 +56,10 @@ const handleSubmit = async (e) => {
      <div className="background-color mt-5">
             <h1 className="text-center">CONTACT US</h1>
         </div>
-      <div className="contact-container pt-2">
+<div className="container-fluid">
+  <div className="row">
+     <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+           <div className="contact-container pt-2">
        
       
         <form className="contact-form" onSubmit={handleSubmit}>
@@ -101,6 +104,24 @@ const handleSubmit = async (e) => {
 )}
 
       </div>
+      
+        </div>
+    <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+  <iframe
+    title="Maguna Beach Map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.027535944996!2d-117.78449572426776!3d33.54268794658636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdd3940cb9f45%3A0x8c00c16a163f8ffb!2sLaguna%20Beach%2C%20CA%2092651%2C%20USA!5e0!3m2!1sen!2sus!4v1691767890987!5m2!1sen!2sus"
+    width="100%"
+    height="450"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+  </div>
+</div>
+       
+
       <Footer />
     </>
   );
