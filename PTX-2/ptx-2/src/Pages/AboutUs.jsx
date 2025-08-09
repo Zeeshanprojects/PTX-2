@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import Image from "../Images/Image";
 import "./AboutUs.style.css";
-import "./Home.style.css"
+
 import Footer from "../Components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -84,7 +84,7 @@ export default function AboutUs() {
 
              <div className="col-sm-12 col-md-6" data-aos="fade-up">
               <div className="custom-image-grid" data-aos="fade-up">
-              {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
+              {[Image.p5, Image.p6, Image.p7, Image.p8].map((src) => (
                 <div
                   className="factory-col"
                   key={src}
@@ -123,7 +123,7 @@ export default function AboutUs() {
 
              <div className="col-sm-12 col-md-6" data-aos="fade-up">
               <div className="custom-image-grid" data-aos="fade-up">
-              {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
+              {[Image.p9, Image.p10, Image.p11, Image.p12].map((src) => (
                 <div
                   className="factory-col"
                   key={src}

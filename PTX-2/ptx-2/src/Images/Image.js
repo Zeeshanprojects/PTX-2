@@ -26,6 +26,8 @@ const Image = {
   p7: require("./Production7.webp"),
   p8: require("./Production8.webp"),
   p9: require("./Production9.webp"),
+   p10: require("./Production10.webp"),
+   p11:require("./Production11.webp"),
   image1: require("./1.webp"),
   image2: require("./2.webp"),
   image3: require("./3.webp"),
