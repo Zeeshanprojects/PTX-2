@@ -8,10 +8,12 @@ export default function Blog1() {
     <>
       <div className="container-fluid p-0">
         <div className="blog-header ">
-          <img src={Image.Blog1} alt="Blog Banner" className="blogs-img" />
-           <div className="blog-title-overlay position-absolute top-50 start-50 translate-middle text-center text-white">
-            <h1 className="display-4 fw-bold">FASHION TRENDS 2025</h1>
-            <p className="lead">Style, Sustainability & Innovation</p>
+          <div className="blog-header position-relative">
+            <img src={Image.Blog1} alt="Blog Banner" className="blogs-img" />
+            <div className="blog-title-overlay position-absolute top-50 start-50 translate-middle text-center text-white">
+              <h1 className="display-4 fw-bold">FASHION TRENDS 2025</h1>
+              <p className="lead">Style, Sustainability & Innovation</p>
+            </div>
           </div>
         </div>
 

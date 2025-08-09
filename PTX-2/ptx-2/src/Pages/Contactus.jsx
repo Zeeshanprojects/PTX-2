@@ -56,7 +56,7 @@ const handleSubmit = async (e) => {
      <div className="background-color mt-5">
             <h1 className="text-center">CONTACT US</h1>
         </div>
-<div className="container-fluid">
+<div className="container-fluid mt-4">
   <div className="row">
      <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
            <div className="contact-container pt-2">

@@ -3,7 +3,7 @@
 }
 .blogs-img {
   width: 100%;
-  height: auto!important;
+  height: 100vh!important;
 object-fit: cover !important;
   padding: 0px;
 
@@ -48,8 +48,16 @@ object-fit: cover !important;
 }
 @media (max-width: 575px) {
   .blogs-img {
-    height: auto; /* Remove fixed height */
-    max-width: 100%;
-    object-fit: contain; /* Optional: or keep 'cover' based on how you want the crop */
+    height: 50vh !important;
+    width: 100%;
+    object-fit: cover; 
+  }
+
+  .blog-title-overlay h1 {
+    font-size: 1.5rem !important; 
+  }
+
+  .blog-title-overlay p {
+    font-size: 1rem !important;
   }
 }
