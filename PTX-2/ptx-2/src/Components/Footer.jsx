@@ -28,7 +28,11 @@ export default function Footer() {
                 <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                   {/* Content */}
                   {/* <img src={Image.logo} alt="logo"></img> */}
- <img src={Image.logo} alt="mainlogo" className="logocolor mb-3" />
+                  <img
+                    src={Image.logo}
+                    alt="mainlogo"
+                    className="logocolor mb-3"
+                  />
                   <br />
                   <br />
                   <p>
@@ -89,13 +93,13 @@ export default function Footer() {
                       />
                     </a>
                     <a
-                      href="https://tiktok.com"
+                      href="https://linkedin.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="me-2"
                     >
                       <FontAwesomeIcon
-                        icon={faTiktok}
+                        icon={faLinkedinIn}
                         style={{
                           fontSize: "5px",
                           color: "white",
@@ -150,7 +154,7 @@ export default function Footer() {
                     </a>
                   </div>
                 </div>
-              
+
                 <div className="col-md-2 col-lg-3 col-xl-3 me-auto mb-4">
                   {/* Links */}
                   <h2 className="text ">Menu</h2>
@@ -233,10 +237,13 @@ export default function Footer() {
                     <button className="subscribe-btn">Subscribe</button>
                   </div>
                 </div>
+                 
               </div>
             </div>
+
           </section>
-          <div className="text-center p-3 ">
+          <hr className="p-2 m-2"/>
+         <div className="text-center pb-5">
             © 2025 |
             <Link className="text-white ms-1" to="/">
               PTX

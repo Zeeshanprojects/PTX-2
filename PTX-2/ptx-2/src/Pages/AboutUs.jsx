@@ -123,7 +123,7 @@ export default function AboutUs() {
 
              <div className="col-sm-12 col-md-6" data-aos="fade-up">
               <div className="custom-image-grid" data-aos="fade-up">
-              {[Image.p9, Image.p10, Image.p11, Image.p12].map((src) => (
+              {[Image.p9, Image.p10, Image.p11, Image.p3].map((src) => (
                 <div
                   className="factory-col"
                   key={src}
