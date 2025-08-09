@@ -59,7 +59,7 @@ const handleSubmit = async (e) => {
 <div className="container-fluid mt-4">
   <div className="row">
      <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-           <div className="contact-container pt-2">
+           <div className="contact-container ">
        
       
         <form className="contact-form" onSubmit={handleSubmit}>
@@ -106,18 +106,51 @@ const handleSubmit = async (e) => {
       </div>
       
         </div>
-    <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-  <iframe
-    title="Maguna Beach Map"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.027535944996!2d-117.78449572426776!3d33.54268794658636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdd3940cb9f45%3A0x8c00c16a163f8ffb!2sLaguna%20Beach%2C%20CA%2092651%2C%20USA!5e0!3m2!1sen!2sus!4v1691767890987!5m2!1sen!2sus"
-    width="100%"
-    height="450"
-    style={{ border: 0 }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
+   <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3">
+
+  <h5 className="fw-bold">HEAD OFFICE</h5>
+  <div className="d-flex align-items-start mb-4">
+    <i className="fas fa-map-marker-alt fa-2x text-dark me-3 mt-1"></i>
+    <div>
+      <strong>Address</strong>
+      <p className="mb-0">
+        2023 South Pacific Coast Hwy, Laguna Beach, CA 92651
+      </p>
+    </div>
+  </div>
+
+  <div className="d-flex align-items-start mb-5">
+    <i className="fas fa-envelope fa-2x text-dark me-3 mt-1"></i>
+    <div>
+      <strong>Call Us / Email</strong>
+      <p className="mb-0">+1 949 283 9554</p>
+      <p className="mb-0">david@paktex.com</p>
+    </div>
+  </div>
+
+  <h5 className="fw-bold">BRANCH OFFICE</h5>
+  <div className="d-flex align-items-start mb-4">
+    <i className="fas fa-map-marker-alt fa-2x text-dark me-3"></i>
+    <div>
+      <strong>Address</strong>
+      <p className="mb-0">
+        Paktex House D-15/3, Block 7 <br />
+        Gulshan e Iqbal - Karachi 75300, Pakistan
+      </p>
+    </div>
+  </div>
+
+  <div className="d-flex align-items-start">
+    <i className="fas fa-envelope fa-2x text-dark me-3"></i>
+    <div>
+      <strong>Call Us / Email</strong>
+      <p className="mb-0">+92 21 3340 2031</p>
+      <p className="mb-0">sales@paktex.com</p>
+    </div>
+  </div>
+
 </div>
+
   </div>
 </div>
        
