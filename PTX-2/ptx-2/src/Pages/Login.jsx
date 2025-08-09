@@ -9,9 +9,9 @@ export default function Login() {
   })
   return (
     <>
- 
+ <div className="space"></div>
       
-      <div className="text-container pt-5">
+      <div className="text-container mt-5">
         <h1>SIGN IN</h1>
         <p>Dont have an account?<Link to="/signup"> Sign up here</Link> </p>
         <div className="page-container">

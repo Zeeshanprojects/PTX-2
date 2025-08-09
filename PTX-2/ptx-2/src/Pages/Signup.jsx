@@ -14,7 +14,7 @@ useEffect(()=>{
   return (
     <>
     <div className="space"></div>
-      <div className="text-container pt-2">
+      <div className="text-container mt-5">
         <h1>CREATE ACCOUNT</h1>
         <p>Already have an account? <Link to="/login">Sign in here</Link></p>
       </div>
@@ -25,7 +25,7 @@ useEffect(()=>{
           
   
           <br/>
-            <h4 className="fw-bold">Primary Contact</h4>
+           
             <div className="row">
               <div className="col-md-6">
                 <div className="form-group">
