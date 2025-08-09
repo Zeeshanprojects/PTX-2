@@ -16,7 +16,7 @@ export default function Footer() {
     <>
       <div className="container-fluid p-0 m-0">
         {/* Footer */}
-        <footer className="text-center text-lg-start text-dark">
+        <footer className="text-center text-lg-start text-white bg-black">
           {/* Section: Social media */}
           <section className="d-flex justify-content-between p-4 text-white"></section>
 
@@ -27,22 +27,22 @@ export default function Footer() {
                 {/* Grid column */}
                 <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                   {/* Content */}
-                  <img src={Image.logo} alt="logo"></img>
-
+                  {/* <img src={Image.logo} alt="logo"></img> */}
+ <img src={Image.logo} alt="mainlogo" className="logocolor mb-3" />
                   <br />
                   <br />
                   <p>
-                    <Link to="/" className="text-dark">
+                    <Link to="/" className="text-white">
                       Laguna Beach, CA 92651
                     </Link>
                   </p>
                   <p>
-                    <Link to="#" className="text-dark">
+                    <Link to="#" className="text-white">
                       Email: david@paktex.com
                     </Link>
                   </p>
                   <p>
-                    <Link to="#" className="text-dark">
+                    <Link to="#" className="text-white">
                       Phone: +1 (949) 283-9554
                     </Link>
                   </p>
@@ -58,7 +58,7 @@ export default function Footer() {
                       <FontAwesomeIcon
                         icon={faFacebookF}
                         style={{
-                          color: "black",
+                          color: "white",
                           border: "2px solid black",
                           borderRadius: "50%",
                           padding: "8px",
@@ -78,7 +78,7 @@ export default function Footer() {
                         icon={faTwitter}
                         style={{
                           fontSize: "5px",
-                          color: "black",
+                          color: "white",
                           border: "2px solid black",
                           borderRadius: "50%",
                           padding: "8px",
@@ -98,7 +98,7 @@ export default function Footer() {
                         icon={faTiktok}
                         style={{
                           fontSize: "5px",
-                          color: "black",
+                          color: "white",
                           border: "2px solid black",
                           borderRadius: "50%",
                           padding: "8px",
@@ -118,7 +118,7 @@ export default function Footer() {
                         icon={faInstagram}
                         style={{
                           fontSize: "5px",
-                          color: "black",
+                          color: "white",
                           border: "2px solid black",
                           borderRadius: "50%",
                           padding: "8px",
@@ -150,8 +150,7 @@ export default function Footer() {
                     </a>
                   </div>
                 </div>
-                {/* Grid column */}
-                {/* Grid column */}
+              
                 <div className="col-md-2 col-lg-3 col-xl-3 me-auto mb-4">
                   {/* Links */}
                   <h2 className="text ">Menu</h2>
@@ -159,24 +158,24 @@ export default function Footer() {
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     style={{
                       width: 60,
-                      backgroundColor: "#7c4dff",
+                      backgroundColor: "#ffffff",
                       height: 2,
                     }}
                   />
                   <p>
-                    <Link to="/" className="text-dark">
+                    <Link to="/" className="text-white">
                       Home
                     </Link>
                   </p>
 
                   <p>
-                    <Link to="/LookBook-V1" className="text-dark">
+                    <Link to="/LookBook-V1" className="text-white">
                       LOOKBOOK
                     </Link>
                   </p>
 
                   <p>
-                    <Link to="/privacypolicy" className="text-dark">
+                    <Link to="/privacypolicy" className="text-white">
                       Privacy Policy
                     </Link>
                   </p>
@@ -193,17 +192,17 @@ export default function Footer() {
                     }}
                   />
                   <p>
-                    <Link to="/Aboutus" className="text-dark">
+                    <Link to="/Aboutus" className="text-white">
                       Our Story
                     </Link>
                   </p>
                   <p>
-                    <Link to="/ContactUS" className="text-dark">
+                    <Link to="/ContactUS" className="text-white">
                       Contact Us
                     </Link>
                   </p>
                   <p>
-                    <Link to="/signup" className="text-dark">
+                    <Link to="/signup" className="text-white">
                       Account
                     </Link>
                   </p>
@@ -239,7 +238,7 @@ export default function Footer() {
           </section>
           <div className="text-center p-3 ">
             © 2025 |
-            <Link className="text-dark ms-1" to="/">
+            <Link className="text-white ms-1" to="/">
               PTX
             </Link>
           </div>

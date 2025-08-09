@@ -84,7 +84,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="container-fluid p-0 mt-5">
+      <div className="container-fluid p-0 mt-5" data-aos="fade-up" fetchPriority="high">
         <div className="col-12">
           <img
             src={Image.bannerimage}
@@ -96,9 +96,9 @@ export default function Home() {
       <br />
 
       <div className="space"></div>
-      <div className="text-center">
-        <h1 className="text-center fw-bold">BUILDING STRONG RELATIONSHIP</h1>
-        <p className="categories-subtitle">
+      <div className="text-center"data-aos="fade-up">
+        <h1 className="text-center fw-bold" >BUILDING STRONG RELATIONSHIP</h1>
+        <p className="categories-subtitle" >
           Fostering Trust Through Quality and Commitment
         </p>
       </div>
@@ -201,23 +201,7 @@ export default function Home() {
               handling, and energy management.
             </p>
 
-            <div className="d-flex flex-wrap ">
-              {["AU TEXTILES", "SHADAN ENTERPRISES", "MAHAD TEXTILES"].map(
-                (name) => (
-                  <span
-                    key={name}
-                    className="badge text-dark fs-6 py-2 rounded-pill d-flex align-items-center gap-2  "
-                  >
-                    <img
-                      src={Image.location}
-                      alt="location"
-                      style={{ width: "16px", height: "16px" }}
-                    />
-                    {name}
-                  </span>
-                )
-              )}
-            </div>
+           
           </div>
 
           <div className="col-lg-6">
@@ -642,7 +626,7 @@ export default function Home() {
         </div>
      
       <div className="container-fluid p-0 m-0" data-aos="fade-up">
-        <div className="space">
+        <div className="space"></div>
           <div className="col-12 col-sm-12 col-md-12 col-lg-12">
             <img
               src={Image.sectionimage}
@@ -651,7 +635,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
+      
 
       <Footer />
     </>
