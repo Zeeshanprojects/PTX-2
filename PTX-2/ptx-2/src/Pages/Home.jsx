@@ -249,8 +249,8 @@ export default function Home() {
           final shipment.
         </p>
 
-        <Link to="/inquireform">
-          <button type="button" className="btn btn-dark px-5 ">
+        <Link to="/inquireform" >
+          <button type="button" className="btn btn-dark px-5 inquirebutton">
             INQUIRE NOW
           </button>
         </Link>
