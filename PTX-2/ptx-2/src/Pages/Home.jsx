@@ -5,11 +5,10 @@ import Image from "../Images/Image";
 import "./Home.style.css";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
-import AOS from 'aos';
-import 'aos/dist/aos.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
-  
   useEffect(() => {
     document.title = "Home | Pakistan Textile Exchange";
   });
@@ -17,10 +16,9 @@ export default function Home() {
   useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration in ms
-      once: true,     // whether animation should happen only once
+      once: true, // whether animation should happen only once
     });
   }, []);
-
 
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
@@ -84,7 +82,11 @@ export default function Home() {
 
   return (
     <>
-      <div className="container-fluid p-0 mt-5" data-aos="fade-up" fetchPriority="high">
+      <div
+        className="container-fluid p-0 mt-5"
+        data-aos="fade-up"
+        fetchPriority="high"
+      >
         <div className="col-12">
           <img
             src={Image.bannerimage}
@@ -96,9 +98,9 @@ export default function Home() {
       <br />
 
       <div className="space"></div>
-      <div className="text-center"data-aos="fade-up">
-        <h1 className="text-center fw-bold" >BUILDING STRONG RELATIONSHIP</h1>
-        <p className="categories-subtitle" >
+      <div className="text-center" data-aos="fade-up">
+        <h1 className="text-center fw-bold">BUILDING STRONG RELATIONSHIP</h1>
+        <p className="categories-subtitle">
           Fostering Trust Through Quality and Commitment
         </p>
       </div>
@@ -196,12 +198,31 @@ export default function Home() {
               carefully monitored under strict quality controls. Our production
               floor is equipped with modern looms, automated dyeing units, and
               precision cutting machines to maintain accuracy and minimize
-              waste. Sustainability is also a key pillar of our operations
-              we’ve adopted eco-friendly practices in water usage, chemical
-              handling, and energy management.
+              waste. Sustainability is also a key pillar of our operations we’ve
+              adopted eco-friendly practices in water usage, chemical handling,
+              and energy management.
             </p>
 
-           
+            <div className="d-flex flex-wrap gap-5 justify-content-start my-4">
+              {[
+                { label: "Factories", value: "5" },
+                { label: "Customers", value: "12" },
+                { label: "Years", value: "20" },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className="d-flex flex-column align-items-center p-3 rounded shadow-sm stat-box"
+                >
+                  <h3
+                    className="fw-bold mb-1"
+                    style={{ fontSize: "3rem", color: "black" }}
+                  >
+                    {item.value}
+                  </h3>
+                  <span className="text-muted">{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="col-lg-6">
@@ -461,8 +482,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-      
       </div>
 
       <div className="space"></div>
@@ -471,13 +490,10 @@ export default function Home() {
         <p>Insights, Stories, and Industry Trends</p>
       </div>
 
-      <div className="container blog-section p-2"data-aos="fade-up">
+      <div className="container blog-section p-2" data-aos="fade-up">
         <div className="row g-4">
           {/* Blog Card 1 */}
-          <div
-            className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
-           
-          >
+          <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
             <Link to="/blog1" className="text-decoration-none text-dark">
               <div className="blog-box">
                 <div className="blog-img-wrapper">
@@ -500,10 +516,7 @@ export default function Home() {
           </div>
 
           {/* Blog Card 2 */}
-          <div
-            className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
-           
-          >
+          <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
             <Link to="/blog2" className="text-decoration-none text-dark">
               <div className="blog-box">
                 <div className="blog-img-wrapper">
@@ -557,28 +570,19 @@ export default function Home() {
       </div>
       <div className="space"></div>
 
-      <div
-        className="w-100 py-5"
-      
-      >
-        <div className="container-fluid text-white text-center p-5 bg-black" data-aos="fade-up" >
-          <h2
-            className="fw-bold mb-3"
-          
-          >
-            Subscribe to Our Channel
-          </h2>
-          <p
-            className="mb-4"
-           
-          >
+      <div className="w-100 py-5">
+        <div
+          className="container-fluid text-white text-center p-5 bg-black"
+          data-aos="fade-up"
+        >
+          <h2 className="fw-bold mb-3">Subscribe to Our Channel</h2>
+          <p className="mb-4">
             Stay updated with the latest videos, tutorials, and industry
             insights. Enter your email below.
           </p>
           <form
             onSubmit={handleSubmit}
             className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
-          
           >
             <input
               type="email"
@@ -593,49 +597,45 @@ export default function Home() {
                 padding: "0.75rem 1rem",
               }}
             />
-            <button
-              type="submit"
-              className="btn btn-outline-light px-4 py-2"
-              
-            >
+            <button type="submit" className="btn btn-outline-light px-4 py-2">
               {loading ? "Subscribing..." : "Subscribe"}
             </button>
           </form>
         </div>
       </div>
 
-      
-        <div className="space"></div>
-        <h1 className="text-center fw-bold" data-aos="fade-up">WHY CHOOSE US?</h1>
-        <div className="space"></div>
-        <div className="container" data-aos="fade-up">
-          <div className="row g-4">
-            {[
-              { icon: "fas fa-tshirt", text: "Premium Quality Fabrics" },
-              { icon: "fas fa-recycle", text: "Sustainable Manufacturing" },
-              { icon: "fas fa-shipping-fast", text: "On-Time Global Delivery" },
-            ].map((item, i) => (
-              <div key={i} className="col-md-4 text-center">
-                <div>
-                  <i className={`${item.icon} fa-3x mb-3`}></i>
-                  <p>{item.text}</p>
-                </div>
+      <div className="space"></div>
+      <h1 className="text-center fw-bold" data-aos="fade-up">
+        WHY CHOOSE US?
+      </h1>
+      <div className="space"></div>
+      <div className="container" data-aos="fade-up">
+        <div className="row g-4">
+          {[
+            { icon: "fas fa-tshirt", text: "Premium Quality Fabrics" },
+            { icon: "fas fa-recycle", text: "Sustainable Manufacturing" },
+            { icon: "fas fa-shipping-fast", text: "On-Time Global Delivery" },
+          ].map((item, i) => (
+            <div key={i} className="col-md-4 text-center">
+              <div>
+                <i className={`${item.icon} fa-3x mb-3`}></i>
+                <p>{item.text}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-     
+      </div>
+
       <div className="container-fluid p-0 m-0" data-aos="fade-up">
         <div className="space"></div>
-          <div className="col-12 col-sm-12 col-md-12 col-lg-12">
-            <img
-              src={Image.sectionimage}
-              className="sectionimage"
-              alt="section"
-            />
-          </div>
+        <div className="col-12 col-sm-12 col-md-12 col-lg-12">
+          <img
+            src={Image.sectionimage}
+            className="sectionimage"
+            alt="section"
+          />
         </div>
-      
+      </div>
 
       <Footer />
     </>
