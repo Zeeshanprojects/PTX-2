@@ -143,7 +143,7 @@ export default function Home() {
       </div>
 
       <div className="container latest-products-section" data-aos="fade-up">
-        <div className="row g-4 ">
+        <div className="row g-0 ">
           {products.map((product, index) => (
             <div key={index} className="col-sm-12 col-md-12 col-lg-4">
               <div className="product-box">
@@ -152,10 +152,10 @@ export default function Home() {
                   className="product-image"
                   alt={product.alt}
                 />
-                <div className="product-info">
+                {/* <div className="product-info">
                   <h3 className="product-title">{product.title}</h3>
                   <p className="product-description">{product.desc}</p>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
@@ -203,11 +203,12 @@ export default function Home() {
               and energy management.
             </p>
 
-            <div className="d-flex flex-wrap gap-5 justify-content-start my-4">
+            <div className="d-flex flex-wrap gap-3 justify-content-start my-4">
               {[
                 { label: "Factories", value: "5" },
-                { label: "Customers", value: "12" },
-                { label: "Years", value: "20" },
+                { label: "Customers", value: "8" },
+                { label: "Years", value: "25" },
+                 { label: "Team Members", value: "20" },
               ].map((item) => (
                 <div
                   key={item.label}

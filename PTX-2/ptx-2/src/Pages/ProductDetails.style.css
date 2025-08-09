@@ -30,10 +30,10 @@
   font-weight: bold;
 }
 
-.product-image {
+/* .product-image {
   height: 450px;
   object-fit: contain !important;
-}
+} */
 
 /* Image */
 img {
