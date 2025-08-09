@@ -80,6 +80,76 @@ export default function Home() {
     },
   ];
 
+  const allImages = [
+    { src: Image.image1, alt: "Tshirt" },
+    { src: Image.LongT2, alt: "Tshirt" },
+    { src: Image.Kidsimage5, alt: "Tshirt" },
+    { src: Image.F1, alt: "Tshirt" },
+    { src: Image.LongT3, alt: "Tshirt" },
+    { src: Image.image6, alt: "Tshirt" },
+    { src: Image.F4, alt: "Tshirt" },
+    { src: Image.Kidsimage2, alt: "Tshirt" },
+    { src: Image.image3, alt: "Tshirt" },
+    { src: Image.LongT1, alt: "longT" },
+    { src: Image.F7, alt: "longT" },
+    { src: Image.Kidsimage1, alt: "longT" },
+    { src: Image.LongT4, alt: "longT" },
+    { src: Image.image5, alt: "longT" },
+    { src: Image.LongT6, alt: "longT" },
+    { src: Image.Kidsimage3, alt: "longT" },
+    { src: Image.LongT8, alt: "longT" },
+    { src: Image.Kidsimage8, alt: "longT" },
+    { src: Image.F6, alt: "longT" },
+    { src: Image.LongT15, alt: "longT" },
+    { src: Image.LongT10, alt: "longT" },
+    { src: Image.image12, alt: "longT" },
+    { src: Image.Kidsimage4, alt: "Kids" },
+    { src: Image.image4, alt: "Kids" },
+    { src: Image.Kidsimage6, alt: "Kids" },
+    { src: Image.LongT12, alt: "Kids" },
+    { src: Image.F5, alt: "Kids" },
+    { src: Image.F3, alt: "Kids" },
+    { src: Image.LongT13, alt: "Kids" },
+    { src: Image.image9, alt: "Kids" },
+    { src: Image.Kidsimage7, alt: "Kids" },
+    { src: Image.Kidsimage9, alt: "Kids" },
+  ];
+
+  // Shuffle function
+  const shuffle = (arr) => {
+    const newArr = [...arr];
+    for (let i = newArr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+    }
+    return newArr;
+  };
+
+  // Randomize and split into 3 equal parts
+  const shuffled = shuffle(allImages);
+  const rowSize = Math.floor(shuffled.length / 3);
+  const row1 = shuffled.slice(0, rowSize);
+  const row2 = shuffled.slice(rowSize, rowSize * 2);
+  const row3 = shuffled.slice(rowSize * 2);
+
+  // Component to render each row with duplicate set
+  const ScrollRow = ({ images, rowClass }) => (
+    <div className={`scroll-row ${rowClass}`}>
+      <div className="scroll-content">
+        {images.map((img, idx) => (
+          <div className="img-box" key={`${rowClass}-${idx}`}>
+            <img src={img.src} alt={img.alt} />
+          </div>
+        ))}
+        {images.map((img, idx) => (
+          <div className="img-box" key={`${rowClass}-dup-${idx}`}>
+            <img src={img.src} alt={img.alt} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
     <>
       <div
@@ -187,7 +257,6 @@ export default function Home() {
       <div className="space"></div>
       <div className="container my-5" data-aos="fade-up">
         <div className="row align-items-center ">
-       
           <div className="col-lg-6 mb-4 mb-lg-0">
             <h1 className="heading-size fw-bold">OUR FACTORY PRODUCTION</h1>
 
@@ -247,240 +316,12 @@ export default function Home() {
       <br />
 
       <div className="app-container">
-        {/* Row 1 - T-Shirts */}
-        <div className="scroll-row row1">
-          <div className="scroll-content">
-            <div className="img-box">
-              <img src={Image.image1} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT2} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage5} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F1} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT2} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image6} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F3} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage2} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image9} alt="Tshirt" />
-            </div>
-
-            {/* Duplicate Set */}
-            <div className="img-box">
-              <img src={Image.image1} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT2} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image3} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage3} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image5} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F1} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT5} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F5} alt="Tshirt" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image9} alt="Tshirt" />
-            </div>
-          </div>
-        </div>
-        <div className="scroll-row row2">
-          <div className="scroll-content">
-            <div className="img-box">
-              <img src={Image.LongT1} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F7} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage1} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT4} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image3} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT6} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage3} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT8} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F4} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage5} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT11} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage8} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F6} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image5} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT15} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT10} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image12} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT6} alt="longT" />
-            </div>
-
-            <div className="img-box">
-              <img src={Image.LongT1} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage3} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image15} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT4} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F1} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage6} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT7} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F3} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT9} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image2} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F4} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT12} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage6} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image8} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT15} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F3} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT17} alt="longT" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage3} alt="longT" />
-            </div>
-          </div>
-        </div>
-
-        <div className="scroll-row row3">
-          <div className="scroll-content">
-            <div className="img-box">
-              <img src={Image.Kidsimage1} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT12} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F5} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage4} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image4} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage6} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT12} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage8} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F6} alt="Kids" />
-            </div>
-
-            <div className="img-box">
-              <img src={Image.Kidsimage1} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.F3} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.LongT13} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image9} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage5} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image4} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage7} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.image3} alt="Kids" />
-            </div>
-            <div className="img-box">
-              <img src={Image.Kidsimage9} alt="Kids" />
-            </div>
-          </div>
-        </div>
+       <div className="app-container">
+      <ScrollRow images={row1} rowClass="row1" />
+      <ScrollRow images={row2} rowClass="row2" />
+      <ScrollRow images={row3} rowClass="row3" />
+    </div>
+       
       </div>
 
       <div className="space"></div>
