@@ -468,7 +468,8 @@ a {
     font-size: 35px !important;
   }
 }
-@media (max-width: 575px) {
+@media (max-width:575px) {
+
   .heading-size {
     font-size: 25px !important;
   }

@@ -1,54 +1,54 @@
 .contact-container {
-    max-width: 600px;
-    margin: 50px auto;
-    text-align: center;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .form-groups {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    position: relative;
-  }
-  
-  .form-groups label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .form-groups input,
-  .form-groups textarea {
-    width: 100%;
-    padding: 7px 0;
-    border: none;
-    border-bottom: 1px solid gray;
-    outline: none;
-    font-size: 16px;
-    background: transparent;
-    border-radius: 0;
-  }
-  
-  .submit-btn {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .submit-btn:hover {
-    background-color: #333;
-  }
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
 
-  .status-message {
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-groups {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+}
+
+.form-groups label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-groups input,
+.form-groups textarea {
+  width: 100%;
+  padding: 7px 0;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 0;
+}
+
+.submit-btn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+}
+
+.status-message {
   margin-top: 1rem;
   font-weight: 500;
   padding: 12px 20px;
@@ -75,24 +75,23 @@
   border: 1px solid #d03333;
 }
 
-  @media (min-width:992px )and (max-width:1199px) {
-    .contact-container{
-        width: 500px;
-    }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-container {
+    width: 500px;
+  }
 }
-@media (min-width:768px )and (max-width:991px) {
-    .contact-container{
-        width: 500px;
-    }
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-container {
+    width: 500px;
+  }
 }
-@media (min-width:576px )and (max-width:767px) {
-    .contact-container{
-        width: 500px !important;
-    }
+@media (min-width: 576px) and (max-width: 767px) {
+  .contact-container {
+    width: 500px !important;
+  }
 }
-@media (max-width:575px) {
-    .contact-container{
-        width: 330px !important;
-    }
+@media (max-width: 575px) {
+  .contact-container {
+    width: 330px !important;
+  }
 }
-  

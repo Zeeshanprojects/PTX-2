@@ -87,7 +87,7 @@ export default function Home() {
         data-aos="fade-up"
         fetchPriority="high"
       >
-        <div className="col-12">
+        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <img
             src={Image.bannerimage}
             alt="ptx-banner-image"
@@ -187,7 +187,7 @@ export default function Home() {
       <div className="space"></div>
       <div className="container my-5" data-aos="fade-up">
         <div className="row align-items-center ">
-          {/* Left Column: Text */}
+       
           <div className="col-lg-6 mb-4 mb-lg-0">
             <h1 className="heading-size fw-bold">OUR FACTORY PRODUCTION</h1>
 
@@ -240,7 +240,6 @@ export default function Home() {
               <source src="/ptxvideo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-           
           </div>
         </div>
       </div>

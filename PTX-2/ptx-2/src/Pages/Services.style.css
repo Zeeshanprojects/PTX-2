@@ -1,8 +1,9 @@
  .background-color {
   position: relative;
-  height: 350px;
-  width: 100%;
+  height:100vh;
+  width: 100vw !important;
   display: flex;
+
   justify-content: center;
   align-items: center;
   color: white;
@@ -134,4 +135,18 @@ border-radius: 20px !important;
   .service-col {
     width: 100%;
   }
+}
+@media screen and (max-width: 576px) {
+   .background-color {
+  position: relative;
+  height:50vh;
+  width: 100vw !important;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  overflow: hidden; 
+} 
 }
