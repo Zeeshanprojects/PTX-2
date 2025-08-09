@@ -1,6 +1,6 @@
 .contact-container {
   max-width: 600px;
- 
+
   margin: 50px auto;
   text-align: center;
 }
@@ -8,14 +8,15 @@
 .contact-form {
   display: flex;
   flex-direction: column;
+  width: 100% !important;
   gap: 50px;
 }
 
 .form-groups {
-
   display: flex;
   flex-direction: column;
   text-align: left;
+  ;
   position: relative;
 }
 
@@ -31,7 +32,7 @@
   border: none;
   border-bottom: 1px solid gray;
   outline: none;
-  
+
   font-size: 16px;
   background: transparent;
   border-radius: 0;
@@ -90,7 +91,7 @@
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
- .contact-container {
+  .contact-container {
     width: 100% !important;
     padding: 10px;
   }

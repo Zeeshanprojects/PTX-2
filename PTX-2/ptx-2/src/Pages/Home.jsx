@@ -68,7 +68,7 @@ export default function Home() {
       img: Image.latestproduct2,
       title: "PTX Juniors",
     },
- 
+
     {
       img: Image.latestproduct4,
       title: "PTX Denim",
@@ -211,7 +211,10 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="container-fluid latest-products-section " data-aos="fade-up">
+      <div
+        className="container-fluid latest-products-section "
+        data-aos="fade-up"
+      >
         <div className="row g-0 ">
           {products.map((product, index) => (
             <div key={index} className="col-sm-12 col-md-12 col-lg-3 col-xl-3">
@@ -303,7 +306,6 @@ export default function Home() {
               autoPlay
               muted
               loop
-            
             >
               <source src="/ptxvideo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -314,13 +316,11 @@ export default function Home() {
 
       <br />
 
-   
-        <div className="app-container"data-aos="fade-up">
-          <ScrollRow images={row1} rowClass="row1" />
-          <ScrollRow images={row2} rowClass="row2" />
-          <ScrollRow images={row3} rowClass="row3" />
-        </div>
-      
+      <div className="app-container" data-aos="fade-up">
+        <ScrollRow images={row1} rowClass="row1" />
+        <ScrollRow images={row2} rowClass="row2" />
+        <ScrollRow images={row3} rowClass="row3" />
+      </div>
 
       <div className="space"></div>
       <div className="text-center" data-aos="fade-up">
