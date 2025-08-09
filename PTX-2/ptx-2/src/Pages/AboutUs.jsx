@@ -27,7 +27,7 @@ export default function AboutUs() {
           <div className="col-sm-12 col-md-6" data-aos="fade-up">
             <div className="knowus p-4 rounded bg-white same-height h-100">
               <h3 className="text-uppercase text-secondary mb-3">Our Story</h3>
-              <p className="text-muted">
+              <p className="text-muted text">
                 <strong>The Pakistan Textile Exchange</strong> is one of the
                 most reliable names in apparel and accessory manufacturing in
                 Pakistan. Our roots started in action sports here in Laguna
@@ -68,7 +68,7 @@ export default function AboutUs() {
               <h3 className="text-uppercase text-secondary mb-3">
                 Our Mission
               </h3>
-              <p className="text-muted">
+              <p className="text-muted text">
                 <strong>Our Mission at Pakistan Textile Exchange</strong> is to
                 elevate Pakistan’s global presence in the textile and apparel
                 industry by delivering superior quality, sustainable products
@@ -107,7 +107,7 @@ export default function AboutUs() {
           <div className="col-sm-12 col-md-6" data-aos="fade-up">
             <div className="knowus p-4 rounded bg-white same-height h-100">
               <h3 className="text-uppercase text-secondary mb-3">Our VISION</h3>
-              <p className="text-muted">
+              <p className="text-muted text">
                 <strong>Our Vision at Pakistan Textile Exchange</strong> is to
                 become a global leader in textile innovation, sustainability,
                 and ethical manufacturing. We aim to set new benchmarks in
