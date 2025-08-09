@@ -303,7 +303,7 @@ export default function Home() {
               autoPlay
               muted
               loop
-              play
+            
             >
               <source src="/ptxvideo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -314,13 +314,13 @@ export default function Home() {
 
       <br />
 
-      <div className="app-container">
-        <div className="app-container">
+   
+        <div className="app-container"data-aos="fade-up">
           <ScrollRow images={row1} rowClass="row1" />
           <ScrollRow images={row2} rowClass="row2" />
           <ScrollRow images={row3} rowClass="row3" />
         </div>
-      </div>
+      
 
       <div className="space"></div>
       <div className="text-center" data-aos="fade-up">
