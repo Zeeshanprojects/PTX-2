@@ -20,8 +20,9 @@ export default function LookBook1() {
   return (
     <>
  <br/>
-      <div className="space"></div>
+     
       <div
+      className="mt-5 p-0"
       style={{
         width: "100vw",
         height: "100vh",
@@ -34,6 +35,7 @@ export default function LookBook1() {
         boxSizing: "border-box",
         flexDirection: "column",
         textAlign: "center",
+        
       }}
     >
       {isMobile ? (
