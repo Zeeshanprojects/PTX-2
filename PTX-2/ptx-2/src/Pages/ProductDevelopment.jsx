@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import React from 'react'
-
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "../Components/Footer";
+
 export default function ProductDevelopment() {
     useEffect(() => {
       AOS.init({
@@ -81,6 +82,7 @@ export default function ProductDevelopment() {
     </div>
   </div>
 </div>
+<Footer/>
 
     </>
   )
