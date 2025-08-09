@@ -1,15 +1,15 @@
 .blog-header {
   text-align: center;
 }
-/* .blogs-img {
+.blogs-img {
   width: 100%;
-  height: auto !important;
+  height: auto!important;
 object-fit: cover !important;
   padding: 0px;
 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
-} */
+}
 .blog-title{
   padding-top: 50px !important;
 }
