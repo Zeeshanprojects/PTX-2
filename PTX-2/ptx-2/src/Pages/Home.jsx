@@ -207,8 +207,9 @@ export default function Home() {
               {[
                 { label: "Factories", value: "5" },
                 { label: "Customers", value: "8" },
+                { label: "Team Members", value: "20" },
                 { label: "Years", value: "25" },
-                 { label: "Team Members", value: "20" },
+                 
               ].map((item) => (
                 <div
                   key={item.label}
@@ -605,7 +606,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="space"></div>
+    
       <h1 className="text-center fw-bold" data-aos="fade-up">
         WHY CHOOSE US?
       </h1>
