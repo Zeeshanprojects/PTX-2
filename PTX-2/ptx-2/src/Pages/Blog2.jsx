@@ -19,6 +19,7 @@ export default function Blog2() {
         
 
         <div className="container blog-content">
+          <h4>The Story Behind Every Stitch</h4>
           <p>
             Before a garment hits the runway or shelf, there’s a story woven
             into every stitch. From hand-sewn details to carefully chosen
