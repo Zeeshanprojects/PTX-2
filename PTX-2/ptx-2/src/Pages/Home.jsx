@@ -63,20 +63,19 @@ export default function Home() {
     {
       img: Image.latestproduct1,
       title: "PTX Essential",
-      desc: "Our wide range of quality premium essentials",
-      alt: "PTX Essential",
     },
     {
       img: Image.latestproduct2,
       title: "PTX Juniors",
-      desc: "Our new range of essentials for kids",
-      alt: "PTX Juniors",
+    },
+ 
+    {
+      img: Image.latestproduct4,
+      title: "PTX Denim",
     },
     {
-      img: Image.latestproduct3,
+      img: Image.latestproduct5,
       title: "PTX Denim",
-      desc: "Our collection of classic denim",
-      alt: "PTX Denim",
     },
   ];
 
@@ -212,10 +211,10 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="container latest-products-section" data-aos="fade-up">
+      <div className="container-fluid latest-products-section " data-aos="fade-up">
         <div className="row g-0 ">
           {products.map((product, index) => (
-            <div key={index} className="col-sm-12 col-md-12 col-lg-4">
+            <div key={index} className="col-sm-12 col-md-12 col-lg-3 col-xl-3">
               <div className="product-box">
                 <img
                   src={product.img}
@@ -274,10 +273,10 @@ export default function Home() {
 
             <div className="d-flex flex-wrap gap-3 justify-content-start my-4">
               {[
-                { label: "Factories", value: "5" },
-                { label: "Customers", value: "8" },
-                { label: "Team Members", value: "20" },
-                { label: "Years", value: "25" },
+                { label: "Factories", value: "5+" },
+                { label: "Customers", value: "7+" },
+                { label: "Team Members", value: "50+" },
+                { label: "Years", value: "10+" },
               ].map((item) => (
                 <div
                   key={item.label}
@@ -316,12 +315,11 @@ export default function Home() {
       <br />
 
       <div className="app-container">
-       <div className="app-container">
-      <ScrollRow images={row1} rowClass="row1" />
-      <ScrollRow images={row2} rowClass="row2" />
-      <ScrollRow images={row3} rowClass="row3" />
-    </div>
-       
+        <div className="app-container">
+          <ScrollRow images={row1} rowClass="row1" />
+          <ScrollRow images={row2} rowClass="row2" />
+          <ScrollRow images={row3} rowClass="row3" />
+        </div>
       </div>
 
       <div className="space"></div>

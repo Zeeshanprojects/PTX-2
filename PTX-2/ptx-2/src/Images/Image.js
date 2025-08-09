@@ -14,6 +14,8 @@ const Image = {
   latestproduct1: require("./latestproduct1.jpg"),
   latestproduct2: require("./latestproduct2.jpg"),
   latestproduct3: require("./latestproduct3.jpg"),
+  latestproduct4: require("./latestproduct4.webp"),
+  latestproduct5: require("./latestproduct5.webp"),
   step1: require("./step1.webp"),
   step2: require("./step2.webp"),
   step3: require("./step3.webp"),
@@ -26,8 +28,8 @@ const Image = {
   p7: require("./Production7.webp"),
   p8: require("./Production8.webp"),
   p9: require("./Production9.webp"),
-   p10: require("./Production10.webp"),
-   p11:require("./Production11.webp"),
+  p10: require("./Production10.webp"),
+  p11: require("./Production11.webp"),
   image1: require("./1.webp"),
   image2: require("./2.webp"),
   image3: require("./3.webp"),
@@ -79,6 +81,6 @@ const Image = {
   image15: require("./pt-6.webp"),
   sectionimage: require("./sectionbanner.webp"),
   CEO: require("./Davidjumani.webp"),
-  location: require("./location.webp"), 
+  location: require("./location.webp"),
 };
 export default Image;
