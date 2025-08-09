@@ -1,7 +1,7 @@
 import React from "react";
 import "./Blog.style.css";
 import Footer from "../Components/Footer";
-// import Image from "../Images/Image";
+import Image from "../Images/Image";
 
 export default function Blog3() {
   return (
@@ -9,11 +9,12 @@ export default function Blog3() {
 
       <div className="container-fluid p-0">
         
-         <div className="blog-header ">
-          {/* <img src={Image.Blog1} alt="Blog Banner" className="blogs-img" /> */}
-          <div className="blog-title mt-5">
-          <h1>GLOBAL THREAD</h1>
-        </div>
+          <div className="blog-header ">
+          <img src={Image.Blog3} alt="Blog Banner" className="blogs-img" />
+           <div className="blog-title-overlay position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 className="display-4 fw-bold">GLOBAL THREADS</h1>
+            <p className="lead">Threads That Tell a Worldwide Story</p>
+          </div>
         </div>
       
 

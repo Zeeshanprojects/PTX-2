@@ -1,6 +1,6 @@
 import React from "react";
 import "./Blog.style.css";
-// import Image from "../Images/Image";
+import Image from "../Images/Image";
 import Footer from "../Components/Footer";
 
 export default function Blog2() {
@@ -9,11 +9,13 @@ export default function Blog2() {
     <div className="space"></div>
       <div className="container-fluid p-0 ">
        <div className="blog-header ">
-          {/* <img src={Image.Blog1} alt="Blog Banner" className="blogs-img" /> */}
-          <div className="blog-title mt-5">
-          <h1>BEHIND THE STITCH</h1>
+          <img src={Image.Blog2} alt="Blog Banner" className="blogs-img" />
+           <div className="blog-title-overlay position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 className="display-4 fw-bold">BEHIND THE STITCH</h1>
+            <p className="lead">Uncovering the Art in Every Seam</p>
+          </div>
         </div>
-        </div>
+        
 
         <div className="container blog-content">
           <p>
