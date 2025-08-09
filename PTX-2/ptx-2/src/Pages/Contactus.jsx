@@ -1,14 +1,21 @@
 import { useState, useEffect } from "react";
-import axios from "axios";  // Import Axios for API requests
-import "./ContactUs.style.css"; 
+import axios from "axios"; // Import Axios for API requests
+import "./ContactUs.style.css";
 import Footer from "../Components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 export default function ContactUs() {
-  
   useEffect(() => {
     document.title = "Contact Us | Pakistan Textile Exchange";
   }, []);
 
+ useEffect(() => {
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true,     // whether animation should happen only once
+      });
+    }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,134 +33,129 @@ export default function ContactUs() {
   };
 
   // Handle form submission
-const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  try {
-    const response = await axios.post("https://ptxapi.io/api/contactform", formData);
-    if (response.data.success) {
-      setStatus({
-        type: "success",
-        message: "✅ Your message has been sent successfully.",
-      });
-      setFormData({ name: "", email: "", message: "" }); // Clear form
-    } else {
+    try {
+      const response = await axios.post(
+        "https://ptxapi.io/api/contactform",
+        formData
+      );
+      if (response.data.success) {
+        setStatus({
+          type: "success",
+          message: "✅ Your message has been sent successfully.",
+        });
+        setFormData({ name: "", email: "", message: "" }); // Clear form
+      } else {
+        setStatus({
+          type: "error",
+          message: "❌ Failed to send message. Please try again.",
+        });
+      }
+    } catch (error) {
       setStatus({
         type: "error",
-        message: "❌ Failed to send message. Please try again.",
+        message: "❌ An error occurred. Please try again later.",
       });
     }
-  } catch (error) {
-    setStatus({
-      type: "error",
-      message: "❌ An error occurred. Please try again later.",
-    });
-  }
-};
+  };
 
   return (
     <>
-     <div className="background-color mt-5">
-            <h1 className="text-center">CONTACT US</h1>
-        </div>
-<div className="container-fluid mt-4">
-  <div className="row">
-     <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-           <div className="contact-container ">
-       
-      
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <div className="form-groups">
-            <input
-              type="text"
-              name="name"
-              placeholder="FULL NAME"
-              required
-              value={formData.name}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form-groups">
-            <input
-              type="email"
-              name="email"
-              placeholder="EMAIL"
-              required
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form-groups">
-            <textarea
-              name="message"
-              placeholder="MESSAGE"
-              rows="3"
-              required
-              value={formData.message}
-              onChange={handleChange}
-            ></textarea>
-          </div>
-          <button type="submit" className="submit-btn">
-            Submit
-          </button>
-        </form>
-      {status.message && (
-  <p className={`status-message ${status.type}`}>
-    {status.message}
-  </p>
-)}
-
+      <div className="background-color mt-5" data-aos="fade-up">
+        <h1 className="text-center" data-aos="fade-up">CONTACT US</h1>
       </div>
-      
+      <div className="container-fluid mt-4">
+        <div className="row">
+          <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-up">
+            <div className="contact-container ">
+              <form className="contact-form" onSubmit={handleSubmit}>
+                <div className="form-groups">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="FULL NAME"
+                    required
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="form-groups">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="EMAIL"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="form-groups">
+                  <textarea
+                    name="message"
+                    placeholder="MESSAGE"
+                    rows="3"
+                    required
+                    value={formData.message}
+                    onChange={handleChange}
+                  ></textarea>
+                </div>
+                <button type="submit" className="submit-btn">
+                  Submit
+                </button>
+              </form>
+              {status.message && (
+                <p className={`status-message ${status.type}`}>
+                  {status.message}
+                </p>
+              )}
+            </div>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3" data-aos="fade-up">
+            <h5 className="fw-bold">HEAD OFFICE</h5>
+            <div className="d-flex align-items-start mb-4">
+              <i className="fas fa-map-marker-alt fa-2x text-dark me-3 mt-1"></i>
+              <div>
+                <strong>Address</strong>
+                <p className="mb-0">
+                  2023 South Pacific Coast Hwy, Laguna Beach, CA 92651
+                </p>
+              </div>
+            </div>
+
+            <div className="d-flex align-items-start mb-5">
+              <i className="fas fa-envelope fa-2x text-dark me-3 mt-1"></i>
+              <div>
+                <strong>Call Us / Email</strong>
+                <p className="mb-0">+1 949 283 9554</p>
+                <p className="mb-0">david@paktex.com</p>
+              </div>
+            </div>
+
+            <h5 className="fw-bold">BRANCH OFFICE</h5>
+            <div className="d-flex align-items-start mb-4">
+              <i className="fas fa-map-marker-alt fa-2x text-dark me-3"></i>
+              <div>
+                <strong>Address</strong>
+                <p className="mb-0">
+                  Paktex House D-15/3, Block 7 <br />
+                  Gulshan e Iqbal - Karachi 75300, Pakistan
+                </p>
+              </div>
+            </div>
+
+            <div className="d-flex align-items-start">
+              <i className="fas fa-envelope fa-2x text-dark me-3"></i>
+              <div>
+                <strong>Call Us / Email</strong>
+                <p className="mb-0">+92 21 3340 2031</p>
+                <p className="mb-0">sales@paktex.com</p>
+              </div>
+            </div>
+          </div>
         </div>
-   <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3">
-
-  <h5 className="fw-bold">HEAD OFFICE</h5>
-  <div className="d-flex align-items-start mb-4">
-    <i className="fas fa-map-marker-alt fa-2x text-dark me-3 mt-1"></i>
-    <div>
-      <strong>Address</strong>
-      <p className="mb-0">
-        2023 South Pacific Coast Hwy, Laguna Beach, CA 92651
-      </p>
-    </div>
-  </div>
-
-  <div className="d-flex align-items-start mb-5">
-    <i className="fas fa-envelope fa-2x text-dark me-3 mt-1"></i>
-    <div>
-      <strong>Call Us / Email</strong>
-      <p className="mb-0">+1 949 283 9554</p>
-      <p className="mb-0">david@paktex.com</p>
-    </div>
-  </div>
-
-  <h5 className="fw-bold">BRANCH OFFICE</h5>
-  <div className="d-flex align-items-start mb-4">
-    <i className="fas fa-map-marker-alt fa-2x text-dark me-3"></i>
-    <div>
-      <strong>Address</strong>
-      <p className="mb-0">
-        Paktex House D-15/3, Block 7 <br />
-        Gulshan e Iqbal - Karachi 75300, Pakistan
-      </p>
-    </div>
-  </div>
-
-  <div className="d-flex align-items-start">
-    <i className="fas fa-envelope fa-2x text-dark me-3"></i>
-    <div>
-      <strong>Call Us / Email</strong>
-      <p className="mb-0">+92 21 3340 2031</p>
-      <p className="mb-0">sales@paktex.com</p>
-    </div>
-  </div>
-
-</div>
-
-  </div>
-</div>
-       
+      </div>
 
       <Footer />
     </>
