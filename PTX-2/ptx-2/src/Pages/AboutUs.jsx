@@ -24,7 +24,7 @@ export default function AboutUs() {
 
       <div className="container my-5">
         <div className="row align-items-stretch g-4">
-          <div className="col-sm-12 col-md-6" data-aos="fade-up">
+          <div className="col-sm-12 col-md-6" data-aos="fade-right">
             <div className="knowus p-4 rounded bg-white same-height h-100">
               <h3 className="text-uppercase text-secondary mb-3">Our Story</h3>
               <p className="text-muted text">
@@ -39,8 +39,8 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-6" data-aos="fade-up">
-              <div className="custom-image-grid" data-aos="fade-up">
+          <div className="col-sm-12 col-md-6" data-aos="fade-left">
+              <div className="custom-image-grid" data-aos="fade-left">
               {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
                 <div
                   className="factory-col"
@@ -63,7 +63,7 @@ export default function AboutUs() {
 
       <div className="container my-5">
         <div className="row align-items-stretch g-4">
-          <div className="col-sm-12 col-md-6" data-aos="fade-up">
+          <div className="col-sm-12 col-md-6" data-aos="fade-right">
             <div className="knowus p-4 rounded bg-white same-height h-100">
               <h3 className="text-uppercase text-secondary mb-3">
                 Our Mission
@@ -82,8 +82,8 @@ export default function AboutUs() {
             </div>
           </div>
 
-             <div className="col-sm-12 col-md-6" data-aos="fade-up">
-              <div className="custom-image-grid" data-aos="fade-up">
+             <div className="col-sm-12 col-md-6" data-aos="fade-left">
+              <div className="custom-image-grid" data-aos="fade-left">
               {[Image.p5, Image.p6, Image.p7, Image.p8].map((src) => (
                 <div
                   className="factory-col"
@@ -104,7 +104,7 @@ export default function AboutUs() {
 
       <div className="container my-5">
         <div className="row align-items-stretch g-4">
-          <div className="col-sm-12 col-md-6" data-aos="fade-up">
+          <div className="col-sm-12 col-md-6" data-aos="fade-right">
             <div className="knowus p-4 rounded bg-white same-height h-100">
               <h3 className="text-uppercase text-secondary mb-3">Our VISION</h3>
               <p className="text-muted text">
@@ -121,8 +121,8 @@ export default function AboutUs() {
             </div>
           </div>
 
-             <div className="col-sm-12 col-md-6" data-aos="fade-up">
-              <div className="custom-image-grid" data-aos="fade-up">
+             <div className="col-sm-12 col-md-6" data-aos="fade-left">
+              <div className="custom-image-grid" data-aos="fade-left">
               {[Image.p9, Image.p10, Image.p11, Image.p3].map((src) => (
                 <div
                   className="factory-col"
