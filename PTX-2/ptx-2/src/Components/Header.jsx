@@ -95,7 +95,7 @@ export default function Header() {
               <li className="nav-item">
                 <Link
                   className="nav-link active"
-                  to="/LookBook-V1"
+                  to="https://book.paktex.com/book/ptx-company-profile/PTX-C-P"
                   onClick={closeNavbar}
                 >
                   LOOKBOOK
