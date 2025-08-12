@@ -4,7 +4,7 @@ import "./ContactUs.style.css";
 import Footer from "../Components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
-import Image from "../Images/Image";
+import Image from "../../public/Images/Image";
 
 export default function ContactUs() {
   useEffect(() => {

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import React from "react";
 
 import Footer from "../Components/Footer";
-import Image from "../Images/Image";
+import Image from "../../public/Images/Image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default function Manufacturing() {

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../Images/Image";
+import Image from "../../public/Images/Image";
 import "./Footer.style.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

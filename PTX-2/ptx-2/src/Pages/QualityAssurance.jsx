@@ -4,7 +4,7 @@ import React from "react";
 import Footer from "../Components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Image from "../Images/Image";
+import Image from "../../public/Images/Image";
 export default function QualityAssurance() {
 
   useEffect(() => {
