@@ -139,8 +139,8 @@ export default function ContactUs() {
               <div>
                 <strong>Address</strong>
                 <p className="mb-0">
-                  Paktex House D-15/3, Block 7 <br />
-                  Gulshan e Iqbal - Karachi 75300, Pakistan
+                  B-131, PCSIR Society,
+Scheme-33, Gulzar e Hijri, Karachi, Sindh, Pakistan
                 </p>
               </div>
             </div>
@@ -149,14 +149,14 @@ export default function ContactUs() {
               <i className="fas fa-envelope fa-2x text-dark me-3"></i>
               <div>
                 <strong>Call Us / Email</strong>
-                <p className="mb-0">+92 21 3340 2031</p>
+                <p className="mb-0">(+92334) 388-1110</p>
                 <p className="mb-0">sales@paktex.com</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+<br/>
       <Footer />
     </>
   );

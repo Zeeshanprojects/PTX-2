@@ -94,7 +94,7 @@ export default function Services() {
                 custom={index}
               >
             
-                   <div className="service-card-body d-flex flex-column flex-grow-1 text-center">
+                   <div className="service-card-body d-flex flex-column flex-grow-1 d-flex  text-center">
              
                   <div className="service-icon-wrapper mx-auto mb-3">
                   <i className={`${service.icon} service-icon`}></i>

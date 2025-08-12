@@ -157,7 +157,7 @@ export default function Footer() {
 
                 <div className="col-md-2 col-lg-3 col-xl-3 me-auto mb-4">
                   {/* Links */}
-                  <h2 className="text ">Menu</h2>
+                  <h2 className="footertext ">Menu</h2>
                   <hr
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     style={{
@@ -186,7 +186,7 @@ export default function Footer() {
                 </div>
                 <div className="col-md-2 col-lg-3 col-xl-3 me-auto mb-4">
                   {/* Links */}
-                  <h2 className="text ">About</h2>
+                  <h2 className="footertext ">About</h2>
                   <hr
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     style={{
@@ -214,7 +214,7 @@ export default function Footer() {
 
                 <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   {/* Links */}
-                  <h1 className="text">Sign Up for Email</h1>
+                  <h1 className="footertext">Sign Up for Email</h1>
                   <hr
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     style={{
