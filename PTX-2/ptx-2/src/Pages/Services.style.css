@@ -22,7 +22,7 @@
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat;
-  filter: brightness(0.9); /* Only affects the background */
+  
   z-index: 0;
 }
 
