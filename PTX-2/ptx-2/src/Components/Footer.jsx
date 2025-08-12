@@ -174,13 +174,13 @@ export default function Footer() {
 
                   <p>
                     <Link to="/LookBook-V1" className="text-white">
-                      LOOKBOOK
+                      Lookbook
                     </Link>
                   </p>
 
                   <p>
-                    <Link to="/privacypolicy" className="text-white">
-                      Privacy Policy
+                    <Link to="/services" className="text-white">
+                      Services
                     </Link>
                   </p>
                 </div>
