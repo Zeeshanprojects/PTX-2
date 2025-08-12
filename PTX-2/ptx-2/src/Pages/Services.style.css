@@ -18,11 +18,11 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url('../Images/background.webp');
+  background-image: url('../Images/banner2.png');
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat;
-  filter: brightness(0.5); /* Only affects the background */
+  filter: brightness(0.9); /* Only affects the background */
   z-index: 0;
 }
 

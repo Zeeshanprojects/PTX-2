@@ -425,6 +425,9 @@ a {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
+video{
+  border-radius: 10px !important;
+}
 @keyframes scroll-left {
   0% {
     transform: translateX(0%);
@@ -443,6 +446,12 @@ a {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .heading-size {
+font-size: 30px !important;
+  }
+  .factory-para{
+    font-size: 12px !important;
+  }
   .custom-box {
     flex-wrap: nowrap !important; /* Keep boxes in one line */
     justify-content: space-between !important;
@@ -460,9 +469,6 @@ a {
     font-size: 2rem !important;
   }
 
-  .heading-size {
-    font-size: 32px !important;
-  }
 
   video {
     height: auto  !important;
