@@ -1,28 +1,59 @@
 import { useEffect } from "react";
 import React from "react";
-import Images from "../Images/Image";
+import Image from "../Images/Image";
 import Footer from "../Components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Logistics() {
   useEffect(() => {
     document.title = "Logistics | Pakistan Textile Exchange ";
   });
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = Images.pdf;
-    link.download = "Zeeshan-CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true, // whether animation should happen only once
+      });
+    }, []);
+
   return (
     <>
-      <div className="background-color">
-        <h1 className="mt-5 text-center">SERVICES / LOGISTICS</h1>
-      </div>
+        <div
+        className="container-fluid p-0 mt-5 position-relative"
+        data-aos="fade-up"
+        fetchPriority="high"
+        style={{ textAlign: "center" }}
+      >
+        {/* Banner Image */}
+        <div className="col-12">
+          <img
+            src={Image.banner2}
+            alt="ptx-banner-image"
+            className="ptx-banner-image w-100"
+            fetchPriority="high"
+            style={{ display: "block" ,  }}
+          />
+        </div>
 
+        {/* Text Overlay */}
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            fontSize: "2rem",
+            fontWeight: "bold",
+            textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
+          }}
+        >
+     SERVICES / LOGISTICS
+        </div>
+      </div>
 <div className="space"></div>
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div className="card-body bg-transparent">
@@ -66,13 +97,7 @@ export default function Logistics() {
               </p>
             </div>
             <br />
-            <button
-              type="button"
-              className="btn btn-dark"
-              onClick={handleDownload}
-            >
-              Download LookBook
-            </button>
+           
           </div>
         </div>
       </div>

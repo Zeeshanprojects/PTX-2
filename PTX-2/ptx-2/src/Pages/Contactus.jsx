@@ -3,7 +3,8 @@ import axios from "axios"; // Import Axios for API requests
 import "./ContactUs.style.css";
 import Footer from "../Components/Footer";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css"; 
+import Image from "../Images/Image";
 
 export default function ContactUs() {
   useEffect(() => {
@@ -63,8 +64,39 @@ export default function ContactUs() {
 
   return (
     <>
-      <div className="background-color mt-5" data-aos="fade-up">
-        <h1 className="text-center" data-aos="fade-up">CONTACT US</h1>
+       <div
+        className="container-fluid p-0 mt-5 position-relative"
+        data-aos="fade-up"
+        fetchPriority="high"
+        style={{ textAlign: "center" }}
+      >
+        {/* Banner Image */}
+        <div className="col-12">
+          <img
+            src={Image.banner2}
+            alt="ptx-banner-image"
+            className="ptx-banner-image w-100"
+            fetchPriority="high"
+            style={{ display: "block" ,  }}
+          />
+        </div>
+
+        {/* Text Overlay */}
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            fontSize: "2rem",
+            fontWeight: "bold",
+            textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
+          }}
+        >
+         CONTACT
+        </div>
       </div>
       <div className="container-fluid mt-4">
         <div className="row">

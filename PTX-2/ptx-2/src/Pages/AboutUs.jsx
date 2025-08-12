@@ -10,16 +10,52 @@ export default function AboutUs() {
   useEffect(() => {
     document.title = "About | Pakistan Textile Exchange ";
   }, []);
-   useEffect(() => {
-      AOS.init({
-        duration: 1000, // animation duration in ms
-        once: true,     // whether animation should happen only once
-      });
-    }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // whether animation should happen only once
+    });
+  }, []);
   return (
     <>
-      <div className="background-color" data-aos="fade-up">
+      {/* <div className="background-color" data-aos="fade-up">
         <h1 className=" text-center" data-aos="fade-up">WHO WE ARE</h1>
+      </div> */}
+
+      <div
+        className="container-fluid p-0 mt-5 position-relative"
+        data-aos="fade-up"
+        fetchPriority="high"
+        style={{ textAlign: "center" }}
+      >
+        {/* Banner Image */}
+        <br/>
+        <div className="col-12 ">
+          <img
+            src={Image.banner2}
+            alt="ptx-banner-image"
+            className="ptx-banner-image w-100"
+            fetchPriority="high"
+            style={{ display: "block" ,  }}
+          />
+        </div>
+
+        {/* Text Overlay */}
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            fontSize: "2rem",
+            fontWeight: "bold",
+            textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
+          }}
+        >
+          WHO WE ARE
+        </div>
       </div>
 
       <div className="container my-5">
@@ -40,7 +76,7 @@ export default function AboutUs() {
           </div>
 
           <div className="col-sm-12 col-md-6" data-aos="fade-left">
-              <div className="custom-image-grid" data-aos="fade-left">
+            <div className="custom-image-grid" data-aos="fade-left">
               {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
                 <div
                   className="factory-col"
@@ -54,10 +90,8 @@ export default function AboutUs() {
                   <img src={src} alt="Factory" className="factory-image" />
                 </div>
               ))}
-             </div>
+            </div>
           </div>
-
-         
         </div>
       </div>
 
@@ -82,8 +116,8 @@ export default function AboutUs() {
             </div>
           </div>
 
-             <div className="col-sm-12 col-md-6" data-aos="fade-left">
-              <div className="custom-image-grid" data-aos="fade-left">
+          <div className="col-sm-12 col-md-6" data-aos="fade-left">
+            <div className="custom-image-grid" data-aos="fade-left">
               {[Image.p5, Image.p6, Image.p7, Image.p8].map((src) => (
                 <div
                   className="factory-col"
@@ -97,7 +131,7 @@ export default function AboutUs() {
                   <img src={src} alt="Factory" className="factory-image" />
                 </div>
               ))}
-             </div>
+            </div>
           </div>
         </div>
       </div>
@@ -121,8 +155,8 @@ export default function AboutUs() {
             </div>
           </div>
 
-             <div className="col-sm-12 col-md-6" data-aos="fade-left">
-              <div className="custom-image-grid" data-aos="fade-left">
+          <div className="col-sm-12 col-md-6" data-aos="fade-left">
+            <div className="custom-image-grid" data-aos="fade-left">
               {[Image.p9, Image.p10, Image.p11, Image.p3].map((src) => (
                 <div
                   className="factory-col"
@@ -136,12 +170,14 @@ export default function AboutUs() {
                   <img src={src} alt="Factory" className="factory-image" />
                 </div>
               ))}
-             </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="space"></div>
-      <h1 className="text-center" data-aos="fade-up">FROM DESIGN TO DELIVERY</h1>
+      <h1 className="text-center" data-aos="fade-up">
+        FROM DESIGN TO DELIVERY
+      </h1>
 
       <br />
       <div className="container my-5" data-aos="fade-up">
