@@ -62,8 +62,8 @@ body {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   position: relative;
 }
-.inquirebutton{
-  border-radius:20px !important;
+.inquirebutton {
+  border-radius: 20px !important;
 }
 .factory-para {
   text-align: justify !important;
@@ -138,7 +138,7 @@ body {
   width: 100%;
   height: auto !important;
   border: 10px !important;
-  object-fit: cover  !important;
+  object-fit: cover !important;
   background-size: cover !important;
   background-position: center !important;
   padding: 10px !important;
@@ -417,15 +417,15 @@ a {
   flex-shrink: 0;
 }
 .stat-box {
-  background: #FBFCFD;
+  background: #fbfcfd;
   min-width: 140px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .stat-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-video{
+video {
   border-radius: 10px !important;
 }
 @keyframes scroll-left {
@@ -447,9 +447,9 @@ video{
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .heading-size {
-font-size: 30px !important;
+    font-size: 30px !important;
   }
-  .factory-para{
+  .factory-para {
     font-size: 12px !important;
   }
   .custom-box {
@@ -459,7 +459,7 @@ font-size: 30px !important;
   }
 
   .stat-box {
-    background: #FBFCFD;
+    background: #fbfcfd;
     flex: 1 1 0 !important; /* Equal width for all */
     min-width: 0 !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -469,23 +469,53 @@ font-size: 30px !important;
     font-size: 2rem !important;
   }
 
-
   video {
-    height: auto  !important;
+    height: auto !important;
     width: 100% !important;
     object-position: left top !important; /* Ensures start of video shows */
     margin: 0 !important;
     padding: 0 !important;
     display: block !important;
   }
-  .stat-box span{
+  .stat-box span {
     font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .heading-size {
+    font-size: 40px !important;
+  }
+  .factory-para {
+    font-size: 14px !important;
+  }
+  .custom-box {
+    flex-wrap: nowrap !important; /* Keep boxes in one line */
+    justify-content: space-between !important;
+    width: 100%;
+  }
+
+  .stat-box {
+    background: #fbfcfd;
+    flex: 1 1 0 !important; /* Equal width for all */
+    min-width: 0 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .custom-box h3 {
+    font-size: 2.5rem !important;
+  }
+
+  video {
+    height: auto !important;
+    width: 100% !important;
+    object-position: left top !important; /* Ensures start of video shows */
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
   }
   
 }
-
-
-
 @media (min-width: 768px) and (max-width: 991px) {
   .sectionimage {
     padding: 0 !important;
@@ -514,8 +544,7 @@ font-size: 30px !important;
     font-size: 35px !important;
   }
 }
-@media (max-width:575px) {
-
+@media (max-width: 575px) {
   .heading-size {
     font-size: 25px !important;
   }
@@ -535,9 +564,9 @@ font-size: 30px !important;
     width: 100% !important;
     object-fit: cover !important;
   }
-  .product-image{
+  .product-image {
     width: 100%;
-   height: auto !important;
-object-fit: contain !important;
+    height: auto !important;
+    object-fit: contain !important;
   }
 }

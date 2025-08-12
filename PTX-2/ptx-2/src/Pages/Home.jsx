@@ -274,7 +274,7 @@ export default function Home() {
               and energy management.
             </p>
 
-            <div className="d-flex flex-wrap gap-3 justify-content-start my-4 custom-box">
+            <div className="d-flex flex-wrap gap-3 justify-content-center my-4 custom-box">
               {[
                 { label: "Factories", value: "5+" },
                 { label: "Customers", value: "7+" },
