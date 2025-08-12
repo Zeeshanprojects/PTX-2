@@ -273,8 +273,8 @@ export default function Home() {
               adopted eco-friendly practices in water usage, chemical handling,
               and energy management.
             </p>
-
-            <div className="d-flex flex-wrap gap-3 justify-content-start my-4">
+<div className="col-sm-12 col-md-12 col-lg-12 col-xl-4"></div>
+            <div className="d-flex flex-wrap gap-3 justify-content-start my-4 custom-box">
               {[
                 { label: "Factories", value: "5+" },
                 { label: "Customers", value: "7+" },
@@ -297,7 +297,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div className=" col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
             <video
               data-aos="fade-up"
               width="100%"

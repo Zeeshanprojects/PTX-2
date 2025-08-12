@@ -83,6 +83,9 @@
   .contact-container {
     width: 500px;
   }
+  .contact-form{
+width: 90% !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .contact-container {

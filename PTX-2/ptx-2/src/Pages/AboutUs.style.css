@@ -119,6 +119,11 @@
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width:992px) and (max-width:1199px){
+  .text{
+    text-align: justify !important;
+  }
+}
 @media (min-width:767px) and (max-width: 991px) {
  .text{
   font-size: 14px !important;

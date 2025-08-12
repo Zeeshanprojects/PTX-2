@@ -442,6 +442,26 @@ a {
     transform: translateX(0%);
   }
 }
+@media (min-width:992px) and (max-width:1199px) {
+  .custom-box h3{
+font-size: 2rem !important;
+  }
+.stat-box {
+  background: #FBFCFD;
+  min-width: 40px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  .heading-size{
+font-size: 32px !important;
+  }
+  video{
+    height: auto !important;
+  object-fit: cover !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  }
+}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
   .sectionimage {

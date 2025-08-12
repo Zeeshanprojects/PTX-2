@@ -112,7 +112,7 @@ export default function ContactUs() {
               )}
             </div>
           </div>
-          <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3" data-aos="fade-up">
+          <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3 " data-aos="fade-up">
             <h5 className="fw-bold">HEAD OFFICE</h5>
             <div className="d-flex align-items-start mb-4">
               <i className="fas fa-map-marker-alt fa-2x text-dark me-3 mt-1"></i>
