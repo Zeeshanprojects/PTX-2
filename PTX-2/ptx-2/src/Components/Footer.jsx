@@ -214,7 +214,7 @@ export default function Footer() {
 
                 <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   {/* Links */}
-                  <h1 className="footertext">Sign Up for Email</h1>
+                  <h2 className="footertext">Sign Up for Email</h2>
                   <hr
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     style={{
