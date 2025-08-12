@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import Image from "../../public/Images/Image";
+import Image from "../Images/Image";
 import "./AboutUs.style.css";
 
 import Footer from "../Components/Footer";

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Image from "../../public/Images/Image";
+import Image from "../Images/Image";
 import "./Services.style.css";
 import Footer from "../Components/Footer";
 import AOS from "aos";

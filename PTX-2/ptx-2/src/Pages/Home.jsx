@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-import Image from "../../public/Images/Image";
+import Image from "../Images/Image";
 import "./Home.style.css";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
