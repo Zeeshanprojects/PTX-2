@@ -82,6 +82,7 @@ export default function ProductDevelopment() {
     </div>
   </div>
 </div>
+<div className="space"></div>
 <Footer/>
 
     </>
