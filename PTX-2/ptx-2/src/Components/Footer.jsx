@@ -173,7 +173,7 @@ export default function Footer() {
                   </p>
 
                   <p>
-                    <Link to="https://book.paktex.com/book/ptx-company-profile/PTX-C-P" className="text-white">
+                    <Link to="https://book.paktex.com/book/ptx-company-profile/PTX-C-P" className="text-white" target="_blank">
                       Lookbook
                     </Link>
                   </p>
