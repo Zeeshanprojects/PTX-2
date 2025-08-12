@@ -259,7 +259,7 @@ export default function Home() {
       <div className="space"></div>
       <div className="container my-5" data-aos="fade-up">
         <div className="row align-items-center ">
-          <div className="col-lg-6 mb-4 mb-lg-0">
+          <div className="col-lg-6 mb-4 mb-lg-0 h-100">
             <h1 className="heading-size fw-bold">OUR FACTORY PRODUCTION</h1>
 
             <p className="factory-para">
@@ -273,7 +273,7 @@ export default function Home() {
               adopted eco-friendly practices in water usage, chemical handling,
               and energy management.
             </p>
-<div className="col-sm-12 col-md-12 col-lg-12 col-xl-4"></div>
+
             <div className="d-flex flex-wrap gap-3 justify-content-start my-4 custom-box">
               {[
                 { label: "Factories", value: "5+" },
@@ -297,7 +297,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+          <div className=" col-sm-12 col-md-12 col-lg-6 col-xl-6 h-100">
             <video
               data-aos="fade-up"
               width="100%"
@@ -463,16 +463,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container-fluid p-0 m-0" data-aos="fade-up">
-        <div className="space"></div>
-        <div className="col-12 col-sm-12 col-md-12 col-lg-12">
-          <img
-            src={Image.sectionimage}
-            className="sectionimage"
-            alt="section"
-          />
-        </div>
-      </div>
+      
 
       <Footer />
     </>
