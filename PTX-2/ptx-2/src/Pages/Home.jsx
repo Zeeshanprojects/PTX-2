@@ -161,6 +161,7 @@ export default function Home() {
             src={Image.bannerimage}
             alt="ptx-banner-image"
             className="ptx-banner-image"
+            fetchPriority="high"
           />
         </div>
       </div>
@@ -249,7 +250,7 @@ export default function Home() {
           final shipment.
         </p>
 
-        <Link to="/inquireform" >
+        <Link to="/inquireform">
           <button type="button" className="btn btn-dark px-5 inquirebutton">
             INQUIRE NOW
           </button>
@@ -306,6 +307,7 @@ export default function Home() {
               autoPlay
               muted
               loop
+              loading="lazy"
             >
               <source src="/PTX Intro video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -317,9 +319,9 @@ export default function Home() {
       <br />
 
       <div className="app-container" data-aos="fade-up">
-        <ScrollRow images={row1} rowClass="row1" />
-        <ScrollRow images={row2} rowClass="row2" />
-        <ScrollRow images={row3} rowClass="row3" />
+        <ScrollRow images={row1} rowClass="row1" loading="lazy"/>
+        <ScrollRow images={row2} rowClass="row2" loading="lazy"/>
+        <ScrollRow images={row3} rowClass="row3" loading="lazy"/>
       </div>
 
       <div className="space"></div>
@@ -462,8 +464,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-
-      
 
       <Footer />
     </>
