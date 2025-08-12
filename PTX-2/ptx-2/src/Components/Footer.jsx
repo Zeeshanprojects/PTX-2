@@ -63,7 +63,7 @@ export default function Footer() {
                         icon={faFacebookF}
                         style={{
                           color: "white",
-                          border: "2px solid black",
+                          border: "2px solid white",
                           borderRadius: "50%",
                           padding: "8px",
                           width: "15px",
@@ -83,7 +83,7 @@ export default function Footer() {
                         style={{
                           fontSize: "5px",
                           color: "white",
-                          border: "2px solid black",
+                          border: "2px solid white",
                           borderRadius: "50%",
                           padding: "8px",
                           width: "15px",
@@ -103,7 +103,7 @@ export default function Footer() {
                         style={{
                           fontSize: "5px",
                           color: "white",
-                          border: "2px solid black",
+                          border: "2px solid white",
                           borderRadius: "50%",
                           padding: "8px",
                           width: "15px",
@@ -123,7 +123,7 @@ export default function Footer() {
                         style={{
                           fontSize: "5px",
                           color: "white",
-                          border: "2px solid black",
+                          border: "2px solid white",
                           borderRadius: "50%",
                           padding: "8px",
                           width: "15px",
@@ -143,7 +143,7 @@ export default function Footer() {
                         style={{
                           fontSize: "5px",
                           color: "black",
-                          border: "2px solid black",
+                          border: "2px solid white",
                           borderRadius: "50%",
                           padding: "8px",
                           width: "15px",
