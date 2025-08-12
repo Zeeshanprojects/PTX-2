@@ -60,7 +60,7 @@ export default function Services() {
       text:
         "Our creative studio brings unique textile concepts to life with trend-driven designs, custom patterns, and branding solutions.",
       link: "/Studio",
-      icon: "fas fa-palette",
+      icon: "fas fa-camera",
     },
     {
       title: "QUALITY ASSURANCE",
