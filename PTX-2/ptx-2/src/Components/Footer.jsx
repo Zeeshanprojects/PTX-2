@@ -142,7 +142,7 @@ export default function Footer() {
                         icon={faLinkedinIn}
                         style={{
                           fontSize: "5px",
-                          color: "black",
+                          color: "white",
                           border: "2px solid white",
                           borderRadius: "50%",
                           padding: "8px",
