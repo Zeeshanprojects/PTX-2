@@ -9,7 +9,7 @@ export default function Blog1() {
       <div className="container-fluid p-0 mt-5">
         <div className="container blog-content col-lg-8 col-xl-8 ">
           <div className="space"></div>
-          <h4 className="fw-bold text-center mb-3">
+          <h4 className="fw-bold text-center mb-3 text-uppercase">
             2025 Fashion Trends: A Deeper Dive into Style, Substance &
             Sustainability
           </h4>
