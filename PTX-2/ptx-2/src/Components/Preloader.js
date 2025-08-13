@@ -1,11 +1,12 @@
-import React from 'react'
-import './Preloader.style.css'
-import Image from '../Images/Image'
+import React from 'react';
+import './Preloader.style.css';
+import Image from '../Images/Image';
+
 export default function Preloader() {
   return (
     <div className="preloader">
-  
-      <img src={Image.logo} alt="Logo" />
+      <img className="pulse" src={Image.logo} alt="Logo" />
+      <p className="loading-text">Loading...</p>
     </div>
-  )
+  );
 }

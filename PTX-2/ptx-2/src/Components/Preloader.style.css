@@ -1,29 +1,38 @@
 .preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100vh !important;
-    background: white; /* White background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
-  
-  .preloader img {
-    width: 100px;
-    animation: fadeIn 1.3s ease-in-out;
-  }
- 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: scale(0.10);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100vh !important;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.preloader img.pulse {
+  width: 100px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.loading-text {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #555;
+  animation: blink 1.2s infinite;
+}
+
+/* Smooth pulsing effect */
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+/* Blinking "Loading..." text */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
