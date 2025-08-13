@@ -17,7 +17,7 @@ export default function Gallery() {
       once: true, // whether animation should happen only once
     });
   }, []);
-  console.log("JHellp")
+
   const galleryImages = [
     { image: Image.Gallery3,},
     { image: Image.Gallery1,  },
