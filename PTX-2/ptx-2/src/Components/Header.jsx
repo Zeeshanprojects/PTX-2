@@ -82,7 +82,7 @@ export default function Header() {
                   CONTACT
                 </Link>
               </li>
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <Link
                   className="nav-link active"
                   to="/Gallery"
@@ -90,7 +90,7 @@ export default function Header() {
                 >
                   GALLERY
                 </Link>
-              </li> */}
+              </li>
 
               <li className="nav-item">
                 <Link

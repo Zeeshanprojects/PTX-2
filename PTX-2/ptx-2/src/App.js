@@ -31,15 +31,13 @@ import Sourcing from "./Pages/Sourcing";
 import Studio from "./Pages/Studio";
 import Inquireform from "./Pages/Inquireform";
 import ProductDevelopment from "./Pages/ProductDevelopment";
-
 import Blog1 from "./Pages/Blog1";
 import Blog2 from "./Pages/Blog2";
 import Blog3 from "./Pages/Blog3";
-
 import Checkout from "./Pages/Checkout";
 import Teams from "./Pages/Teams";
 import Teaminfo from "./Pages/Teaminfo";
-
+import Gallery from "./Pages/Gallery";
 function AppContent() {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
@@ -68,7 +66,7 @@ function AppContent() {
             <Route path="/Logistics" element={<Logistics />} />
             <Route path="/Sourcing" element={<Sourcing />} />
             <Route path="/Studio" element={<Studio />} />
-           <Route path="/productdevelopment" element={<ProductDevelopment />} />
+            <Route path="/productdevelopment"element={<ProductDevelopment />} />
             <Route path="/team" element={<Teams />} />
             <Route path="/team/:slug" element={<Teaminfo />} />
             <Route path="/inquireform" element={<Inquireform />} />
@@ -78,6 +76,7 @@ function AppContent() {
             <Route path="/privacypolicy" element={<PrivacyPolicy />} />
             <Route path="/LookBook-V1" element={<LookBook1 />} />
             <Route path="/LookBook-V2" element={<LookBook2 />} />
+            <Route path="/Gallery" element={<Gallery />} />
             <Route path="/Tshirts" element={<Tshirts />} />
             <Route path="/Hoodies" element={<Hoodies />} />
             <Route path="/Login" element={<Login />} />
