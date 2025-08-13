@@ -42,33 +42,12 @@
     const [loading, setLoading] = useState(true);
     const location = useLocation();
 
-    // useEffect(() => {
-    //   setLoading(true);
-    //   setTimeout(() => {
-    //     setLoading(false);
-    //   }, 15000);
-    // }, [location.pathname]);
-
     useEffect(() => {
-  setLoading(true);
-
-  // Wait for all images, fonts, videos etc. to load
-  const handlePageLoad = () => {
-    setLoading(false);
-  };
-
-  if (document.readyState === "complete") {
-    // Page already loaded
-    handlePageLoad();
-  } else {
-    // Wait until load event
-    window.addEventListener("load", handlePageLoad);
-  }
-
-  return () => {
-    window.removeEventListener("load", handlePageLoad);
-  };
-}, [location.pathname]);
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+      }, 8000);
+    }, [location.pathname]);
 
 
     return (

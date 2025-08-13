@@ -22,6 +22,7 @@ export default function Home() {
 
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
+  const [bannerLoaded, setBannerLoaded] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -151,11 +152,10 @@ export default function Home() {
 
   return (
     <>
-      <div
+      {/* <div
         className="container-fluid p-0 mt-5"
         data-aos="fade-up"
         fetchPriority="high"
-      
       >
         <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <img
@@ -165,11 +165,29 @@ export default function Home() {
             fetchPriority="high"
           />
         </div>
+      </div> */}
+      <div
+      className="container-fluid p-0 mt-5"
+      data-aos="fade-up"
+      fetchPriority="high"
+    >
+      <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        {!bannerLoaded && <div className="banner-placeholder" />}
+        
+        <img
+          src={Image.bannerimage}
+          alt="ptx-banner-image"
+          className="ptx-banner-image"
+          fetchPriority="high"
+          style={{ display: bannerLoaded ? "block" : "none" }}
+          onLoad={() => setBannerLoaded(true)}
+        />
       </div>
+    </div>
       <br />
 
       <div className="space"></div>
-      <div className="text-center" data-aos="fade-up" loading="lazy">
+      <div className="text-center" data-aos="fade-up" >
         <h1 className="text-center fw-bold">BUILDING STRONG RELATIONSHIP</h1>
         <p className="categories-subtitle">
           Fostering Trust Through Quality and Commitment
@@ -320,9 +338,9 @@ export default function Home() {
       <br />
 
       <div className="app-container" data-aos="fade-up">
-        <ScrollRow images={row1} rowClass="row1" loading="lazy"/>
-        <ScrollRow images={row2} rowClass="row2" loading="lazy"/>
-        <ScrollRow images={row3} rowClass="row3" loading="lazy"/>
+        <ScrollRow images={row1} rowClass="row1" loading="lazy" />
+        <ScrollRow images={row2} rowClass="row2" loading="lazy" />
+        <ScrollRow images={row3} rowClass="row3" loading="lazy" />
       </div>
 
       <div className="space"></div>
