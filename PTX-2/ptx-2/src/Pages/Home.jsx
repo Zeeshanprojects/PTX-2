@@ -168,7 +168,7 @@ export default function Home() {
       <br />
 
       <div className="space"></div>
-      <div className="text-center" data-aos="fade-up">
+      <div className="text-center" data-aos="fade-up" loading="lazy">
         <h1 className="text-center fw-bold">BUILDING STRONG RELATIONSHIP</h1>
         <p className="categories-subtitle">
           Fostering Trust Through Quality and Commitment
