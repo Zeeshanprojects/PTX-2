@@ -6,7 +6,7 @@ export default function Preloader() {
   return (
     <div className="preloader">
       <img className="pulse" src={Image.logo} alt="Logo" />
-      <p className="loading-text">Loading...</p>
+      
     </div>
   );
 }
