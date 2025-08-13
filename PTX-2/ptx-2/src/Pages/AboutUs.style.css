@@ -53,7 +53,7 @@
   /* box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15) !important; */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.text{
+.text {
   text-align: justify !important;
 }
 .custom-card-title {
@@ -106,7 +106,6 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
-
 .knowus h5 {
   font-weight: 700;
   color: #a40aa5;
@@ -125,17 +124,16 @@
   flex-direction: column;
   justify-content: center;
 }
-@media (min-width:992px) and (max-width:1199px){
-  .text{
+@media (min-width: 992px) and (max-width: 1199px) {
+  .text {
     text-align: justify !important;
   }
 }
-@media (min-width:767px) and (max-width: 991px) {
- .text{
-  font-size: 14px !important;
-  text-align: justify;
- }
-  
+@media (min-width: 767px) and (max-width: 991px) {
+  .text {
+    font-size: 14px !important;
+    text-align: justify;
+  }
 }
 @media (max-width: 575px) {
   .storyimage {
