@@ -34,7 +34,7 @@ const Image = {
   image7: require("./7.webp"),
   image8: require("./8.webp"),
   image9: require("./9.webp"),
-  LongT1: require("./LongT.webp"),
+  LongT1: require("./LongT1.webp"),
   LongT2: require("./LongT2.webp"),
   LongT3: require("./LongT3.webp"),
   LongT4: require("./LongT4.webp"),

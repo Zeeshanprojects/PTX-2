@@ -27,7 +27,7 @@
 }
 .logocolor{
   filter: invert(1);
-  height: 30px 
+  height: 20px 
 ;
  }
 .dropdown-menu {
@@ -48,7 +48,7 @@ background-color: none !important;
 
 .nav-link{
     padding-right: 20px !important;
-    font-size: .875rem !important;
+    font-size: .775rem !important;
 }
 .nav-icons {
   display: flex;
