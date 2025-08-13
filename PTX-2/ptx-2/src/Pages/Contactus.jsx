@@ -151,7 +151,7 @@ export default function ContactUs() {
               <div>
                 <strong>Address</strong>
                 <p className="mb-0">
-                  2023 South Pacific Coast Hwy, Laguna Beach, CA 92651
+                  Laguna Beach, CA 92651
                 </p>
               </div>
             </div>

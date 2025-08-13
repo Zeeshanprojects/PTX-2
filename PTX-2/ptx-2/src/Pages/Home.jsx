@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     document.title = "Home | Pakistan Textile Exchange";
 
-    // Simulate loading all content (images, video, etc.) to ensure uniform loading
+    // Load all content (images, video) to ensure uniform loading
     const loadContent = async () => {
       const imagePromises = [
         Image.bannerimage,
@@ -29,11 +29,10 @@ export default function Home() {
           const img = new window.Image();
           img.src = src;
           img.onload = resolve;
-          img.onerror = resolve; // Resolve even if image fails to load
+          img.onerror = resolve;
         });
       });
 
-      // Simulate video loading (since video may take time to be ready)
       const videoPromise = new Promise((resolve) => {
         const video = document.createElement("video");
         video.src = "/PTX Intro video.mp4";
@@ -153,17 +152,19 @@ export default function Home() {
     </div>
   );
 
-  // Shimmer placeholder component
-  const ShimmerPlaceholder = () => (
-    <div className="shimmer-wrapper">
-      <div className="shimmer"></div>
+  // Bootstrap loader component
+  const Loader = () => (
+    <div className="loader-overlay">
+    <div class="spinner-grow" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
     </div>
   );
 
   return (
     <>
       {!isLoaded ? (
-        <ShimmerPlaceholder />
+        <Loader />
       ) : (
         <>
           <div className="container-fluid p-0 mt-5" data-aos="fade-up">

@@ -1,6 +1,26 @@
 body {
   overflow-x: hidden;
 }
+/* Existing styles (assumed to be present, not fully listed for brevity) */
+.ptx-banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Loader overlay styles */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
 .banner-placeholder {
   width: 100%;
   height: 450px; /* match your banner height */
