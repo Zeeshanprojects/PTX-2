@@ -354,7 +354,7 @@ const ScrollRow = ({ images, rowClass }) => (
                   loop
                   loading="lazy"
                 >
-                  <source src="/PTX Intro video.mp4" type="video/mp4" />
+                  <source src="/PTX-Video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
