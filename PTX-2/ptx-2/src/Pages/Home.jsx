@@ -50,7 +50,7 @@ export default function Home() {
       duration: 1000,
       once: true,
     });
-  }, []);
+  }, );
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -170,7 +170,8 @@ export default function Home() {
           <div className="container-fluid p-0 mt-5" data-aos="fade-up">
             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <img
-                src={Image.bannerimage}
+              rel="preload"
+                src="../PTX-Main-banner.webp"
                 alt="ptx-banner-image"
                 className="ptx-banner-image"
                 fetchPriority="high"
