@@ -182,37 +182,24 @@ const splitIntoRows = (arr) => {
 };
 
 
-  const [paused, setPaused] = useState(false);
-  const [row1, row2, row3] = splitIntoRows(allImages);
+ const [row1, row2, row3] = splitIntoRows(allImages);
 
-  const ScrollRow = ({ images, rowClass }) => (
-    <div
-      className={`scroll-row ${rowClass} ${paused ? "paused" : ""}`}
-    >
-      <div className="scroll-content">
-        {images.map((img, idx) => (
-          <div
-            className="img-box"
-            key={`${rowClass}-${idx}`}
-            onMouseEnter={() => setPaused(true)}
-            onMouseLeave={() => setPaused(false)}
-          >
-            <img src={img.src} alt={img.alt} loading="lazy" />
-          </div>
-        ))}
-        {images.map((img, idx) => (
-          <div
-            className="img-box"
-            key={`${rowClass}-dup-${idx}`}
-            onMouseEnter={() => setPaused(true)}
-            onMouseLeave={() => setPaused(false)}
-          >
-            <img src={img.src} alt={img.alt} loading="lazy" />
-          </div>
-        ))}
-      </div>
+const ScrollRow = ({ images, rowClass }) => (
+  <div className={`scroll-row ${rowClass}`}>
+    <div className="scroll-content">
+      {images.map((img, idx) => (
+        <div className="img-box" key={`${rowClass}-${idx}`}>
+          <img src={img.src} alt={img.alt} loading="lazy" />
+        </div>
+      ))}
+      {images.map((img, idx) => (
+        <div className="img-box" key={`${rowClass}-dup-${idx}`}>
+          <img src={img.src} alt={img.alt} loading="lazy" />
+        </div>
+      ))}
     </div>
-  );
+  </div>
+);
 
   // Bootstrap loader component
   const Loader = () => (
