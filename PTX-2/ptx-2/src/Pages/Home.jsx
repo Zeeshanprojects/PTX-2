@@ -220,7 +220,7 @@ const ScrollRow = ({ images, rowClass }) => (
             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <img
             
-                src="../PTX-Main-banner.webp"
+                src={Image.bannerimage}
                 alt="ptx-banner-image"
                 className="ptx-banner-image"
                 fetchPriority="high"

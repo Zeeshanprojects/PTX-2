@@ -619,4 +619,8 @@ video {
     text-align:center !important;
     hyphens: auto;
   }
+  .ptx-banner-image{
+padding-top: 23px !important;
+   
+  }
 }
