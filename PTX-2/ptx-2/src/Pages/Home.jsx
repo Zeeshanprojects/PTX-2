@@ -35,7 +35,7 @@ export default function Home() {
 
       const videoPromise = new Promise((resolve) => {
         const video = document.createElement("video");
-        video.src = "/PTX-Video.mp4";
+        video.src = "PTX-2/ptx-2/public/PTX-Video.mp4";
         video.onloadeddata = resolve;
         video.onerror = resolve;
       });
