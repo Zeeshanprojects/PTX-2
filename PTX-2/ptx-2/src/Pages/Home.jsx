@@ -219,7 +219,7 @@ const ScrollRow = ({ images, rowClass }) => (
           <div className="container-fluid p-0 mt-5" data-aos="fade-up">
             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <img
-              rel="preload"
+            
                 src="../PTX-Main-banner.webp"
                 alt="ptx-banner-image"
                 className="ptx-banner-image"
@@ -230,7 +230,7 @@ const ScrollRow = ({ images, rowClass }) => (
           <br />
           <div className="space"></div>
           <div className="text-center" data-aos="fade-up">
-            <h1 className="text-center fw-bold ">BUILDING STRONG RELATIONSHIP</h1>
+            <h1 className="text-center fw-bold " loading="lazy">BUILDING STRONG RELATIONSHIP</h1>
             <p className="categories-subtitle">
               Fostering Trust Through Quality and Commitment
             </p>
