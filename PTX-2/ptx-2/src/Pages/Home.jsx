@@ -35,7 +35,7 @@ export default function Home() {
 
       const videoPromise = new Promise((resolve) => {
         const video = document.createElement("video");
-        video.src = "/PTX Intro video.mp4";
+        video.src = "/PTX-Video.mp4";
         video.onloadeddata = resolve;
         video.onerror = resolve;
       });
@@ -230,7 +230,7 @@ const ScrollRow = ({ images, rowClass }) => (
           <br />
           <div className="space"></div>
           <div className="text-center" data-aos="fade-up">
-            <h1 className="text-center fw-bold">BUILDING STRONG RELATIONSHIP</h1>
+            <h1 className="text-center fw-bold ">BUILDING STRONG RELATIONSHIP</h1>
             <p className="categories-subtitle">
               Fostering Trust Through Quality and Commitment
             </p>
@@ -265,7 +265,7 @@ const ScrollRow = ({ images, rowClass }) => (
             </div>
           </div>
           <div className="section-heading text-center mt-5" data-aos="fade-up">
-            <h1 className="categories-title fw-bold">CATEGORIES</h1>
+            <h1 className="categories-title fw-bold ">CATEGORIES</h1>
             <p className="categories-subtitle">
               Explore our latest curated product categories
             </p>
