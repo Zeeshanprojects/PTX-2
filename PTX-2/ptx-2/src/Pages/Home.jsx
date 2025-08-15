@@ -35,7 +35,7 @@ export default function Home() {
 
       const videoPromise = new Promise((resolve) => {
         const video = document.createElement("video");
-        video.src = "/PTX-Video.mp4";
+        video.src = "PTX-2/ptx-2/public/PTX-Video.mp4";
         video.onloadeddata = resolve;
         video.onerror = resolve;
       });
@@ -354,7 +354,7 @@ const ScrollRow = ({ images, rowClass }) => (
                   loop
                   loading="lazy"
                 >
-                  <source src="/PTX Intro video.mp4" type="video/mp4" />
+                  <source src="/PTX-Video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
