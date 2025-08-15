@@ -85,66 +85,128 @@ export default function Home() {
     { img: Image.latestproduct5, title: "PTX Denim" },
   ];
 
-  const allImages = [
-    { src: Image.image1, alt: "Tshirt" },
-    { src: Image.LongT2, alt: "Tshirt" },
-    { src: Image.Kidsimage5, alt: "Tshirt" },
-    { src: Image.F1, alt: "Tshirt" },
-    { src: Image.LongT3, alt: "Tshirt" },
-    { src: Image.image6, alt: "Tshirt" },
-    { src: Image.F4, alt: "Tshirt" },
-    { src: Image.Kidsimage2, alt: "Tshirt" },
-    { src: Image.image3, alt: "Tshirt" },
-    { src: Image.LongT1, alt: "longT" },
-    { src: Image.F7, alt: "longT" },
-    { src: Image.Kidsimage1, alt: "longT" },
-    { src: Image.LongT4, alt: "longT" },
-    { src: Image.image5, alt: "longT" },
-    { src: Image.LongT6, alt: "longT" },
-    { src: Image.Kidsimage3, alt: "longT" },
-    { src: Image.LongT8, alt: "longT" },
-    { src: Image.Kidsimage8, alt: "longT" },
-    { src: Image.F6, alt: "longT" },
-    { src: Image.LongT15, alt: "longT" },
-    { src: Image.LongT10, alt: "longT" },
-    { src: Image.image12, alt: "longT" },
-    { src: Image.Kidsimage4, alt: "Kids" },
-    { src: Image.image4, alt: "Kids" },
-    { src: Image.Kidsimage6, alt: "Kids" },
-    { src: Image.LongT12, alt: "Kids" },
-    { src: Image.F5, alt: "Kids" },
-    { src: Image.F3, alt: "Kids" },
-    { src: Image.LongT13, alt: "Kids" },
-    { src: Image.image9, alt: "Kids" },
-    { src: Image.Kidsimage7, alt: "Kids" },
-    { src: Image.Kidsimage9, alt: "Kids" },
-  ];
 
-  const shuffle = (arr) => {
-    const newArr = [...arr];
-    for (let i = newArr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
-    }
-    return newArr;
-  };
 
-  const shuffled = shuffle(allImages);
+const allImages = [
+  { src: Image.img1, alt: "1" },
+  { src: Image.img2, alt: "2" },
+  { src: Image.img3, alt: "3" },
+  { src: Image.img4, alt: "4" },
+  { src: Image.img5, alt: "5" },
+  { src: Image.img6, alt: "6" },
+  { src: Image.img7, alt: "7" },
+  { src: Image.img8, alt: "8" },
+  { src: Image.img9, alt: "9" },
+  { src: Image.img10, alt: "11" },
+  { src: Image.img11, alt: "12" },
+  { src: Image.img12, alt: "13" },
+  { src: Image.img13, alt: "14" },
+  { src: Image.img14, alt: "15" },
+  { src: Image.img15, alt: "16" },
+  { src: Image.img16, alt: "17" },
+  { src: Image.img17, alt: "18" },
+  { src: Image.img18, alt: "19" },
+  { src: Image.img19, alt: "19" },
+  { src: Image.img20, alt: "20" },
+  { src: Image.img21, alt: "21" },
+  { src: Image.img22, alt: "22" },
+  { src: Image.img23, alt: "23" },
+  { src: Image.img24, alt: "24" },
+  { src: Image.img25, alt: "25" },
+  { src: Image.img26, alt: "26" },
+  { src: Image.img27, alt: "27" },
+  { src: Image.img28, alt: "28" },
+  { src: Image.img29, alt: "29" },
+  { src: Image.img30, alt: "30" },
+  { src: Image.img31, alt: "31" },
+  { src: Image.img32, alt: "32" },
+  { src: Image.img33, alt: "33" },
+  { src: Image.img34, alt: "34" },
+  { src: Image.img35, alt: "35" },
+  { src: Image.img36, alt: "36" },
+  { src: Image.img37, alt: "37" },
+  { src: Image.img38, alt: "38" },
+  { src: Image.img39, alt: "39" },
+  { src: Image.img40, alt: "40" },
+  { src: Image.img41, alt: "41" },
+  { src: Image.img42, alt: "42" },
+  { src: Image.img43, alt: "43" },
+  { src: Image.img44, alt: "44" },
+  { src: Image.img45, alt: "45" },
+  { src: Image.img46, alt: "46" },
+  { src: Image.img47, alt: "47" },
+  { src: Image.img48, alt: "48" },
+  { src: Image.img49, alt: "49" },
+  { src: Image.img50, alt: "50" }, 
+  { src: Image.img51, alt: "51" },
+  { src: Image.img52, alt: "52" },
+  { src: Image.img53, alt: "53" },
+  { src: Image.img54, alt: "54" },
+  { src: Image.img55, alt: "55" },
+  { src: Image.img56, alt: "56" },
+  { src: Image.img57, alt: "57" },
+  { src: Image.img58, alt: "58" },
+  { src: Image.img59, alt: "59" },
+  { src: Image.img60, alt: "60" },
+  { src: Image.img61, alt: "61" },
+  { src: Image.img62, alt: "62" },
+  { src: Image.img63, alt: "63" },
+  { src: Image.img64, alt: "64" },
+  { src: Image.img65, alt: "65" },
+  { src: Image.img66, alt: "66" },
+  { src: Image.img67, alt: "67" },
+  { src: Image.img68, alt: "68" },
+  { src: Image.img69, alt: "69" },
+       
+];
+
+// Shuffle helper
+const shuffle = (arr) => {
+  const newArr = [...arr];
+  for (let i = newArr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+  }
+  return newArr;
+};
+
+// Split into 3 non-repeating rows
+const splitIntoRows = (arr) => {
+  const shuffled = shuffle(arr);
   const rowSize = Math.floor(shuffled.length / 3);
-  const row1 = shuffled.slice(0, rowSize);
-  const row2 = shuffled.slice(rowSize, rowSize * 2);
-  const row3 = shuffled.slice(rowSize * 2);
+  return [
+    shuffled.slice(0, rowSize),
+    shuffled.slice(rowSize, rowSize * 2),
+    shuffled.slice(rowSize * 2)
+  ];
+};
+
+
+  const [paused, setPaused] = useState(false);
+  const [row1, row2, row3] = splitIntoRows(allImages);
 
   const ScrollRow = ({ images, rowClass }) => (
-    <div className={`scroll-row ${rowClass}`}>
+    <div
+      className={`scroll-row ${rowClass} ${paused ? "paused" : ""}`}
+    >
       <div className="scroll-content">
         {images.map((img, idx) => (
-          <div className="img-box" key={`${rowClass}-${idx}`}>
+          <div
+            className="img-box"
+            key={`${rowClass}-${idx}`}
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          >
             <img src={img.src} alt={img.alt} loading="lazy" />
           </div>
         ))}
         {images.map((img, idx) => (
-          <div className="img-box" key={`${rowClass}-dup-${idx}`}>
+          <div
+            className="img-box"
+            key={`${rowClass}-dup-${idx}`}
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          >
             <img src={img.src} alt={img.alt} loading="lazy" />
           </div>
         ))}
