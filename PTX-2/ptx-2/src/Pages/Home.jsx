@@ -338,7 +338,7 @@ const ScrollRow = ({ images, rowClass }) => (
                       >
                         {item.value}
                       </h3>
-                      <span className="text-muted">{item.label}</span>
+                      <span className="text-muted label">{item.label}</span>
                     </div>
                   ))}
                 </div>
