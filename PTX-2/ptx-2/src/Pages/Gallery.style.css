@@ -39,7 +39,7 @@
   position: relative;
   border-radius: 0; /* Remove rounded corners */
   overflow: hidden;
-  background: #fff;
+  background: #E0E0E2;
   box-shadow: none; /* Remove shadow if needed */
   transition: transform 0.3s ease;
   margin: 0; /* Remove margin */

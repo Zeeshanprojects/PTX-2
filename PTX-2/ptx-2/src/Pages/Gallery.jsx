@@ -19,12 +19,12 @@ export default function Gallery() {
   }, []);
 
   const galleryImages = [
-    { image: Image.Gallery3,},
-    { image: Image.Gallery1,  },
-    { image: Image.Gallery4, },
-    { image: Image.Gallery2,},
-    { image: Image.Gallery5,  },
+    { image: Image.Gallery1,},
+    { image: Image.Gallery2,  },
     { image: Image.Gallery6, },
+    { image: Image.Gallery5,},
+    { image: Image.Gallery4,  },
+    { image: Image.Gallery3, },
   ];
 
   return (
@@ -68,7 +68,7 @@ export default function Gallery() {
       <br />
       <br />
 
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           {galleryImages.map((item, index) => (
             <div className="col-md-4 mb-3" key={index}>
