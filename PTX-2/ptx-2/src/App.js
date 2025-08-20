@@ -37,7 +37,7 @@
   import Checkout from "./Pages/Checkout";
   import Teams from "./Pages/Teams";
   import Teaminfo from "./Pages/Teaminfo";
-  import Gallery from "./Pages/Gallery";
+import Gallery from "./Pages/Gallery";
   function AppContent() {
     const [loading, setLoading] = useState(true);
     const location = useLocation();
