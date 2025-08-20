@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 import Image from "../Images/Image";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUser,
-  // faSearch,
-  // faShoppingCart,
-} from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import "./Header.style.css";
 
 export default function Header() {
@@ -21,30 +17,32 @@ export default function Header() {
 
   return (
     <>
-     {/* <div className="Top-header p-3 ">
-  <div className="#">
-    <span className="d-flex justify-content-center fw-bold">SALE UPTO 50%  </span>
-  </div>
-</div> */}
-
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top p-3 ">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top p-3">
         <div className="container-fluid">
+          {/* Logo */}
           <Link className="navbar-brand" to="/">
             <img src={Image.logo} alt="mainlogo" className="logocolor" />
           </Link>
 
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
+          {/* Toggler + Login Icon on small screens */}
+          <div className="d-flex align-items-center d-lg-none">
+            <Link to="/Login" className="me-2 text-white">
+              <FontAwesomeIcon icon={faUser} size="lg" />
+            </Link>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon" />
+            </button>
+          </div>
 
+          {/* Navbar Links */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
@@ -82,6 +80,7 @@ export default function Header() {
                   CONTACT
                 </Link>
               </li>
+
               <li className="nav-item">
                 <Link
                   className="nav-link active"
@@ -94,7 +93,7 @@ export default function Header() {
 
               <li className="nav-item">
                 <Link
-                target="_blank"
+                  target="_blank"
                   className="nav-link active"
                   to="https://book.paktex.com/book/ptx-company-profile/PTX-C-P"
                   onClick={closeNavbar}
@@ -102,6 +101,7 @@ export default function Header() {
                   LOOKBOOK
                 </Link>
               </li>
+
               <li className="nav-item">
                 <a
                   className="nav-link active d-flex align-items-center gap-1"
@@ -114,6 +114,7 @@ export default function Header() {
                   <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" />
                 </a>
               </li>
+
               <li className="nav-item">
                 <a
                   className="nav-link active d-flex align-items-center gap-1"
@@ -127,29 +128,12 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-            {/* Icons for small screens */}
-            <div className="nav-icons d-flex d-lg-none">
-              <Link to="/Login">
-                <FontAwesomeIcon icon={faUser} size="lg" />
-              </Link>
-              {/* <Link to="/Search">
-              <FontAwesomeIcon icon={faSearch} size="lg" />
-            </Link>
-            <Link to="/cart">
-              <FontAwesomeIcon icon={faShoppingCart} size="lg" />
-            </Link> */}
-            </div>
-            {/* Icons for large screens */}
+
+            {/* Login Icon on large screens */}
             <div className="nav-icons d-none d-lg-flex">
               <Link to="/Login">
                 <FontAwesomeIcon icon={faUser} size="lg" />
               </Link>
-              {/* <Link to="/Search">
-                <FontAwesomeIcon icon={faSearch} size="lg" />
-              </Link>
-              <Link to="/Cart">
-                <FontAwesomeIcon icon={faShoppingCart} size="lg" />
-              </Link> */}
             </div>
           </div>
         </div>
