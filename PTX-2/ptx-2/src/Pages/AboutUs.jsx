@@ -18,12 +18,9 @@ export default function AboutUs() {
   }, []);
   return (
     <>
-      {/* <div className="background-color" data-aos="fade-up">
-        <h1 className=" text-center" data-aos="fade-up">WHO WE ARE</h1>
-      </div> */}
-
+     
       <div
-        className="container-fluid p-0 mt-5 position-relative"
+        className="container-fluid p-0 mt-lg-5 mt-4 position-relative"
         data-aos="fade-up"
         fetchPriority="high"
         style={{ textAlign: "center" }}

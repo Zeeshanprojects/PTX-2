@@ -235,7 +235,7 @@ const ScrollRow = ({ images, rowClass }) => (
               Fostering Trust Through Quality and Commitment
             </p>
           </div>
-          <div className="container-fluid" data-aos="fade-up">
+          <div className="container-fluid" >
             <div className="row g-4">
               {[
                 {
@@ -254,7 +254,7 @@ const ScrollRow = ({ images, rowClass }) => (
                   desc: "Our logistics and operations teams are dedicated to delivering every order on schedule, without compromising quality.",
                 },
               ].map((card, index) => (
-                <div key={index} className="col-sm-12 col-md-6 col-lg-4">
+                <div key={index} className="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up">
                   <div className="relationship-card border-outline">
                     <i className={`${card.icon} relationship-icon`}></i>
                     <h5>{card.title}</h5>
@@ -270,10 +270,10 @@ const ScrollRow = ({ images, rowClass }) => (
               Explore our latest curated product categories
             </p>
           </div>
-          <div className="container-fluid latest-products-section" data-aos="fade-up">
+          <div className="container-fluid latest-products-section" >
             <div className="row g-0">
               {products.map((product, index) => (
-                <div key={index} className="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                <div key={index} className="col-sm-12 col-md-12 col-lg-3 col-xl-3 "data-aos="fade-up">
                   <div className="product-box">
                     <img
                       src={product.img}
@@ -338,7 +338,7 @@ const ScrollRow = ({ images, rowClass }) => (
                       >
                         {item.value}
                       </h3>
-                      <span className="text-muted">{item.label}</span>
+                      <span className="text-muted label">{item.label}</span>
                     </div>
                   ))}
                 </div>
@@ -368,7 +368,7 @@ const ScrollRow = ({ images, rowClass }) => (
           </div>
           <div className="space"></div>
           <div className="text-center" data-aos="fade-up">
-            <h1 className="text-center fw-bold fs-1">BLOGS</h1>
+            <h1 className="text-center fw-bold fs-1 ">BLOGS</h1>
             <p>Insights, Stories, and Industry Trends</p>
           </div>
           <div className="container blog-section p-2" data-aos="fade-up">
@@ -472,7 +472,7 @@ const ScrollRow = ({ images, rowClass }) => (
               </form>
             </div>
           </div>
-          <h1 className="text-center fw-bold" data-aos="fade-up">
+          <h1 className="text-center fw-bold " data-aos="fade-up">
             WHY CHOOSE US?
           </h1>
           <div className="space"></div>

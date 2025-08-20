@@ -75,7 +75,7 @@ export default function Services() {
     <>
 
       <div
-        className="container-fluid p-0 mt-5 position-relative"
+        className="container-fluid p-0 mt-lg-5 mt-lg-5  mt-4 position-relative"
         data-aos="fade-up"
         fetchPriority="high"
         style={{ textAlign: "center" }}
