@@ -37,6 +37,7 @@ export default function Studio() {
 
         {/* Text Overlay */}
         <div
+         className="text-overlay-size"
           style={{
             position: "absolute",
             top: "50%",
@@ -44,12 +45,12 @@ export default function Studio() {
             
             transform: "translate(-50%, -50%)",
             color: "white",
-            fontSize: "2rem",
+            
             fontWeight: "bold",
             textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
           }}
         >
-     SERVICES / STUDIO
+     STUDIO
         </div>
       </div>
  
