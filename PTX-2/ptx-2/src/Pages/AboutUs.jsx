@@ -173,44 +173,9 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="space"></div>
-      <h1 className="text-center" data-aos="fade-up">
-        FROM DESIGN TO DELIVERY
-      </h1>
+    
 
-      <br />
-      <div className="container my-5" data-aos="fade-up">
-        <div className="row g-4">
-          {[Image.step1, Image.step2, Image.step3].map((img, index) => (
-            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <div className="service-card p-4 h-100">
-                <div className="service-card-body">
-                  <img src={img} alt={index + 1} className="steps" />
-                  <br />
-                  <br />
-                  <h6 className="custom-card-title">
-                    {
-                      ["Design", "Materials & Manufacturing", "Delivering"][
-                        index
-                      ]
-                    }
-                  </h6>
-                  <p className="text-justify">
-                    {
-                      [
-                        "We craft innovative and trend-forward designs that blend creativity with functionality, ensuring every garment reflects the perfect balance of style and comfort.",
-                        "We source high-quality fabrics and employ advanced manufacturing techniques to create durable and premium clothing with a strong focus on sustainability.",
-                        "With a streamlined logistics network, we ensure timely and secure delivery of our textile products with efficiency and excellence.",
-                      ][index]
-                    }
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="space"></div>
+     
       <div className="container" data-aos="fade-up">
         <div className="row align-items-center">
           <div className="col-md-5 text-center">

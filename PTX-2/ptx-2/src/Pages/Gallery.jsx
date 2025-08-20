@@ -50,6 +50,7 @@ export default function Gallery() {
 
         {/* Text Overlay */}
         <div
+         className="text-overlay-size"
           style={{
             position: "absolute",
             top: "50%",
@@ -57,7 +58,7 @@ export default function Gallery() {
             
             transform: "translate(-50%, -50%)",
             color: "white",
-            fontSize: "2rem",
+          
             fontWeight: "bold",
             textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
           }}
