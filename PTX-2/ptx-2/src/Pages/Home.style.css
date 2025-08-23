@@ -7,6 +7,45 @@ body {
   height: auto;
   object-fit: cover;
 }
+.video-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;              /* flexbox */
+  justify-content: center;    /* center horizontally */
+  align-items: center;        /* center vertically */
+  
+  width: 100px;   /* fixed size button */
+  height: 100px;
+  
+  background: white(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  color: black;
+  font-size: 50px; /* play icon size */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+.play-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: white !important;
+}
 
 /* Loader overlay styles */
 .loader-overlay {

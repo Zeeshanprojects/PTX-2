@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import Image from "../Images/Image";
 import "./Home.style.css";
@@ -11,6 +11,9 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [showControls, setShowControls] = useState(false);
 
   useEffect(() => {
     document.title = "Home | Pakistan Textile Exchange";
@@ -77,7 +80,23 @@ export default function Home() {
       setLoading(false);
     }
   };
-
+  // const handlePlay = () => {
+  //   if (videoRef.current) {
+  //     videoRef.current.play();
+  //     setIsPlaying(true); // hide play button
+  //   }
+  // };
+  const handlePlayPause = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        videoRef.current.play();
+        setIsPlaying(true);
+      }
+    }
+  };
   const products = [
     { img: Image.latestproduct1, title: "PTX Essential" },
     { img: Image.latestproduct2, title: "PTX Juniors" },
@@ -348,20 +367,31 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 h-100">
+              <div
+                className="video-container col-sm-12 col-md-12 col-lg-6 col-xl-6 h-100 p-0 m-0"
+                onMouseEnter={() => setShowControls(true)}
+                onMouseLeave={() => setShowControls(false)}
+              >
                 <video
-                  data-aos="fade-up"
+                  ref={videoRef}
                   width="100%"
                   height="auto"
-                  controls
-                  autoPlay
                   muted
                   loop
-                  loading="lazy"
+                  preload="metadata"
+                  controls={false}
+                  
                 >
                   <source src="/PTX-Video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+
+                {/* Show button: if not playing OR hovered */}
+                {(!isPlaying || showControls) && (
+                  <button className="play-btn" onClick={handlePlayPause}>
+                    {isPlaying ? "❚❚" : "▶"}
+                  </button>
+                )}
               </div>
             </div>
           </div>
