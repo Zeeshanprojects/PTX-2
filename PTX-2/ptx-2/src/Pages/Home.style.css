@@ -534,6 +534,13 @@ a {
 video {
   border-radius: 10px !important;
 }
+.stats-col {
+  border-right: 2px solid black; /* vertical line */
+}
+
+.stats-col:last-child {
+  border-right: none; /* remove line on last column */
+}
 
 @keyframes scroll-left {
   0% {
@@ -657,12 +664,14 @@ video {
 .stat-box{
   background-color: #f6f6f6 !important;
 }
-
+.heading-size{
+  font-size: 22px !important;
+}
   .categories-subtitle{
     font-size: 14px !important;}
-  .heading-size {
+  /* .heading-size {
     font-size: 25px !important;
-  }
+  } */
   .sectionimage {
     padding: 0 !important;
     margin: 0 !important;

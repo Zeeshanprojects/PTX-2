@@ -37,7 +37,7 @@ export default function ProductDevelopment() {
           style={{
             position: "absolute",
             top: "50%",
-            left: "50%",
+            left: "30%",
 
             transform: "translate(-50%, -50%)",
             color: "white",
@@ -46,7 +46,7 @@ export default function ProductDevelopment() {
             textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
           }}
         >
-      PRODUCT DEVELOPMENT
+       DEVELOPMENT
         </div>
       </div>
 

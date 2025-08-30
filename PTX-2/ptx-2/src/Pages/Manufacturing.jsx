@@ -19,8 +19,8 @@ export default function Manufacturing() {
 
   return (
     <>
-    <br/>
-        <div
+      <br />
+      <div
         className="container-fluid p-0 mt-lg-5 mt-xl-5 mt-4 position-relative"
         data-aos="fade-up"
         fetchPriority="high"
@@ -33,26 +33,26 @@ export default function Manufacturing() {
             alt="ptx-banner-image"
             className="ptx-banner-image w-100"
             fetchPriority="high"
-            style={{ display: "block" ,  }}
+            style={{ display: "block" }}
           />
         </div>
 
         {/* Text Overlay */}
         <div
-         className="text-overlay-size"
+          className="text-overlay-size"
           style={{
             position: "absolute",
             top: "50%",
-            left: "50%",
-            
+            left: "30%",
+
             transform: "translate(-50%, -50%)",
             color: "white",
-           
+
             fontWeight: "bold",
             textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
           }}
         >
-      MANUFACTURING
+          MANUFACTURING
         </div>
       </div>
 
@@ -109,7 +109,6 @@ export default function Manufacturing() {
               </p>
             </div>
             <br />
-           
           </div>
         </div>
       </div>

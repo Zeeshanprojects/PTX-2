@@ -35,7 +35,7 @@ export default function Services() {
       icon: "fas fa-industry",
     },
     {
-      title: "PRODUCT DEVELOPMENT",
+      title: "DEVELOPMENT",
       text:
         "Collaborative design & prototyping services to turn your ideas into ready-to-produce fashion items.",
       link: "/productdevelopment",
@@ -63,7 +63,7 @@ export default function Services() {
       icon: "fas fa-camera",
     },
     {
-      title: "QUALITY ASSURANCE",
+      title: "QUALITY",
       text:
         "Our rigorous inspection processes guarantee that every fabric and garment meets durability, resilience, comfort, and industry benchmarks.",
       link: "/QualityAssurance",
@@ -97,7 +97,7 @@ export default function Services() {
           style={{
             position: "absolute",
             top: "50%",
-            left: "50%",
+            left: "30%",
             
             transform: "translate(-50%, -50%)",
             color: "white",

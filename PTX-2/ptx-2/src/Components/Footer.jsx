@@ -9,7 +9,6 @@ import {
   faTwitter,
   faInstagram,
   faLinkedinIn,
-
 } from "@fortawesome/free-brands-svg-icons";
 export default function Footer() {
   return (
@@ -21,11 +20,11 @@ export default function Footer() {
           <section className="d-flex justify-content-between p-4 text-white"></section>
 
           <section className="">
-            <div className="container-fluid text-center text-md-start mt-3">
+            <div className="container-fluid p-5 text-center text-md-start mt-3">
               {/* Grid row */}
               <div className="row mt-3">
                 {/* Grid column */}
-                <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                <div className="col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
                   {/* Content */}
                   {/* <img src={Image.logo} alt="logo"></img> */}
                   <img
@@ -155,7 +154,7 @@ export default function Footer() {
                   </div>
                 </div>
 
-                <div className="col-md-2 col-lg-3 col-xl-3 me-auto mb-4">
+                <div className="col-md-6 col-lg-3 col-xl-3 me-auto mb-4">
                   {/* Links */}
                   <h2 className="footertext ">Menu</h2>
                   <hr
@@ -173,7 +172,11 @@ export default function Footer() {
                   </p>
 
                   <p>
-                    <Link to="https://book.paktex.com/book/ptx-company-profile/PTX-C-P" className="text-white" target="_blank">
+                    <Link
+                      to="https://book.paktex.com/book/ptx-company-profile/PTX-C-P"
+                      className="text-white"
+                      target="_blank"
+                    >
                       Lookbook
                     </Link>
                   </p>
@@ -183,8 +186,13 @@ export default function Footer() {
                       Services
                     </Link>
                   </p>
+                  <p>
+                    <Link to="/Gallery" className="text-white">
+                      Gallery
+                    </Link>
+                  </p>
                 </div>
-                <div className="col-md-2 col-lg-3 col-xl-3 me-auto mb-4">
+                <div className="col-md-6 col-lg-3 col-xl-3 me-auto mb-4">
                   {/* Links */}
                   <h2 className="footertext ">About</h2>
                   <hr
@@ -205,6 +213,11 @@ export default function Footer() {
                       Contact Us
                     </Link>
                   </p>
+                    <p>
+                    <Link to="/inquireform" className="text-white">
+                  Inquire
+                    </Link>
+                  </p>
                   <p>
                     <Link to="/signup" className="text-white">
                       Account
@@ -212,7 +225,7 @@ export default function Footer() {
                   </p>
                 </div>
 
-                <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <div className="col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   {/* Links */}
                   <h2 className="footertext">Sign Up for Email</h2>
                   <hr
@@ -228,22 +241,20 @@ export default function Footer() {
                     content, events and more!
                   </p>
 
-                  <div className="email-subscribe">
+                  <div className="email-subscribe ">
                     <input
                       type="email"
                       placeholder="Enter your email"
                       className="subscribe-input"
                     />
-                    <button className="subscribe-btn">Subscribe</button>
+                    <button className="subscribe-btn ms-2">Subscribe</button>
                   </div>
                 </div>
-                 
               </div>
             </div>
-
           </section>
-          <hr className="p-2 m-2"/>
-         <div className="text-center pb-5">
+          <hr className="p-2 m-2" />
+          <div className="text-center pb-5">
             © 2025 |
             <Link className="text-white ms-1" to="/">
               PTX
