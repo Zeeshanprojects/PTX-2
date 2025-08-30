@@ -12,7 +12,6 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
-
   useEffect(() => {
     document.title = "Home | Pakistan Textile Exchange";
 
@@ -233,50 +232,54 @@ export default function Home() {
               Fostering Trust Through Quality and Commitment
             </p>
           </div>
-     <div className="container-fluid">
-  <div className="row g-4">
-    {[
-      {
-        icon: Image.service, // your imported image
-        title: "Consistent Quality Assurance",
-        desc: "We maintain strict quality control at every stage, ensuring each fabric meets international standards and earns our clients' trust.",
-      },
-      {
-        icon: Image.chat,
-        title: "Transparent Communication",
-        desc: "We believe in clear, timely communication to keep our partners informed and confident throughout every project.",
-      },
-      {
-        icon: Image.timing,
-        title: "Reliable Service & On-Time Delivery",
-        desc: "Our logistics and operations teams are dedicated to delivering every order on schedule, without compromising quality.",
-      },
-      {
-        icon: Image.tshirt, // <-- add your apparel-related image here
-        title: "Innovative Apparel Solutions",
-        desc: "From stylish designs to functional wear, our apparel expertise ensures your brand stands out in the competitive fashion industry.",
-      },
-    ].map((card, index) => (
-      <div
-        key={index}
-        className="col-sm-12 col-md-6 col-lg-3"
-        data-aos="fade-up"
-      >
-        <div className="relationship-card border-outline text-center">
-          {/* Use image instead of <i> */}
-          <img
-            src={card.icon}
-            alt={card.title}
-            className="relationship-icon mb-3"
-            style={{ width: "60px", height: "60px", objectFit: "contain" }}
-          />
-          <h5>{card.title}</h5>
-          <p>{card.desc}</p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
+          <div className="container-fluid">
+            <div className="row g-4">
+              {[
+                {
+                  icon: Image.service, // your imported image
+                  title: "Consistent Quality Assurance",
+                  desc: "We maintain strict quality control at every stage, ensuring each fabric meets international standards and earns our clients' trust.",
+                },
+                {
+                  icon: Image.chat,
+                  title: "Transparent Communication",
+                  desc: "We believe in clear, timely communication to keep our partners informed and confident throughout every project.",
+                },
+                {
+                  icon: Image.timing,
+                  title: "Reliable Service & On-Time Delivery",
+                  desc: "Our logistics and operations teams are dedicated to delivering every order on schedule, without compromising quality.",
+                },
+                {
+                  icon: Image.tshirt, // <-- add your apparel-related image here
+                  title: "Innovative Apparel Solutions",
+                  desc: "From stylish designs to functional wear, our apparel expertise ensures your brand stands out in the competitive fashion industry.",
+                },
+              ].map((card, index) => (
+                <div
+                  key={index}
+                  className="col-sm-12 col-md-6 col-lg-3"
+                  data-aos="fade-up"
+                >
+                  <div className="relationship-card border-outline text-center">
+                    {/* Use image instead of <i> */}
+                    <img
+                      src={card.icon}
+                      alt={card.title}
+                      className="relationship-icon mb-3"
+                      style={{
+                        width: "60px",
+                        height: "60px",
+                        objectFit: "contain",
+                      }}
+                    />
+                    <h5>{card.title}</h5>
+                    <p>{card.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
           <div className="section-heading text-center mt-5" data-aos="fade-up">
             <h1 className="categories-title fw-bold ">CATEGORIES</h1>
@@ -306,7 +309,7 @@ export default function Home() {
           <div className="space"></div>
           <div className="content-card" data-aos="fade-up">
             <p className="card-subtitle">WHO WE ARE?</p>
-            <h1 className="card-title mt-3">PAKISTAN TEXTILE EXCHANGE</h1>
+            <h2 className="card-title mt-3">PAKISTAN TEXTILE EXCHANGE</h2>
             <p className="card-description">
               Pakistan Textile Exchange (Paktex) is a leading apparel sourcing
               company offering complete supply chain solutions including product
@@ -318,7 +321,10 @@ export default function Home() {
               to final shipment.
             </p>
             <Link to="/inquireform">
-              <button type="button" className="btn btn-outline-light read-more px-5">
+              <button
+                type="button"
+                className="btn btn-outline-light read-more px-5"
+              >
                 INQUIRE NOW
               </button>
             </Link>
@@ -337,29 +343,13 @@ export default function Home() {
                   dyeing units, and precision cutting machines to maintain
                   accuracy and minimize waste. Sustainability is also a key
                   pillar of our operations we’ve adopted eco-friendly practices
-                  in water usage, chemical handling, and energy management.
+                  in water usage, chemical handling, and energy management to
+                  reduce our environmental footprint By integrating sustainable
+                  raw materials such as organic cotton and recycled fibers, we
+                  contribute to a greener textile ecosystem while meeting the
+                  growing demand for ethical fashion.
                 </p>
-                <div className="d-flex flex-wrap gap-3 justify-content-center my-4 custom-box">
-                  {[
-                    { label: "Factories", value: "5+" },
-                    { label: "Customers", value: "7+" },
-                    { label: "Team Members", value: "50+" },
-                    { label: "Years", value: "10+" },
-                  ].map((item) => (
-                    <div
-                      key={item.label}
-                      className="d-flex flex-column align-items-center p-3 rounded shadow-sm stat-box"
-                    >
-                      <h3
-                        className="fw-bold mb-1"
-                        style={{ fontSize: "3rem", color: "black" }}
-                      >
-                        {item.value}
-                      </h3>
-                      <span className="text-muted label">{item.label}</span>
-                    </div>
-                  ))}
-                </div>
+                
               </div>
               <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 h-100">
                 <video
@@ -378,8 +368,30 @@ export default function Home() {
               </div>
             </div>
           </div>
+<br/>
+          <div className="container-fluid mt-5" data-aos="fade-up">
+            <div className="row">
+              <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center stats-col ">
+                <h1 >5+</h1>
+                <p>FACTORIES</p>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center stats-col">
+                <h1>10+</h1>
+                <p>CUSTOMERS</p>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center stats-col">
+                <h1>20+</h1>
+                <p>TEAM MEMBERS</p>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center stats-col">
+                <h1>10+</h1>
+                <p>YEAR</p>
+              </div>
+            </div>
+          </div>
+
           <br />
-          <div className="app-container" data-aos="fade-up">
+          <div className="app-container mt-5" data-aos="fade-up">
             <ScrollRow images={row1} rowClass="row1" />
             <ScrollRow images={row2} rowClass="row2" />
             <ScrollRow images={row3} rowClass="row3" />

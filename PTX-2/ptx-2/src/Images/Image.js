@@ -2,7 +2,7 @@ const Image = {
   logo: require("./PTX-Main-Logo.png"),
   bannerimage: require("./PTX-Main-banner.webp"),
   backgroundimage: require("./background.webp"),
-  banner2: require("./background.webp"),
+  banner2: require("./Inventory-banner.webp"),
   service:require("./service.webp"),
   timing:require("./timing.webp"),
   tshirt:require("./polo-shirt.webp"),

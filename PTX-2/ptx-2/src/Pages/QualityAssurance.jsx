@@ -42,7 +42,7 @@ export default function QualityAssurance() {
           style={{
             position: "absolute",
             top: "50%",
-            left: "50%",
+            left: "30%",
             
             transform: "translate(-50%, -50%)",
             color: "white",
@@ -51,7 +51,7 @@ export default function QualityAssurance() {
             textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
           }}
         >
-     QUALITY ASSURANCE
+     QUALITY
         </div>
       </div>
       <div className="space"></div>

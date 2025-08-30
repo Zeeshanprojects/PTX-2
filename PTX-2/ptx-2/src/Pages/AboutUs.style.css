@@ -1,10 +1,9 @@
 .ptx-banner-image {
-height: 100lvh;
-width: 100lvw;
-filter: brightness(0.6);
+  height: 100lvh;
+  width: 100lvw;
 }
-.text-overlay-size{
-font-size: 5rem ;
+.text-overlay-size {
+  font-size: 5rem;
 }
 .ceomessagecard {
   margin-top: 10rem;
@@ -57,7 +56,6 @@ font-size: 5rem ;
 .text {
   text-align: justify !important;
 }
-
 
 .user-name {
   font-size: 18px;
@@ -113,33 +111,60 @@ font-size: 5rem ;
   justify-content: center;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-   .ptx-banner-image{
+  .ptx-banner-image {
     height: auto;
   }
   .text {
     text-align: justify !important;
   }
+  .text-overlay-size {
+    font-size: 4rem;
+    margin-top: 20px;
+  }
 }
-@media (min-width: 767px) and (max-width: 991px) {
-    .ptx-banner-image{
+@media (min-width: 768px) and (max-width: 991px) {
+  .ptx-banner-image {
     height: auto;
   }
   .text {
     font-size: 14px !important;
     text-align: justify;
   }
+  .text-overlay-size {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
 }
-@media (max-width: 575px) {
-  .ptx-banner-image{
+@media (min-width: 577px) and (max-width: 767px) {
+  .ptx-banner-image {
     height: auto;
   }
-  .text-overlay-size{
-font-size: 2rem ;
-margin-top: 20px;}
+  .text {
+    font-size: 14px !important;
+    text-align: justify;
+  }
+  .text-overlay-size {
+    font-size: 1.7rem;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .ptx-banner-image {
+    height: auto;
+  }
+  .text-overlay-size {
+    font-size: 1.7rem;
+    margin-top: 20px;
+  }
   .storyimage {
     margin: 0 !important;
   }
   .ceocontent {
     text-align: center !important;
+  }
+  .stats-col {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    width: 50% !important;
   }
 }

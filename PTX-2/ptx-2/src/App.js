@@ -15,8 +15,7 @@
   import ScrollToTop from "./Components/ScrollToTop";
   import LookBook1 from "./Pages/LookBook1";
   import LookBook2 from "./Pages/LookBook2";
-  import Tshirts from "./Pages/Tshirts";
-  import Hoodies from "./Pages/Hoodies";
+
   import Login from "./Pages/Login";
   import Preloader from "./Components/Preloader";
   import Cart from "./Pages/Cart";
@@ -81,8 +80,7 @@ import Gallery from "./Pages/Gallery";
               <Route path="/LookBook-V1" element={<LookBook1 />} />
               <Route path="/LookBook-V2" element={<LookBook2 />} />
               <Route path="/Gallery" element={<Gallery />} />
-              <Route path="/Tshirts" element={<Tshirts />} />
-              <Route path="/Hoodies" element={<Hoodies />} />
+        
               <Route path="/Login" element={<Login />} />
               <Route path="/Cart" element={<Cart />} />
               <Route path="/Checkout" element={<Checkout />} />

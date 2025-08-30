@@ -23,7 +23,7 @@ export default function AboutUs() {
         className="container-fluid p-0 mt-lg-5 mt-4 position-relative"
         data-aos="fade-up"
         fetchPriority="high"
-        style={{ textAlign: "center" }}
+        style={{ textAlign: "" }}
       >
         {/* Banner Image */}
         <br/>
@@ -43,7 +43,7 @@ export default function AboutUs() {
           style={{
             position: "absolute",
             top: "50%",
-            left: "50%",
+            left: "30%",
             
             transform: "translate(-50%, -50%)",
             color: "white",
@@ -85,7 +85,7 @@ export default function AboutUs() {
                   }}
                   transition={{ duration: 0.5, ease: "easeOut" }}
                 >
-                  <img src={src} alt="Factory" className="factory-image" />
+                  <img src={src} alt="Factory" className="factory-image" loading="lazy" />
                 </div>
               ))}
             </div>
@@ -93,7 +93,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="container my-5">
+      <div className="container my-5 p-0">
         <div className="row align-items-stretch g-4">
           <div className="col-sm-12 col-md-6" data-aos="fade-right">
             <div className="knowus p-4 rounded bg-white same-height h-100">
@@ -114,7 +114,7 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-6" data-aos="fade-left">
+          <div className="col-sm-12 col-md-6 p-0" data-aos="fade-left">
             <div className="custom-image-grid" data-aos="fade-left">
               {[Image.p5, Image.p6, Image.p7, Image.p8].map((src) => (
                 <div
@@ -126,7 +126,7 @@ export default function AboutUs() {
                   }}
                   transition={{ duration: 0.5, ease: "easeOut" }}
                 >
-                  <img src={src} alt="Factory" className="factory-image" />
+                  <img src={src} alt="Factory" className="factory-image" loading="lazy" />
                 </div>
               ))}
             </div>
@@ -165,7 +165,7 @@ export default function AboutUs() {
                   }}
                   transition={{ duration: 0.5, ease: "easeOut" }}
                 >
-                  <img src={src} alt="Factory" className="factory-image" />
+                  <img src={src} alt="Factory" className="factory-image" loading="lazy" />
                 </div>
               ))}
             </div>
