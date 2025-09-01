@@ -349,7 +349,6 @@ export default function Home() {
                   contribute to a greener textile ecosystem while meeting the
                   growing demand for ethical fashion.
                 </p>
-                
               </div>
               <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 h-100">
                 <video
@@ -368,11 +367,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-<br/>
+          <br />
           <div className="container-fluid mt-5" data-aos="fade-up">
             <div className="row">
               <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center stats-col ">
-                <h1 >5+</h1>
+                <h1>5+</h1>
                 <p>FACTORIES</p>
               </div>
               <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center stats-col">
@@ -401,10 +400,10 @@ export default function Home() {
             <h1 className="text-center fw-bold fs-1 ">BLOGS</h1>
             <p>Insights, Stories, and Industry Trends</p>
           </div>
-          <div className="container blog-section p-2" data-aos="fade-up">
+          <div className="container-fluid blog-section p-3" data-aos="fade-up">
             <div className="row g-4">
               <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <Link to="/blog1" className="text-decoration-none text-dark">
+                <div className="text-decoration-none text-dark">
                   <div className="blog-box">
                     <div className="blog-img-wrapper">
                       <img
@@ -414,18 +413,21 @@ export default function Home() {
                         loading="lazy"
                       />
                     </div>
-                    <div className="blog-body">
+                    <div className="blog-body bg-transparent">
                       <h3 className="blog-heading">FASHIONS TRENDS 2025</h3>
-                      <p className="blog-text">
+                      <p className="blog-text mb-3">
                         Discover what's shaping the clothing world this
                         year—from eco fabrics to minimalist design.
                       </p>
+                      <Link to="/blog1 " className="pt-5 text-dark">
+                        Read More
+                      </Link>
                     </div>
                   </div>
-                </Link>
+                </div>
               </div>
               <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <Link to="/blog2" className="text-decoration-none text-dark">
+                <div className="text-decoration-none text-dark">
                   <div className="blog-box">
                     <div className="blog-img-wrapper">
                       <img
@@ -437,16 +439,19 @@ export default function Home() {
                     </div>
                     <div className="blog-body">
                       <h3 className="blog-heading">BEHIND THE STITCH</h3>
-                      <p className="blog-text">
+                      <p className="blog-text mb-3">
                         A deep dive into how our premium clothing is made with
                         quality, precision, and passion.
                       </p>
+                      <Link to="/blog2" className="text-dark">
+                        Read More
+                      </Link>
                     </div>
                   </div>
-                </Link>
+                </div>
               </div>
               <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <Link to="/blog3" className="text-decoration-none text-dark">
+                <div className="text-decoration-none text-dark">
                   <div className="blog-box">
                     <div className="blog-img-wrapper">
                       <img
@@ -458,13 +463,16 @@ export default function Home() {
                     </div>
                     <div className="blog-body">
                       <h3 className="blog-heading">GLOBAL THREADS</h3>
-                      <p className="blog-text">
+                      <p className="blog-text mb-3 ">
                         Markets served, quality standards, how your company
                         stands out globally
                       </p>
+                      <Link to="/blog3" className="text-dark">
+                        Read More
+                      </Link>
                     </div>
                   </div>
-                </Link>
+                </div>
               </div>
             </div>
           </div>
