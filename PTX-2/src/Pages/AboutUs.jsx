@@ -93,7 +93,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="container my-5 p-0">
+      <div className="container my-5 ">
         <div className="row align-items-stretch g-4">
           <div className="col-sm-12 col-md-6" data-aos="fade-right">
             <div className="knowus p-4 rounded bg-white same-height h-100">
