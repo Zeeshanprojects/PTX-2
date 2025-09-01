@@ -107,6 +107,6 @@ const Image = {
   sectionimage: require("./sectionbanner.webp"),
   CEO: require("./Davidjumani.webp"),
   location: require("./location.webp"),
-  readmore:require("./read-more.png")
+
 };
 export default Image;
