@@ -21,10 +21,10 @@ export default function Gallery() {
   const galleryImages = [
     { image: Image.Gallery1,},
     { image: Image.Gallery2,  },
-    { image: Image.Gallery6, },
+    { image: Image.Gallery3, },
     { image: Image.Gallery5,},
     { image: Image.Gallery4,  },
-    { image: Image.Gallery3, },
+    { image: Image.Gallery6, },
   ];
 
   return (

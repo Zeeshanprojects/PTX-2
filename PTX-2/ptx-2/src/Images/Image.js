@@ -3,10 +3,10 @@ const Image = {
   bannerimage: require("./PTX-Main-banner.webp"),
   backgroundimage: require("./background.webp"),
   banner2: require("./Inventory-banner.webp"),
-  service:require("./service.webp"),
-  timing:require("./timing.webp"),
-  tshirt:require("./polo-shirt.webp"),
-  chat:require("./chat.webp"),
+  service: require("./service.webp"),
+  timing: require("./timing.webp"),
+  tshirt: require("./polo-shirt.webp"),
+  chat: require("./chat.webp"),
   Blog1: require("./Blog1-image.webp"),
   Blog2: require("./Blog2-image.webp"),
   Blog3: require("./Blog3-image.webp"),
@@ -18,12 +18,12 @@ const Image = {
   step1: require("./step1.webp"),
   step2: require("./step2.webp"),
   step3: require("./step3.webp"),
-  Gallery1: require("./gallery1.webp"),
-  Gallery2: require("./gallery2.webp"),
-  Gallery3: require("./gallery3.webp"),
-  Gallery4: require("./gallery4.webp"),
-  Gallery5: require("./gallery5.webp"),
-  Gallery6: require("./gallery6.webp"),
+  Gallery1: require("./g1.jpeg"),
+  Gallery2: require("./g2.png"),
+  Gallery3: require("./g3.png"),
+  Gallery4: require("./g4.jpeg"),
+  Gallery5: require("./g5.jpeg"),
+  Gallery6: require("./g6.jpeg"),
   p1: require("./Production1.webp"),
   p2: require("./Production2.webp"),
   p3: require("./Production3.webp"),
@@ -52,35 +52,25 @@ const Image = {
   img15: require("./15.webp"),
   img16: require("./16.webp"),
   img17: require("./17.webp"),
-
   img18: require("./18.webp"),
   img19: require("./19.webp"),
   img20: require("./20.webp"),
-
   img21: require("./21.webp"),
   img22: require("./22.webp"),
   img23: require("./23.webp"),
   img24: require("./24.webp"),
-
   img25: require("./25.webp"),
   img26: require("./26.webp"),
   img27: require("./27.webp"),
   img28: require("./28.webp"),
-
   img29: require("./29.webp"),
-
   img30: require("./30.webp"),
-
   img31: require("./31.webp"),
-
   img32: require("./32.webp"),
   img33: require("./33.webp"),
-
   img34: require("./34.webp"),
-
   img35: require("./35.webp"),
   img36: require("./36.webp"),
-
   img37: require("./37.webp"),
   img38: require("./38.webp"),
   img39: require("./39.webp"),
@@ -89,21 +79,14 @@ const Image = {
   img42: require("./42.webp"),
   img43: require("./43.webp"),
   img44: require("./44.webp"),
-
   img45: require("./45.webp"),
-
   img46: require("./46.webp"),
   img47: require("./47.webp"),
-
   img48: require("./48.webp"),
-
   img49: require("./49.webp"),
   img50: require("./50.webp"),
-
   img51: require("./51.webp"),
-
   img52: require("./52.webp"),
-
   img53: require("./53.webp"),
   img54: require("./54.webp"),
   img55: require("./55.webp"),
@@ -121,10 +104,9 @@ const Image = {
   img67: require("./67.webp"),
   img68: require("./68.webp"),
   img69: require("./69.webp"),
-
-
   sectionimage: require("./sectionbanner.webp"),
   CEO: require("./Davidjumani.webp"),
   location: require("./location.webp"),
+
 };
 export default Image;
