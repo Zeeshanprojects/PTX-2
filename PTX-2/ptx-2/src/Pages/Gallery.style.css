@@ -35,7 +35,7 @@
 
 .gallery-card {
   aspect-ratio: auto;
-  height: 500px; /* Vertically big */
+  height: auto; /* Vertically big */
   position: relative;
   border-radius: 0; /* Remove rounded corners */
   overflow: hidden;
