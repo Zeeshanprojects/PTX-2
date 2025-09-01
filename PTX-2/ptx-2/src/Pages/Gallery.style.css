@@ -39,7 +39,7 @@
   position: relative;
   border-radius: 0; /* Remove rounded corners */
   overflow: hidden;
-  background: #E0E0E2;
+
   box-shadow: none; /* Remove shadow if needed */
   transition: transform 0.3s ease;
   margin: 0; /* Remove margin */
@@ -50,6 +50,7 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+    background: #E8E8E6 !important;
 }
 
 .gallery-card:hover img {
