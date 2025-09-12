@@ -15,7 +15,6 @@
   import ScrollToTop from "./Components/ScrollToTop";
   import LookBook1 from "./Pages/LookBook1";
   import LookBook2 from "./Pages/LookBook2";
-
   import Login from "./Pages/Login";
   import Preloader from "./Components/Preloader";
   import Cart from "./Pages/Cart";
@@ -37,6 +36,9 @@
   import Teams from "./Pages/Teams";
   import Teaminfo from "./Pages/Teaminfo";
 import Gallery from "./Pages/Gallery";
+import QualityPolicy from "./Pages/QualityPolicy";
+import FactoryTour from "./Pages/FactoryTour";
+
   function AppContent() {
     const [loading, setLoading] = useState(true);
     const location = useLocation();
@@ -89,6 +91,8 @@ import Gallery from "./Pages/Gallery";
               <Route path="/blog2" element={<Blog2 />} />
               <Route path="/blog3" element={<Blog3 />} />
               <Route path="/ProductDetails/:id" element={<ProductDetails />} />
+              <Route path="/quaitypolicy" element={<QualityPolicy/>}/>
+              <Route path="/factorytour" element={<FactoryTour/>}/>
             </Routes>
           </>
         )}
