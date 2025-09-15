@@ -65,7 +65,7 @@ export default function Laboratory() {
     {/* Image column */}
     <div className="col-sm-12 col-md-6 text-center">
       <img
-        src={Image.FabricDivision}
+        src={Image.Laboratory}
         alt="fabricdivision"
         className="unique-division-img"
       />

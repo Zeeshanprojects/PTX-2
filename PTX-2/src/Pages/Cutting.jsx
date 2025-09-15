@@ -48,31 +48,39 @@ export default function Cutting() {
             fontWeight: "bold",
             textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
           }}
-        >CUTTING
+        >
+          CUTTING
         </div>
       </div>
-    <div className="container unique-division-section">
-  <div className="row align-items-center">
-    {/* Text column */}
-    <div className="col-sm-12 col-md-6">
-      <h4 className="fw-bold"> CUTTING</h4>
-      <p className="unique-division-text">
-The cutting process is the foundation of garment manufacturing, where fabric is precisely measured and cut according to the approved patterns. Accuracy in cutting is critical, as it directly impacts the fit, shape, and overall quality of the garment. Using advanced techniques and tools, the fabric is layered, marked, and cut to ensure minimal wastage and maximum efficiency. This stage sets the tone for the stitching and finishing processes, making it one of the most vital steps in the textile production line.
-      </p>
-    </div>
+      <div className="container unique-division-section">
+        <div className="row align-items-center">
+          {/* Text column */}
+          <div className="col-sm-12 col-md-6">
+            <h4 className="fw-bold"> CUTTING</h4>
+            <p className="unique-division-text">
+              At PTX,the cutting process serves as the foundation of garment manufacturing,
+              where fabric is precisely measured and cut according to the
+              approved patterns. Accuracy in cutting is critical, as it directly
+              impacts the fit, shape, and overall quality of the garment. Using
+              advanced techniques and tools, the fabric is layered, marked, and
+              cut to ensure minimal wastage and maximum efficiency. This stage
+              sets the tone for the stitching and finishing processes, making it
+              one of the most vital steps in the textile production line.
+            </p>
+          </div>
 
-    {/* Image column */}
-    <div className="col-sm-12 col-md-6 text-center">
-      <img
-        src={Image.FabricDivision}
-        alt="fabricdivision"
-        className="unique-division-img"
-      />
-    </div>
-  </div>
-</div>
+          {/* Image column */}
+          <div className="col-sm-12 col-md-6 text-center">
+            <img
+              src={Image.Cutting}
+              alt="fabricdivision"
+              className="unique-division-img"
+            />
+          </div>
+        </div>
+      </div>
 
-        <div className="space"></div>
+      <div className="space"></div>
       <Footer />
     </>
   );
