@@ -22,11 +22,7 @@ import Search from "./Pages/Search";
 import ProductDetails from "./Pages/ProductDetails";
 import AboutUs from "./Pages/AboutUs";
 import Services from "./Pages/Services";
-import Manufacturing from "./Pages/Manufacturing";
-import QualityAssurance from "./Pages/QualityAssurance";
-import Logistics from "./Pages/Logistics";
-import Sourcing from "./Pages/Sourcing";
-import Studio from "./Pages/Studio";
+
 import Inquireform from "./Pages/Inquireform";
 import ProductDevelopment from "./Pages/ProductDevelopment";
 import Blog1 from "./Pages/Blog1";
@@ -46,6 +42,7 @@ import Cutting from "./Pages/Cutting";
 import Stitching from "./Pages/Stitching";
 import Finishing from "./Pages/Finishing";
 import Laboratory from "./Pages/Laboratory";
+import QualityAssurance from "./Pages/QualityAssurance";
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -70,11 +67,9 @@ function AppContent() {
             <Route path="/" element={<Home />} />
             <Route path="/Aboutus" element={<AboutUs />} />
             <Route path="/Services" element={<Services />} />
-            <Route path="/Manufacturing" element={<Manufacturing />} />
+        
             <Route path="/QualityAssurance" element={<QualityAssurance />} />
-            <Route path="/Logistics" element={<Logistics />} />
-            <Route path="/Sourcing" element={<Sourcing />} />
-            <Route path="/Studio" element={<Studio />} />
+           
             <Route
               path="/productdevelopment"
               element={<ProductDevelopment />}

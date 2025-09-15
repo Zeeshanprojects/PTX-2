@@ -57,7 +57,7 @@ export default function Cutting() {
     <div className="col-sm-12 col-md-6">
       <h4 className="fw-bold"> CUTTING</h4>
       <p className="unique-division-text">
-      Our fabric garment services deliver premium-quality clothing crafted with precision and care, using a diverse selection of high-grade fabrics. From design to production, we ensure each garment meets your unique specifications, offering exceptional comfort, style, and durability. Our expert team combines advanced techniques with sustainable practices to create garments that elevate your brand and satisfy your customers.
+The cutting process is the foundation of garment manufacturing, where fabric is precisely measured and cut according to the approved patterns. Accuracy in cutting is critical, as it directly impacts the fit, shape, and overall quality of the garment. Using advanced techniques and tools, the fabric is layered, marked, and cut to ensure minimal wastage and maximum efficiency. This stage sets the tone for the stitching and finishing processes, making it one of the most vital steps in the textile production line.
       </p>
     </div>
 

@@ -58,20 +58,14 @@ export default function Stitching() {
           <div className="col-sm-12 col-md-6">
             <h4 className="fw-bold">STITCHING</h4>
             <p className="unique-division-text">
-              Our fabric garment services deliver premium-quality clothing
-              crafted with precision and care, using a diverse selection of
-              high-grade fabrics. From design to production, we ensure each
-              garment meets your unique specifications, offering exceptional
-              comfort, style, and durability. Our expert team combines advanced
-              techniques with sustainable practices to create garments that
-              elevate your brand and satisfy your customers.
+           We have a vast range of stitching unit, that is fully equipped with latest automatic and semi automatic machines. This gives us flexibility and speed to produce many types of garments simultaneously. The Quality control and Quality Assurance departments are in place to make sure the company’s objective of zero defect. We ensure the quality and customer’s standards at the start of the production in the sewing lines and at the end of final stage before packing.
             </p>
           </div>
 
           {/* Image column */}
           <div className="col-sm-12 col-md-6 text-center">
             <img
-              src={Image.FabricDivision}
+              src={Image.Stitching}
               alt="fabricdivision"
               className="unique-division-img"
             />

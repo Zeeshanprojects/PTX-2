@@ -52,28 +52,28 @@ export default function Finishing() {
           FINISHING
         </div>
       </div>
-    <div className="container unique-division-section">
-  <div className="row align-items-center">
-    {/* Text column */}
-    <div className="col-sm-12 col-md-6">
-      <h4 className="fw-bold">FINISHING</h4>
-      <p className="unique-division-text">
-      Our fabric garment services deliver premium-quality clothing crafted with precision and care, using a diverse selection of high-grade fabrics. From design to production, we ensure each garment meets your unique specifications, offering exceptional comfort, style, and durability. Our expert team combines advanced techniques with sustainable practices to create garments that elevate your brand and satisfy your customers.
-      </p>
-    </div>
+      <div className="container unique-division-section">
+        <div className="row align-items-center">
+          {/* Text column */}
+          <div className="col-sm-12 col-md-6">
+            <h4 className="fw-bold">FINISHING</h4>
+            <p className="unique-division-text">
+             At PTX, finishing is where perfection takes shape. After stitching, every garment goes through a meticulous finishing process designed to enhance its look, feel, and durability. From advanced washing techniques and controlled shrinkage to pressing, labeling, and packaging, we ensure each product is retail-ready and meets international quality standards. Our finishing department focuses on detail, ensuring smooth textures, vibrant colors, and flawless presentation — so that every piece leaving PTX reflects the promise of excellence and reliability our clients trust.
+            </p>
+          </div>
 
-    {/* Image column */}
-    <div className="col-sm-12 col-md-6 text-center">
-      <img
-        src={Image.FabricDivision}
-        alt="fabricdivision"
-        className="unique-division-img"
-      />
-    </div>
-  </div>
-</div>
+          {/* Image column */}
+          <div className="col-sm-12 col-md-6 text-center">
+            <img
+              src={Image.Finishing}
+              alt="fabricdivision"
+              className="unique-division-img"
+            />
+          </div>
+        </div>
+      </div>
 
-        <div className="space"></div>
+      <div className="space"></div>
       <Footer />
     </>
   );

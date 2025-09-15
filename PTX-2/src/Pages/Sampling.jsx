@@ -58,14 +58,14 @@ export default function Sampling() {
     <div className="col-sm-12 col-md-6">
       <h4 className="fw-bold">SAMPLING</h4>
       <p className="unique-division-text">
-      Our fabric garment services deliver premium-quality clothing crafted with precision and care, using a diverse selection of high-grade fabrics. From design to production, we ensure each garment meets your unique specifications, offering exceptional comfort, style, and durability. Our expert team combines advanced techniques with sustainable practices to create garments that elevate your brand and satisfy your customers.
+At PTX, sampling is more than just a step — it’s the foundation of trust with our clients. We create high-quality prototype garments that reflect the exact design, fabric, and finish envisioned by our partners. Each sample undergoes strict evaluation for fit, durability, and aesthetics, ensuring it meets international standards before moving into bulk production. This process not only helps reduce errors and wastage but also demonstrates our commitment to precision, innovation, and customer satisfaction. With PTX, every sample is a promise of excellence.
       </p>
     </div>
 
     {/* Image column */}
     <div className="col-sm-12 col-md-6 text-center">
       <img
-        src={Image.FabricDivision}
+        src={Image.Sampling}
         alt="fabricdivision"
         className="unique-division-img"
       />

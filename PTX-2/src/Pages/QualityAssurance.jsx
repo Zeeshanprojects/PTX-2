@@ -1,140 +1,79 @@
 import { useEffect } from "react";
-import React from "react";
+import Image from "../Images/Image";
 
 import Footer from "../Components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Image from "../Images/Image";
 export default function QualityAssurance() {
-
   useEffect(() => {
-    document.title = "Quality Assurance | Pakistan Textile Exchange ";
-  });
+    document.title = "Dyeing anf Finishing | Pakistan Textile Exchange ";
+  }, []);
   useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration in ms
       once: true, // whether animation should happen only once
     });
   }, []);
-
   return (
     <>
-       <div
-        className="container-fluid p-0 mt-lg-5 mt-xl-5 mt-4 position-relative"
+      <div
+        className="container-fluid p-0 mt-lg-5 mt-4 position-relative"
         data-aos="fade-up"
         fetchPriority="high"
-        style={{ textAlign: "center" }}
+        style={{ textAlign: "" }}
       >
         {/* Banner Image */}
-        <div className="col-12">
+        <br />
+        <div className="col-12 ">
           <img
             src={Image.banner2}
             alt="ptx-banner-image"
             className="ptx-banner-image w-100"
             fetchPriority="high"
-            style={{ display: "block" ,  }}
+            style={{ display: "block" }}
           />
         </div>
 
         {/* Text Overlay */}
         <div
-         className="text-overlay-size"
+          className="text-overlay-size"
           style={{
             position: "absolute",
             top: "50%",
             left: "30%",
-            
+
             transform: "translate(-50%, -50%)",
             color: "white",
-          
+            // fontSize: "5rem",
             fontWeight: "bold",
             textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
           }}
         >
-     QUALITY
+          QUALITY ASSURANCE
         </div>
       </div>
-      <div className="space"></div>
-      <div className="container" data-aos="fade-up">
-        <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <div className="card-body bg-white">
-              <h2 className="card-title service">
-                Ensuring Best Apparel Quality
-              </h2>
+      <div className="container unique-division-section">
+        <div className="row align-items-center">
+          {/* Text column */}
+          <div className="col-sm-12 col-md-6">
+            <h4 className="fw-bold">QUALITY ASSURANCE</h4>
+            <p className="unique-division-text">
+            At PTX, quality is not just an objective — it is our commitment. Our Quality Assurance team ensures that every stage of production, from fabric selection to final packaging, adheres to the highest international standards. Using advanced testing methods and modern laboratory facilities, we closely monitor color fastness, shrinkage, stitching accuracy, and overall durability. Each garment is inspected with precision to guarantee consistency and excellence. With PTX, clients can be confident that every product delivered is crafted to perfection, meeting both global benchmarks and customer expectations.
+            </p>
+          </div>
 
-              <p
-                className="card-text service mt-2"
-                style={{ textAlign: "justify" }}
-              >
-                Pakistan textile exchange prides itself on strict focus of
-                quality assurance, we do not just handle in-line and final
-                inspection we start with product induction, inspecting yarn,
-                fabrication, finishing, shrinkage, sewing all the way to carton
-                packing and loading into the container. All visible real time
-                and online through our PLM. We are very proud of our quality
-                track record.
-              </p>
-            </div>
-            <div className="card-body bg-white serviceparagraph">
-              <h2 className="card-title service mt-4">
-                Quality Assurance and Quality Control
-              </h2>
-
-              <p
-                className="card-text  service mt-2 "
-                style={{ textAlign: "justify" }}
-              >
-                Quality assurance and quality control may seem the same thing,
-                but they’re not. Apparel garments, accessories, and other
-                textile products are assessed for quality in the preproduction
-                phase, during production, and with a final inspection after the
-                product has been completed. Quality Assurance (QA) is focused on
-                the process. It builds quality into each step of the
-                manufacturing process including designing, production, and
-                beyond.
-              </p>
-            </div>
-            <div className="card-body bg-white serviceparagraph">
-              <h2 className="card-title service mt-4">
-                In-line Production Inspection
-              </h2>
-
-              <p
-                className="card-text  service mt-2"
-                style={{ textAlign: "justify" }}
-              >
-                In-line product inspection or DUPRO (During Production
-                Inspection) is an effective way for customers to know about the
-                status of the manufacturing of an order, gain important
-                information about the shipment schedule and identify defects
-                early on before they affect the entire production.
-              </p>
-            </div>
-
-            <div className="card-body bg-white ">
-              <h2 className="card-title service mt-4">Why Choose PTX</h2>
-
-              <p
-                className="card-text service mt-2"
-                style={{ textAlign: "justify" }}
-              >
-                We never compromise with the quality as we consider it as our
-                success pillar. We believe that compromising on quality leads to
-                losing market share or clients. We believe that if we have
-                customers, we have everything. That is why, we have appointed a
-                separate team to answer the queries of customers and satisfy
-                them on their needs. For us customer satisfaction is above all.
-              </p>
-            </div>
-            <br />
-        
+          {/* Image column */}
+          <div className="col-sm-12 col-md-6 text-center">
+            <img
+              src={Image.FabricDivision}
+              alt="fabricdivision"
+              className="unique-division-img"
+            />
           </div>
         </div>
       </div>
 
       <div className="space"></div>
-
       <Footer />
     </>
   );

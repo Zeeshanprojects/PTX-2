@@ -1,5 +1,6 @@
 import DyeingandFinishing from "../Pages/DyeingandFinishing";
 import FabricDivision from "../Pages/FabricDivision";
+import Stitching from "../Pages/Stitching";
 
 const Image = {
   logo: require("./PTX-Main-Logo.png"),
@@ -112,6 +113,11 @@ const Image = {
   location: require("./location.webp"),
   FabricDivision: require("./fabricdivision.webp"),
   GarmentDivision: require("./Garment.webp"),
-  DyeingandFinishing: require("./DyeingandFinishing.webp"),
+  DyeingandFinishing: require("./Dyeing and finishing.webp"),
+  Stitching: require("./stitching.webp"),
+  Sampling: require("./sampling.webp"),
+  Cutting: require("./cutting.webp"),
+  Finishing: require("./finishing.webp"),
+  Laboratory: require("./laboratory.webp"),
 };
 export default Image;
