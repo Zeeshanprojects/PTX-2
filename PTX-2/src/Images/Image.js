@@ -110,5 +110,6 @@ const Image = {
   CEO: require("./Davidjumani.webp"),
   location: require("./location.webp"),
   FabricDivision: require("./fabricdivision.webp"),
+  GarmentDivision: require("./garment.webp"),
 };
 export default Image;

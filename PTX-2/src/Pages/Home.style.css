@@ -65,19 +65,19 @@ body {
   animation: shimmer 1.5s infinite;
 }
 /* Unique section wrapper */
-.fabric-division-section {
+.unique-division-section {
   padding: 50px 0;
 }
 
 /* Text styling */
-.fabric-division-text {
+.unique-division-text {
   font-size: 16px;
   line-height: 1.8;
   color: #333;
 }
 
 /* Image styling */
-.fabric-division-img {
+.unique-division-img {
   max-width: 100%;
   height: auto;
   border-radius: 8px; /* optional */

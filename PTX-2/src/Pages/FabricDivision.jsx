@@ -52,17 +52,13 @@ export default function FabricDivision() {
           FABRIC DIVISION
         </div>
       </div>
-    <div className="container fabric-division-section">
+    <div className="container unique-division-section">
   <div className="row align-items-center">
     {/* Text column */}
     <div className="col-sm-12 col-md-6">
       <h4 className="fw-bold"> FABRIC DIVISION</h4>
-      <p className="fabric-division-text">
-        We are a leading manufacturer and exporter of assorted knitted fabrics like 
-        Single jersey, interlock, rib, terry, pique, Brush Back, Spandex Terry, 
-        Loop Back Terry, Fleece pointelle, jacquards (sj & Interlock), 
-        autostripers (Sj & Rib), transfer jacquards comprises of various natural 
-        and man-made fibre like Viscose, Modal & Blended Fibers and yarn dyed.
+      <p className="unique-division-text">
+      Our fabric garment services deliver premium-quality clothing crafted with precision and care, using a diverse selection of high-grade fabrics. From design to production, we ensure each garment meets your unique specifications, offering exceptional comfort, style, and durability. Our expert team combines advanced techniques with sustainable practices to create garments that elevate your brand and satisfy your customers.
       </p>
     </div>
 
@@ -71,7 +67,7 @@ export default function FabricDivision() {
       <img
         src={Image.FabricDivision}
         alt="fabricdivision"
-        className="fabric-division-img"
+        className="unique-division-img"
       />
     </div>
   </div>

@@ -52,6 +52,26 @@ export default function DyeingandFinishing() {
        DYEING AND FINISHING
         </div>
       </div>
+          <div className="container unique-division-section">
+  <div className="row align-items-center">
+    {/* Text column */}
+    <div className="col-sm-12 col-md-6">
+      <h4 className="fw-bold"> Dyring and Finishing</h4>
+      <p className="unique-division-text">
+       Our dyeing and finishing services transform raw fabrics into vibrant, high-quality textiles with exceptional color consistency and durability. Utilizing state-of-the-art equipment and eco-friendly processes, we offer a wide range of dyeing techniques and finishing treatments tailored to meet your specific needs, ensuring superior texture, colorfastness, and aesthetic appeal for every project.
+      </p>
+    </div>
+
+    {/* Image column */}
+    <div className="col-sm-12 col-md-6 text-center">
+      <img
+        src={Image.DyeingandFinishing}
+        alt="fabricdivision"
+        className="unique-division-img"
+      />
+    </div>
+  </div>
+</div>
         <div className="space"></div>
 <Footer/>
    </>
