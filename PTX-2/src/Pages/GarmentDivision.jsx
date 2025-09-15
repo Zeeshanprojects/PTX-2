@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 export default function GarmentDivision() {
   useEffect(() => {
-    document.title = "Dyeing anf Finishing | Pakistan Textile Exchange ";
+    document.title = "Dyeing and Finishing | Pakistan Textile Exchange ";
   }, []);
   useEffect(() => {
     AOS.init({
