@@ -92,11 +92,7 @@ export default function Header() {
                   QUALITY POLICY
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <Link className="dropdown-item" to="#" onClick={closeNavbar}>
-                      Quality Assurance
-                    </Link>
-                  </li>
+                
                   <li>
                     <Link className="dropdown-item" to="/dyeingandfinishing">
                       Dyeing And Finishing

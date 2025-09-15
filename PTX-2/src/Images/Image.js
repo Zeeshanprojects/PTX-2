@@ -1,3 +1,4 @@
+import DyeingandFinishing from "../Pages/DyeingandFinishing";
 import FabricDivision from "../Pages/FabricDivision";
 
 const Image = {
@@ -110,6 +111,7 @@ const Image = {
   CEO: require("./Davidjumani.webp"),
   location: require("./location.webp"),
   FabricDivision: require("./fabricdivision.webp"),
-  GarmentDivision: require("./garment.webp"),
+  GarmentDivision: require("./Garment.webp"),
+  DyeingandFinishing: require("./DyeingandFinishing.webp"),
 };
 export default Image;
