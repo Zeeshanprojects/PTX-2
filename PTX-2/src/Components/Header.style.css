@@ -21,6 +21,7 @@
 
 .navbar {
   background-color: black !important;
+  height: 80px !important;
 }
 .logocolor {
   filter: invert(1);
@@ -87,25 +88,29 @@
 .nav-link:hover::after {
   width: 100%;
 }
-.Top-header {
-  background-color: white;
 
-  height: 70px;
-}
-.Top-header .h1 {
-  color: black !important;
-}
-.dropdown-menu{
+.dropdown-menu {
   padding: 20px !important;
 }
-.dropdown-item{
+.dropdown-item {
   padding: 10px !important;
 }
-@media (max-width:992px) {
-  .nav-item{
+/* Show dropdown menu on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* removes jump */
+}
+
+/* Change caret/plus rotation on hover (optional) */
+.nav-item.dropdown:hover .fa-plus {
+  transform: rotate(45deg); /* turns + into × */
+  transition: 0.3s ease;
+}
+@media (max-width: 992px) {
+  .nav-item {
     padding-top: 10px !important;
   }
- .nav-link{
-  padding: 12px 5px !important;
- } 
+  .nav-link {
+    padding: 12px 5px !important;
+  }
 }
