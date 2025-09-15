@@ -1,6 +1,6 @@
- .background-color {
+.background-color {
   position: relative;
-  height:100vh;
+  height: 100vh;
   width: 100vw !important;
   display: flex;
 
@@ -8,8 +8,8 @@
   align-items: center;
   color: white;
   font-weight: bold;
-  overflow: hidden; 
-} 
+  overflow: hidden;
+}
 /* 
 .background-color::before {
   content: '';
@@ -46,8 +46,7 @@
   min-width: 300px;
 }
 .service-card {
-
- box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   padding: 45px !important;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -116,8 +115,8 @@
   font-size: 0.95rem;
   color: #555;
 }
-.read-more{
-border-radius: 20px !important;
+.read-more {
+  border-radius: 20px !important;
 }
 
 @media (max-width: 992px) {
@@ -138,12 +137,12 @@ border-radius: 20px !important;
   }
 }
 @media screen and (max-width: 576px) {
-   .background-color {
-  position: relative;
-  height:50vh;
-  width: 100vw !important;
-  display: flex;
+  .background-color {
+    position: relative;
+    height: 50vh;
+    width: 100vw !important;
+    display: flex;
 
-  object-fit: cover !important;
-} 
+    object-fit: cover !important;
+  }
 }

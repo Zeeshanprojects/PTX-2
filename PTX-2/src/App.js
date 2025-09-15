@@ -38,6 +38,10 @@
 import Gallery from "./Pages/Gallery";
 import QualityPolicy from "./Pages/QualityPolicy";
 import FactoryTour from "./Pages/FactoryTour";
+import DyeingandFinishing from "./Pages/DyeingandFinishing";
+import FabricDivision from "./Pages/FabricDivision";
+import GarmentDivision from "./Pages/GarmentDivision";
+
 
   function AppContent() {
     const [loading, setLoading] = useState(true);
@@ -82,7 +86,6 @@ import FactoryTour from "./Pages/FactoryTour";
               <Route path="/LookBook-V1" element={<LookBook1 />} />
               <Route path="/LookBook-V2" element={<LookBook2 />} />
               <Route path="/Gallery" element={<Gallery />} />
-        
               <Route path="/Login" element={<Login />} />
               <Route path="/Cart" element={<Cart />} />
               <Route path="/Checkout" element={<Checkout />} />
@@ -93,6 +96,9 @@ import FactoryTour from "./Pages/FactoryTour";
               <Route path="/ProductDetails/:id" element={<ProductDetails />} />
               <Route path="/quaitypolicy" element={<QualityPolicy/>}/>
               <Route path="/factorytour" element={<FactoryTour/>}/>
+          <Route path="dyeingandfinishing" element={<DyeingandFinishing/>}/>
+          <Route path="fabricdivision" element={<FabricDivision/>}/>
+          <Route path="/garmentdivision" element={<GarmentDivision/>}/>
             </Routes>
           </>
         )}
