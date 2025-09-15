@@ -81,8 +81,8 @@ export default function Header() {
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
+                <Link
+                  className="nav-link active"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -90,7 +90,7 @@ export default function Header() {
                   aria-expanded="false"
                 >
                   QUALITY POLICY
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a className="dropdown-item" href="#">
@@ -114,7 +114,7 @@ export default function Header() {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link active"
                   href="#"
                   id="navbarDropdown"
                   role="button"
