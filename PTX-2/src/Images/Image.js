@@ -1,3 +1,6 @@
+import DyeingandFinishing from "../Pages/DyeingandFinishing";
+import FabricDivision from "../Pages/FabricDivision";
+
 const Image = {
   logo: require("./PTX-Main-Logo.png"),
   bannerimage: require("./PTX-Main-banner.webp"),
@@ -107,6 +110,8 @@ const Image = {
   sectionimage: require("./sectionbanner.webp"),
   CEO: require("./Davidjumani.webp"),
   location: require("./location.webp"),
-
+  FabricDivision: require("./fabricdivision.webp"),
+  GarmentDivision: require("./Garment.webp"),
+  DyeingandFinishing: require("./DyeingandFinishing.webp"),
 };
 export default Image;

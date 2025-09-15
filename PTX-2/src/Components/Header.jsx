@@ -80,6 +80,80 @@ export default function Header() {
                   CONTACT
                 </Link>
               </li>
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link active"
+                  to="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  QUALITY POLICY
+                </Link>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  <li>
+                    <Link className="dropdown-item" to="/dyeingandfinishing">
+                      Dyeing And Finishing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/fabricdivision">
+                      Fabric Division
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/GarmentDivision">
+                      Garment Division
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  FACTORY TOUR
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Dyeing And Finishing Capacity
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Cutting
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Sampling
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Stitching
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Finishing
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Laboratory
+                    </a>
+                  </li>
+                </ul>
+              </li>
 
               <li className="nav-item">
                 <Link
@@ -115,7 +189,7 @@ export default function Header() {
                 </a>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a
                   className="nav-link active d-flex align-items-center gap-1"
                   href="https://styles.paktex.com/"
@@ -126,7 +200,7 @@ export default function Header() {
                   STYLES
                   <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" />
                 </a>
-              </li>
+              </li> */}
             </ul>
 
             {/* Login Icon on large screens */}

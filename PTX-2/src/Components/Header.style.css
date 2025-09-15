@@ -21,6 +21,7 @@
 
 .navbar {
   background-color: black !important;
+  height: 80px !important;
 }
 .logocolor {
   filter: invert(1);
@@ -63,7 +64,7 @@
   transition: all 0.3s ease;
 }
 
-.nav-icons a:hover {
+/* .nav-icons a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
 }
@@ -86,21 +87,33 @@
 }
 .nav-link:hover::after {
   width: 100%;
-}
-.Top-header {
-  background-color: white;
+} */
+.nav-link:hover {
+  color: #C39764 !important;
 
-  height: 70px;
 }
-.Top-header .h1 {
-  color: black !important;
+.dropdown-menu {
+  padding: 20px !important;
+}
+.dropdown-item {
+  padding: 10px !important;
+}
+/* Show dropdown menu on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* removes jump */
 }
 
-@media (max-width:992px) {
-  .nav-item{
+/* Change caret/plus rotation on hover (optional) */
+.nav-item.dropdown:hover .fa-plus {
+  transform: rotate(45deg); /* turns + into × */
+  transition: 0.3s ease;
+}
+@media (max-width: 992px) {
+  .nav-item {
     padding-top: 10px !important;
   }
- .nav-link{
-  padding: 12px 5px !important;
- } 
+  .nav-link {
+    padding: 12px 5px !important;
+  }
 }

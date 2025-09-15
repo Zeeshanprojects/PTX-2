@@ -11,7 +11,6 @@ body {
   position: relative;
   display: inline-block;
   width: 100%;
-  
 }
 
 .video-container video {
@@ -24,13 +23,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;              /* flexbox */
-  justify-content: center;    /* center horizontally */
-  align-items: center;        /* center vertically */
-  
-  width: 100px;   /* fixed size button */
+  display: flex; /* flexbox */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+
+  width: 100px; /* fixed size button */
   height: 100px;
-  
+
   background: white(0, 0, 0, 0.6);
   border: none;
   border-radius: 50%;
@@ -39,8 +38,6 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
-
 
 .play-btn:hover {
   background: rgba(0, 0, 0, 0.8);
@@ -66,6 +63,25 @@ body {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
+}
+/* Unique section wrapper */
+.unique-division-section {
+  padding: 50px 0;
+}
+
+/* Text styling */
+.unique-division-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Image styling */
+.unique-division-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* optional */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* optional */
 }
 
 @keyframes shimmer {
@@ -153,9 +169,8 @@ body {
 
 .relationship-icon {
   font-size: 36px;
- 
+
   margin-bottom: 15px;
-   
 }
 
 .icon-circle {
@@ -425,10 +440,10 @@ p {
 }
 
 .card-description {
-  max-width: 850px;     /* keeps text in a readable width */
-  margin: 0 auto 40px;  /* center align with spacing */
+  max-width: 850px; /* keeps text in a readable width */
+  margin: 0 auto 40px; /* center align with spacing */
   font-size: 18px;
-  line-height: 1.8;     /* better readability */
+  line-height: 1.8; /* better readability */
   color: #ddd;
 }
 
@@ -523,7 +538,7 @@ a {
   flex-shrink: 0;
 }
 .stat-box {
-   background: #f6f6f6 !important; 
+  background: #f6f6f6 !important;
   min-width: 140px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -600,7 +615,7 @@ video {
   .heading-size {
     font-size: 40px !important;
   }
-  
+
   .factory-para {
     font-size: 14px !important;
   }
@@ -616,9 +631,9 @@ video {
     min-width: 0 !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-.label{
-  font-size: 12px;
-}
+  .label {
+    font-size: 12px;
+  }
   .custom-box h3 {
     font-size: 2.5rem !important;
   }
@@ -661,14 +676,15 @@ video {
   }
 }
 @media (max-width: 575px) {
-.stat-box{
-  background-color: #f6f6f6 !important;
-}
-.heading-size{
-  font-size: 22px !important;
-}
-  .categories-subtitle{
-    font-size: 14px !important;}
+  .stat-box {
+    background-color: #f6f6f6 !important;
+  }
+  .heading-size {
+    font-size: 22px !important;
+  }
+  .categories-subtitle {
+    font-size: 14px !important;
+  }
   /* .heading-size {
     font-size: 25px !important;
   } */
@@ -693,12 +709,11 @@ video {
     height: auto !important;
     object-fit: contain !important;
   }
-  .card-description{
-    text-align:center !important;
+  .card-description {
+    text-align: center !important;
     hyphens: auto;
   }
-  .ptx-banner-image{
-padding-top: 23px !important;
-   
+  .ptx-banner-image {
+    padding-top: 23px !important;
   }
 }
