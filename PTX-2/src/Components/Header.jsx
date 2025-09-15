@@ -61,7 +61,7 @@ export default function Header() {
                 </Link>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   className="nav-link active"
                   to="/Services"
@@ -69,7 +69,7 @@ export default function Header() {
                 >
                   SERVICES
                 </Link>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <Link
@@ -92,7 +92,11 @@ export default function Header() {
                   QUALITY POLICY
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                
+                 <li>
+                    <Link className="dropdown-item" to="/qualityassurance">
+                      Quality Assurance
+                    </Link>
+                  </li>
                   <li>
                     <Link className="dropdown-item" to="/dyeingandfinishing">
                       Dyeing And Finishing
@@ -122,35 +126,31 @@ export default function Header() {
                   FACTORY TOUR
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                    
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Dyeing And Finishing Capacity
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/Cutting">
                       Cutting
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/Sampling">
                       Sampling
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/stitching">
                       Stitching
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/finishing">
                       Finishing
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/laboratory">
                       Laboratory
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>

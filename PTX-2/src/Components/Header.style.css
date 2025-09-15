@@ -64,34 +64,14 @@
   transition: all 0.3s ease;
 }
 
-/* .nav-icons a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-}
-.nav-link {
-  position: relative;
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  padding-bottom: 5px;
-}
-.nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: white;
-  transition: width 0.3s ease;
-}
-.nav-link:hover::after {
-  width: 100%;
-} */
 .nav-link:hover {
-  color: #C39764 !important;
-
+ color: orange !important;
 }
+.dropdown-item:hover {
+ color: orange !important;
+  background: none !important;
+}
+
 .dropdown-menu {
   padding: 20px !important;
 }
