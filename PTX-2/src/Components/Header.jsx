@@ -83,7 +83,7 @@ export default function Header() {
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link active"
-                  href="#"
+                  to="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -94,20 +94,22 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      QUALITY ASSURANCE
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      DYEING AND FINISHING
                     </a>
                   </li>
                   <li>
-                    <hr className="dropdown-divider" />
+                    <a className="dropdown-item" href="#">
+                      FABRIC DIVISION
+                    </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      GARMENT DIVISION
                     </a>
                   </li>
                 </ul>
@@ -126,20 +128,32 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Dyeing And Finishing Capacity
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      Cutting
                     </a>
                   </li>
                   <li>
-                    <hr className="dropdown-divider" />
+                    <a className="dropdown-item" href="#">
+                      Sampling
+                    </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      Stitching
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Finishing
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Laboratory
                     </a>
                   </li>
                 </ul>

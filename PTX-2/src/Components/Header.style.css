@@ -95,7 +95,12 @@
 .Top-header .h1 {
   color: black !important;
 }
-
+.dropdown-menu{
+  padding: 20px !important;
+}
+.dropdown-item{
+  padding: 10px !important;
+}
 @media (max-width:992px) {
   .nav-item{
     padding-top: 10px !important;
