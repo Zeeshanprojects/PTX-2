@@ -94,22 +94,22 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a className="dropdown-item" href="#">
-                      QUALITY ASSURANCE
+                      Quality Assurance
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      DYEING AND FINISHING
+                      Dyeing And Finishimg
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      FABRIC DIVISION
+                      Fabric Division
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      GARMENT DIVISION
+                      Garment Division
                     </a>
                   </li>
                 </ul>
