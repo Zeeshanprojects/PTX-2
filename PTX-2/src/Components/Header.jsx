@@ -122,35 +122,35 @@ export default function Header() {
                   FACTORY TOUR
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a className="dropdown-item" href="#">
+                     <li>
+                    <Link className="dropdown-item" to="/Cutting">
                       Dyeing And Finishing Capacity
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/Cutting">
                       Cutting
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/Sampling">
                       Sampling
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/stitching">
                       Stitching
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/finishing">
                       Finishing
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/laboratory">
                       Laboratory
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
