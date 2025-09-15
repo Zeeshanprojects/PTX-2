@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Image from "../Images/Image";
-import "./Services.style.css";
+
 import Footer from "../Components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -52,6 +52,32 @@ export default function FabricDivision() {
           FABRIC DIVISION
         </div>
       </div>
+    <div className="container fabric-division-section">
+  <div className="row align-items-center">
+    {/* Text column */}
+    <div className="col-sm-12 col-md-6">
+      <h4 className="fw-bold"> FABRIC DIVISION</h4>
+      <p className="fabric-division-text">
+        We are a leading manufacturer and exporter of assorted knitted fabrics like 
+        Single jersey, interlock, rib, terry, pique, Brush Back, Spandex Terry, 
+        Loop Back Terry, Fleece pointelle, jacquards (sj & Interlock), 
+        autostripers (Sj & Rib), transfer jacquards comprises of various natural 
+        and man-made fibre like Viscose, Modal & Blended Fibers and yarn dyed.
+      </p>
+    </div>
+
+    {/* Image column */}
+    <div className="col-sm-12 col-md-6 text-center">
+      <img
+        src={Image.FabricDivision}
+        alt="fabricdivision"
+        className="fabric-division-img"
+      />
+    </div>
+  </div>
+</div>
+
+        <div className="space"></div>
       <Footer />
     </>
   );
