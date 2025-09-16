@@ -52,10 +52,10 @@ export default function Cutting() {
           CUTTING
         </div>
       </div>
-      <div className="container unique-division-section">
+      <div className="container unique-division-section" >
         <div className="row align-items-center">
           {/* Text column */}
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-12 " data-aos="fade-up">
             <h4 className="fw-bold"> CUTTING</h4>
             <p className="unique-division-text">
               At PTX,the cutting process serves as the foundation of garment manufacturing,
@@ -70,7 +70,7 @@ export default function Cutting() {
           </div>
 
           {/* Image column */}
-          <div className="col-sm-12 col-md-6 text-center">
+          <div className="col-sm-12 col-md-12 text-center" data-aos="fade-up">
             <img
               src={Image.Cutting}
               alt="fabricdivision"

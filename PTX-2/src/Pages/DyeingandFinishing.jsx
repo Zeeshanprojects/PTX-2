@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 export default function DyeingandFinishing() {
     useEffect(() => {
-        document.title = "Dyeing anf Finishing | Pakistan Textile Exchange ";
+        document.title = "Dyeing  | Pakistan Textile Exchange ";
       }, []);
       useEffect(() => {
         AOS.init({
@@ -49,14 +49,14 @@ export default function DyeingandFinishing() {
             textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
           }}
         >
-       DYEING AND FINISHING
+       DYEING
         </div>
       </div>
           <div className="container unique-division-section">
   <div className="row align-items-center">
     {/* Text column */}
     <div className="col-sm-12 col-md-6">
-      <h4 className="fw-bold"> Dyeing and Finishing</h4>
+      <h4 className="fw-bold"> Dyeing</h4>
       <p className="unique-division-text">
        Our dyeing and finishing services transform raw fabrics into vibrant, high-quality textiles with exceptional color consistency and durability. Utilizing state-of-the-art equipment and eco-friendly processes, we offer a wide range of dyeing techniques and finishing treatments tailored to meet your specific needs, ensuring superior texture, colorfastness, and aesthetic appeal for every project.
       </p>

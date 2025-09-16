@@ -55,7 +55,7 @@ export default function Laboratory() {
     <div className="container unique-division-section">
   <div className="row align-items-center">
     {/* Text column */}
-    <div className="col-sm-12 col-md-6">
+    <div className="col-sm-12 col-md-12" data-aos="fade-up">
       <h4 className="fw-bold">LABORATORY</h4>
       <p className="unique-division-text">
 At PTX, our state-of-the-art laboratory plays a crucial role in ensuring the highest standards of textile quality. Every fabric undergoes rigorous testing to evaluate its color fastness, shrinkage, GSM, tensile strength, and durability before moving into bulk production. By simulating real-life conditions, we guarantee that our products meet both international quality benchmarks and the unique requirements of our clients  
@@ -63,7 +63,7 @@ At PTX, our state-of-the-art laboratory plays a crucial role in ensuring the hig
     </div>
 
     {/* Image column */}
-    <div className="col-sm-12 col-md-6 text-center">
+    <div className="col-sm-12 col-md-12 text-center" data-aos="fade-up">
       <img
         src={Image.Laboratory}
         alt="fabricdivision"
