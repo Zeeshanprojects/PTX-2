@@ -658,6 +658,7 @@ video {
     object-fit: cover !important;
     display: block;
   }
+ 
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .carousel-item img {
@@ -676,8 +677,15 @@ video {
   .heading-size {
     font-size: 35px !important;
   }
+   .text-overlay-size{
+    top: 50%;
+    left: 35% !important;
+  }
 }
 @media (max-width: 575px) {
+.text-overlay-size{
+  font-size: 20px !important;
+}
   .stat-box {
     background-color: #f6f6f6 !important;
   }

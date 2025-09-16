@@ -92,7 +92,7 @@ export default function Header() {
                   QUALITY POLICY
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                 <li>
+                  <li>
                     <Link className="dropdown-item" to="/qualityassurance">
                       Quality Assurance
                     </Link>
@@ -126,7 +126,6 @@ export default function Header() {
                   FACTORY TOUR
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    
                   <li>
                     <Link className="dropdown-item" to="/Cutting">
                       Cutting

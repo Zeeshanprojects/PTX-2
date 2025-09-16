@@ -1,99 +1,119 @@
-@keyframes scroll-left {
-  0% {
-    transform: translateX(100%);
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
-  100% {
-    transform: translateX(-100%);
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .navbar-collapse {
+    background-color: black !important; /* makes the collapsed dropdown area black */
+width: 100% !important;
   }
-}
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .scrolling-text {
-    font-size: 0.85rem;
+    .scrolling-text {
+      font-size: 0.85rem;
+    }
   }
-}
 
-@media (max-width: 480px) {
-  .scrolling-text {
-    font-size: 0.75rem;
+  @media (max-width: 480px) {
+    .navbar-collapse {
+    background-color: black !important; /* makes the collapsed dropdown area black */
+    padding: 10px; /* optional for spacing */
   }
-}
+    .scrolling-text {
+      font-size: 0.75rem;
+    }
+  }
 
-.navbar {
-  background-color: black !important;
-  height: 80px !important;
-}
-.logocolor {
-  filter: invert(1);
-  height: 30px;
-}
-.dropdown-menu {
-  background-color: black !important;
-}
-.dropdown-item {
-  color: white !important;
-}
-.dropdown-item:hover {
-  background-color: none !important;
-  color: black !important;
-}
-.dropdown-item:focus {
-  background-color: transparent !important;
-  color: white !important;
-  outline: none !important; /* Remove outline on focus */
-}
+  .navbar {
+    background-color: black !important;
+    height: 80px !important;
+  }
+  .logocolor {
+    filter: invert(1);
+    height: 30px;
+  }
+  .dropdown-menu {
+    background-color: black !important;
+  }
+  .dropdown-item {
+    color: white !important;
+  }
+  .dropdown-item:hover {
+    background-color: none !important;
+    color: black !important;
+  }
+  .dropdown-item:focus {
+    background-color: transparent !important;
+    color: white !important;
+    outline: none !important; /* Remove outline on focus */
+  }
 
-.nav-link {
-  padding-right: 20px !important;
-  font-size: 0.875rem !important;
-}
-.nav-icons {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-.nav-icons a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  /* border: 2px solid rgba(255, 255, 255, 0.5);  */
-  border-radius: 50%;
-  color: rgba(255, 255, 255, 0.7); /* Light color */
-  transition: all 0.3s ease;
-}
+  .nav-link {
+    padding-right: 20px !important;
+    font-size: 0.875rem !important;
+  }
+  .nav-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .nav-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    /* border: 2px solid rgba(255, 255, 255, 0.5);  */
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.7); /* Light color */
+    transition: all 0.3s ease;
+  }
 
-.nav-link:hover {
- color: orange !important;
-}
-.dropdown-item:hover {
- color: orange !important;
-  background: none !important;
-}
+  .nav-link:hover {
+    color: orange !important;
+  }
+  .dropdown-item:hover {
+    color: orange !important;
+    background: none !important;
+  }
 
-.dropdown-menu {
-  padding: 20px !important;
-}
-.dropdown-item {
-  padding: 10px !important;
-}
-/* Show dropdown menu on hover */
+  .dropdown-menu {
+    padding: 20px !important;
+  }
+  .dropdown-item {
+    padding: 10px !important;
+  }
+  /* Show dropdown menu on hover */
+
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
-  margin-top: 0; /* removes jump */
+  margin-top: 0;
 }
-
-/* Change caret/plus rotation on hover (optional) */
-.nav-item.dropdown:hover .fa-plus {
-  transform: rotate(45deg); /* turns + into × */
-  transition: 0.3s ease;
-}
-@media (max-width: 992px) {
-  .nav-item {
-    padding-top: 10px !important;
+  /* Change caret/plus rotation on hover (optional) */
+  .nav-item.dropdown:hover .fa-plus {
+    transform: rotate(45deg); /* turns + into × */
+    transition: 0.3s ease;
   }
-  .nav-link {
-    padding: 12px 5px !important;
+  @media (min-width:993px) and (max-width:1299px) {
+    .nav-item {
+      padding-top: 10px !important;
+    }
+    .nav-link {
+      padding: 15px 8px !important;
+    }
   }
-}
+  @media (max-width: 992px) {
+       .navbar-collapse {
+    background-color: black !important; /* makes the collapsed dropdown area black */
+    padding: 10px; /* optional for spacing */
+  }
+    .nav-item {
+      padding-top: 10px !important;
+    }
+    .nav-link {
+      padding: 12px 5px !important;
+    }
+  }
