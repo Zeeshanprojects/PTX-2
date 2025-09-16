@@ -68,6 +68,7 @@ export default function Stitching() {
               src={Image.Stitching}
               alt="fabricdivision"
               className="unique-division-img"
+              fetchPriority="high"
             />
           </div>
         </div>

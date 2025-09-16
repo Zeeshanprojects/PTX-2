@@ -68,6 +68,7 @@ export default function Finishing() {
               src={Image.Finishing}
               alt="fabricdivision"
               className="unique-division-img"
+              fetchPriority="high"
             />
           </div>
         </div>

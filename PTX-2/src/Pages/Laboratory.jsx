@@ -68,6 +68,7 @@ At PTX, our state-of-the-art laboratory plays a crucial role in ensuring the hig
         src={Image.Laboratory}
         alt="fabricdivision"
         className="unique-division-img"
+        fetchPriority="high"
       />
     </div>
   </div>

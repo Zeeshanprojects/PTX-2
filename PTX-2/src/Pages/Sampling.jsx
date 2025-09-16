@@ -68,6 +68,7 @@ At PTX, sampling is more than just a step — it’s the foundation of trust wit
         src={Image.Sampling}
         alt="fabricdivision"
         className="unique-division-img"
+        fetchPriority="high"
       />
     </div>
   </div>

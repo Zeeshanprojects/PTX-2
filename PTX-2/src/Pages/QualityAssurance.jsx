@@ -68,6 +68,7 @@ export default function QualityAssurance() {
               src={Image.qualityassurance}
               alt="fabricdivision"
               className="unique-division-img"
+              fetchPriority="high"
             />
           </div>
         </div>

@@ -75,6 +75,7 @@ export default function Cutting() {
               src={Image.Cutting}
               alt="fabricdivision"
               className="unique-division-img"
+              fetchPriority="high"
             />
           </div>
         </div>

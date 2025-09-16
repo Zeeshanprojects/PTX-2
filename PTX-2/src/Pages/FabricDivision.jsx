@@ -68,6 +68,7 @@ export default function FabricDivision() {
         src={Image.FabricDivision}
         alt="fabricdivision"
         className="unique-division-img"
+        fetchPriority="high"
       />
     </div>
   </div>
