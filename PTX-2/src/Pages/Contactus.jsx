@@ -65,7 +65,7 @@ export default function ContactUs() {
   return (
     <>
        <div
-        className="container-fluid p-0 mt-5 position-relative"
+        className="container-fluid p-0 mt-lg-5 mt-4 position-relative"
         data-aos="fade-up"
         fetchPriority="high"
         style={{ textAlign: "center" }}
@@ -75,7 +75,7 @@ export default function ContactUs() {
           <img
             src={Image.banner2}
             alt="ptx-banner-image"
-            className="ptx-banner-image w-100"
+            className="ptx-banner-image2 w-100"
             fetchPriority="high"
             style={{ display: "block" ,  }}
           />

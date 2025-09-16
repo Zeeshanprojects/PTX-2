@@ -30,7 +30,7 @@ export default function AboutUs() {
           <img
             src={Image.banner2}
             alt="ptx-banner-image"
-            className="ptx-banner-image w-100"
+            className="ptx-banner-image2 w-100"
             fetchPriority="high"
             style={{ display: "block" }}
           />

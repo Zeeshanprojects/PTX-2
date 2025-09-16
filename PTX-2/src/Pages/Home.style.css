@@ -1,11 +1,15 @@
 body {
   overflow-x: hidden;
 }
-/* Existing styles (assumed to be present, not fully listed for brevity) */
 .ptx-banner-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: auto !important;
+
+}
+/* Existing styles (assumed to be present, not fully listed for brevity) */
+.ptx-banner-image2{
+height: 35lvh;
+object-fit: cover;
+width: 100%;
 }
 .video-container {
   position: relative;
@@ -733,7 +737,10 @@ video {
     text-align: center !important;
     hyphens: auto;
   }
-  .ptx-banner-image {
-    padding-top: 23px !important;
-  }
+  
+  .ptx-banner-image2{
+height: 20lvh;
+object-fit: cover;
+width: 100%;
+}
 }
