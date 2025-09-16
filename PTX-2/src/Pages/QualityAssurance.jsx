@@ -57,7 +57,7 @@ export default function QualityAssurance() {
           {/* Text column */}
           <div className="col-sm-12 col-md-6">
             <h4 className="fw-bold">QUALITY ASSURANCE</h4>
-            <p className="unique-division-text">
+            <p className="unique-division-text ">
             At PTX, quality is not just an objective — it is our commitment. Our Quality Assurance team ensures that every stage of production, from fabric selection to final packaging, adheres to the highest international standards. Using advanced testing methods and modern laboratory facilities, we closely monitor color fastness, shrinkage, stitching accuracy, and overall durability. Each garment is inspected with precision to guarantee consistency and excellence. With PTX, clients can be confident that every product delivered is crafted to perfection, meeting both global benchmarks and customer expectations.
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function QualityAssurance() {
           {/* Image column */}
           <div className="col-sm-12 col-md-6 text-center">
             <img
-              src={Image.FabricDivision}
+              src={Image.qualityassurance}
               alt="fabricdivision"
               className="unique-division-img"
             />

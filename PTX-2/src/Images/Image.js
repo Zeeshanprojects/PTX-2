@@ -111,13 +111,14 @@ const Image = {
   sectionimage: require("./sectionbanner.webp"),
   CEO: require("./Davidjumani.webp"),
   location: require("./location.webp"),
+  qualityassurance: require("./QA.webp"),
   FabricDivision: require("./fabricdivision.webp"),
-  GarmentDivision: require("./Garment.webp"),
-  DyeingandFinishing: require("./Dyeing and finishing.webp"),
+  GarmentDivision: require("./Garmentdivision.webp"),
+  DyeingandFinishing: require("./Dyeing.webp"),
   Stitching: require("./stitching.webp"),
   Sampling: require("./sampling.webp"),
   Cutting: require("./cutting.webp"),
-  Finishing: require("./finishing.webp"),
+  Finishing: require("./Finishing.webp"),
   Laboratory: require("./laboratory.webp"),
 };
 export default Image;

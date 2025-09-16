@@ -333,7 +333,7 @@ export default function Home() {
           <div className="container my-5" data-aos="fade-up">
             <div className="row align-items-center">
               <div className="col-lg-6 mb-4 mb-lg-0 h-100">
-                <h1 className="heading-size fw-bold">OUR FACTORY PRODUCTION</h1>
+                <h3 className=" fw-bold">OUR FACTORY PRODUCTION</h3>
                 <p className="factory-para">
                   At our state-of-the-art textile facility, we specialize in the
                   production of high-quality fabrics ranging from denim to woven
