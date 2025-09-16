@@ -57,121 +57,35 @@ export default function AboutUs() {
       </div>
 
       <div className="container my-5">
-        <div className="row align-items-stretch g-4">
-          <div className="col-sm-12 col-md-6" data-aos="fade-right">
+        <div className="row align-items-stretch g-4 text-center">
+          <div className="col-12" data-aos="fade-right">
             <div className="knowus p-4 rounded bg-white same-height h-100">
-              <h3 className="text-uppercase text-secondary mb-3">Our Story</h3>
-              <p className="text-muted text-justify">
-                <strong>The Pakistan Textile Exchange</strong> is one of the
-                most reliable names in apparel and accessory manufacturing in
-                Pakistan. Our roots started in action sports here in Laguna
-                Beach. Our production can now be seen in almost every retailer
-                in the United States.Knits, Woven, Denim Apparel, along with
-                backpacks and socks — we have emerged as one of the most trusted
-                sources out of Pakistan for North America.
+              <h3 className="text-uppercase fw-bold mb-3">Our Story</h3>
+              <p className=" text-justify  ">
+               <strong>The Pakistan Textile Exchange (PTX)</strong> is one of the most reliable and forward-looking names in apparel and accessory manufacturing in Pakistan. With decades of experience, we have built a reputation for delivering world-class textile solutions that combine quality, innovation, and sustainability.
+
+Our journey began with humble roots in action sports manufacturing in Laguna Beach, where our passion for fabrics and design first came to life. Over the years, we have expanded our expertise and infrastructure, enabling us to serve some of the most demanding markets across the globe. Today, our production can be found in almost every major retailer in the United States, a testament to our consistency, reliability, and commitment to excellence.
+
+At PTX, our product portfolio covers a wide spectrum of textiles and apparel categories. From Knits, Woven, and Denim Apparel to backpacks, socks, and premium accessories, we offer end-to-end solutions tailored to the unique needs of our clients. Every product we create reflects a careful balance of craftsmanship, advanced technology, and strict quality assurance standards.
+
+Our manufacturing facilities in Pakistan are equipped with state-of-the-art machinery, modern laboratories, and highly skilled teams dedicated to innovation at every stage — from fabric development and dyeing to stitching, finishing, and packaging. We take pride in maintaining international compliance and sustainability standards, ensuring that our processes are both ethically and environmentally responsible.
+
+Over time, PTX has grown into more than just a manufacturing partner; we are a trusted extension of our clients’ businesses. We collaborate closely with global brands, designers, and retailers, offering them not just products but complete solutions — from sampling and prototyping to bulk production and timely delivery.
+
+Our commitment to quality, competitive pricing, and customer satisfaction has allowed us to emerge as one of the most trusted sourcing hubs from Pakistan for North America and beyond. As we continue to grow, our vision is to strengthen our global footprint, invest in innovation, and contribute to making Pakistan a recognized leader in the global textile industry.
+
+At PTX, we believe in building long-term partnerships based on trust, transparency, and excellence. Whether it’s a small custom order or large-scale production, we approach every project with the same dedication to quality and precision.
               </p>
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-6" data-aos="fade-left">
-            <div className="custom-image-grid" data-aos="fade-left">
-              {[Image.p1, Image.p2, Image.p3, Image.p4].map((src) => (
-                <div
-                  className="factory-col"
-                  key={src}
-                  variants={{
-                    hidden: { opacity: 0, scale: 0.8 },
-                    visible: { opacity: 1, scale: 1 },
-                  }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
-                >
-                  <img src={src} alt="Factory" className="factory-image" loading="lazy" />
-                </div>
-              ))}
-            </div>
-          </div>
+         
         </div>
       </div>
 
-      <div className="container my-5 ">
-        <div className="row align-items-stretch g-4">
-          <div className="col-sm-12 col-md-6" data-aos="fade-right">
-            <div className="knowus p-4 rounded bg-white same-height h-100">
-              <h3 className="text-uppercase text-secondary mb-3">
-                Our Mission
-              </h3>
-              <p className="text-muted text-justify">
-                <strong>Our Mission at Pakistan Textile Exchange</strong> is to
-                elevate Pakistan’s global presence in the textile and apparel
-                industry by delivering superior quality, sustainable products
-                with precision and innovation. We are committed to ethical
-                manufacturing, cutting-edge design, and building long-term
-                partnerships across North America and beyond. From premium knits
-                and denim to woven garments and accessories, we strive to exceed
-                expectations at every step — ensuring our clients receive
-                nothing less than excellence.
-              </p>
-            </div>
-          </div>
+   
 
-          <div className="col-sm-12 col-md-6 p-0" data-aos="fade-left">
-            <div className="custom-image-grid" data-aos="fade-left">
-              {[Image.p5, Image.p6, Image.p7, Image.p8].map((src) => (
-                <div
-                  className="factory-col"
-                  key={src}
-                  variants={{
-                    hidden: { opacity: 0, scale: 0.8 },
-                    visible: { opacity: 1, scale: 1 },
-                  }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
-                >
-                  <img src={src} alt="Factory" className="factory-image" loading="lazy" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="container my-5">
-        <div className="row align-items-stretch g-4">
-          <div className="col-sm-12 col-md-6" data-aos="fade-right">
-            <div className="knowus p-4 rounded bg-white same-height h-100">
-              <h3 className="text-uppercase text-secondary mb-3">Our VISION</h3>
-              <p className="text-muted text-justify">
-                <strong>Our Vision at Pakistan Textile Exchange</strong> is to
-                become a global leader in textile innovation, sustainability,
-                and ethical manufacturing. We aim to set new benchmarks in
-                quality and creativity, empowering brands worldwide with
-                products that reflect integrity, craftsmanship, and
-                forward-thinking design. Through continuous improvement and a
-                customer-first mindset, we envision a future where PTX stands as
-                a symbol of trust, excellence, and responsible production in the
-                global apparel industry.
-              </p>
-            </div>
-          </div>
-
-          <div className="col-sm-12 col-md-6" data-aos="fade-left">
-            <div className="custom-image-grid" data-aos="fade-left">
-              {[Image.p9, Image.p10, Image.p11, Image.p3].map((src) => (
-                <div
-                  className="factory-col"
-                  key={src}
-                  variants={{
-                    hidden: { opacity: 0, scale: 0.8 },
-                    visible: { opacity: 1, scale: 1 },
-                  }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
-                >
-                  <img src={src} alt="Factory" className="factory-image" loading="lazy" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <div className="space"></div>
     
 
