@@ -64,41 +64,42 @@ export default function ContactUs() {
 
   return (
     <>
-       <div
-        className="container-fluid p-0 mt-lg-5 mt-4 position-relative"
-        data-aos="fade-up"
-        fetchPriority="high"
-        style={{ textAlign: "center" }}
-      >
-        {/* Banner Image */}
-        <div className="col-12">
-          <img
-            src={Image.banner2}
-            alt="ptx-banner-image"
-            className="ptx-banner-image2 w-100"
-            fetchPriority="high"
-            style={{ display: "block" ,  }}
-          />
-        </div>
-
-        {/* Text Overlay */}
         <div
-        className="text-overlay-size"
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "30%",
-            
-            transform: "translate(-50%, -50%)",
-            color: "white",
-           
-            fontWeight: "bold",
-            textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
-          }}
-        >
-         CONTACT US
-        </div>
-      </div>
+              className="container-fluid p-0 mt-lg-5 mt-4 position-relative"
+              data-aos="fade-up"
+              fetchPriority="high"
+              style={{ textAlign: "" }}
+            >
+              {/* Banner Image */}
+              <br />
+              <div className="col-12 ">
+                <img
+                  src={Image.banner2}
+                  alt="ptx-banner-image"
+                  className="ptx-banner-image2 w-100"
+                  fetchPriority="high"
+                  style={{ display: "block" }}
+                />
+              </div>
+      
+              {/* Text Overlay */}
+              <div
+                className="text-overlay-size"
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  left: "30%",
+      
+                  transform: "translate(-50%, -50%)",
+                  color: "white",
+                  // fontSize: "5rem",
+                  fontWeight: "bold",
+                  textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
+                }}
+              >
+           CONTACT US
+              </div>
+            </div>
       <div className="container-fluid mt-4">
         <div className="row">
           <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-up">
