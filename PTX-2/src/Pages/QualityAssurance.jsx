@@ -65,7 +65,7 @@ export default function QualityAssurance() {
           {/* Image column */}
           <div className="col-sm-12 col-md-6 text-center">
             <img
-              src={Image.FabricDivision}
+              src={Image.qualityassurance}
               alt="fabricdivision"
               className="unique-division-img"
             />
