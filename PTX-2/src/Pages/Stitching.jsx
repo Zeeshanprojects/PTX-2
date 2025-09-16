@@ -55,7 +55,7 @@ export default function Stitching() {
       <div className="container unique-division-section">
         <div className="row align-items-center">
           {/* Text column */}
-          <div className="col-sm-12 col-md-12" data-aos="fade-up">
+          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6" data-aos="fade-up">
             <h4 className="fw-bold">STITCHING</h4>
             <p className="unique-division-text">
            We have a vast range of stitching unit, that is fully equipped with latest automatic and semi automatic machines. This gives us flexibility and speed to produce many types of garments simultaneously. The Quality control and Quality Assurance departments are in place to make sure the company’s objective of zero defect. We ensure the quality and customer’s standards at the start of the production in the sewing lines and at the end of final stage before packing.
@@ -63,7 +63,7 @@ export default function Stitching() {
           </div>
 
           {/* Image column */}
-          <div className="col-sm-12 col-md-12 text-center" data-aos="fade-up">
+          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center" data-aos="fade-up">
             <img
               src={Image.Stitching}
               alt="fabricdivision"

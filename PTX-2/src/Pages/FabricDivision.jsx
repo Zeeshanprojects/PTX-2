@@ -55,7 +55,7 @@ export default function FabricDivision() {
     <div className="container unique-division-section">
   <div className="row align-items-center">
     {/* Text column */}
-    <div className="col-sm-12 col-md-12" data-aos="fade-up">
+    <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6" data-aos="fade-up">
       <h4 className="fw-bold"> FABRIC DIVISION</h4>
       <p className="unique-division-text">
       Our fabric garment services deliver premium-quality clothing crafted with precision and care, using a diverse selection of high-grade fabrics. From design to production, we ensure each garment meets your unique specifications, offering exceptional comfort, style, and durability. Our expert team combines advanced techniques with sustainable practices to create garments that elevate your brand and satisfy your customers.
@@ -63,7 +63,7 @@ export default function FabricDivision() {
     </div>
 
     {/* Image column */}
-    <div className="col-sm-12 col-md-12 text-center" data-aos="fade-up">
+    <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center" data-aos="fade-up">
       <img
         src={Image.FabricDivision}
         alt="fabricdivision"
