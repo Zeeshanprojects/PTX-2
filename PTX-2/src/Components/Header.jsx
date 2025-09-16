@@ -17,8 +17,8 @@ export default function Header() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top p-3">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div className="container-fluid p-2">
           {/* Logo */}
           <Link className="navbar-brand" to="/">
             <img src={Image.logo} alt="mainlogo" className="logocolor" />

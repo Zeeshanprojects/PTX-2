@@ -55,7 +55,7 @@ export default function Finishing() {
       <div className="container unique-division-section">
         <div className="row align-items-center">
           {/* Text column */}
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-12" data-aos="fade-up">
             <h4 className="fw-bold">FINISHING</h4>
             <p className="unique-division-text">
              At PTX, finishing is where perfection takes shape. After stitching, every garment goes through a meticulous finishing process designed to enhance its look, feel, and durability. From advanced washing techniques and controlled shrinkage to pressing, labeling, and packaging, we ensure each product is retail-ready and meets international quality standards. Our finishing department focuses on detail, ensuring smooth textures, vibrant colors, and flawless presentation — so that every piece leaving PTX reflects the promise of excellence and reliability our clients trust.
@@ -63,7 +63,7 @@ export default function Finishing() {
           </div>
 
           {/* Image column */}
-          <div className="col-sm-12 col-md-6 text-center">
+          <div className="col-sm-12 col-md-12 text-center" data-aos="fade-up">
             <img
               src={Image.Finishing}
               alt="fabricdivision"
