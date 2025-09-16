@@ -73,7 +73,6 @@ At PTX, sampling is more than just a step — it’s the foundation of trust wit
   </div>
 </div>
 
-        <div className="space"></div>
       <Footer />
     </>
   );

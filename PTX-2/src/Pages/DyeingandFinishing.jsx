@@ -72,7 +72,7 @@ export default function DyeingandFinishing() {
     </div>
   </div>
 </div>
-        <div className="space"></div>
+      
 <Footer/>
    </>
   )

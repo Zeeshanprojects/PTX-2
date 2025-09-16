@@ -80,7 +80,7 @@ export default function Cutting() {
         </div>
       </div>
 
-      <div className="space"></div>
+      
       <Footer />
     </>
   );

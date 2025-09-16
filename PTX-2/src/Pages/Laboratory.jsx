@@ -73,7 +73,8 @@ At PTX, our state-of-the-art laboratory plays a crucial role in ensuring the hig
   </div>
 </div>
 
-        <div className="space"></div>
+
+     
       <Footer />
     </>
   );

@@ -73,7 +73,7 @@ export default function QualityAssurance() {
         </div>
       </div>
 
-      <div className="space"></div>
+
       <Footer />
     </>
   );

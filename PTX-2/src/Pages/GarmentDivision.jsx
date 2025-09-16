@@ -72,7 +72,7 @@ export default function GarmentDivision() {
     </div>
   </div>
 </div>
-      <div className="space"></div>
+
       <Footer />
     </>
   );

@@ -73,7 +73,6 @@ export default function Finishing() {
         </div>
       </div>
 
-      <div className="space"></div>
       <Footer />
     </>
   );

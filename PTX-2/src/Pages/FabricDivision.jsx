@@ -73,7 +73,7 @@ export default function FabricDivision() {
   </div>
 </div>
 
-        <div className="space"></div>
+      
       <Footer />
     </>
   );
