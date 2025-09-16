@@ -58,19 +58,19 @@ export default function AboutUs() {
 
       <div className="container my-5">
         <div className="row align-items-stretch g-4 text-center">
-          <div className="col-12" data-aos="fade-right">
+          <div className="col-12" data-aos="fade-up">
             <div className="knowus p-4 rounded bg-white same-height h-100">
               <h3 className="text-uppercase fw-bold mb-3">Our Story</h3>
-              <p className=" text-justify  ">
+              <p className="unique-division-text ">
                <strong>The Pakistan Textile Exchange (PTX)</strong> is one of the most reliable and forward-looking names in apparel and accessory manufacturing in Pakistan. With decades of experience, we have built a reputation for delivering world-class textile solutions that combine quality, innovation, and sustainability.
 
 Our journey began with humble roots in action sports manufacturing in Laguna Beach, where our passion for fabrics and design first came to life. Over the years, we have expanded our expertise and infrastructure, enabling us to serve some of the most demanding markets across the globe. Today, our production can be found in almost every major retailer in the United States, a testament to our consistency, reliability, and commitment to excellence.
 
 At PTX, our product portfolio covers a wide spectrum of textiles and apparel categories. From Knits, Woven, and Denim Apparel to backpacks, socks, and premium accessories, we offer end-to-end solutions tailored to the unique needs of our clients. Every product we create reflects a careful balance of craftsmanship, advanced technology, and strict quality assurance standards.
 
-Our manufacturing facilities in Pakistan are equipped with state-of-the-art machinery, modern laboratories, and highly skilled teams dedicated to innovation at every stage — from fabric development and dyeing to stitching, finishing, and packaging. We take pride in maintaining international compliance and sustainability standards, ensuring that our processes are both ethically and environmentally responsible.
+Our manufacturing facilities in Pakistan are equipped with state-of-the-art machinery, modern laboratories, and highly skilled teams dedicated to innovation at every stage from fabric development and dyeing to stitching, finishing, and packaging. We take pride in maintaining international compliance and sustainability standards, ensuring that our processes are both ethically and environmentally responsible.
 
-Over time, PTX has grown into more than just a manufacturing partner; we are a trusted extension of our clients’ businesses. We collaborate closely with global brands, designers, and retailers, offering them not just products but complete solutions — from sampling and prototyping to bulk production and timely delivery.
+Over time, PTX has grown into more than just a manufacturing partner; we are a trusted extension of our clients’ businesses. We collaborate closely with global brands, designers, and retailers, offering them not just products but complete solutions from sampling and prototyping to bulk production and timely delivery.
 
 Our commitment to quality, competitive pricing, and customer satisfaction has allowed us to emerge as one of the most trusted sourcing hubs from Pakistan for North America and beyond. As we continue to grow, our vision is to strengthen our global footprint, invest in innovation, and contribute to making Pakistan a recognized leader in the global textile industry.
 
