@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 export default function DyeingandFinishing() {
     useEffect(() => {
-        document.title = "Dyeing  | Pakistan Textile Exchange ";
+        document.title = "Dyeing AND FINISHING | Pakistan Textile Exchange ";
       }, []);
       useEffect(() => {
         AOS.init({
@@ -49,7 +49,7 @@ export default function DyeingandFinishing() {
             textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
           }}
         >
-       DYEING
+       DYEING AND FINISHING
         </div>
       </div>
           <div className="container unique-division-section">

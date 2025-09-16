@@ -65,9 +65,9 @@ function AppContent() {
             <Route path="/" element={<Home />} />
             <Route path="/Aboutus" element={<AboutUs />} />
             <Route path="/Services" element={<Services />} />
-        
+
             <Route path="/QualityAssurance" element={<QualityAssurance />} />
-           
+
             <Route
               path="/productdevelopment"
               element={<ProductDevelopment />}
@@ -75,7 +75,7 @@ function AppContent() {
             <Route path="/team" element={<Teams />} />
             <Route path="/team/:slug" element={<Teaminfo />} />
             <Route path="/inquireform" element={<Inquireform />} />
-           
+
             <Route path="/signup" element={<Signup />} />
             <Route path="/Contactus" element={<ContactUs />} />
             <Route path="/privacypolicy" element={<PrivacyPolicy />} />
@@ -83,20 +83,18 @@ function AppContent() {
             <Route path="/LookBook-V2" element={<LookBook2 />} />
             <Route path="/Gallery" element={<Gallery />} />
             <Route path="/Login" element={<Login />} />
-          
-            
-          
+
             <Route path="/blog1" element={<Blog1 />} />
             <Route path="/blog2" element={<Blog2 />} />
             <Route path="/blog3" element={<Blog3 />} />
-           
+
             <Route path="/quaitypolicy" element={<QualityPolicy />} />
             <Route path="/factorytour" element={<FactoryTour />} />
             <Route path="dyeingandfinishing" element={<DyeingandFinishing />} />
             <Route path="fabricdivision" element={<FabricDivision />} />
             <Route path="/garmentdivision" element={<GarmentDivision />} />
             <Route path="/sampling" element={<Sampling />} />
-            <Route path="/cutting" element={<Cutting />} /> 
+            <Route path="/cutting" element={<Cutting />} />
             <Route path="/stitching" element={<Stitching />} />
             <Route path="/finishing" element={<Finishing />} />
             <Route path="/laboratory" element={<Laboratory />} />
