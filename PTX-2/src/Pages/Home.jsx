@@ -352,6 +352,7 @@ export default function Home() {
               </div>
               <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 h-100">
                 <video
+                
                   data-aos="fade-up"
                   width="100%"
                   height="auto"
@@ -391,9 +392,9 @@ export default function Home() {
 
           <br />
           <div className="app-container mt-5" data-aos="fade-up">
-            <ScrollRow images={row1} rowClass="row1" />
-            <ScrollRow images={row2} rowClass="row2" />
-            <ScrollRow images={row3} rowClass="row3" />
+            <ScrollRow images={row1} rowClass="row1" loading="lazy" />
+            <ScrollRow images={row2} rowClass="row2" loading="lazy"/>
+            <ScrollRow images={row3} rowClass="row3" loading="lazy" />
           </div>
           <div className="space"></div>
           <div className="text-center" data-aos="fade-up">
