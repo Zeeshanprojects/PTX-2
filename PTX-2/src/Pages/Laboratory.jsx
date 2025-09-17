@@ -28,7 +28,7 @@ export default function Laboratory() {
           <img
             src={Image.banner2}
             alt="ptx-banner-image"
-            className="ptx-banner-image w-100"
+            className="ptx-banner-image2 w-100"
             fetchPriority="high"
             style={{ display: "block" }}
           />
@@ -68,12 +68,14 @@ At PTX, our state-of-the-art laboratory plays a crucial role in ensuring the hig
         src={Image.Laboratory}
         alt="fabricdivision"
         className="unique-division-img"
+        fetchPriority="high"
       />
     </div>
   </div>
 </div>
 
-        <div className="space"></div>
+
+     
       <Footer />
     </>
   );

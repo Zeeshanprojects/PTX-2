@@ -28,7 +28,7 @@ export default function Cutting() {
           <img
             src={Image.banner2}
             alt="ptx-banner-image"
-            className="ptx-banner-image w-100"
+            className="ptx-banner-image2 w-100"
             fetchPriority="high"
             style={{ display: "block" }}
           />
@@ -75,12 +75,13 @@ export default function Cutting() {
               src={Image.Cutting}
               alt="fabricdivision"
               className="unique-division-img"
+              fetchPriority="high"
             />
           </div>
         </div>
       </div>
 
-      <div className="space"></div>
+      
       <Footer />
     </>
   );

@@ -28,7 +28,7 @@ export default function Stitching() {
           <img
             src={Image.banner2}
             alt="ptx-banner-image"
-            className="ptx-banner-image w-100"
+            className="ptx-banner-image2 w-100"
             fetchPriority="high"
             style={{ display: "block" }}
           />
@@ -68,6 +68,7 @@ export default function Stitching() {
               src={Image.Stitching}
               alt="fabricdivision"
               className="unique-division-img"
+              fetchPriority="high"
             />
           </div>
         </div>

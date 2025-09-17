@@ -5,8 +5,7 @@ import Stitching from "../Pages/Stitching";
 const Image = {
   logo: require("./PTX-Main-Logo.png"),
   bannerimage: require("./PTX-Main-banner.webp"),
-
-  banner2: require("./Inventory-banner.webp"),
+  banner2: require("./Pages-background.webp"),
   service: require("./service.webp"),
   timing: require("./timing.webp"),
   tshirt: require("./polo-shirt.webp"),
