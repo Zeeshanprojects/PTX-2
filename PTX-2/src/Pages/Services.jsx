@@ -3,19 +3,13 @@ import { Link } from "react-router-dom";
 import Image from "../Images/Image";
 import "./Services.style.css";
 import Footer from "../Components/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 export default function Services() {
   useEffect(() => {
     document.title = "Services | Pakistan Textile Exchange ";
   }, []);
-    useEffect(() => {
-        AOS.init({
-          duration: 1000, // animation duration in ms
-          once: true,     // whether animation should happen only once
-        });
-      }, []);
+   
 
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },

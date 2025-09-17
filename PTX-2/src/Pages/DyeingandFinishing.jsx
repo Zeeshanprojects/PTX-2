@@ -2,18 +2,12 @@ import { useEffect } from "react";
 import Image from "../Images/Image";
 import "./Services.style.css";
 import Footer from "../Components/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 export default function DyeingandFinishing() {
   useEffect(() => {
     document.title = "Dyeing AND FINISHING | Pakistan Textile Exchange ";
   }, []);
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // animation duration in ms
-      once: true, // whether animation should happen only once
-    });
-  }, []);
+ 
   return (
     <>
       <div
