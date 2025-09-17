@@ -8,7 +8,7 @@ body {
 
 /* Existing styles (assumed to be present, not fully listed for brevity) */
 .ptx-banner-image2 {
-  height: 35lvh !important;
+  height: 35vh !important;
   object-fit: cover;
   width: 100%;
 }
