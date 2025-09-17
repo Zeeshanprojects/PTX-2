@@ -488,9 +488,10 @@ export default function Home() {
                 Stay updated with the latest videos, tutorials, and industry
                 insights. Enter your email below.
               </p>
+              
               <form
                 onSubmit={handleSubmit}
-                className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+                className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2"
               >
                 <input
                   type="email"
@@ -501,13 +502,13 @@ export default function Home() {
                   required
                   style={{
                     maxWidth: "300px",
-                    border: "none",
-                    padding: "0.75rem 1rem",
+                  borderRadius:"none",
+                    padding: "0.5rem",
                   }}
                 />
                 <button
                   type="submit"
-                  className="btn btn-outline-light px-4 py-2"
+                  className="btn btn-outline-light px-4 "
                 >
                   {loading ? "Subscribing..." : "Subscribe"}
                 </button>

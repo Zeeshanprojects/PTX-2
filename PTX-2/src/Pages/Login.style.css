@@ -1,31 +1,56 @@
-.signin-container {
-    width: 700px !important; 
-    padding: 30px;
-    border-radius: 8px;
-  
-}
-.signin-form {
-    display: flex;
-    flex-direction: column;
+/* Centered container */
+.login-container {
+  margin-top: 50px;
+  padding:60px;
 }
 
-@media (min-width:992px )and (max-width:1199px) {
-    .signin-container{
-        width: 500px;
-    }
+/* Card */
+.login-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 450px;
 }
-@media (min-width:768px )and (max-width:991px) {
-    .signin-container{
-        width: 500px;
-    }
+
+/* Input fields */
+.signin-form .form-control {
+  border-radius: 6px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 15px;
 }
-@media (min-width:576px )and (max-width:767px) {
-    .signin-container{
-        width: 500px !important;
-    }
+
+.signin-form .form-control:focus {
+  border-color: #7585AF;
+  box-shadow: 0 0 4px rgba(117, 133, 175, 0.5);
 }
-@media (max-width:575px) {
-    .signin-container{
-        width: 380px !important;
-    }
+
+/* Button */
+.signin-form button {
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.signin-form button:hover {
+  background-color: #5c6a94 !important;
+}
+
+/* Forgot password link */
+.forgot-link {
+  font-size: 14px;
+  color: #7585AF;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .login-card {
+    padding: 20px 20px;
+    max-width: 100%;
+  }
 }

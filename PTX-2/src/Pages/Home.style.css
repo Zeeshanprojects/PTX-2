@@ -8,7 +8,7 @@ body {
 
 /* Existing styles (assumed to be present, not fully listed for brevity) */
 .ptx-banner-image2 {
-  height: 35lvh;
+  height: 35lvh !important;
   object-fit: cover;
   width: 100%;
 }
@@ -190,9 +190,7 @@ body {
   position: relative;
 }
 
-.inquirebutton {
-  border-radius: 20px !important;
-}
+
 
 .factory-para {
   text-align: justify !important;
@@ -444,7 +442,7 @@ p {
 
 /* Button Styling */
 .btn-container .btn {
-  border-radius: 50px !important;
+  /* border-radius: 50px !important; */
   /* Apply a larger border radius for a round button */
   padding-left: 30px;
   padding-right: 30px;
