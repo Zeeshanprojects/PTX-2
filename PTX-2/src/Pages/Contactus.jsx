@@ -100,7 +100,7 @@ export default function ContactUs() {
           CONTACT US
         </div>
       </div>
-      <div className="container-fluid mt-1">
+      <div className="container-fluid mt-3">
         <div className="row">
           <div
             className="col-sm-12 col-md-6 col-lg-6 col-xl-6"
