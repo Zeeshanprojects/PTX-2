@@ -2,18 +2,12 @@ import { useEffect } from "react";
 import Image from "../Images/Image";
 
 import Footer from "../Components/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 export default function FabricDivision() {
   useEffect(() => {
     document.title = "Gabric Division| Pakistan Textile Exchange ";
   }, []);
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // animation duration in ms
-      once: true, // whether animation should happen only once
-    });
-  }, []);
+ 
   return (
     <>
       <div

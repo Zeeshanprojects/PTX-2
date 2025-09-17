@@ -8,7 +8,7 @@ body {
 
 /* Existing styles (assumed to be present, not fully listed for brevity) */
 .ptx-banner-image2 {
-  height: 35lvh !important;
+  height: 35vh !important;
   object-fit: cover;
   width: 100%;
 }
@@ -831,10 +831,10 @@ video {
     hyphens: auto;
   }
 
-  .ptx-banner-image2 {
+  /* .ptx-banner-image2 {
     width: 100%;
-    height: 20vh; /* adjust: 25vh looks better on mobile */
+    height: 20vh; 
     object-fit: cover;
     display: block;
-  }
+  } */
 }

@@ -4,18 +4,12 @@ import Image from "../Images/Image";
 import "./AboutUs.style.css";
 
 import Footer from "../Components/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 export default function AboutUs() {
   useEffect(() => {
     document.title = "About | Pakistan Textile Exchange ";
   }, []);
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // animation duration in ms
-      once: true, // whether animation should happen only once
-    });
-  }, []);
+ 
   return (
     <>
       <div

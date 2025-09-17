@@ -11,6 +11,8 @@ import { useState, useEffect, lazy, Suspense } from "react";
 import Header from "./Components/Header";
 import ScrollToTop from "./Components/ScrollToTop";
 import Preloader from "./Components/Preloader";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Lazy-loaded Pages
 const Home = lazy(() => import("./Pages/Home"));
@@ -23,7 +25,7 @@ const LookBook2 = lazy(() => import("./Pages/LookBook2"));
 const Login = lazy(() => import("./Pages/Login"));
 const Services = lazy(() => import("./Pages/Services"));
 const Inquireform = lazy(() => import("./Pages/Inquireform"));
-const ProductDevelopment = lazy(() => import("./Pages/ProductDevelopment"));
+
 const Blog1 = lazy(() => import("./Pages/Blog1"));
 const Blog2 = lazy(() => import("./Pages/Blog2"));
 const Blog3 = lazy(() => import("./Pages/Blog3"));
@@ -42,10 +44,22 @@ const Finishing = lazy(() => import("./Pages/Finishing"));
 const Laboratory = lazy(() => import("./Pages/Laboratory"));
 const QualityAssurance = lazy(() => import("./Pages/QualityAssurance"));
 
+
 function AppContent() {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      mirror: false,
+    });
+  }, []);
 
+  // refresh AOS on route change
+  useEffect(() => {
+    AOS.refresh();
+  }, [location.pathname]);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -69,7 +83,7 @@ function AppContent() {
               <Route path="/Aboutus" element={<AboutUs />} />
               <Route path="/Services" element={<Services />} />
               <Route path="/QualityAssurance" element={<QualityAssurance />} />
-              <Route path="/productdevelopment" element={<ProductDevelopment />} />
+             
               <Route path="/team" element={<Teams />} />
               <Route path="/team/:slug" element={<Teaminfo />} />
               <Route path="/inquireform" element={<Inquireform />} />

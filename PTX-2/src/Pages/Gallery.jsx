@@ -1,8 +1,7 @@
   import { useEffect } from "react";
 import "./Gallery.style.css";
 import Image from "../Images/Image";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import Footer from "../Components/Footer";
 
 
@@ -11,12 +10,7 @@ export default function Gallery() {
     useEffect(() => {
     document.title = "Gallery | Pakistan Textile Exchange ";
   }, []);
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // animation duration in ms
-      once: true, // whether animation should happen only once
-    });
-  }, []);
+
 
   const galleryImages = [
     { image: Image.Gallery1,},

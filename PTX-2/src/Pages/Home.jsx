@@ -4,8 +4,7 @@ import Image from "../Images/Image";
 import "./Home.style.css";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -46,10 +45,7 @@ export default function Home() {
 
     loadContent();
 
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
+   
   });
 
   const handleSubmit = async (e) => {
