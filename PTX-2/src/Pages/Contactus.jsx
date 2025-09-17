@@ -3,7 +3,7 @@ import axios from "axios"; // Import Axios for API requests
 import "./ContactUs.style.css";
 import Footer from "../Components/Footer";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 import Image from "../Images/Image";
 
 export default function ContactUs() {
@@ -11,12 +11,12 @@ export default function ContactUs() {
     document.title = "Contact Us | Pakistan Textile Exchange";
   }, []);
 
- useEffect(() => {
-      AOS.init({
-        duration: 1000, // animation duration in ms
-        once: true,     // whether animation should happen only once
-      });
-    }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // whether animation should happen only once
+    });
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -64,46 +64,49 @@ export default function ContactUs() {
 
   return (
     <>
+      <div
+        className="container-fluid p-0 mt-lg-5 mt-4 position-relative"
+        data-aos="fade-up"
+        fetchPriority="high"
+        style={{ textAlign: "" }}
+      >
+        {/* Banner Image */}
+        <br />
+        <div className="col-12 ">
+          <img
+            src={Image.banner2}
+            alt="ptx-banner-image"
+            className="ptx-banner-image2 w-100"
+            fetchPriority="high"
+            style={{ display: "block" }}
+          />
+        </div>
+
+        {/* Text Overlay */}
         <div
-              className="container-fluid p-0 mt-lg-5 mt-4 position-relative"
-              data-aos="fade-up"
-              fetchPriority="high"
-              style={{ textAlign: "" }}
-            >
-              {/* Banner Image */}
-              <br />
-              <div className="col-12 ">
-                <img
-                  src={Image.banner2}
-                  alt="ptx-banner-image"
-                  className="ptx-banner-image2 w-100"
-                  fetchPriority="high"
-                  style={{ display: "block" }}
-                />
-              </div>
-      
-              {/* Text Overlay */}
-              <div
-                className="text-overlay-size"
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  left: "30%",
-      
-                  transform: "translate(-50%, -50%)",
-                  color: "white",
-                  // fontSize: "5rem",
-                  fontWeight: "bold",
-                  textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
-                }}
-              >
-           CONTACT US
-              </div>
-            </div>
-      <div className="container-fluid mt-4">
+          className="text-overlay-size"
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            // fontSize: "5rem",
+            fontWeight: "bold",
+            textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
+          }}
+        >
+          CONTACT US
+        </div>
+      </div>
+      <div className="container-fluid mt-3">
         <div className="row">
-          <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-up">
-            <div className="contact-container ">
+          <div
+            className="col-sm-12 col-md-6 col-lg-6 col-xl-6"
+            data-aos="fade-up"
+          >
+            <div className="contact-container shadow-lg p-5">
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-groups">
                   <input
@@ -146,41 +149,46 @@ export default function ContactUs() {
               )}
             </div>
           </div>
-          <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3 " data-aos="fade-up">
-            <h5 className="fw-bold">HEAD OFFICE</h5>
-            <div className="d-flex align-items-start mb-4">
-              <i className="fas fa-map-marker-alt fa-2x text-dark me-3 mt-1"></i>
-              <div>
-                <strong>Address</strong>
-                <p className="mb-0">
-                  Laguna Beach, CA 92651
-                </p>
+          <div
+            className="col-sm-12 col-md-6 col-lg-6 col-xl-6 p-lg-5 "
+            data-aos="fade-up"
+          >
+            <h5 className="fw-bold mt-4">HEAD OFFICE</h5>
+            <div className="mt-3">
+              <div className="d-flex align-items-start mb-3">
+                {/* <i className="fas fa-map-marker-alt fa-2x text-dark me-3 mt-2"></i> */}
+                <div className="mt-1">
+                  <strong>Address</strong>
+                  <p className="mb-0">Laguna Beach, CA 92651</p>
+                </div>
               </div>
             </div>
 
-            <div className="d-flex align-items-start mb-5">
-              <i className="fas fa-envelope fa-2x text-dark me-3 mt-1"></i>
+            <div className="d-flex align-items-start mb-4">
+              {/* <i className="fas fa-envelope fa-2x text-dark me-3 mt-1"></i> */}
               <div>
                 <strong>Call Us / Email</strong>
                 <p className="mb-0">+1 949 283 9554</p>
                 <p className="mb-0">david@paktex.com</p>
               </div>
             </div>
-
-            <h5 className="fw-bold">BRANCH OFFICE</h5>
-            <div className="d-flex align-items-start mb-4">
-              <i className="fas fa-map-marker-alt fa-2x text-dark me-3"></i>
-              <div>
-                <strong>Address</strong>
-                <p className="mb-0">
-                  B-131, PCSIR Society,
-Scheme-33, Gulzar e Hijri, Karachi, Sindh, Pakistan
-                </p>
+            <hr />
+            <h5 className="fw-bold mt-4">BRANCH OFFICE</h5>
+            <div className="mt-3">
+              <div className="d-flex align-items-start mb-4">
+                {/* <i className="fas fa-map-marker-alt fa-2x text-dark me-3"></i> */}
+                <div>
+                  <strong>Address</strong>
+                  <p className="mb-0">
+                    B-131, PCSIR Society, Scheme-33, Gulzar e Hijri, Karachi,
+                    Sindh, Pakistan
+                  </p>
+                </div>
               </div>
             </div>
 
             <div className="d-flex align-items-start">
-              <i className="fas fa-envelope fa-2x text-dark me-3"></i>
+              {/* <i className="fas fa-envelope fa-2x text-dark me-3"></i> */}
               <div>
                 <strong>Call Us / Email</strong>
                 <p className="mb-0">(+92334) 388-1110</p>
@@ -190,7 +198,7 @@ Scheme-33, Gulzar e Hijri, Karachi, Sindh, Pakistan
           </div>
         </div>
       </div>
-<br/>
+      <br />
       <Footer />
     </>
   );

@@ -54,7 +54,7 @@ export default function Gallery() {
           style={{
             position: "absolute",
             top: "50%",
-            left: "30%",
+            left: "50%",
             
             transform: "translate(-50%, -50%)",
             color: "white",
@@ -69,7 +69,7 @@ export default function Gallery() {
       <br />
       <br />
 
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
           {galleryImages.map((item, index) => (
             <div className="col-md-4 mb-3" key={index}>
@@ -78,6 +78,7 @@ export default function Gallery() {
                   src={item.image}
                   alt={`Gallery-${index}`}
                   className="img-fluid"
+                  loading="lazy"
                 />
                 <h2 className="hover-caption text-align-center">
                   {item.text}
