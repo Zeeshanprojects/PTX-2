@@ -4,7 +4,6 @@ body {
 
 .ptx-banner-image {
   height: auto !important;
-
 }
 
 /* Existing styles (assumed to be present, not fully listed for brevity) */
@@ -697,7 +696,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-
   .heading-size {
     font-size: 40px !important;
   }
@@ -753,7 +751,6 @@ video {
     object-fit: cover !important;
     display: block;
   }
-
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -836,11 +833,10 @@ video {
     hyphens: auto;
   }
 
-.ptx-banner-image2 {
-  width: 100%;
-  height: 20vh; /* adjust: 25vh looks better on mobile */
-  object-fit: cover;
-  display: block;
-}
-
+  .ptx-banner-image2 {
+    width: 100%;
+    height: 20vh; /* adjust: 25vh looks better on mobile */
+    object-fit: cover;
+    display: block;
+  }
 }
