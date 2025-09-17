@@ -150,13 +150,13 @@ export default function ContactUs() {
             </div>
           </div>
           <div
-            className="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-5 "
+            className="col-sm-12 col-md-6 col-lg-6 col-xl-6 p-lg-5 "
             data-aos="fade-up"
           >
-            <h5 className="fw-bold">HEAD OFFICE</h5>
+            <h5 className="fw-bold mt-4">HEAD OFFICE</h5>
             <div className="mt-3">
               <div className="d-flex align-items-start mb-3">
-                <i className="fas fa-map-marker-alt fa-2x text-dark me-3 mt-2"></i>
+                {/* <i className="fas fa-map-marker-alt fa-2x text-dark me-3 mt-2"></i> */}
                 <div className="mt-1">
                   <strong>Address</strong>
                   <p className="mb-0">Laguna Beach, CA 92651</p>
@@ -165,7 +165,7 @@ export default function ContactUs() {
             </div>
 
             <div className="d-flex align-items-start mb-4">
-              <i className="fas fa-envelope fa-2x text-dark me-3 mt-1"></i>
+              {/* <i className="fas fa-envelope fa-2x text-dark me-3 mt-1"></i> */}
               <div>
                 <strong>Call Us / Email</strong>
                 <p className="mb-0">+1 949 283 9554</p>
@@ -173,10 +173,10 @@ export default function ContactUs() {
               </div>
             </div>
             <hr />
-            <h5 className="fw-bold">BRANCH OFFICE</h5>
+            <h5 className="fw-bold mt-4">BRANCH OFFICE</h5>
             <div className="mt-3">
               <div className="d-flex align-items-start mb-4">
-                <i className="fas fa-map-marker-alt fa-2x text-dark me-3"></i>
+                {/* <i className="fas fa-map-marker-alt fa-2x text-dark me-3"></i> */}
                 <div>
                   <strong>Address</strong>
                   <p className="mb-0">
@@ -188,7 +188,7 @@ export default function ContactUs() {
             </div>
 
             <div className="d-flex align-items-start">
-              <i className="fas fa-envelope fa-2x text-dark me-3"></i>
+              {/* <i className="fas fa-envelope fa-2x text-dark me-3"></i> */}
               <div>
                 <strong>Call Us / Email</strong>
                 <p className="mb-0">(+92334) 388-1110</p>

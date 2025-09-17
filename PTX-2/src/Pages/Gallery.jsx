@@ -69,7 +69,7 @@ export default function Gallery() {
       <br />
       <br />
 
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
           {galleryImages.map((item, index) => (
             <div className="col-md-4 mb-3" key={index}>
