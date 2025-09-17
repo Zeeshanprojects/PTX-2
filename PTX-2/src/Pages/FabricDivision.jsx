@@ -40,7 +40,7 @@ export default function FabricDivision() {
           style={{
             position: "absolute",
             top: "50%",
-            left: "30%",
+            left: "50%",
 
             transform: "translate(-50%, -50%)",
             color: "white",

@@ -78,6 +78,7 @@ export default function Gallery() {
                   src={item.image}
                   alt={`Gallery-${index}`}
                   className="img-fluid"
+                  loading="lazy"
                 />
                 <h2 className="hover-caption text-align-center">
                   {item.text}
