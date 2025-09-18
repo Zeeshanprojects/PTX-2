@@ -23,10 +23,10 @@ export default function Cutting() {
         <div className="col-12 ">
           <img
             src={Image.banner2}
-            alt="ptx-banner-image"
-            className="ptx-banner-image2 w-100"
+            alt="ptx-banner-image2"
+            className="banner-image2 w-100"
             fetchPriority="high"
-            style={{ display: "block" }}
+            
           />
         </div>
 
@@ -71,7 +71,7 @@ export default function Cutting() {
               src={Image.Cutting}
               alt="fabricdivision"
               className="unique-division-img"
-              fetchPriority="high"
+            
             />
           </div>
         </div>

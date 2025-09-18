@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 export default function DyeingandFinishing() {
   useEffect(() => {
-    document.title = "Dyeing AND FINISHING | Pakistan Textile Exchange ";
+    document.title = "Dyeing | Pakistan Textile Exchange ";
   }, []);
  
   return (
@@ -22,9 +22,9 @@ export default function DyeingandFinishing() {
           <img
             src={Image.banner2}
             alt="ptx-banner-image"
-            className="ptx-banner-image2 w-100"
+            className="banner-image2 w-100"
             fetchPriority="high"
-            style={{ display: "block" }}
+         
           />
         </div>
 
@@ -43,7 +43,7 @@ export default function DyeingandFinishing() {
             textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
           }}
         >
-          DYEING AND FINISHING
+          DYEING
         </div>
       </div>
       <div className="container unique-division-section" data-aos="fade-up">

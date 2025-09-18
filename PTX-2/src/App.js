@@ -5,49 +5,49 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import { useState, useEffect, lazy, Suspense } from "react";
+import { useState, useEffect } from "react";
 
-// Components (not split since they are small and used everywhere)
+// Components
 import Header from "./Components/Header";
 import ScrollToTop from "./Components/ScrollToTop";
 import Preloader from "./Components/Preloader";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Lazy-loaded Pages
-const Home = lazy(() => import("./Pages/Home"));
-const AboutUs = lazy(() => import("./Pages/AboutUs"));
-const Signup = lazy(() => import("./Pages/Signup"));
-const ContactUs = lazy(() => import("./Pages/Contactus"));
-const PrivacyPolicy = lazy(() => import("./Pages/PrivacyPolicy"));
-const LookBook1 = lazy(() => import("./Pages/LookBook1"));
-const LookBook2 = lazy(() => import("./Pages/LookBook2"));
-const Login = lazy(() => import("./Pages/Login"));
-const Services = lazy(() => import("./Pages/Services"));
-const Inquireform = lazy(() => import("./Pages/Inquireform"));
-
-const Blog1 = lazy(() => import("./Pages/Blog1"));
-const Blog2 = lazy(() => import("./Pages/Blog2"));
-const Blog3 = lazy(() => import("./Pages/Blog3"));
-const Teams = lazy(() => import("./Pages/Teams"));
-const Teaminfo = lazy(() => import("./Pages/Teaminfo"));
-const Gallery = lazy(() => import("./Pages/Gallery"));
-const QualityPolicy = lazy(() => import("./Pages/QualityPolicy"));
-const FactoryTour = lazy(() => import("./Pages/FactoryTour"));
-const DyeingandFinishing = lazy(() => import("./Pages/DyeingandFinishing"));
-const FabricDivision = lazy(() => import("./Pages/FabricDivision"));
-const GarmentDivision = lazy(() => import("./Pages/GarmentDivision"));
-const Sampling = lazy(() => import("./Pages/Sampling"));
-const Cutting = lazy(() => import("./Pages/Cutting"));
-const Stitching = lazy(() => import("./Pages/Stitching"));
-const Finishing = lazy(() => import("./Pages/Finishing"));
-const Laboratory = lazy(() => import("./Pages/Laboratory"));
-const QualityAssurance = lazy(() => import("./Pages/QualityAssurance"));
-
+// Pages (Normal Imports)
+import Home from "./Pages/Home";
+import AboutUs from "./Pages/AboutUs";
+import Signup from "./Pages/Signup";
+import ContactUs from "./Pages/Contactus";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import LookBook1 from "./Pages/LookBook1";
+import LookBook2 from "./Pages/LookBook2";
+import Login from "./Pages/Login";
+import Services from "./Pages/Services";
+import Inquireform from "./Pages/Inquireform";
+import Blog1 from "./Pages/Blog1";
+import Blog2 from "./Pages/Blog2";
+import Blog3 from "./Pages/Blog3";
+import Teams from "./Pages/Teams";
+import Teaminfo from "./Pages/Teaminfo";
+import Gallery from "./Pages/Gallery";
+import QualityPolicy from "./Pages/QualityPolicy";
+import FactoryTour from "./Pages/FactoryTour";
+import DyeingandFinishing from "./Pages/DyeingandFinishing";
+import FabricDivision from "./Pages/FabricDivision";
+import GarmentDivision from "./Pages/GarmentDivision";
+import Sampling from "./Pages/Sampling";
+import Cutting from "./Pages/Cutting";
+import Stitching from "./Pages/Stitching";
+import Finishing from "./Pages/Finishing";
+import Laboratory from "./Pages/Laboratory";
+import QualityAssurance from "./Pages/QualityAssurance";
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
+
+  // Initialize AOS (Animate on Scroll)
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -56,15 +56,19 @@ function AppContent() {
     });
   }, []);
 
-  // refresh AOS on route change
+  // Refresh AOS on route change
   useEffect(() => {
     AOS.refresh();
   }, [location.pathname]);
+
+  // Preloader effect
   useEffect(() => {
     setLoading(true);
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setLoading(false);
     }, 2000);
+
+    return () => clearTimeout(timer);
   }, [location.pathname]);
 
   return (
@@ -76,39 +80,35 @@ function AppContent() {
           <ScrollToTop />
           <Header />
 
-          {/* Suspense handles lazy page loading */}
-          <Suspense fallback={<div className="text-center p-5">Loading...</div>}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/Aboutus" element={<AboutUs />} />
-              <Route path="/Services" element={<Services />} />
-              <Route path="/QualityAssurance" element={<QualityAssurance />} />
-             
-              <Route path="/team" element={<Teams />} />
-              <Route path="/team/:slug" element={<Teaminfo />} />
-              <Route path="/inquireform" element={<Inquireform />} />
-              <Route path="/signup" element={<Signup />} />
-              <Route path="/Contactus" element={<ContactUs />} />
-              <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-              <Route path="/LookBook-V1" element={<LookBook1 />} />
-              <Route path="/LookBook-V2" element={<LookBook2 />} />
-              <Route path="/Gallery" element={<Gallery />} />
-              <Route path="/Login" element={<Login />} />
-              <Route path="/blog1" element={<Blog1 />} />
-              <Route path="/blog2" element={<Blog2 />} />
-              <Route path="/blog3" element={<Blog3 />} />
-              <Route path="/quaitypolicy" element={<QualityPolicy />} />
-              <Route path="/factorytour" element={<FactoryTour />} />
-              <Route path="/dyeingandfinishing" element={<DyeingandFinishing />} />
-              <Route path="/fabricdivision" element={<FabricDivision />} />
-              <Route path="/garmentdivision" element={<GarmentDivision />} />
-              <Route path="/sampling" element={<Sampling />} />
-              <Route path="/cutting" element={<Cutting />} />
-              <Route path="/stitching" element={<Stitching />} />
-              <Route path="/finishing" element={<Finishing />} />
-              <Route path="/laboratory" element={<Laboratory />} />
-            </Routes>
-          </Suspense>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/qualityassurance" element={<QualityAssurance />} />
+            <Route path="/team" element={<Teams />} />
+            <Route path="/team/:slug" element={<Teaminfo />} />
+            <Route path="/inquireform" element={<Inquireform />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+            <Route path="/lookbook-v1" element={<LookBook1 />} />
+            <Route path="/lookbook-v2" element={<LookBook2 />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/blog1" element={<Blog1 />} />
+            <Route path="/blog2" element={<Blog2 />} />
+            <Route path="/blog3" element={<Blog3 />} />
+            <Route path="/qualitypolicy" element={<QualityPolicy />} />
+            <Route path="/factorytour" element={<FactoryTour />} />
+            <Route path="/dyeingandfinishing" element={<DyeingandFinishing />} />
+            <Route path="/fabricdivision" element={<FabricDivision />} />
+            <Route path="/garmentdivision" element={<GarmentDivision />} />
+            <Route path="/sampling" element={<Sampling />} />
+            <Route path="/cutting" element={<Cutting />} />
+            <Route path="/stitching" element={<Stitching />} />
+            <Route path="/finishing" element={<Finishing />} />
+            <Route path="/laboratory" element={<Laboratory />} />
+          </Routes>
         </>
       )}
     </div>

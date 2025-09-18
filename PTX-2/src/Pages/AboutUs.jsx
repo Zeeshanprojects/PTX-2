@@ -23,9 +23,10 @@ export default function AboutUs() {
         <div className="col-12 ">
           <img
             src={Image.banner2}
-            alt="ptx-banner-image"
-            className="ptx-banner-image2 w-100"
+            alt="banner-image"
+            className="banner-image2 w-100"
             fetchPriority="high"
+            loading="eager"
             style={{ display: "block" }}
           />
         </div>
