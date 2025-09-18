@@ -99,7 +99,7 @@ export default function Header() {
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/dyeingandfinishing">
-                      Dyeing And Finishing
+                      Dyeing
                     </Link>
                   </li>
                   <li>
