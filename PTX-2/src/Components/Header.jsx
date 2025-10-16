@@ -27,7 +27,7 @@ export default function Header() {
           {/* Toggler + Login Icon on small screens */}
           <div className="d-flex align-items-center d-lg-none">
             <Link to="/Login" className="me-2 text-white">
-              <FontAwesomeIcon icon={faUser} size="lg" />
+              <button type="button" className="btn btn-outline-light ">Login</button>
             </Link>
             <button
               className="navbar-toggler"
@@ -99,7 +99,7 @@ export default function Header() {
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/dyeingandfinishing">
-                      Dyeing And Finishing
+                      Dyeing
                     </Link>
                   </li>
                   <li>
@@ -205,7 +205,8 @@ export default function Header() {
             {/* Login Icon on large screens */}
             <div className="nav-icons d-none d-lg-flex">
               <Link to="/Login">
-                <FontAwesomeIcon icon={faUser} size="lg" />
+               
+                <button type="button" className="btn btn-outline-light me-5">Login</button>
               </Link>
             </div>
           </div>
