@@ -179,18 +179,7 @@ export default function Header() {
                 </a>
               </li>
 
-              {/* <li className="nav-item">
-                <a
-                  className="nav-link active d-flex align-items-center gap-1"
-                  href="https://styles.paktex.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={closeNavbar}
-                >
-                  STYLES
-                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" />
-                </a>
-              </li> */}
+      
             </ul>
 
             {/* Login Icon on large screens */}

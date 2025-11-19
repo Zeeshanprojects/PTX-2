@@ -1,6 +1,4 @@
-import DyeingandFinishing from "../Pages/DyeingandFinishing";
-import FabricDivision from "../Pages/FabricDivision";
-import Stitching from "../Pages/Stitching";
+
 
 const Image = {
   logo: require("./PTX-Main-Logo.png"),

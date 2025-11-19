@@ -366,9 +366,11 @@ export default function Home() {
                   contribute to a greener textile ecosystem while meeting the
                   growing demand for ethical fashion.
                 </p>
-                <button className=" btn btn-outline-dark">
+                <Link  to="/Cutting"  target="_blank">
+                  <button className=" btn btn-outline-dark">
                   Explore Our Factory
-                </button>
+                </button></Link>
+              
               </div>
               <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 h-100">
                 <video
