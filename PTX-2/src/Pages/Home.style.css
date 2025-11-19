@@ -2,9 +2,44 @@ body {
   overflow-x: hidden;
 }
 
-.ptx-banner-image {
-  height: auto !important;
+.banner-wrapper {
+  position: relative;
 }
+
+.banner-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.ptx-banner-image {
+  width: 100%;
+  height: auto !important;
+  display: block;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  padding: 20px;
+width: 80% !important;
+}
+.banner-overlay h1{
+  font-size: 80px !important;
+  width: 100% !important;
+}
+
+.banner-overlay p {
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+
+
+
+
 
 /* Existing styles (assumed to be present, not fully listed for brevity) */
 .banner-image2 {

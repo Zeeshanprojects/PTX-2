@@ -208,16 +208,29 @@ export default function Home() {
         <Loader />
       ) : (
         <>
-          <div className="container-fluid p-0 mt-5" data-aos="fade-up">
-            <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-              <img
-                src={Image.bannerimage}
-                alt="ptx-banner-image"
-                className="ptx-banner-image"
-                fetchPriority="high"
-              />
-            </div>
-          </div>
+        <div className="container-fluid p-0 mt-5 banner-wrapper" data-aos="fade-up">
+  <div className="banner-image-container">
+    <img
+      src={Image.bannerimage}
+      alt="ptx-banner-image"
+      className="ptx-banner-image"
+      fetchPriority="high"
+    />
+
+    {/* Overlay Text */}
+    <div className="banner-overlay">
+      <h1>We are Paktex,<br />Pakistan Textile Exchange</h1>
+      <p>
+        PTX is a Professional apparel sourcing group offering exceptional quality
+        assurance, logistics and import solutions. We also provide retail services
+        with a strong commitment to full social compliance.
+      </p>
+
+      <button className="btn btn-outline-dark ps-5 pe-5 mt-3">LookBook</button>
+    </div>
+  </div>
+</div>
+
           <br />
           <div className="space"></div>
           <div className="text-center" data-aos="fade-up">
