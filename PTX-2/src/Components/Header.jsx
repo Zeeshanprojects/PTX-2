@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Image from "../Images/Image";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 import "./Header.style.css";
 
 export default function Header() {
@@ -106,16 +105,16 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link active"
-                  href="#"
+                  to="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   FACTORY TOUR
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/Cutting">
