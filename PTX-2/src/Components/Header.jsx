@@ -61,15 +61,6 @@ export default function Header() {
                 </Link>
               </li>
 
-              {/* <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  to="/Services"
-                  onClick={closeNavbar}
-                >
-                  SERVICES
-                </Link>
-              </li> */}
 
               <li className="nav-item">
                 <Link
