@@ -5,7 +5,6 @@ import "./Home.style.css";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 
-
 export default function Home() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
@@ -44,8 +43,6 @@ export default function Home() {
     };
 
     loadContent();
-
-   
   });
 
   const handleSubmit = async (e) => {
@@ -208,16 +205,40 @@ export default function Home() {
         <Loader />
       ) : (
         <>
-          <div className="container-fluid p-0 mt-5" data-aos="fade-up">
-            <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div
+            className="container-fluid p-0 mt-5 banner-wrapper"
+            data-aos="fade-up"
+          >
+            <div className="banner-image-container">
               <img
                 src={Image.bannerimage}
                 alt="ptx-banner-image"
                 className="ptx-banner-image"
                 fetchPriority="high"
               />
+
+              {/* Overlay Text */}
+              <div className="banner-overlay">
+                <h1>
+                  We are Paktex,
+                  <br />
+                  Pakistan Textile Exchange
+                </h1>
+                <p>
+                  PTX is a Professional apparel sourcing group offering
+                  exceptional quality assurance, logistics and import solutions.
+                  We also provide retail services with a strong commitment to
+                  full social compliance.
+                </p>
+                <Link to="https://book.paktex.com/book/ptx-company-profile/PTX-C-P">
+                  <button className="btn btn-outline-dark ps-5 pe-5 mt-3">
+                    Explore Our LookBook
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
+
           <br />
           <div className="space"></div>
           <div className="text-center" data-aos="fade-up">
@@ -319,7 +340,7 @@ export default function Home() {
             <Link to="/inquireform">
               <button
                 type="button"
-                className="btn btn-outline-light read-more px-5"
+                className="btn btn-outline-dark read-more px-5"
               >
                 INQUIRE NOW
               </button>
@@ -345,10 +366,14 @@ export default function Home() {
                   contribute to a greener textile ecosystem while meeting the
                   growing demand for ethical fashion.
                 </p>
+                <Link  to="/Cutting"  target="_blank">
+                  <button className=" btn btn-outline-dark">
+                  Explore Our Factory
+                </button></Link>
+              
               </div>
               <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 h-100">
                 <video
-                
                   data-aos="fade-up"
                   width="100%"
                   height="auto"
@@ -389,7 +414,7 @@ export default function Home() {
           <br />
           <div className="app-container mt-5" data-aos="fade-up">
             <ScrollRow images={row1} rowClass="row1" loading="lazy" />
-            <ScrollRow images={row2} rowClass="row2" loading="lazy"/>
+            <ScrollRow images={row2} rowClass="row2" loading="lazy" />
             <ScrollRow images={row3} rowClass="row3" loading="lazy" />
           </div>
           <div className="space"></div>
@@ -476,7 +501,7 @@ export default function Home() {
           <div className="space"></div>
           <div className="w-100 py-5">
             <div
-              className="container-fluid text-white text-center p-5 bg-black"
+              className="container-fluid text-dark text-center p-5 content-card"
               data-aos="fade-up"
             >
               <h2 className="fw-bold mb-3">Subscribe to Our Channel</h2>
@@ -484,7 +509,7 @@ export default function Home() {
                 Stay updated with the latest videos, tutorials, and industry
                 insights. Enter your email below.
               </p>
-              
+
               <form
                 onSubmit={handleSubmit}
                 className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2"
@@ -498,14 +523,11 @@ export default function Home() {
                   required
                   style={{
                     maxWidth: "300px",
-                  borderRadius:"none",
+                    borderRadius: "none",
                     padding: "0.5rem",
                   }}
                 />
-                <button
-                  type="submit"
-                  className="btn btn-outline-light px-4 "
-                >
+                <button type="submit" className="btn btn-outline-light px-4 ">
                   {loading ? "Subscribing..." : "Subscribe"}
                 </button>
               </form>

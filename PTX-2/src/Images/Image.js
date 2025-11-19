@@ -1,10 +1,8 @@
-import DyeingandFinishing from "../Pages/DyeingandFinishing";
-import FabricDivision from "../Pages/FabricDivision";
-import Stitching from "../Pages/Stitching";
+
 
 const Image = {
   logo: require("./PTX-Main-Logo.png"),
-  bannerimage: require("./PTX-Main-banner.webp"),
+  bannerimage: require("./apparel-banner.webp"),
   banner2: require("./Pages-background.webp"),
   service: require("./service.webp"),
   timing: require("./timing.webp"),

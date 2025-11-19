@@ -73,10 +73,10 @@ width: 100% !important;
   }
 
   .nav-link:hover {
-    color: orange !important;
+    color: rgb(213, 163, 71) !important;
   }
   .dropdown-item:hover {
-    color: orange !important;
+    color: rgb(213, 163, 71) !important;
     background: none !important;
   }
 
