@@ -230,7 +230,8 @@ export default function Home() {
                   We also provide retail services with a strong commitment to
                   full social compliance.
                 </p>
-                <Link to="https://book.paktex.com/book/ptx-company-profile/PTX-C-P">
+                <Link to="https://book.paktex.com/book/ptx-company-profile/PTX-C-P" target="_blank">
+                
                   <button className="btn btn-outline-light ps-5 pe-5 mt-3">
                     Explore Our LookBook
                   </button>
