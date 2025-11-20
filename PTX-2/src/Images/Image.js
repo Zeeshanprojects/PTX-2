@@ -2,7 +2,7 @@
 
 const Image = {
   logo: require("./PTX-Main-Logo.png"),
-  bannerimage: require("./apparel-banner.webp"),
+  bannerimage: require("./paktex-banner.webp"),
   banner2: require("./Pages-background.webp"),
   service: require("./service.webp"),
   timing: require("./timing.webp"),
@@ -105,7 +105,6 @@ const Image = {
   img67: require("./67.webp"),
   img68: require("./68.webp"),
   img69: require("./69.webp"),
-  sectionimage: require("./sectionbanner.webp"),
   CEO: require("./Davidjumani.webp"),
   location: require("./location.webp"),
   qualityassurance: require("./QA.webp"),
