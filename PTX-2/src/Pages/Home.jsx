@@ -211,6 +211,7 @@ export default function Home() {
           >
             <div className="banner-image-container">
               <img
+              rel="preload"
                 src={Image.bannerimage}
                 alt="ptx-banner-image"
                 className="ptx-banner-image"
