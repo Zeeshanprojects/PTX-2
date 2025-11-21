@@ -833,7 +833,7 @@ video {
 }
 @media (max-width: 575px) {
   .ptx-banner-image {
-    height: 50vh !important  ;        /* More consistent height */
+    height: 60vh !important  ;        /* More consistent height */
     object-fit: cover;
   }
 
