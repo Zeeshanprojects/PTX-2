@@ -9,7 +9,6 @@ body {
 .banner-image-container {
   position: relative;
   width: 100%;
-
 }
 
 .ptx-banner-image {
@@ -39,11 +38,6 @@ width: 80% !important;
   margin: 15px 0;
 }
 
-
-
-
-
-/* Existing styles (assumed to be present, not fully listed for brevity) */
 .banner-image2 {
   width: 100%;
   height: 30vh !important; /* half screen */
@@ -681,7 +675,8 @@ video {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width:992px) and (max-width:1299px) {
+
   .text-overlay-size {
     font-size: 40px !important;
   }
@@ -729,6 +724,22 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .ptx-banner-image {
+    height:100vh !important  ;        /* More consistent height */
+    object-fit: cover;
+  }
+  .banner-overlay{
+    width: 100%;
+  }
+    .banner-overlay h1 {
+    font-size: 70px !important; /* readable & modern */
+    line-height: 1.3;
+  }
+
+  .banner-overlay p {
+    font-size: 0.9rem !important;
+    margin-top: 10px;
+  }
   .heading-size {
     font-size: 40px !important;
   }
@@ -771,22 +782,9 @@ video {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .text-overlay-size {
-    font-size: 30px !important;
-  }
+@media (min-width: 768px) and (max-width: 992px) {
 
-  .sectionimage {
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100% !important;
-    height: auto !important;
-    object-fit: cover !important;
-    display: block;
-  }
-}
 
-@media (min-width: 576px) and (max-width: 767px) {
   .carousel-item img {
     height: 50vh !important;
     width: 100% !important;
@@ -815,8 +813,51 @@ video {
     font-size: 16px !important;
   }
 }
+@media (min-width:576px) and (max-width:768px) {
+  .ptx-banner-image {
+    height: 50vh !important  ;        /* More consistent height */
+    object-fit: cover;
+  }
+  .banner-overlay{
+    width: 100%;
+  }
+    .banner-overlay h1 {
+    font-size: 32px !important; /* readable & modern */
+    line-height: 1.3;
+  }
 
+  .banner-overlay p {
+    font-size: 0.9rem !important;
+    margin-top: 10px;
+  }
+}
 @media (max-width: 575px) {
+  .ptx-banner-image {
+    height: 60vh !important  ;        /* More consistent height */
+    object-fit: cover;
+  }
+
+  .banner-overlay {
+    width: 100%;
+    top: 50%;
+    padding: 0 10px;
+  }
+
+  .banner-overlay h1 {
+    font-size: 35px !important; /* readable & modern */
+    line-height: 1.3;
+  }
+
+  .banner-overlay p {
+    font-size: 0.9rem !important;
+    margin-top: 10px;
+  }
+
+  .banner-overlay button {
+    font-size: 0.9rem;
+    padding: 6px 15px;
+    margin-top: 12px;
+  }
   .text-overlay-size {
     font-size: 20px !important;
    width:300px !important;

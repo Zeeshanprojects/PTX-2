@@ -211,6 +211,7 @@ export default function Home() {
           >
             <div className="banner-image-container">
               <img
+              rel="preload"
                 src={Image.bannerimage}
                 alt="ptx-banner-image"
                 className="ptx-banner-image"
@@ -232,7 +233,7 @@ export default function Home() {
                 </p>
                 <Link to="https://book.paktex.com/book/ptx-company-profile/PTX-C-P" target="_blank">
                 
-                  <button className="btn btn-outline-light ps-5 pe-5 mt-3">
+                  <button className="btn btn-outline-light ps-5 pe-5  mt-3">
                     Explore Our LookBook
                   </button>
                 </Link>
