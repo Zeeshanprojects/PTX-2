@@ -171,7 +171,7 @@ export default function Home() {
     ];
   };
 
-  const [row1, row2, row3] = splitIntoRows(allImages);
+ 
 
   const ScrollRow = ({ images, rowClass }) => (
     <div className={`scroll-row ${rowClass}`}>
@@ -211,7 +211,7 @@ export default function Home() {
           >
             <div className="banner-image-container">
               <img
-              rel="preload"
+                rel="preload"
                 src={Image.bannerimage}
                 alt="ptx-banner-image"
                 className="ptx-banner-image"
@@ -231,8 +231,10 @@ export default function Home() {
                   We also provide retail services with a strong commitment to
                   full social compliance.
                 </p>
-                <Link to="https://book.paktex.com/book/ptx-company-profile/PTX-C-P" target="_blank">
-                
+                <Link
+                  to="https://book.paktex.com/book/ptx-company-profile/PTX-C-P"
+                  target="_blank"
+                >
                   <button className="btn btn-outline-light ps-5 pe-5  mt-3">
                     Explore Our LookBook
                   </button>
@@ -245,7 +247,7 @@ export default function Home() {
           <div className="space"></div>
           <div className="text-center" data-aos="fade-up">
             <h1 className="text-center fw-bold " loading="lazy">
-              BUILDING STRONG RELATIONSHIP
+              VALUE PROPOSITION STRIP
             </h1>
             <p className="categories-subtitle">
               Fostering Trust Through Quality and Commitment
@@ -255,43 +257,32 @@ export default function Home() {
             <div className="row g-4">
               {[
                 {
-                  icon: Image.service, // your imported image
-                  title: "Consistent Quality Assurance",
-                  desc: "We maintain strict quality control at every stage, ensuring each fabric meets international standards and earns our clients' trust.",
+                  icon: "fa-solid fa-gears",
+                  title: "End-to-End Services",
+                  desc: "Design to delivery with complete PLM tracking and seamless workflow.",
                 },
                 {
-                  icon: Image.chat,
-                  title: "Transparent Communication",
-                  desc: "We believe in clear, timely communication to keep our partners informed and confident throughout every project.",
+                  icon: "fa-solid fa-location-dot",
+                  title: "Pakistan Advantage",
+                  desc: "Competitive pricing supported by a skilled workforce and strong manufacturing ecosystem.",
                 },
                 {
-                  icon: Image.timing,
-                  title: "Reliable Service & On-Time Delivery",
-                  desc: "Our logistics and operations teams are dedicated to delivering every order on schedule, without compromising quality.",
-                },
-                {
-                  icon: Image.tshirt, // <-- add your apparel-related image here
-                  title: "Innovative Apparel Solutions",
-                  desc: "From stylish designs to functional wear, our apparel expertise ensures your brand stands out in the competitive fashion industry.",
+                  icon: "fa-solid fa-leaf",
+                  title: "Sustainability & Compliance",
+                  desc: "Ethically sourced materials with global sustainability and compliance certifications.",
                 },
               ].map((card, index) => (
                 <div
                   key={index}
-                  className="col-sm-12 col-md-6 col-lg-3"
+                  className="col-sm-12 col-md-4 col-lg-4"
                   data-aos="fade-up"
                 >
                   <div className="relationship-card border-outline text-center">
-                    {/* Use image instead of <i> */}
-                    <img
-                      src={card.icon}
-                      alt={card.title}
-                      className="relationship-icon mb-3"
-                      style={{
-                        width: "60px",
-                        height: "60px",
-                        objectFit: "contain",
-                      }}
-                    />
+                    <i
+                      className={`${card.icon} mb-3`}
+                      style={{ fontSize: "60px" }}
+                    ></i>
+
                     <h5>{card.title}</h5>
                     <p>{card.desc}</p>
                   </div>
@@ -326,28 +317,55 @@ export default function Home() {
             </div>
           </div>
           <div className="space"></div>
-          <div className="content-card" data-aos="fade-up">
-            <p className="card-subtitle">WHO WE ARE?</p>
-            <h2 className="card-title mt-3">PAKISTAN TEXTILE EXCHANGE</h2>
-            <p className="card-description">
-              Pakistan Textile Exchange (Paktex) is a leading apparel sourcing
-              company offering complete supply chain solutions including product
-              development, quality assurance, logistics, and import services. We
-              partner with global brands to deliver high-quality garments with a
-              strong focus on timely delivery and full social compliance. Backed
-              by a network of reliable manufacturers and a commitment to ethical
-              practices, Paktex ensures excellence at every stage—from concept
-              to final shipment.
-            </p>
-            <Link to="/inquireform">
-              <button
-                type="button"
-                className="btn btn-outline-dark read-more px-5"
-              >
-                INQUIRE NOW
-              </button>
-            </Link>
-          </div>
+       <div
+        className="container-fluid position-relative p-0"
+        style={{
+          height: "80vh",
+          backgroundImage: `url(${Image.sectionbanner})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        {/* Dark overlay only on background */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.5)", // dark overlay (instead of filter)
+            zIndex: 1,
+          }}
+        ></div>
+
+        {/* Text content */}
+        <div
+          className="position-absolute top-50 start-50 translate-middle text-center text-white"
+          style={{ width: "80%", zIndex: 2 }}
+        >
+          <h1 className="fw-bold text-uppercase mb-3">
+            Trying to serve you best since 1966
+          </h1>
+          <p>
+            Pakistan Textile Exchange (Paktex) is a leading apparel sourcing
+    company offering complete supply chain solutions including product
+    development, quality assurance, logistics, and import services. We
+    partner with global brands to deliver high-quality garments with a
+    strong focus on timely delivery and full social compliance. Backed
+    by a network of reliable manufacturers and a commitment to ethical
+    practices, Paktex ensures excellence at every stage—from concept
+    to final shipment.
+          </p>
+          <Link to="/about">
+            <button type="button" className="btn btn-outline-light ps-5 pe-5">
+              About us
+            </button>
+          </Link>
+        </div>
+      </div>
+
           <div className="space"></div>
           <div className="container my-5" data-aos="fade-up">
             <div className="row align-items-center">
@@ -368,11 +386,11 @@ export default function Home() {
                   contribute to a greener textile ecosystem while meeting the
                   growing demand for ethical fashion.
                 </p>
-                <Link  to="/Cutting"  target="_blank">
+                <Link to="/Cutting" target="_blank">
                   <button className=" btn btn-outline-dark">
-                  Explore Our Factory
-                </button></Link>
-              
+                    Explore Our Factory
+                  </button>
+                </Link>
               </div>
               <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 h-100">
                 <video
@@ -414,11 +432,35 @@ export default function Home() {
           </div>
 
           <br />
-          <div className="app-container mt-5" data-aos="fade-up">
-            <ScrollRow images={row1} rowClass="row1" loading="lazy" />
-            <ScrollRow images={row2} rowClass="row2" loading="lazy" />
-            <ScrollRow images={row3} rowClass="row3" loading="lazy" />
+          <div className="space"></div>
+           <div className="text-center" data-aos="fade-up">
+            <h1 className="text-center fw-bold fs-1 ">CLIENTS</h1>
+            <p>Proudly partnering with top international brands and companies</p>
           </div>
+       <div className="client-slider">
+<div className="scroll-row">
+  {[
+    "Live Nation",
+    "Ripple Junction",
+    "Merch Traffic",
+    "Scope",
+    "Bravado",
+    "C&P Brands",
+    "Merch Traffic",
+    "Scope",
+    "Bravado",
+    "C&P",
+    "Lkwid",
+    "Silk City",
+    "Elevated",
+    "The Forecast Agency",
+  ].map((client, i) => (
+    <h1 key={i} className="client-item">| {client} |</h1>
+  ))}
+</div>
+
+</div>
+
           <div className="space"></div>
           <div className="text-center" data-aos="fade-up">
             <h1 className="text-center fw-bold fs-1 ">BLOGS</h1>
@@ -500,64 +542,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="space"></div>
-          <div className="w-100 py-5">
-            <div
-              className="container-fluid text-dark text-center p-5 content-card"
-              data-aos="fade-up"
-            >
-              <h2 className="fw-bold mb-3">Subscribe to Our Channel</h2>
-              <p className="mb-4">
-                Stay updated with the latest videos, tutorials, and industry
-                insights. Enter your email below.
-              </p>
 
-              <form
-                onSubmit={handleSubmit}
-                className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2"
-              >
-                <input
-                  type="email"
-                  className="form-control"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  style={{
-                    maxWidth: "300px",
-                    borderRadius: "none",
-                    padding: "0.5rem",
-                  }}
-                />
-                <button type="submit" className="btn btn-outline-light px-4 ">
-                  {loading ? "Subscribing..." : "Subscribe"}
-                </button>
-              </form>
-            </div>
-          </div>
-          <h1 className="text-center fw-bold " data-aos="fade-up">
-            WHY CHOOSE US?
-          </h1>
-          <div className="space"></div>
-          <div className="container mb-5" data-aos="fade-up">
-            <div className="row g-4">
-              {[
-                { icon: "fas fa-tshirt", text: "Premium Quality Fabrics" },
-                { icon: "fas fa-recycle", text: "Sustainable Manufacturing" },
-                {
-                  icon: "fas fa-shipping-fast",
-                  text: "On-Time Global Delivery",
-                },
-              ].map((item, i) => (
-                <div key={i} className="col-md-4 text-center">
-                  <div>
-                    <i className={`${item.icon} fa-3x mb-3`}></i>
-                    <p>{item.text}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
           <Footer />
         </>
       )}
