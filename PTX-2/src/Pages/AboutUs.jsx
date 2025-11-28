@@ -77,6 +77,29 @@ export default function AboutUs() {
       </div>
 
       <div className="space"></div>
+        <h1 className="text-center fw-bold " data-aos="fade-up">
+            WHY CHOOSE US?
+          </h1>
+          <div className="space"></div>
+          <div className="container mb-5" data-aos="fade-up">
+            <div className="row g-4">
+              {[
+                { icon: "fas fa-tshirt", text: "Premium Quality Fabrics" },
+                { icon: "fas fa-recycle", text: "Sustainable Manufacturing" },
+                {
+                  icon: "fas fa-shipping-fast",
+                  text: "On-Time Global Delivery",
+                },
+              ].map((item, i) => (
+                <div key={i} className="col-md-4 text-center">
+                  <div>
+                    <i className={`${item.icon} fa-3x mb-3`}></i>
+                    <p>{item.text}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
       <div className="container" data-aos="fade-up">
         <div className="row align-items-center">
