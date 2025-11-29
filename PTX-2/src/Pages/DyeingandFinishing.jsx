@@ -10,40 +10,38 @@ export default function DyeingandFinishing() {
  
   return (
     <>
-      <div
+       <div
         className="container-fluid p-0 mt-lg-5 mt-4 position-relative"
         data-aos="fade-up"
-        fetchPriority="high"
-        style={{ textAlign: "" }}
+        style={{ height: "30vh" }} // adjust height as needed
       >
-        {/* Banner Image */}
-        <br />
-        <div className="col-12 ">
-          <img
-            src={Image.banner2}
-            alt="ptx-banner-image"
-            className="banner-image2 w-100"
-            fetchPriority="high"
-         
-          />
-        </div>
+        {/* Solid Black Background */}
+        <div
+          className="w-100 h-100"
+          style={{
+            backgroundColor: "#000000", // pure black
+            // Or use a very dark shade: "#0f0f0f", "#111111"
+          }}
+        ></div>
 
-        {/* Text Overlay */}
+        {/* Text Overlay - ABOUT US */}
         <div
           className="text-overlay-size"
           style={{
             position: "absolute",
             top: "50%",
             left: "50%",
-
             transform: "translate(-50%, -50%)",
             color: "white",
-            // fontSize: "5rem",
-            fontWeight: "bold",
-            textShadow: "2px 2px 8px rgba(0,0,0,0.7)",
+
+            fontWeight: "600",
+            textShadow: "3px 3px 10px rgba(0,0,0,0.9)",
+            letterSpacing: "0.05em",
+            textAlign: "center",
+            zIndex: 10,
           }}
         >
-          DYEING
+       DYEING
         </div>
       </div>
       <div className="container unique-division-section" data-aos="fade-up">
