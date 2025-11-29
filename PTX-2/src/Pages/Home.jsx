@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 
 export default function Home() {
-  
   const [playVideo, setPlayVideo] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -57,9 +56,10 @@ export default function Home() {
   const products = [
     { img: Image.latestproduct1, title: "KNITS" },
     { img: Image.latestproduct2, title: "WOVENS" },
-    { img: Image.latestproduct3, title: "OUTWEAR" },
+    { img: Image.latestproduct3, title: "OUTERWEAR" },
     { img: Image.latestproduct4, title: "DENIM" },
-
+      { img: Image.latestproduct5, title: "ACTIVEWEAR" },
+    { img: Image.latestproduct6, title: "ACESSORIES" }
   ];
 
   const allImages = [{ src: Image.img69, alt: "69" }];
@@ -175,72 +175,22 @@ export default function Home() {
               {products.map((product, index) => (
                 <div
                   key={index}
-                  className="col-sm-12 col-md-6 col-lg-3 col-xl-3 "
+                  className="col-sm-12 col-md-6 col-lg-4 col-xl-4 "
                   data-aos="fade-up"
                 >
-                 <div className="product-box">
-  <img src={product.img} className="product-image" alt={product.title} />
-  <h4>{product.title}</h4>
-</div>
-
+                  <div className="product-box">
+                    <img
+                      src={product.img}
+                      className="product-image"
+                      alt={product.title}
+                    />
+                    <h4>{product.title}</h4>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="space"></div>
-          <div
-            className="container-fluid position-relative p-0"
-            style={{
-              height: "80vh",
-              backgroundImage: `url(${Image.sectionbanner})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundAttachment: "fixed",
-            }}
-          >
-            {/* Dark overlay only on background */}
-            <div
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                backgroundColor: "rgba(0, 0, 0, 0.5)", // dark overlay (instead of filter)
-                zIndex: 1,
-              }}
-            ></div>
-
-            {/* Text content */}
-            <div
-              className="position-absolute top-50 start-50 translate-middle text-center text-white"
-              style={{ width: "80%", zIndex: 2 }}
-            >
-              <h1 className="fw-bold text-uppercase mb-3">
-                Proudly serving you best since 2005
-              </h1>
-              <p>
-                Pakistan Textile Exchange (Paktex) is a leading apparel sourcing
-                company offering complete supply chain solutions including
-                product development, quality assurance, logistics, and import
-                services. We partner with global brands to deliver high-quality
-                garments with a strong focus on timely delivery and full social
-                compliance. Backed by a network of reliable manufacturers and a
-                commitment to ethical practices, Paktex ensures excellence at
-                every stage—from concept to final shipment.
-              </p>
-              <Link to="/aboutus">
-                <button
-                  type="button"
-                  className="btn btn-outline-light ps-5 pe-5"
-                >
-                  About us
-                </button>
-              </Link>
-            </div>
-          </div>
-
-          <div className="space"></div>
+         <div className="space"></div>
           <div className="container my-5" data-aos="fade-up">
             <div className="row align-items-center">
               <div className="col-lg-6 mb-4 mb-lg-0 h-100">
@@ -318,8 +268,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-          <br />
+              <br />
           <div className="container-fluid mt-5" data-aos="fade-up">
             <div className="row">
               <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center stats-col ">
@@ -340,16 +289,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <br />
-          <div className="space"></div>
+          </div>
+      
+           <div className="space"></div>
           <div className="text-center" data-aos="fade-up">
             <h1 className="text-center fw-bold fs-1 ">CLIENTS</h1>
             <p>
               Proudly partnering with top international brands and companies
             </p>
           </div>
-          <div className="client-slider" data-aos="fade-up">
+            <div className="client-slider" data-aos="fade-up">
             <div className="scroll-row">
               {[
                 "Live Nation",
@@ -371,6 +320,58 @@ export default function Home() {
                   | {client} |
                 </h1>
               ))}
+            </div>
+          </div>
+          <div className="space"></div>
+          <div
+            className="container-fluid position-relative p-0"
+            style={{
+              height: "80vh",
+              backgroundImage: `url(${Image.sectionbanner})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundAttachment: "fixed",
+            }}
+          >
+            {/* Dark overlay only on background */}
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backgroundColor: "rgba(0, 0, 0, 0.5)", // dark overlay (instead of filter)
+                zIndex: 1,
+              }}
+            ></div>
+
+            {/* Text content */}
+            <div
+              className="position-absolute top-50 start-50 translate-middle text-center text-white"
+              style={{ width: "80%", zIndex: 2 }}
+            >
+              <h1 className="fw-bold text-uppercase mb-3">
+                Proudly serving you best since 2005
+              </h1>
+              <p>
+                Pakistan Textile Exchange (Paktex) is a leading apparel sourcing
+                company offering complete supply chain solutions including
+                product development, quality assurance, logistics, and import
+                services. We partner with global brands to deliver high-quality
+                garments with a strong focus on timely delivery and full social
+                compliance. Backed by a network of reliable manufacturers and a
+                commitment to ethical practices, Paktex ensures excellence at
+                every stage—from concept to final shipment.
+              </p>
+              <Link to="/aboutus">
+                <button
+                  type="button"
+                  className="btn btn-outline-light ps-5 pe-5"
+                >
+                  About us
+                </button>
+              </Link>
             </div>
           </div>
 

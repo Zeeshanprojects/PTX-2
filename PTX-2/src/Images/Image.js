@@ -13,7 +13,7 @@ const Image = {
   Blog3: require("./Blog3-image.webp"),
   latestproduct1: require("./Knit.webp"),
   latestproduct2: require("./Woven.webp"),
-    latestproduct3: require("./Outwear.webp"),
+    latestproduct3: require("./Outerwear.webp"),
   latestproduct4: require("./Denim.webp"),
   latestproduct5: require("./Activewear.webp"),
   latestproduct6: require("./Acessories.webp"),
