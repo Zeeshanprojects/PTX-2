@@ -84,22 +84,22 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/qualityassurance">
-                      Quality Assurance
+                      QUALITY ASSURANCE
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/dyeingandfinishing">
-                      Dyeing
+                      DYEING
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/fabricdivision">
-                      Fabric Division
+                      FABRIC DIVISION
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/GarmentDivision">
-                      Garment Division
+                     GARMENT DIVISION
                     </Link>
                   </li>
                 </ul>
@@ -118,27 +118,27 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/Cutting">
-                      Cutting
+                      CUTTING
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/Sampling">
-                      Sampling
+                      SAMPLING
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/stitching">
-                      Stitching
+                      STITCHING
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/finishing">
-                      Finishing
+                      FINISHING
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/laboratory">
-                      Laboratory
+                      LABORATORY
                     </Link>
                   </li>
                 </ul>
