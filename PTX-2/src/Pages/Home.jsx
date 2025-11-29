@@ -81,10 +81,12 @@ export default function Home() {
   };
 
   const products = [
-    { img: Image.latestproduct1, title: "PTX Essential" },
-    { img: Image.latestproduct2, title: "PTX Juniors" },
-    { img: Image.latestproduct4, title: "PTX Denim" },
-    { img: Image.latestproduct5, title: "PTX Denim" },
+    { img: Image.latestproduct1, title: "KNITS" },
+    { img: Image.latestproduct2, title: "WOVENS" },
+    { img: Image.latestproduct3, title: "Denim" },
+    { img: Image.latestproduct4, title: "OUTERWEAR" },
+ { img: Image.latestproduct5, title: "ACTIVEWEAR" },
+    { img: Image.latestproduct6 , title: "ACCESSORIES" },
   ];
 
   const allImages = [{ src: Image.img69, alt: "69" }];
@@ -200,7 +202,7 @@ export default function Home() {
               {products.map((product, index) => (
                 <div
                   key={index}
-                  className="col-sm-12 col-md-12 col-lg-3 col-xl-3 "
+                  className="col-sm-12 col-md-6 col-lg-4 col-xl-4 "
                   data-aos="fade-up"
                 >
                   <div className="product-box">
@@ -208,7 +210,9 @@ export default function Home() {
                       src={product.img}
                       className="product-image"
                       alt={product.title}
+                      
                     />
+                    <h4>{product.title}</h4>
                   </div>
                 </div>
               ))}
