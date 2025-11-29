@@ -37,7 +37,7 @@ const Image = {
   p10: require("./Production10.webp"),
   p11: require("./Production11.webp"),
 sectionbanner: require("./aboutbanner.webp"),
-  
+  Thumbnail:require("./thumbnail.webp"),
   CEO: require("./Davidjumani.webp"),
   location: require("./location.webp"),
   qualityassurance: require("./QA.webp"),

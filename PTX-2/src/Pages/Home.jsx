@@ -8,6 +8,8 @@ import Footer from "../Components/Footer";
 export default function Home() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -171,8 +173,6 @@ export default function Home() {
     ];
   };
 
- 
-
   const ScrollRow = ({ images, rowClass }) => (
     <div className={`scroll-row ${rowClass}`}>
       <div className="scroll-content">
@@ -317,74 +317,78 @@ export default function Home() {
             </div>
           </div>
           <div className="space"></div>
-       <div
-        className="container-fluid position-relative p-0"
-        style={{
-          height: "80vh",
-          backgroundImage: `url(${Image.sectionbanner})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        {/* Dark overlay only on background */}
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.5)", // dark overlay (instead of filter)
-            zIndex: 1,
-          }}
-        ></div>
+          <div
+            className="container-fluid position-relative p-0"
+            style={{
+              height: "80vh",
+              backgroundImage: `url(${Image.sectionbanner})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundAttachment: "fixed",
+            }}
+          >
+            {/* Dark overlay only on background */}
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backgroundColor: "rgba(0, 0, 0, 0.5)", // dark overlay (instead of filter)
+                zIndex: 1,
+              }}
+            ></div>
 
-        {/* Text content */}
-        <div
-          className="position-absolute top-50 start-50 translate-middle text-center text-white"
-          style={{ width: "80%", zIndex: 2 }}
-        >
-          <h1 className="fw-bold text-uppercase mb-3">
-            Trying to serve you best since 1966
-          </h1>
-          <p>
-            Pakistan Textile Exchange (Paktex) is a leading apparel sourcing
-    company offering complete supply chain solutions including product
-    development, quality assurance, logistics, and import services. We
-    partner with global brands to deliver high-quality garments with a
-    strong focus on timely delivery and full social compliance. Backed
-    by a network of reliable manufacturers and a commitment to ethical
-    practices, Paktex ensures excellence at every stage—from concept
-    to final shipment.
-          </p>
-          <Link to="/about">
-            <button type="button" className="btn btn-outline-light ps-5 pe-5">
-              About us
-            </button>
-          </Link>
-        </div>
-      </div>
+            {/* Text content */}
+            <div
+              className="position-absolute top-50 start-50 translate-middle text-center text-white"
+              style={{ width: "80%", zIndex: 2 }}
+            >
+              <h1 className="fw-bold text-uppercase mb-3">
+                Trying to serve you best since 1966
+              </h1>
+              <p>
+                Pakistan Textile Exchange (Paktex) is a leading apparel sourcing
+                company offering complete supply chain solutions including
+                product development, quality assurance, logistics, and import
+                services. We partner with global brands to deliver high-quality
+                garments with a strong focus on timely delivery and full social
+                compliance. Backed by a network of reliable manufacturers and a
+                commitment to ethical practices, Paktex ensures excellence at
+                every stage—from concept to final shipment.
+              </p>
+              <Link to="/about">
+                <button
+                  type="button"
+                  className="btn btn-outline-light ps-5 pe-5"
+                >
+                  About us
+                </button>
+              </Link>
+            </div>
+          </div>
 
           <div className="space"></div>
           <div className="container my-5" data-aos="fade-up">
             <div className="row align-items-center">
               <div className="col-lg-6 mb-4 mb-lg-0 h-100">
-                <h3 className=" fw-bold">OUR FACTORY PRODUCTION</h3>
+                <h3 className=" fw-bold">Your Global Apparel Partner</h3>
+                <h6> From Concept to Delivery</h6>
                 <p className="factory-para">
-                  At our state-of-the-art textile facility, we specialize in the
-                  production of high-quality fabrics ranging from denim to woven
-                  and knitwear. From yarn spinning to final finishing, each
-                  process is carefully monitored under strict quality controls.
-                  Our production floor is equipped with modern looms, automated
-                  dyeing units, and precision cutting machines to maintain
-                  accuracy and minimize waste. Sustainability is also a key
-                  pillar of our operations we’ve adopted eco-friendly practices
-                  in water usage, chemical handling, and energy management to
-                  reduce our environmental footprint By integrating sustainable
-                  raw materials such as organic cotton and recycled fibers, we
-                  contribute to a greener textile ecosystem while meeting the
-                  growing demand for ethical fashion.
+                  Manufacturing, sourcing, and quality assurance powered by our
+                  advanced custom PLM system. We deliver end-to-end apparel
+                  solutions with precision and consistency, ensuring every
+                  product meets global standards. From concept development to
+                  final production, our integrated workflow guarantees
+                  transparency, speed, and seamless collaboration at every
+                  stage. We specialize in high-quality knits, premium denim,
+                  durable outerwear, and performance-driven activewear, offering
+                  complete material sourcing, mill management, product
+                  engineering, and compliance oversight. With robust quality
+                  checkpoints and real-time production tracking, we help brands
+                  reduce lead times, optimize costs, and achieve unmatched
+                  reliability across their supply chain.
                 </p>
                 <Link to="/Cutting" target="_blank">
                   <button className=" btn btn-outline-dark">
@@ -393,19 +397,32 @@ export default function Home() {
                 </Link>
               </div>
               <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 h-100">
-                <video
-                  data-aos="fade-up"
-                  width="100%"
-                  height="auto"
-                  controls
-                  autoPlay
-                  muted
-                  loop
-                  loading="lazy"
-                >
-                  <source src="/PTX-Video.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <div className="video-container" onClick={() => setShowModal(true)}>
+  <img
+    src={Image.Thumbnail}
+    alt="Video Thumbnail"
+    className="video-thumbnail"
+  />
+  <div className="play-button-overlay">▶</div>
+</div>
+
+{showModal && (
+  <div className="video-modal" onClick={() => setShowModal(false)}>
+    <div
+      className="video-modal-content"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button className="close-btn" onClick={() => setShowModal(false)}>
+        ×
+      </button>
+
+      <video controls autoPlay className="modal-video">
+        <source src="/PTX-Video.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+)}
+
               </div>
             </div>
           </div>
@@ -433,33 +450,36 @@ export default function Home() {
 
           <br />
           <div className="space"></div>
-           <div className="text-center" data-aos="fade-up">
+          <div className="text-center" data-aos="fade-up">
             <h1 className="text-center fw-bold fs-1 ">CLIENTS</h1>
-            <p>Proudly partnering with top international brands and companies</p>
+            <p>
+              Proudly partnering with top international brands and companies
+            </p>
           </div>
-       <div className="client-slider">
-<div className="scroll-row">
-  {[
-    "Live Nation",
-    "Ripple Junction",
-    "Merch Traffic",
-    "Scope",
-    "Bravado",
-    "C&P Brands",
-    "Merch Traffic",
-    "Scope",
-    "Bravado",
-    "C&P",
-    "Lkwid",
-    "Silk City",
-    "Elevated",
-    "The Forecast Agency",
-  ].map((client, i) => (
-    <h1 key={i} className="client-item">| {client} |</h1>
-  ))}
-</div>
-
-</div>
+          <div className="client-slider">
+            <div className="scroll-row">
+              {[
+                "Live Nation",
+                "Ripple Junction",
+                "Merch Traffic",
+                "Scope",
+                "Bravado",
+                "C&P Brands",
+                "Merch Traffic",
+                "Scope",
+                "Bravado",
+                "C&P",
+                "Lkwid",
+                "Silk City",
+                "Elevated",
+                "The Forecast Agency",
+              ].map((client, i) => (
+                <h1 key={i} className="client-item">
+                  | {client} |
+                </h1>
+              ))}
+            </div>
+          </div>
 
           <div className="space"></div>
           <div className="text-center" data-aos="fade-up">

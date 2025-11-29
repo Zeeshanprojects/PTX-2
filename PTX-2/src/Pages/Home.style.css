@@ -51,51 +51,89 @@ body {
   /* fallback for small screens */
   object-fit: cover;
 }
-
+/* VIDEO THUMBNAIL */
 .video-container {
   position: relative;
-  display: inline-block;
   width: 100%;
+  cursor: pointer;
 }
 
-.video-container video {
+.video-thumbnail {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* PLAY BUTTON */
+.play-button-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+/* BACKDROP */
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+
+}
+
+/* MODAL BOX */
+.video-modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 12px;
+  overflow: hidden;
+ 
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 40px;
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 9999999;
+  padding: 0 8px;
+  border-radius: 6px;
+}
+
+/* VIDEO */
+.modal-video {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  /* flexbox */
-  justify-content: center;
-
-  align-items: center;
-  /* center vertically */
-
-  width: 100px;
-  /* fixed size button */
-  height: 100px;
-
-  background: white(0, 0, 0, 0.6);
-  border: none;
-  border-radius: 50%;
-  color: black;
-  font-size: 50px;
-  /* play icon size */
-  cursor: pointer;
-  transition: all 0.3s ease;
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
-.play-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
-  color: white !important;
-}
 
-/* Loader overlay styles */
 .loader-overlay {
   position: fixed;
   top: 0;
