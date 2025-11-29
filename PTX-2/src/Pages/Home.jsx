@@ -57,8 +57,9 @@ export default function Home() {
     { img: Image.latestproduct1, title: "KNITS" },
     { img: Image.latestproduct2, title: "WOVENS" },
     { img: Image.latestproduct3, title: "OUTERWEAR" },
+          { img: Image.latestproduct5, title: "ACTIVEWEAR" },
     { img: Image.latestproduct4, title: "DENIM" },
-      { img: Image.latestproduct5, title: "ACTIVEWEAR" },
+
     { img: Image.latestproduct6, title: "ACESSORIES" }
   ];
 
