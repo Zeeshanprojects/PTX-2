@@ -878,6 +878,7 @@ video {
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
+
   .ptx-banner-image {
     height: 50vh !important  ; /* More consistent height */
     object-fit: cover;
@@ -896,6 +897,9 @@ video {
   }
 }
 @media (max-width: 575px) {
+    h1{
+    font-size: 22px !important;
+  }
   .ptx-banner-image {
     height: 50vh !important  ; /* More consistent height */
     object-fit: cover;
