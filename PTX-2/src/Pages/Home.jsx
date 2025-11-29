@@ -250,7 +250,7 @@ const videoRef = useRef(null);
               style={{ width: "80%", zIndex: 2 }}
             >
               <h1 className="fw-bold text-uppercase mb-3">
-                Trying to serve you best since 1966
+              Proudly serving you best since 2005
               </h1>
               <p>
                 Pakistan Textile Exchange (Paktex) is a leading apparel sourcing

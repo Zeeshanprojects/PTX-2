@@ -23,7 +23,7 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import LookBook1 from "./Pages/LookBook1";
 import LookBook2 from "./Pages/LookBook2";
 import Login from "./Pages/Login";
-import Services from "./Pages/Services";
+
 import Inquireform from "./Pages/Inquireform";
 import Blog1 from "./Pages/Blog1";
 import Blog2 from "./Pages/Blog2";
@@ -83,7 +83,7 @@ function AppContent() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/aboutus" element={<AboutUs />} />
-            <Route path="/services" element={<Services />} />
+        
             <Route path="/qualityassurance" element={<QualityAssurance />} />
             <Route path="/team" element={<Teams />} />
             <Route path="/team/:slug" element={<Teaminfo />} />
