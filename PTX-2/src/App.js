@@ -100,7 +100,10 @@ function AppContent() {
             <Route path="/blog3" element={<Blog3 />} />
             <Route path="/qualitypolicy" element={<QualityPolicy />} />
             <Route path="/factorytour" element={<FactoryTour />} />
-            <Route path="/dyeingandfinishing" element={<DyeingandFinishing />} />
+            <Route
+              path="/dyeingandfinishing"
+              element={<DyeingandFinishing />}
+            />
             <Route path="/fabricdivision" element={<FabricDivision />} />
             <Route path="/garmentdivision" element={<GarmentDivision />} />
             <Route path="/sampling" element={<Sampling />} />

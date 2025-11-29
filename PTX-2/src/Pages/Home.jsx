@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,useRef } from "react";
 import axios from "axios";
 import Image from "../Images/Image";
 import "./Home.style.css";
@@ -7,14 +7,23 @@ import Footer from "../Components/Footer";
 
 export default function Home() {
   const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [showModal, setShowModal] = useState(false);
+ const [playVideo, setPlayVideo] = useState(false);
+const [videoReady, setVideoReady] = useState(false);
+const[loading,setLoading]=useState(false)
+const videoRef = useRef(null);
+
 
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     document.title = "Home | Pakistan Textile Exchange";
+ const vid = document.createElement("video");
+  vid.src = "/PTX-Video.mp4";
+  vid.preload = "auto";
 
+  vid.oncanplaythrough = () => {
+    setVideoReady(true);
+  };
     // Load all content (images, video) to ensure uniform loading
     const loadContent = async () => {
       const imagePromises = [
@@ -45,7 +54,7 @@ export default function Home() {
     };
 
     loadContent();
-  });
+  },[]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -358,7 +367,7 @@ export default function Home() {
                 commitment to ethical practices, Paktex ensures excellence at
                 every stage—from concept to final shipment.
               </p>
-              <Link to="/about">
+              <Link to="/aboutus">
                 <button
                   type="button"
                   className="btn btn-outline-light ps-5 pe-5"
@@ -397,31 +406,41 @@ export default function Home() {
                 </Link>
               </div>
               <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 h-100">
-              <div className="video-container" onClick={() => setShowModal(true)}>
-  <img
-    src={Image.Thumbnail}
-    alt="Video Thumbnail"
-    className="video-thumbnail"
-  />
-  <div className="play-button-overlay">▶</div>
-</div>
+               <div className="video-container">
 
-{showModal && (
-  <div className="video-modal" onClick={() => setShowModal(false)}>
-    <div
-      className="video-modal-content"
-      onClick={(e) => e.stopPropagation()}
+  {/* THUMBNAIL + PLAY BUTTON */}
+  {!playVideo && (
+    <>
+      <img
+        src={Image.Thumbnail}
+        alt="Video Thumbnail"
+        className="video-thumbnail"
+      />
+
+      <div
+        className="play-button-overlay"
+        onClick={() => {
+          if (videoReady) setPlayVideo(true);
+        }}
+      >
+        ▶
+      </div>
+    </>
+  )}
+
+  {/* VIDEO PLAYER */}
+  {playVideo && (
+    <video
+      ref={videoRef}
+      controls
+      autoPlay
+      className="video-element"
+      onPause={() => setPlayVideo(false)}  // bring thumbnail + button back
     >
-      <button className="close-btn" onClick={() => setShowModal(false)}>
-        ×
-      </button>
-
-      <video controls autoPlay className="modal-video">
-        <source src="/PTX-Video.mp4" type="video/mp4" />
-      </video>
-    </div>
-  </div>
-)}
+      <source src="/PTX-Video.mp4" type="video/mp4" />
+    </video>
+  )}
+</div>
 
               </div>
             </div>
@@ -456,12 +475,12 @@ export default function Home() {
               Proudly partnering with top international brands and companies
             </p>
           </div>
-          <div className="client-slider">
+          <div className="client-slider" data-aos="fade-up">
             <div className="scroll-row">
               {[
                 "Live Nation",
                 "Ripple Junction",
-                "Merch Traffic",
+                "Merch Treffic",
                 "Scope",
                 "Bravado",
                 "C&P Brands",
