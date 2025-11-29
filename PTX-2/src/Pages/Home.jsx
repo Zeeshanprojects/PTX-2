@@ -1,12 +1,12 @@
 import { useEffect, useState, useRef } from "react";
-import axios from "axios";
+
 import Image from "../Images/Image";
 import "./Home.style.css";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 
 export default function Home() {
-  const [email, setEmail] = useState("");
+  
   const [playVideo, setPlayVideo] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -52,41 +52,14 @@ export default function Home() {
     };
 
     loadContent();
-  }, []);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!email) {
-      alert("Please enter a valid email.");
-      return;
-    }
-    setLoading(true);
-    try {
-      const response = await axios.post(
-        "https://ptxapi.io/api/newslettersubscribers",
-        { email }
-      );
-      if (response.status === 201 || response.status === 200) {
-        alert("Subscribed successfully!");
-        setEmail("");
-      } else {
-        alert("Subscription failed. Please try again.");
-      }
-    } catch (error) {
-      console.error("API Error:", error);
-      alert("An error occurred while subscribing.");
-    } finally {
-      setLoading(false);
-    }
-  };
+  });
 
   const products = [
     { img: Image.latestproduct1, title: "KNITS" },
     { img: Image.latestproduct2, title: "WOVENS" },
-    { img: Image.latestproduct3, title: "Denim" },
-    { img: Image.latestproduct4, title: "OUTERWEAR" },
- { img: Image.latestproduct5, title: "ACTIVEWEAR" },
-    { img: Image.latestproduct6 , title: "ACCESSORIES" },
+    { img: Image.latestproduct3, title: "OUTWEAR" },
+    { img: Image.latestproduct4, title: "DENIM" },
+
   ];
 
   const allImages = [{ src: Image.img69, alt: "69" }];
@@ -202,18 +175,14 @@ export default function Home() {
               {products.map((product, index) => (
                 <div
                   key={index}
-                  className="col-sm-12 col-md-6 col-lg-4 col-xl-4 "
+                  className="col-sm-12 col-md-6 col-lg-3 col-xl-3 "
                   data-aos="fade-up"
                 >
-                  <div className="product-box">
-                    <img
-                      src={product.img}
-                      className="product-image"
-                      alt={product.title}
-                      
-                    />
-                    <h4>{product.title}</h4>
-                  </div>
+                 <div className="product-box">
+  <img src={product.img} className="product-image" alt={product.title} />
+  <h4>{product.title}</h4>
+</div>
+
                 </div>
               ))}
             </div>
