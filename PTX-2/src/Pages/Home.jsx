@@ -1,4 +1,4 @@
-import { useEffect, useState,useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import Image from "../Images/Image";
 import "./Home.style.css";
@@ -7,23 +7,21 @@ import Footer from "../Components/Footer";
 
 export default function Home() {
   const [email, setEmail] = useState("");
- const [playVideo, setPlayVideo] = useState(false);
-const [videoReady, setVideoReady] = useState(false);
-const[loading,setLoading]=useState(false)
-const videoRef = useRef(null);
-
+  const [playVideo, setPlayVideo] = useState(false);
+  const [videoReady, setVideoReady] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const videoRef = useRef(null);
 
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     document.title = "Home | Pakistan Textile Exchange";
- const vid = document.createElement("video");
-  vid.src = "/PTX-Video.mp4";
-  vid.preload = "auto";
-
-  vid.oncanplaythrough = () => {
-    setVideoReady(true);
-  };
+    const vid = document.createElement("video");
+    vid.src = "/PTX-Video.mp4";
+    vid.preload = "auto";
+    vid.oncanplaythrough = () => {
+      setVideoReady(true);
+    };
     // Load all content (images, video) to ensure uniform loading
     const loadContent = async () => {
       const imagePromises = [
@@ -54,7 +52,7 @@ const videoRef = useRef(null);
     };
 
     loadContent();
-  },[]);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -89,11 +87,7 @@ const videoRef = useRef(null);
     { img: Image.latestproduct5, title: "PTX Denim" },
   ];
 
-  const allImages = [
-   
-
-    { src: Image.img69, alt: "69" },
-  ];
+  const allImages = [{ src: Image.img69, alt: "69" }];
 
   const Loader = () => (
     <div className="loader-overlay">
@@ -250,7 +244,7 @@ const videoRef = useRef(null);
               style={{ width: "80%", zIndex: 2 }}
             >
               <h1 className="fw-bold text-uppercase mb-3">
-              Proudly serving you best since 2005
+                Proudly serving you best since 2005
               </h1>
               <p>
                 Pakistan Textile Exchange (Paktex) is a leading apparel sourcing
@@ -301,42 +295,54 @@ const videoRef = useRef(null);
                 </Link>
               </div>
               <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 h-100">
-               <div className="video-container">
+                <div className="video-container">
+                  {/* THUMBNAIL + PLAY BUTTON */}
+                  {!playVideo && !loading && (
+                    <>
+                      <img
+                        src={Image.Thumbnail}
+                        alt="Video Thumbnail"
+                        className="video-thumbnail"
+                      />
 
-  {/* THUMBNAIL + PLAY BUTTON */}
-  {!playVideo && (
-    <>
-      <img
-        src={Image.Thumbnail}
-        alt="Video Thumbnail"
-        className="video-thumbnail"
-      />
+                      <div
+                        className="play-button-overlay"
+                        onClick={() => {
+                          if (videoReady) {
+                            setLoading(true); // show loader
+                            setTimeout(() => {
+                              setPlayVideo(true);
+                              setLoading(false);
+                            }, 300); // slight delay to remove flash
+                          }
+                        }}
+                      >
+                        ▶
+                      </div>
+                    </>
+                  )}
 
-      <div
-        className="play-button-overlay"
-        onClick={() => {
-          if (videoReady) setPlayVideo(true);
-        }}
-      >
-        ▶
-      </div>
-    </>
-  )}
+                  {/* LOADING SPINNER */}
+                  {loading && (
+                    <div className="video-loader">
+                      <div className="spinner"></div>
+                    </div>
+                  )}
 
-  {/* VIDEO PLAYER */}
-  {playVideo && (
-    <video
-      ref={videoRef}
-      controls
-      autoPlay
-      className="video-element"
-      onPause={() => setPlayVideo(false)}  // bring thumbnail + button back
-    >
-      <source src="/PTX-Video.mp4" type="video/mp4" />
-    </video>
-  )}
-</div>
-
+                  {/* VIDEO PLAYER */}
+                  {playVideo && (
+                    <video
+                      ref={videoRef}
+                      controls
+                      autoPlay
+                      className="video-element"
+                      onPause={() => setPlayVideo(false)}
+                      onLoadedData={() => setLoading(false)}
+                    >
+                      <source src="/PTX-Video.mp4" type="video/mp4" />
+                    </video>
+                  )}
+                </div>
               </div>
             </div>
           </div>
