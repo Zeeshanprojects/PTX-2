@@ -721,15 +721,6 @@ video {
   border-radius: 10px !important;
 }
 
-.stats-col {
-  border-right: 2px solid black;
-  /* vertical line */
-}
-
-.stats-col:last-child {
-  border-right: none;
-  /* remove line on last column */
-}
 
 @keyframes scroll-left {
   0% {
@@ -906,7 +897,7 @@ video {
 }
 @media (max-width: 575px) {
   .ptx-banner-image {
-    height: 60vh !important  ; /* More consistent height */
+    height: 50vh !important  ; /* More consistent height */
     object-fit: cover;
   }
 
@@ -917,13 +908,14 @@ video {
   }
 
   .banner-overlay h1 {
-    font-size: 35px !important; /* readable & modern */
-    line-height: 1.3;
+    font-size: 23px !important;
+    width: 100% !important ; 
   }
 
   .banner-overlay p {
-    font-size: 0.9rem !important;
+    font-size: 0.7rem !important;
     margin-top: 10px;
+    width: 100% !important;
   }
 
   .banner-overlay button {

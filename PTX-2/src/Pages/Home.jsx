@@ -55,12 +55,12 @@ export default function Home() {
 
   const products = [
     { img: Image.latestproduct1, title: "KNITS" },
-    { img: Image.latestproduct2, title: "WOVENS" },
+    { img: Image.latestproduct2, title: "WOVEN" },
     { img: Image.latestproduct3, title: "OUTERWEAR" },
-          { img: Image.latestproduct5, title: "ACTIVEWEAR" },
+    { img: Image.latestproduct5, title: "ACTIVEWEAR" },
     { img: Image.latestproduct4, title: "DENIM" },
 
-    { img: Image.latestproduct6, title: "ACESSORIES" }
+    { img: Image.latestproduct6, title: "ACCESSORIES" },
   ];
 
   const allImages = [{ src: Image.img69, alt: "69" }];
@@ -191,7 +191,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-         <div className="space"></div>
+          <div className="space"></div>
           <div className="container my-5" data-aos="fade-up">
             <div className="row align-items-center">
               <div className="col-lg-6 mb-4 mb-lg-0 h-100">
@@ -269,8 +269,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-              <br />
-          <div className="container-fluid mt-5" data-aos="fade-up">
+            <br />
+            {/* <div className="container-fluid mt-5" data-aos="fade-up">
             <div className="row">
               <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center stats-col ">
                 <h1>5+</h1>
@@ -289,17 +289,16 @@ export default function Home() {
                 <p>YEAR</p>
               </div>
             </div>
+          </div> */}
           </div>
-          </div>
-      
-           <div className="space"></div>
+
           <div className="text-center" data-aos="fade-up">
             <h1 className="text-center fw-bold fs-1 ">CLIENTS</h1>
             <p>
               Proudly partnering with top international brands and companies
             </p>
           </div>
-            <div className="client-slider" data-aos="fade-up">
+          <div className="client-slider" data-aos="fade-up">
             <div className="scroll-row">
               {[
                 "Live Nation",
