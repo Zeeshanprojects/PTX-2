@@ -17,14 +17,14 @@ export default function Footer() {
         {/* Footer */}
         <footer className="text-center text-lg-start text-white bg-black">
           {/* Section: Social media */}
-          <section className="d-flex justify-content-between p-4 text-white"></section>
+          <section className="d-flex justify-content-between text-white"></section>
 
           <section className="">
-            <div className="container-fluid p-5 text-center text-md-start mt-3">
+            <div className="container-fluid pt-5 ps-5 pe-5  text-center text-md-start mt-3">
               {/* Grid row */}
               <div className="row mt-3">
                 {/* Grid column */}
-                <div className="col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+                <div className="col-md-6 col-lg-5 col-xl-5 mx-auto mb-md-0 mb-4">
                   {/* Content */}
                   {/* <img src={Image.logo} alt="logo"></img> */}
                   <img
@@ -32,8 +32,9 @@ export default function Footer() {
                     alt="mainlogo"
                     className="logocolor mb-3"
                   />
-                  <br />
-                  <br />
+                  
+                 <p className="mt-4 footer-paragraph">Pakistan Textile Exchange (Paktex) is a leading apparel sourcing company delivering complete supply chain solutions with quality, speed, and full social compliance. We partner with global brands to ensure excellence from concept to final shipment.</p>
+                
                   <p>
                     <Link to="/" className="text-white">
                       Laguna Beach, CA 92651
@@ -154,7 +155,7 @@ export default function Footer() {
                   </div>
                 </div>
 
-                <div className="col-md-6 col-lg-3 col-xl-3 me-auto mb-4">
+                <div className="col-md-6 col-lg-2 col-xl-2 me-auto mb-md-0 mb-4">
                   {/* Links */}
                   <h2 className="footertext ">Menu</h2>
                   <hr
@@ -192,7 +193,7 @@ export default function Footer() {
                     </Link>
                   </p>
                 </div>
-                <div className="col-md-6 col-lg-3 col-xl-3 me-auto mb-4">
+                <div className="col-md-6 col-lg-2 col-xl-2 me-auto  mb-md-0 mb-4">
                   {/* Links */}
                   <h2 className="footertext ">About</h2>
                   <hr
@@ -225,7 +226,7 @@ export default function Footer() {
                   </p>
                 </div>
 
-                <div className="col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <div className="col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ">
                   {/* Links */}
                   <h2 className="footertext">Sign Up for Email</h2>
                   <hr
@@ -253,8 +254,8 @@ export default function Footer() {
               </div>
             </div>
           </section>
-          <hr className="p-2 m-2" />
-          <div className="text-center pb-5">
+          <hr  />
+          <div className="text-center pb-5 pt-0">
             © 2025 |
             <Link className="text-white ms-1" to="/">
               PTX

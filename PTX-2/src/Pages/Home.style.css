@@ -652,32 +652,22 @@ a {
   padding: 40px 0;
   overflow: hidden;
 }
+.client-box {
+  background: #000;
+  color: #fff;
+  font-size: 1.3rem;
+  border: 1px solid #444;
+  padding: 20px 10px;
+  border-radius: 6px;
+  transition: 0.3s ease;
 
-.client-slider {
-  background: #000; /* black background */
-  overflow: hidden;
-  white-space: nowrap;
-  padding: 20px 0;
-}
-
-.scroll-row {
-  display: inline-flex;
-  gap: 60px;
-  animation: scroll-left 20s linear infinite;
 }
 
-.scroll-row h1 {
-  color: white;
-  font-size: 2rem;
-  margin: 0;
-  white-space: nowrap;
+.client-box:hover {
+  background: #111;
+  transform: translateY(-3px);
 }
-.client-item {
-  color: white;
-  margin: 0 40px;
-  font-size: 2rem;
-  white-space: nowrap;
-}
+
 
 @keyframes scroll-left {
   0% {
@@ -721,6 +711,20 @@ video {
   border-radius: 10px !important;
 }
 
+.why-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Add spacing on smaller screens */
+@media (max-width: 768px) {
+  .why-image {
+    margin-top: 20px;
+  }
+}
 
 @keyframes scroll-left {
   0% {
@@ -878,6 +882,7 @@ video {
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
+
   .ptx-banner-image {
     height: 50vh !important  ; /* More consistent height */
     object-fit: cover;
@@ -896,6 +901,9 @@ video {
   }
 }
 @media (max-width: 575px) {
+    h1{
+    font-size: 22px !important;
+  }
   .ptx-banner-image {
     height: 50vh !important  ; /* More consistent height */
     object-fit: cover;
@@ -956,7 +964,9 @@ video {
   .content-card .card-title {
     color: white !important;
   }
-
+.client-box{
+  font-size: 0.7rem;
+}
   .carousel-item img {
     height: 50vh !important;
     width: 100% !important;

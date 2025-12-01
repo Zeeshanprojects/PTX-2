@@ -37,6 +37,10 @@ footer p h1{
 .subscribe-btn:hover {
   background-color: gray;
 }
+.footer-paragraph{
+  text-align: justify;
+  hyphens: auto;
+}
 @media (min-width: 1200px) and (max-width: 1399px) {
   .subscribe-input {
     flex: 1;
@@ -68,4 +72,9 @@ font-size: 15px !important;
   .subscribe-btn {
     padding: 10px 10px !important;
   }
+}
+@media (max-width:576px) {
+ .footer-paragraph{
+  text-align: center;
+ } 
 }
