@@ -292,36 +292,34 @@ export default function Home() {
           </div> */}
           </div>
 
-          <div className="text-center" data-aos="fade-up">
-            <h1 className="text-center fw-bold fs-1 ">CLIENTS</h1>
-            <p>
-              Proudly partnering with top international brands and companies
-            </p>
-          </div>
-          <div className="client-slider" data-aos="fade-up">
-            <div className="scroll-row">
-              {[
-                "Live Nation",
-                "Ripple Junction",
-                "Merch Treffic",
-                "Scope",
-                "Bravado",
-                "C&P Brands",
-                "Merch Traffic",
-                "Scope",
-                "Bravado",
-                "C&P",
-                "Lkwid",
-                "Silk City",
-                "Elevated",
-                "The Forecast Agency",
-              ].map((client, i) => (
-                <h1 key={i} className="client-item">
-                  | {client} |
-                </h1>
-              ))}
-            </div>
-          </div>
+        <div className="text-center" data-aos="fade-up">
+  <h1 className="text-center fw-bold fs-1">CLIENTS</h1>
+  <p>Proudly partnering with top international brands and companies</p>
+</div>
+
+<div className="container my-5" data-aos="fade-up">
+  <div className="row text-center">
+    {[
+      "Live Nation",
+      "Ripple Junction",
+      "Merch Treffic",
+      "Scope",
+      "Bravado",
+      "C&P Brands",
+      "Changes",
+      "Lkwid",
+      "Silk City",
+      "Elevated",
+      "The Forecast Agency",
+      "Cotton Collective"
+    ].map((client, i) => (
+      <div className="col-6 col-md-4 mb-4" key={i}>
+        <div className="client-box">| {client} |</div>
+      </div>
+    ))}
+  </div>
+</div>
+
           <div className="space"></div>
           <div
             className="container-fluid position-relative p-0"

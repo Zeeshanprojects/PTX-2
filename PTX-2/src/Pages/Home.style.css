@@ -652,32 +652,22 @@ a {
   padding: 40px 0;
   overflow: hidden;
 }
-
-.client-slider {
-  background: #000; /* black background */
-  overflow: hidden;
-  white-space: nowrap;
-  padding: 20px 0;
+.client-box {
+  background: #000;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 20px 10px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  font-size: 20px;
 }
 
-.scroll-row {
-  display: inline-flex;
-  gap: 60px;
-  animation: scroll-left 20s linear infinite;
+.client-box:hover {
+  background: #111;
+  transform: translateY(-3px);
 }
 
-.scroll-row h1 {
-  color: white;
-  font-size: 2rem;
-  margin: 0;
-  white-space: nowrap;
-}
-.client-item {
-  color: white;
-  margin: 0 40px;
-  font-size: 2rem;
-  white-space: nowrap;
-}
 
 @keyframes scroll-left {
   0% {
