@@ -711,6 +711,20 @@ video {
   border-radius: 10px !important;
 }
 
+.why-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Add spacing on smaller screens */
+@media (max-width: 768px) {
+  .why-image {
+    margin-top: 20px;
+  }
+}
 
 @keyframes scroll-left {
   0% {
