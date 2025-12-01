@@ -33,7 +33,7 @@ export default function Footer() {
                     className="logocolor mb-3"
                   />
                   
-                 <p className="mt-4">Pakistan Textile Exchange (Paktex) is a leading apparel sourcing company delivering complete supply chain solutions with quality, speed, and full social compliance. We partner with global brands to ensure excellence from concept to final shipment.</p>
+                 <p className="mt-4 footer-paragraph">Pakistan Textile Exchange (Paktex) is a leading apparel sourcing company delivering complete supply chain solutions with quality, speed, and full social compliance. We partner with global brands to ensure excellence from concept to final shipment.</p>
                 
                   <p>
                     <Link to="/" className="text-white">
