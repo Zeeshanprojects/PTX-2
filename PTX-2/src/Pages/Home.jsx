@@ -292,92 +292,94 @@ export default function Home() {
           </div> */}
           </div>
 
-        <div className="text-center" data-aos="fade-up">
-  <h1 className="text-center fw-bold fs-1">CLIENTS</h1>
-  <p>Proudly partnering with top international brands and companies</p>
-</div>
+          <div className="text-center" data-aos="fade-up">
+            <h1 className="text-center fw-bold fs-1">CLIENTS</h1>
+            <p>
+              Proudly partnering with top international brands and companies
+            </p>
+          </div>
 
-<div className="container my-5" data-aos="fade-up">
-  <div className="row text-center">
-    {[
-      "Live Nation",
-      "Ripple Junction",
-      "Merch Treffic",
-      "Scope",
-      "Bravado",
-      "C&P Brands",
-      "Changes",
-      "Lkwid",
-      "Silk City",
-      "Elevated",
-      "The Forecast Agency",
-      "Cotton Collective"
-    ].map((client, i) => (
-      <div className="col-6 col-md-4 mb-4" key={i}>
-        <div className="client-box">| {client} |</div>
-      </div>
-    ))}
-  </div>
-</div>
+          <div className="container my-5" data-aos="fade-up">
+            <div className="row text-center">
+              {[
+                "Live Nation",
+                "Ripple Junction",
+                "Merch Treffic",
+                "Scope",
+                "Bravado",
+                "C&P Brands",
+                "Changes",
+                "Lkwid",
+                "Silk City",
+                "Elevated",
+                "The Forecast Agency",
+                "Cotton Collective",
+              ].map((client, i) => (
+                <div className="col-6 col-md-4 mb-4" key={i}>
+                  <div className="client-box">| {client} |</div>
+                </div>
+              ))}
+            </div>
+          </div>
 
           <div className="space"></div>
           <section className="why-pakistan-section" data-aos="fade-up">
-<div className="container">
-  <div className="row align-items-center">
-    <div className="col-md-6">
-      <h2 className="why-title">Why Pakistan?</h2>
-      <p className="why-intro">
-        Pakistan has emerged as a strategic sourcing hub for apparel and textiles,
-        offering a powerful combination of cost efficiency, market access, and
-        modern manufacturing capability.
-      </p>
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-md-6">
+                  <h1 className="why-title">Why Pakistan?</h1>
+                  <p className="why-intro">
+                    Pakistan has emerged as a strategic sourcing hub for apparel
+                    and textiles, offering a powerful combination of cost
+                    efficiency, market access, and modern manufacturing
+                    capability.
+                  </p>
 
-      <h4 className="why-subtitle">Tariff & Trade Advantages</h4>
-      <ul className="why-list">
-        <li>
-          Preferential access to key markets under various trade agreements and
-          concessionary schemes.
-        </li>
-        <li>
-          Competitive duty structures that help brands improve landed cost and
-          overall margin.
-        </li>
-        <li>
-          Strong export-focused policies that support long-term partnerships
-          with international brands.
-        </li>
-      </ul>
+                  <h5 className="why-subtitle">Tariff & Trade Advantages</h5>
+                  <ul className="why-list">
+                    <li>
+                      Preferential access to key markets under various trade
+                      agreements and concessionary schemes.
+                    </li>
+                    <li>
+                      Competitive duty structures that help brands improve
+                      landed cost and overall margin.
+                    </li>
+                    <li>
+                      Strong export-focused policies that support long-term
+                      partnerships with international brands.
+                    </li>
+                  </ul>
 
-      <h4 className="why-subtitle">Infrastructure & Capability</h4>
-      <ul className="why-list">
-        <li>
-          Vertically integrated supply chain – from spinning and weaving to
-          dyeing, washing, printing, and finishing.
-        </li>
-        <li>
-          Modern factories compliant with global social, safety, and
-          environmental standards.
-        </li>
-        <li>
-          Access to major ports and logistics corridors enabling reliable,
-          time-bound deliveries.
-        </li>
-      </ul>
-    </div>
+                  <h5 className="why-subtitle">Infrastructure & Capability</h5>
+                  <ul className="why-list">
+                    <li>
+                      Vertically integrated supply chain – from spinning and
+                      weaving to dyeing, washing, printing, and finishing.
+                    </li>
+                    <li>
+                      Modern factories compliant with global social, safety, and
+                      environmental standards.
+                    </li>
+                    <li>
+                      Access to major ports and logistics corridors enabling
+                      reliable, time-bound deliveries.
+                    </li>
+                  </ul>
+                </div>
 
-    <div className="col-md-6">
-      <img
-        src={Image.pakistantextile}
-        alt="textile-image"
-        className="why-image"
-      />
-    </div>
-  </div>
-</div>
+                <div className="col-md-6">
+                  <img
+                    src={Image.pakistantextile}
+                    alt="textile-image"
+                    className="why-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
 
-</section>
-
-<div className="space"></div>
+          <div className="space"></div>
           <div
             className="container-fluid position-relative p-0"
             style={{
